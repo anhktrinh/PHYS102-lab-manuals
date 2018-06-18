@@ -555,7 +555,7 @@ Once you have some result from your data, you must offer a physical explanation 
 \begin{itemize}
 \item Learn about exponential functions.
 \item Learn about RC circuits.
-\item Learn about Kirchhoff' laws.
+\item Learn about equivalent resistance and capacitance
 \end{itemize}
 
 \section{Introduction}
@@ -564,7 +564,7 @@ signal generator tool to examine the charging and discharging of a capacitor.
 
 In the first session, you will be asked to \textbf{measure the time constant} of a given RC circuit. You will learn how to measure time constants and understand subtleties in the data acquisition apparatus. This session will be a more traditional lab where you will follow well outlined instructions. 
 
-In the second session, you will be asked to \textbf{build an RC circuit with a specific time constant} and to show, based on well supported data, that your circuit has the appropriate time constant. When you arrive at the second session, you will receive a sheet that asks you to build an RC circuit with a specific number of parallel branches. Using Kirchoff's laws, you are to choose an appropriate number of resistors and capacitors to obtain a specific time constant.
+In the second session, you will be asked to \textbf{build an RC circuit with a specific time constant} and to show, based on well supported data, that your circuit has the appropriate time constant. When you arrive at the second session, you will receive a sheet that asks you to build an RC circuit with a specific number of parallel branches. You are to choose an appropriate number of resistors and capacitors to obtain a specific time constant.
 
 \subsection{Pre-lab activity}
 \begin{enumerate}
@@ -606,8 +606,8 @@ where $\Delta V_{max}$ is the maximum voltage across the capacitor, i.e. the vol
 \end{equation}
 where $R_{eq}$ and $C_{eq}$ are respectively the equivalent resistance and capacitance of the circuit. Although the theoretical discharge time is infinite, in practice we consider that the discharge is over when the voltage at the bounds of the capacitor is at $1\%$ of its maximal value. 
 
-\subsection{Kirchoff's Laws}
-The equivalent resistance and capacitance of a circuit can be found from Kirchoff's laws. The equivalent quantity is different depending on whether the resistors and capacitors are combined in series or in parallel. For resistors, the equivalent resistance is given as
+\subsection{Equivalent resistance and capacitance}
+To find the equivalent resistance and capacitance of a circuit, one must apply the correct equations to sum the contributions of all the components.. The equivalent quantity differs depending on whether the resistors and capacitors are combined in series or in parallel. For resistors, the equivalent resistance is given as
 \begin{equation}
 R_{series} = R_1 + R_2 + R_3 + ... R_n = \displaystyle \sum_{i=1}^n R_i
 \end{equation}
@@ -658,7 +658,7 @@ You will execute the following steps in order to understand how to use the PASCO
 \item Flip the switch to the ``Charge" position. A graph should slowly appear on your screen. Log the time it takes for the capacitor to charge.
 \item When the capacitor is charged, press the red button that now says Stop (\todo{symbol}).
 \item Press that same button that now says Record (\todo{symbol}) and set the switch to discharge the capacitor and notice the rate of the voltage drop. When the capacitor is discharged, stop the recording.
-\item Repeat steps 4 to 7 for the rheostat at approximately half its value and at its minimum value. Compare the charging rates from step 7 (with the maximum rheostat value) with these two new rheostat values. \todo{Questions of lab report?}
+\item Repeat steps 4 to 7 for the rheostat at approximately half its value and at its minimum value. Compare the charging rates from step 7 (with the maximum rheostat value) with these two new rheostat values. Discuss your qualitative observations in the ``General notes" section of your log book.
 \item Discharge the capacitor (steps 8,9) and record it for the minimum rheostat value. The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (on the right hand side of \todo{symbol}). The curve of Eq.~\ref{Eq:V-discharge} will be fit to the whole data set. To fit it on the right segment on the data set, use the highlighting tool (still on the right hand graph \todo{symbol}) and select/box the values that are most relevant. The time constant is given by the parameter $1/B$ in the curve fitting data window. Use Eq.~\ref{Eq:1/x error} to find the error on the time constant.
 \item \textbf{Determine the time constant $\tau$ of the circuit}. $\tau = RC$ is the time the voltage takes to decrease from its maximum value $V_0$ to $1/e$ of $V_0$ (see Section 19.6 of your notes). Use the discharge data from the PASCO in step 11 to determine this. How does the value obtained from the data compare to the fitting exponent provided by the software regression in Step 11?
 \item The capacitance value of $100 \mu$F is only approximate. \textbf{Determine} the true capacitance from the time constant measured in Step 12 and recalling that $\tau=RC$ (assume that the resistance of $150$k$\Omega$ is correct).
@@ -681,9 +681,17 @@ You will execute the following steps in order to understand how to use the PASCO
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\linewidth]{lab2-session1-Rpractice}
-\caption{Kirchoff's laws practice}
+\caption{Effect of a fully charged capacitor on the circuit.}
 \label{Fig:lab2-session1-Rpractice}
 \end{figure}
+
+\begin{tcolorbox}[title=Answer]
+The current is defined as the change in charge over time. In other words,
+\begin{equation}
+\frac{dQ}{dt} = C \frac{dV}{dt} = I.
+\end{equation}
+Therefore if the capacitor is fully charged, the change in voltage vanishes and so the current also vanishes: it is then considered like an open-circuit. Thus the potential across R6 vanishes.
+\end{tcolorbox}
 
 \item Answer the following in the results section of your log book. Your draft calculations can be shown in the ``General Notes" section of the log book. Given Fig.~\ref{Fig:lab2-session1-tau-practice}, what must be the value of C2 such that the time constant is approximately $\tau=12.5$ms. If one replaces C2 by two capacitors in series, one of which has $C5=250\mu$F. What must be the capacitance of the second capacitor to preserve the same time constant?
 \begin{figure}[h]
@@ -706,7 +714,11 @@ Resistors and capacitors can be found in the lab. Instructions about reading the
 
 \section{Session \# 2}
 \begin{tcolorbox}[title=Session \#2]
-In this session you will help students connect their circuits and guide them through the analysis of their data. Through testing, we found that the internal impedance of the PASCO is not large enough to allow measurements of time constants of the order of 10s. To remedy the situation, one can add a large impedance to the probes of the PASCO. For more advanced students, push them to think of how the PASCO and multimeters measure voltages and hence the limitations of the setup.
+In this session you will help students connect their circuits and guide them through the analysis of their data.\\
+
+We expect students to consider the possibility of internal impedance from the PASCO unit. We expect them to propose possible methods to extract the internal impedance of the PASCO. Testing showed that a rigorous experiment to extract the internal impedance would be too time consuming for these lab sessions. \\
+
+Through testing, we found that the internal impedance of the PASCO is not large enough to allow measurements of time constants of the order of 10s. To remedy the situation, one can add a large impedance to the probes of the PASCO. For more advanced students, push them to think of how the PASCO and multimeters measure voltages and hence the limitations of the setup.
 \end{tcolorbox}
 
 In this session, you are asked to build an RC circuit with a specific time constant. Your circuit will have two sub-circuits: one that consists only of resistors and another one that consists only of capacitors. You are to placed both of these in series with the PASCO source as shown in Fig.~\ref{Fig:lab2-session2-circuit}.
