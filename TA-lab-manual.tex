@@ -1,0 +1,919 @@
+\documentclass[12pt]{report}
+\usepackage[margin=1in]{geometry} % change margins
+\usepackage{graphicx} % inserting images
+\usepackage{caption} % captions
+\usepackage{amsmath} % for better math
+\usepackage{verbatim} %used for comment blocks
+\usepackage{mathtools}
+\usepackage[english]{babel}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{placeins}
+\usepackage[square, sort, numbers]{natbib}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{breqn}
+\usepackage{subcaption}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{leftidx}
+\usepackage{bm}
+\usepackage[titletoc,toc, title]{appendix}
+\usepackage[utf8]{inputenc}
+\usepackage{diagbox}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+
+\usepackage{amsmath,amssymb,braket,cancel,nicefrac,physics,tensor,slashed}
+\usepackage{color,empheq,enumitem,forloop,graphicx,microtype,subcaption,verbatim,wrapfig,pdfpages,titlesec}
+\usepackage{array,booktabs,multicol,multirow,tabularx} 
+
+\usepackage{fancyhdr}
+\addto\captionsenglish{\renewcommand{\chaptername}{Lab}}
+\setcounter{chapter}{-1}
+\def \todo #1{\textcolor{red}{#1}}
+\tcbset{colback=blue!5!white,colframe=blue!75!black,center,halign=justify,width=0.9\textwidth,fonttitle=\bfseries}
+
+\linespread{1.15}
+\title{PHYS 102: TA Lab Manual}
+\author{Nikolas Provatas, Anh-Khoi Trinh}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\phantomsection
+\addcontentsline{toc}{part}{Introduction}
+\part*{Introduction} \label{Sec:Intro}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Lab Format}
+\chapter*{Lab Format}
+
+\phantomsection
+\addcontentsline{toc}{section}{Introduction, Learning Objectives and Lab Structure}
+\section*{Introduction, Learning Objectives and Lab Structure}
+Welcome to PHYS 102! The focus of these lab session will be to teach you how to think critically about  data collected from experiments, a skill that can be applied in many other STEM fields and in your own personal lives. You will learn how to acquire and analyse data quantitatively in experiments pertaining to electromagnetism experiments. \\
+
+\noindent \large \textbf{Learning objectives} \normalsize
+
+Whether it is in your professional or personal lives, the ability to analyse and think critically about information, particularly information in the form of data, is a valuable one. In an age where one can feel overwhelmed by the prevalence of information from documentaries, non-fiction books, online websites and politicians, one must find a way to sift through this sea of information to determine objective truths. As scientists, we recommend the \textit{scientific method}.
+
+While the labs will be related to electromagnetism topics that you will learn about in class, the main focus of these labs will be for you to be acquainted with the scientific method. This methodology will be used to answer a question posed to you through data collected and observations you make. The first step is to conjecture a \textit{falsifiable} hypothesis to answer this question. One then performs an experiment to verify said hypothesis. After that, one can make a conclusion based on the data. In these labs, you will be asked to apply the scientific method \underline{quantitatively} to electromagnetism experiments. \\
+
+\noindent \large \textbf{Lab structure} \normalsize
+
+In these labs, you will have two 2-hour sessions to complete your labs: one session per week over the span of two weeks. You will have different tasks to accomplish per session. The goal of this two-session setup is to allow students to make mistakes during the first session, think critically about these, and improve your experimental data and or interpretation of these in the second session. Contrary to other lab courses that you may have taken, the emphasis here is to evaluate a student's critical thinking \textit{process}. This is best achieved when acquiring crude or bad data at first, and leaving room for follow up and subsequent improvement. The critical thinking process of improving one's data is the main focus of these labs.
+
+To evaluate a student's critical thinking process, we will resort to the following grading rubric:
+\begin{itemize}
+\item $15 \%$ for attendance (to both sessions of a given lab)
+\item $15 \%$ for a pre-lab analysis
+\item $10 \%$ for participation in group discussions
+\item $60 \%$ for the content of your log book
+\end{itemize}
+
+Given the focus on critical thinking, the instructions for each lab will be minimal. Students must learn how to acquire meaningful data on their own. Their thinking process must therefore be reflected in their log book with enough clarity, organization and precision to allow us evaluate their ability to think critically. TAs will be more involved that in typical labs in order to guide students throughout the labs.
+
+At the start of the first session, each student will be asked to submit their pre-lab answers to specific questions posed. Students will then be asked to divide into pairs and perform  measurements as a team to collect data related to the posed question(s). All methods, experimental data collected, and interpretations will be written in log book. By the end of the first session, students are asked to hand in \underline{a single} log book \underline{per team}. While you cannot bring the log book home, you are allowed (and encouraged) to take pictures of the log book to think about your results between the two sessions and plan ahead what you intend to do in the second session to improve your experiments. Although you will work with one teammate, and submit one joint journal, as is common in scientific research, we highly encourage discussions with other teams and students outside of the lab session. Such discussions will start in the lab, where TAs will facilitate group discussions between groups to help students troubleshoot their experiments and understand sources of error. You will receive your log book again at the start of the second session to document your improved experiment, new data collected and any revised interpretations. By the end of the second session, students will again submit their log book for evaluation. For most labs, there will be an individual work station and a collective work station. The former offers the base materials and supplies for each group to successfully finish the lab, while the collective work station offers additional material that can be used to improve your data.
+
+\phantomsection
+\addcontentsline{toc}{section}{Lab Log Look}
+\section*{Lab Log Books}
+The log book will be your primary source of evaluation. You will be asked to submit a log book entry by the end of each session. We will distribute at the start of each session the following structured log book:
+ 
+\noindent \textbf{i) Introduction (5\%)}\\
+\noindent Clearly state your goal. This can be a brief re-statement of the question, or of your method to improve your data. Clearly state your hypotheses. Write down what you intend to verify experimentally, and why this method is an appropriate verification of your hypothesis. This part may differ for the second session since you may be more acquainted with the theory and experiment. \\
+
+\noindent \textbf{ii) General Notes: Methodology and Rough data (35\%)}\\
+In this section, we expect you to write all your observations so that we can see your thought process as you are performing the lab. 
+
+As opposed to other lab reports that you may have submitted, we do not expect a clean point-by-point list of manipulations. In fact, you may start following a set of protocol and realize you made some mistakes and therefore should change your original protocol. We recommend writing short sentences and/or intelligible and readable notes of what your are doing. If you do encounter unexpected problems, please write down what they were, and how you resolved them.
+
+We encourage you to write your measurements and rough calculations as you do your measurements. If you choose to compile your data in Excel, you should simply write a few sample calculations. These sample calculations do not need to follow the significant figure rules to be outlined later. More importantly, \textbf{you should write down \underline{all} your observations}. This part can be messy, but as long as the information that you want to convey is clear. We recommend boxing, colouring, underlining and/or labelling important measurements, calculations or observations. \\
+
+\noindent \textbf{iii) Results (30\%)}\\
+\noindent In this section, you will present your data \underline{in its most presentable form}. This differs from the previous section by the way that you present your data: significant figures, graph rules, etc. have to be followed. You will also state your observation and analysis in this part. We expect you to be able to present your data adequately according to instructions from the \textbf{Data Analysis} section. For electronic files such as Excel documents, a TA will have a USB drive onto which you are to upload your documents.\\
+
+\noindent \textbf{iv) Conclusions and future work (30\%)}\\
+\noindent In this section, you will state your conclusion, and offer possible follow-ups to this lab. This can include other physical properties to study, or to offer a better methodology to study this phenomenon. You must motivate your proposed follow-up project by clearly stating what you expect to observe (a hypothesis) and support your claim based on your current experiment. The proposed future projects must be realistically performed by your peers, and must not assume an unrealistic sum of budgetary support or higher level of experimental expertise such that you or your peers are not acquainted to. For your lab report submitted at the end of the first session, be mindful that you must execute your proposed improvements during the second session.
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Data Analysis}
+\chapter*{Data Analysis}
+
+\phantomsection
+\addcontentsline{toc}{section}{General Guidelines}
+\section*{General Guidelines}
+Here is a list of general guidelines for your log book:
+\begin{itemize}
+\item Measurements must always include \textbf{units}.
+\item Measurements must include an uncertainty (\textbf{standard deviation}).
+\item Tables (and any other data representation method) must also include appropriate labels, units and standard deviation.
+\item When comparing to a known quantity (theoretical value), the former does not have a standard deviation attributed to it, unless that information is found from an experiment, in which case there should be an associated standard deviation.
+\item If you quote results from elsewhere, you must include the source: \todo{how to quote sources}
+\item Recall that vector-data has both a \textbf{magnitude} and a \textbf{direction}.
+\item Write down \underline{all} your observations and some commentary about them.
+\end{itemize}
+
+\noindent Figures must
+\begin{itemize}
+\item Include a title.
+\item Include labels on your axes.
+\item Include units on your axes.
+\item Include a few tick markers for the audience to know the scale.
+\item Use an appropriate scale.
+\item Include a legend for the different curves shown on a single plot.
+\item Fit equation (and $R^2$ value) if a fit was used.
+\item Not have joint data points (unless necessary).
+\end{itemize}
+
+\phantomsection
+\addcontentsline{toc}{section}{Data Presentation}
+\section*{Data Presentation}
+One of the most important aspects of doing research is to be able to communicate efficiently your findings. In physics, this is done mostly by means of one of the following:
+\begin{itemize}
+\item A quoted result
+\item A table of results
+\item A figure
+\end{itemize}
+
+As emphasized previously, all quoted results must include an uncertainty i.e. a standard deviation and units. For example, if I measured the gravitational acceleration, I can quote it as
+\begin{equation}
+g = 9.8 \pm 0.2 \ m/s^2.
+\end{equation}
+Usually, if you have a single result, you must explain what it is: was it from a single measurement? Was it an average or did you obtain it from some other method? Whatever the method that you used, there is a specific way to obtain the correct uncertainties. This will be explained in the next sections.
+
+On rare occasions, there are certain quantities that do not need a standard deviation. This could include percentages of error or absolute error differences.
+
+If you choose to present multiple results, you may opt for a table. In this case, you still must include standard deviations and units.
+\begin{table}[h]
+\centering
+\begin{tabular}{||c|c||}
+\hline
+Voltage ($\pm 0.2$ V) & Current ($\pm 0.1$ A) \\ \hline
+3 & 15 \\
+5 & 25 \\
+7 & 35 \\ \hline
+\end{tabular}
+\caption{Example of a table where all measurements have the same standard deviation. If they didn't, you must still include them individually.}
+\label{Table:Presentation-Example}
+\end{table}
+
+Tables are useful to show the explicit values of your results. However sometimes the exact values aren't as important as the general trend. In this case, you would opt to present your data in chart form.
+
+There are many types of possible charts. The most useful one for us will be the scatter plot. An example of a scatter plot is shown in Fig.~\ref{Fig:Example-Scatter}.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{intro-example-scatter}
+\caption{Example of a scatter plot. Each measurement is displayed as a point. One can add error bars in both the x and y axes (although only the y direction is displayed here). One can also fit an equation to the data set.}
+\label{Fig:Example-Scatter}
+\end{figure}
+
+A scatter plot allows you to see the general trend of your data. If you expect a specific behaviour, you can fit a trendline to your data to match a specific equation. By further plotting error bars, you can compare how far away your data points are from the expected trendline. This gives you some insight into whether your data matches your expected trend. From the trendline, you can also see the actual coefficient of the fit. As shown in Fig.~\ref{Fig:Example-Scatter}, you can also display a $R^2$ value, which is called the coefficient of determination. This tells you how good your fit was to your data. A good $R^2$ value is $1$. For the example of Fig.~\ref{Fig:Example-Scatter}, the $R^2$ value is good and most of the measurements fall within a standard deviation of the fit, therefore this says that the current is proportional to the voltage by a proportionality factor of $3.0371$. 
+
+In summary, to present your data, you will need to know certain things: how to perform an average and other basic statistics, how to evaluate the uncertainty in your measurements and by extension, your final result, how many digits to display in your final answer, and most importantly, how to analyse your data. This will be the subject of the following sections.
+
+\phantomsection
+\addcontentsline{toc}{section}{Basic Statistics}
+\section*{Basic Statistics}
+
+\noindent \large \textbf{Mean} \normalsize
+
+Let $y(x)$ be a function of $x_i$ datapoints. The value of $y$ for $x_i$ can be denoted by $y(x_i)$ or $y_i$. The mean, or average, denoted by $\bar{y}$ of a dataset with $N$ datapoints is given by
+\begin{equation}
+\bar{y} = \frac{1}{N} \displaystyle \sum_{i}^N y(x_i) = \frac{1}{N} \left( y(x_1) + y(x_2) +... + y(x_N) \right).
+\end{equation}
+
+\noindent \large \textbf{Standard deviation} \normalsize
+
+The standard deviation of a function $y(x)$ is denoted by $\sigma_y$. One says that a measurement $y(x_i)$ has an \textit{uncertainty} of
+\begin{equation}
+y_i \pm \sigma_{y_i}.
+\end{equation}
+The standard deviation tells you up to what value is your data precise: your data point can vary between $y_i + \sigma_{y_i}$ and $y_i - \sigma_{y_i}$. This means that your measurement $y_i$ can vary by $2 \sigma_{y_i}$. A good set of measurement would have a very small standard deviation: this gives you the bounds under which your measurement is considered precise. You will see in section ``\textbf{Error Analysis}" how to quantify this quantity. \\
+
+\noindent \large \textbf{Significant Numbers} \normalsize
+
+To present results, one must present an appropriate number of significant numbers. In this course, we will not be concerned with the \textit{number of significant digits}, but more with the precision attributed to a measurement. When quoting a measurement, the last digit should be fixed by the uncertainty of the measurement: it must match the order of magnitude of the standard deviation. In other words, the standard deviation fixes up to what precision (roughly decimal place) you can quote your results. Table~\ref{Tab:SigFigs} lists some common mistakes and how to present those results appropriately. In the context of this course, we will simplify our conventions by \underline{keeping only one significant number for the standard deviation}. Recall that leading zeros do not count as a significant number and trailing zeros (after the precision of the standard deviation) should be discarded.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{||c|c||}
+\hline
+Incorrect & Correct \\ \hline
+$324.9453 \pm 0.02$m & $324.95 \pm 0.02$m \\
+$20 \pm 0.1$\$ & $20.0 \pm 0.1$\$ \\
+$3 \times 10^4 \pm 2$N & $3000 \pm 2$N \\
+$31.02 \pm 0.10$\$ & $31.0 \pm 0.1$\$ \\
+$0.003564 \pm 0.00012$m/s & $0.0036 \pm 0.0001$m/s \\ \hline
+\end{tabular}
+\caption{Significant numbers. Common mistakes and the correct way to present such results.}
+\label{Tab:SigFigs}
+\end{table}
+
+\noindent \large \textbf{Precision versus Accuracy} \normalsize
+
+\textbf{Precision} refers to how closely related two measurements are from each other. This means that one expects a \underline{small standard deviation} for highly precise measurements.
+
+\textbf{Accuracy} measurements refers to the closeness of a measurement from a \textit{known} value. This means that one must calculate the \underline{difference} of the measurement to the known value \underline{in terms of standard deviations}. For example, if $y=0.4 \pm 0.1$m, and the known value is $y_t=0.7$m, then the measurement differs by $3\sigma_y$.
+
+Often, one may encounter a highly precise set of measurements, but also very inaccurate. This is a signal that there may have been a \textbf{systematic error} in your results. This is a type of error that propagates throughout your experiment and offsets your results by a constant factor. For example, recall the equation of the period of oscillation of a pendulum is
+\begin{equation}
+T = 2 \pi \sqrt{\frac{L}{g}}.
+\end{equation}
+If one incorrectly measured the length $L$ of the string, then the results would be offset by a constant factor of $\sqrt{L_{good}- L_{bad}}$. \\
+
+\phantomsection
+\addcontentsline{toc}{section}{Error Analysis}
+\section*{Error Analysis} \label{Sec:ErrorAnalysis}
+
+\noindent \large \textbf{Standard deviation of a measurement} \normalsize
+
+The \textit{rule of thumb} for finding the standard deviation of measurements is as follows: each measurement can vary by \textit{half} of the smallest available precision from your measuring instrument, and you must add the uncertainties of the measurement. Consider the example of measuring a distance with a 30cm ruler. The smallest increment is a mm. When you measure a distance between \underline{two points}, you take \underline{two} measurements: one at each point. Thus the uncertainty on the measurement is $2 \times 0.5$mm, so $1$mm. This is exactly the smallest available increment of your measuring device. Therefore, unless otherwise specified, the \textit{standard deviation of a measurement is the smallest available measurable value allowed by your instrument}. 
+
+Another example is measuring the time difference between two events. Again, there will be two measurements: the initial and end time. Stopwatches often allow one to view up to ms precision. However, the average visual time reaction is roughly $0.3$s, and therefore each initial and final time measurement varies by $0.15$s and so the uncertainty for the whole measurement is $0.3$s. \\
+
+\noindent \textbf{Standard deviation for fluctuating data}
+
+For fluctuating datasets where \textit{each measurement is independent of the previous}, to reliably represent your data, you should take some form of average over some number of measurements. Measurements that are random are said to follow a \textit{Poisson distribution}. To study these types of measurements, one typically chooses a subset of $N$ data points, and calculate its mean. Given the mean, one must approximate the error as
+\begin{equation}
+d_i = y_i - \bar{y}.
+\end{equation}
+The standard deviation on the average of your measurements will therefore be given as
+\begin{equation}
+\sigma_{\bar{y}} = \sqrt{ \frac{1}{N} \displaystyle \sum_{i=1}^{N} d_i^2}.
+\label{Eq:STDev.P}
+\end{equation}
+This can be obtained in Excel by using the function \verb|=STDEV.P(x)|. \\
+
+\noindent \large \textbf{Error propagation} \normalsize
+
+The standard deviation value above is attributed to \underline{a single measurement}. However, often one would be interested in deriving a quantity that depends on \textit{multiple} measurements. To describe the standard deviation on the end result, one must use \textit{error propagation techniques}.
+
+For these labs, you will only need to know the following two error propagation formulas. Consider first the following function
+\begin{equation}
+f(x,y) = x \times y.
+\end{equation}
+The standard deviation $\sigma_f$ on $f$ will be
+\begin{equation}
+\sigma_f = \sqrt{ (x \sigma_y)^2 + (y \sigma_x)^2}.
+\label{Eq:product error}
+\end{equation}
+This will be useful for example to calculate the error on the area given two length measurements, or in Lab 2, you can calculate the error on the time constant in a similar way.
+
+Consider also the function
+\begin{equation}
+f(x) = \frac{1}{x}.
+\end{equation}
+The standard deviation for this case is
+\begin{equation}
+\sigma_f = \frac{\sigma_x}{x^2}.
+\label{Eq:1/x error}
+\end{equation}
+
+
+\noindent \large \textbf{Measurement analysis} \normalsize
+
+To understand the significance of a measurement, one can compare it in different ways. When a theoretical value is known, one can compare a set of measurements by calculating the \textit{absolute error}, the \textit{percentage error} or the \textit{standard deviation error}. One can also analyse a dataset by studying fits in a similar manner. \\
+
+\noindent \textbf{Absolute error}
+
+The absolute error indicates the difference between the known value, and either a measurement, the mean value of a set of measurements, or a fit parameter. One can also compare a set of measurement to the fit of the dataset in this matter. Let $y_t$ be the theoretical value and $y$ be one of the variables mentioned before, then the absolute value is
+\begin{equation}
+\text{Absolute error} = \left\rvert y_t - y \right\rvert
+\end{equation}
+
+\noindent \textbf{Percentage error}
+
+The percentage error is simply the ratio of absolute error relative to the known value. This gives an indication, in percentage, of how far away with respect to the known value is the measurement. It is given as
+\begin{equation}
+\text{Percentage error} = \left\rvert \frac{y_t - y}{y_t} \right\rvert \times 100
+\end{equation}
+
+\noindent \textbf{Standard deviation error}
+
+The standard deviation error indicates how many standard deviations away is a measurement when compared to the known value. It is given as
+\begin{equation}
+\text{Standard deviation error} = \left\rvert \frac{y_t - y}{\sigma_y} \right\rvert
+\end{equation}
+
+You will have to recognize which one of the above is useful and representative of the information that you wish to convey for the data analysis that you have to perform. Note that we've taken the absolute values of the above, but by not doing so, we could convey information about the ``direction" of the error i.e. whether the measurements are higher or lower than the known theoretical value.\\
+
+\noindent \large \textbf{Fit analysis} \normalsize
+
+As mentioned before, a good way to know whether your fit is correct is to compute the coefficient of determination $R^2$. To compare your fit to your data, you should see whether your data points all (or mostly) fall within one standard deviation of the fitted equation, that is if the standard deviation error should be less than 1 $\sigma$ for all data points when compared to $y_{fit}$.
+
+
+\phantomsection
+\addcontentsline{toc}{part}{Lab Manuals}
+\part*{Lab Manuals} \label{Part:Labs}
+
+\chapter{Excel}
+\section{Learning objectives}
+\begin{itemize}
+\item Learn how to use Excel
+\item Compute certain basic mathematical statistics
+\end{itemize}
+
+\section{Content}
+This lab will be an interactive demo lab where teaching Assistants will help you  learn how to use Excel and to apply it to the concepts presented in the \textbf{Data analysis} chapter. We recommend that you read the \textbf{Data Analysis} and familiarize yourself to Excel before attending this session. This lab will be called "Lab 0" and will be scheduled in the Lab information document on MyCourses. 
+
+\chapter{Capacitance}
+\section{Learning objectives}
+\begin{itemize}
+\item How to acquire data
+\item How to quantify error
+\item How to present basic data
+\item Learn about linear fits
+\item Confirm capacitance law
+\end{itemize}
+
+
+\section{Introduction}
+In this lab you will be asked to accomplish the following tasks:
+\begin{itemize}
+\item Find possible parameters that could affect the capacitance of a parallel plate capacitor system.
+\item Support your conclusion based on a quantitative evaluation of your data.
+\end{itemize}
+
+You will have to chose some parameters and quantify their affect on the capacitance. In the process, you will learn how to acquire good data and how to quantify and present your data. We would like to re-emphasize that collaborations and discussions are expected through the two-session lab process.
+
+\begin{tcolorbox}[title=Role as a TA]
+Your role as a TA will be to guide them through the ``script" that we present in the protocol section. You should guide them by asking questions and making them think about their results as opposed to giving them the right answer. You will also be required to bring teams together to collaborate with each other. You should clarify the grading method, and re-emphasize that the major part of their grade comes from the log book.
+\end{tcolorbox}
+
+In the first session, you will work together to find possible parameters that can affect the capacitance. Measurements at this stage may be crude; do not worry about that, we are {\it not} evaluating the goodness of data at this stage, rather the process of thinking about what this data {\it means} and your thinking process about how to improve your experiment to obtain better data. During the second session, you will be asked to obtain quantitatively improved data and to compare it with data from the previous session. You must conclude, based on a quantitative evaluation of your data, whether or not, and how, your chosen parameter affects the capacitance of a parallel plate capacitor.
+
+
+\subsection{Pre-lab activity}
+To answer some of these questions, we encourage you to read the \textbf{Data Analysis} chapter of the lab manual.
+\begin{enumerate}
+\item What is a measurement? Give your own definition of what constitutes a measurement based on your previous courses with lab components (biology, chemistry, physics).
+\begin{tcolorbox}[title=Answer]
+This is more open-ended. Measurements can be taught of as quantifying observations. Measurements must come with an inherent uncertainty.
+\end{tcolorbox}
+\item Two engineers must measure the distance between the McGill metro station to the athletic centre to build an underground tunnel. One engineer finds that the distance is $9134 \pm 5$m while the other finds that the distance is $915 \pm 2 \times 10^1$m. In what ways can they compare their measurements? Do their measurements agree? Explain.
+\begin{tcolorbox}[title=Answer]
+They should compare the standard deviations to conclude that the measurements of the two engineers agree.
+\end{tcolorbox}
+\item The city considers to build a metro line between McGill station and the station at University of Montreal. To do this, an engineer decides to use a km-long ruler whose smallest divider is a meter. She \textit{did not} use any other measuring devices. She takes her measurements and presents her findings to her team as $3653.4500$m. What is the uncertainty on this measurement? Did she present enough, too little or too many digits about her measurement? Why?
+\begin{tcolorbox}[title=Answer]
+The correct way to present this measurement is $3653 \pm 1$m since the smallest increment on her measuring instrument is a meter. She presented too many digits since she cannot know of smaller distances than a meter.
+\end{tcolorbox}
+\item Two groups of researchers are trying to test their new methodology to measure the speed of light $c$. Current data shows that the speed of light is roughly $c=2.99 792 \times 10^8$ m/s. The first group finds that $c=2.88 \pm 0.02 \times 10^8$ m/s while the second group finds that $c=3.0 \pm 0.2 \times 10^8$ m/s. What do these measurements tell you about their methodology? What type of mistake may have caused the discrepancy in the first group's results?
+\begin{tcolorbox}[title=Answer]
+These measurements show that the first group has a more \textbf{precise} methodology, while the second team has a more \textbf{accurate} one. The first group probably has a \textbf{systematic error} that causes this offset.
+\end{tcolorbox}
+\item How do you know if an experimental result is acceptable and trustworthy? What gives you confidence that your data is trustworthy?
+\begin{tcolorbox}[title=Answer]
+They should say something about the standard deviation and fit coefficient of determination. Ideally, they would mention that the methodology must be questioned as well.
+\end{tcolorbox}
+\end{enumerate}
+
+\subsection{What is a capacitor?}
+You have learned in class that charges can attract and repel each other. This is because point charges source \textit{electric fields} that apply a force on a test charge. Since there can exist a force between two point charges, there exists a \textit{potential energy} between two point charges $\Delta U$ due to this force. One defines the \textit{electrical potential} as \textit{the potential energy change \underline{per unit charge}} as
+\begin{equation}
+\Delta V = \frac{\Delta U}{q}
+\label{Eq:ElectricPotential}
+\end{equation}
+where $q$ is the \textit{test particle's charge}. In practice, it is more useful to define an electrical potential difference to move \textit{\underline{any} test charge} $q$ from $r=\infty$ to a distance $R$ from a source charge $Q$ as
+\begin{equation}
+V = \frac{k Q}{R}
+\label{Eq:ElectricPotential_point}
+\end{equation}
+where $k$ is Coulomb's constant $k = {1}/{4\pi \epsilon_0}$. This will have units of \textit{voltage} V. This process is depicted in Fig. \ref{Fig:ElectricPotential_point}.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7 \textwidth]{lab1-electric-potential.png}
+\caption{The electrical potential due to a source charge $Q$ (left) at a distance $R$. The test charge (right) is placed at a distance $r$ from the location that we measure the electrical potential difference.}
+\label{Fig:ElectricPotential_point}
+\end{figure}
+
+Now consider a pair of parallel plates separated by a distance $d$ connected to a battery as shown in Fig. \ref{Fig:ParallelPlates}. A pair of parallel plates separated by air or another material can be assembled into a \textit{capacitor}: on each parallel plate, because of the battery, there will accumulate a number of electrons on the negative plate such that the total charge is $-Q$ and $+Q$ on the positive plate. Because of the gap between the plates, there now exists an electric potential between the plates, which is given by Eq. \ref{Eq:ElectricPotential}.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.6]{lab1-parallel-plates.png}
+\caption{Capacitor plate setup. The battery with voltage $V$ creates a flow of electrons such that there will accumulate a total charge of $-Q$ on one plate, and $+Q$ on the positive plate. Since the plates are separated by a distance $d$, there will be a electrical potential difference between the two plates.}
+\label{Fig:ParallelPlates}
+\end{figure}
+
+One defines the \textit{capacitance} of a capacitor as the constant of proportionality between the total number of charges $Q$ and the electric potential $V$ stored between the plates, i.e. 
+\begin{equation}
+Q = C V.
+\label{capacitor_formula}
+\end{equation}
+Capacitance is measured in Farads F. A useful constant in such setup is the \textit{vacuum permittivity} $\epsilon = 8.85 \times 10^{-12}$F/m. In this lab, you will be asked to verify \textit{what} affects the capacitance $C$ of a parallel plate capacitor system.
+
+\begin{tcolorbox}[title=Expected result]
+We expect them to find
+\begin{equation}
+C = \epsilon \frac{A}{d}, \nonumber
+\end{equation}
+where $\epsilon$ is the \textit{relative} permittivity. They should be able to test the area correlation with the plates given, and the distance one by stacking multiple sheets of dielectric between the plates.
+\end{tcolorbox}
+
+\begin{tcolorbox}
+We expect them to plot their data and fit a linear regression with standard deviation error bars as shown in Fig.~\ref{Fig:Lab1-results-area}. They can also plot a comparison with the mean to see the consistency of their results as shown in Fig.~\ref{Fig:Lab1-results-area2}.
+\end{tcolorbox}
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{lab1-results-area}
+\caption{Data of capacitance versus area. We expect them to display the equation and $R^2$ value. They should be able to find a good linear fit.}
+\label{Fig:Lab1-results-area}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{lab1-results-area2}
+\caption{Comparison of the capacitance area data versus its mean. The average $\epsilon$ is $3.4 \pm 0.3 \times 10^{-12}$ F/m.}
+\label{Fig:Lab1-results-area2}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{lab1-results-distance}
+\caption{Data of $C/A$ versus $1/r$. The data points in orange are those of the first three layers. The linear fit matches the average $\epsilon$ found from the area experiment.}
+\label{Fig:Lab1-results-distance}
+\end{figure}
+
+\begin{tcolorbox}
+In our testing showed that for $n>3$ sheets, there seems to be a $1/\sqrt{d}$ correction that appears, and therefore students aren't expected to find a perfect fit for large distances of $d$. This is mostly due to some polarization effect from stacking the dielectrics, and therefore one should view the $1/d$ dependence as a ``small distance" approximation. You should encourage students to find this disparity between experiment and theory and encourage them to discuss the cause of this. The data is shown in Fig.~\ref{Fig:Lab1-results-distance}.
+\end{tcolorbox}
+
+\begin{tcolorbox}
+Students are encouraged to discuss about other parameters such as shape, volume, mass applied to the dielectric, and the use of other dielectrics, but these aren't easily quantifiable parameters.
+\end{tcolorbox}
+
+%\begin{equation}
+%C = \epsilon \frac{A}{d}, \qquad \epsilon = \kappa \epsilon_0
+%\end{equation}
+
+
+\section{Protocol}
+\subsection{Session $\# 1$}
+\begin{tcolorbox}[title=Session \#1]
+We suggest the following time distribution for this session:\\
+
+During the first 20mins, assemble everyone to the front and do a quick introduction, and maybe a demo of the manipulations. You should then ask everyone what they think could affect the capacitance of a capacitor, and push them to give a physical reason behind their hypothesis. We expect you to motivate the idea that electrical potential is given by the relative distance between two charged objects, and therefore, for parallel conducting plates, larger area would allow for more charges to accumulate, and by Eq.~\ref{Eq:ElectricPotential_point}, we expect there to be a $1/r$ factor. Recommend that they works together to cover more parameters e.g. one team takes care of area, the other does distance.
+\end{tcolorbox}
+
+\begin{tcolorbox}
+Give them about 60-75mins to perform their measurements while walking around, answering questions and facilitating discussions between teams and teammates. In the meantime, don't forget to verify that students have done their pre-labs.
+\end{tcolorbox}
+
+\begin{tcolorbox}
+After about 90mins of the 2-hour session, call everyone to the front and ask people to describe their findings. List on the board what could affect capacitance and why. Make sure that they support their findings with statistics (standard deviations and fits), and ask them whether the correlations that they find are well supported and warrant extra verification during the next session. After this discussion period, make sure that everyone understands that they have to be looking to verify the effects of area and distance of the plates during the next session.
+\end{tcolorbox}
+
+\begin{tcolorbox}
+For the remainder of the time, students can try and take additional measurements, and prepare notes for the next session. Don't forget to pick up every teams' log book by the end of the session.
+\end{tcolorbox}
+
+The available material is listed in Table \ref{Tab:Lab1-material}. The metallic rectangular plates will be of varying dimensions. The manipulations are straightforward: insert either a plastic or paper sheet between the two plates and use the Arduino unit (see below) to measure the capacitance. At this point, you do not need to know how the Arduino unit works, simply how to use it. You will learn how it works in the next lab. The plates must not touch each other in order for you to see a measurement: this causes a short-circuit and therefore you will not see a capacitance measurement. You can assume that the distance between the plates is the thickness of the plastic or paper sheet.
+\begin{table}[h]
+\centering
+\begin{tabular}{||c | c ||}
+\hline
+Individual station & Collective station\\ \hline
+Laptop & Aluminum foil \\
+Arduino capacitance setup & Blocks of wood \\
+Metallic plates & Small weights \\
+Ruler (?) & Assorted capacitors \\
+Plastic sheets & Assorted resistors \\
+Paper sheets & Extra wires \\
+& Micrometer \\
+& Multimeter \\
+\hline
+\end{tabular}
+\caption{Available material for Lab \# 1}
+\label{Tab:Lab1-material}
+\end{table}
+
+\noindent Information about the Arduino code can be found \href{https://www.arduino.cc/en/Tutorial/CapacitanceMeter}{here}. To use the Arduino unit:
+\begin{enumerate}
+\item Plug the USB-port into the laptop
+\item Open the Arduino Genuino application on the laptop.
+\item Open the capacitanceMeter.ino file found in \todo{location}.
+
+\item In the tabs above, go into the drop-down menu Tools $\rightarrow$ Port $\rightarrow$ Com4.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5 \textwidth]{lab1-Arduino-menu-bar.png}
+\caption{Arduino application menu bar. Note that the color boxes were added manually. The red checkmark box is the \textbf{verify} button. It serves to verify whether there is an error in the code. The orange right arrow box is the \textbf{upload} button, and the purple box is the \textbf{Tools} drop-down menu bar.}
+\label{Fig:ArduinoMenuBar}
+\end{figure}
+
+\item Verify the script by clicking the icon with a checkmark. If there is an error, call the TA.
+\item Upload the script by clicking the icon with the right arrow.
+\item In the tabs above, go into Tools $\rightarrow$ Serial Monitor (or on your keyboard, press Ctrl+Shift+M).
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85 \textwidth]{lab1-Arduino-monitor.png}
+\caption{Arduino Serial Monitor. This is a pop-up screen where you will see your capacitance measurements scroll by. The Arduino unit takes a capcitance measurement at a fixed frequency. Unless otherwise specified, the output is in nanoFarads. Units aren't display as to simplify the transfer from the monitor screen to Excel, but one could display the units by changing the command in the Arduino script. To stop the scrolling of measurements, click on the Autoscroll box.}
+\label{Fig:Arduino-Monitor}
+\end{figure}
+
+\item Take the two wires (see Fig.~\todo{updated setup}) and simply touch each side of the parallel plates: you should see a multitude of measurements scrolling down the monitor window. If you do not see many measurements scrolling in the monitor window, it is likely that the plates are touching each other. \todo{input new setup pic}
+\item You can stop the auto-scroll by clicking the bottom-left box to better see your results (see Fig.~\ref{Fig:Arduino-Monitor}).
+\end{enumerate}
+
+Notice that in Fig.~\ref{Fig:Arduino-Monitor}, the data fluctuates. You will have to determine how many capacitance measurements should you average over to acquire a good representation of that capacitance measurement. We refer you to the ``\textbf{Error Analysis}" section of the lab manual. Using this setup, proceed to conduct you experiments and collect data that will let you evaluate $C$ in in Eq.~\ref{capacitor_formula}. 
+
+You will have the opportunity to test whatever hypothesis you may have, however \textbf{every group must take a capacitance measurement for at least \underline{three} different pairs of plate sizes while inserting a single sheet of plastic between them. The plates must be perfectly aligned on top of each other}. After doing so, you may explore in more details the consequences of these measurements, or you may study other possible parameters that could affect the capacitance.
+
+Given the measurement of the two sides $L_1$ and $L_2$ of a rectangle and their corresponding standard deviations $\sigma_{L_1}$ and $\sigma_{L_2}$, the standard deviation on the area is given by
+\begin{equation}
+\sigma_A = \sqrt{ \left( L_1 \sigma_{L_2} \right)^2 + \left( L_2 \sigma_{L_1} \right)^2 }.
+\end{equation}
+
+\begin{tcolorbox}
+The three area measurements will serve as a baseline for students in case some of them attempt to test unconventional hypotheses.
+\end{tcolorbox}
+
+While studying other parameters, if you are unsure of the standard deviation of a certain parameter, you may ask the TAs to derive the appropriate derived standard deviation for that parameter.
+
+Enter your set up, measurement process and data in your log book. Before handing in your log book, be sure to write down your observations in the \textbf{General Notes} section of your log book, and a rough plan of what you intend to do during the next session in the \textbf{Conclusions and future work} section. The latter part should be done after discussions with at least one other group. You \textbf{do not need to include a results section} in your log book for this session.
+
+\subsection{Session $\# 2$}
+We recommend that you bring whatever material that you think could help you acquire better data. At this point, you should know what parameters affect the capacitance, and therefore you should plan in advance your own ``protocol" to verify your hypothesis quantitatively with improved data. This protocol does \underline{not} have to match what you wrote in your log book during the last session, but if it does differ, you must explain what made you change your mind.
+
+\begin{tcolorbox}[title=Session \#2]
+In this session, you should remind everyone that last time, you discovered together that $C \propto A/d$, so this session should be simpler as they will know what to do.
+\end{tcolorbox}
+
+Be mindful that you will be evaluated based on your data presentation, data analysis and explanation of the physics, therefore be certain to \textit{fully, but succinctly, describe} your thought process. 
+
+\section{Measurement Analysis}
+During this lab, you will have to use data analysis techniques to understand your data. For \underline{each session}, we recommend that you analyse your data as follows.
+
+To study a system, one typically isolates as many variables as possible to see each of its individual affect on the whole system. If we are able to isolate such a variable, mathematically, that is the equivalent of finding some $f(x)$ that depends just on one variable $x$. In this lab, you will find as many variables that can affect the capacitance as possible by isolating each parameter one at a time.
+
+For each dataset, corresponding to each parameter you measure, you must abide by the error analysis rules outlined in the first part of the lab manual. The data analysis can be done much more rapidly with spreadsheets, therefore we highly recommend that you read that section (\textbf{Introduction to Excel}) which can be found in the appendix of the lab manual. When analysing your data, you must follow the norms established in the \textbf{Data Analysis} chapter to understand the significance of your data. 
+
+Once you have some result from your data, you must offer a physical explanation that supports your results. Explain why physically each parameter affects the capacitance of the system. Support your claim by proposing a possible experiment to test your claims, and offer possible outcomes that one could observe from your experiment. Recall that bouncing your ideas off peers is an invaluable way to actually test the rational of your hypothesis.
+
+
+\chapter{RC Circuits}
+\section{Learning objectives}
+\begin{itemize}
+\item Learn about exponential functions.
+\item Learn about RC circuits.
+\item Learn about Kirchhoff' laws.
+\end{itemize}
+
+\section{Introduction}
+In this lab you will characterize an RC circuit. An RC circuit is a circuit that contains a resistor (R) and a capacitor (C). The analysis tool we will use is called a PASCO 850 Universal Interface, the use of which explained below. Specifically, we will also use a voltmeter and a
+signal generator tool to examine the charging and discharging of a capacitor. 
+
+In the first session, you will be asked to \textbf{measure the time constant} of a given RC circuit. You will learn how to measure time constants and understand subtleties in the data acquisition apparatus. This session will be a more traditional lab where you will follow well outlined instructions. 
+
+In the second session, you will be asked to \textbf{build an RC circuit with a specific time constant} and to show, based on well supported data, that your circuit has the appropriate time constant. When you arrive at the second session, you will receive a sheet that asks you to build an RC circuit with a specific number of parallel branches. Using Kirchoff's laws, you are to choose an appropriate number of resistors and capacitors to obtain a specific time constant.
+
+\subsection{Pre-lab activity}
+\begin{enumerate}
+\item Why would we want to fit a dataset to an equation?
+\begin{tcolorbox}[title=Answer]
+Curve fitting allows one to match data to a quantitative theoretical model. A good model is able to predict future outcomes of similar experiments.
+\end{tcolorbox}
+\item What is $e^{x}$ evaluated at $x=0$, $x=1$ and $x=-1$?
+\item For $f(x) = e^{-x}$, what is the value of $x$ so that $f(x)=0$?
+\item What does $a$, $b$ and $c$ do in the following function?
+\begin{equation}
+f(x) = a e^{b x}+c
+\end{equation}
+\item What is the difference between these two plots:
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{lab2-prelab}
+\caption{Exponential functions.}
+\label{Fig:lab2-prelab}
+\end{figure}
+\end{enumerate}
+
+\subsection{RC Circuits}
+Recall that the capacitance is defined as the proportionality constant between the total charge accumulated by a capacitor and the voltage across the circuit
+\begin{equation}
+Q = C \Delta V.
+\end{equation}
+In this equation, the charge $Q$ is expressed in Coulomb (C), the tension $\Delta V$, in volts (V) and the capacitance $C$ in farads (F).
+
+In this lab you will study both the \textit{charging} and \textit{discharging} process of an RC circuit. During the charging process, charges accumulate on each sides of the parallel plate capacitor. During the discharging process, the capacitor releases all its charges into the circuit. Capacitors charge and discharge exponentially in time. During the \textit{discharge} of a capacitor, the instantaneous voltage $\Delta V_C$ between the ends of the capacitor also drops and is given by
+\begin{equation}
+\Delta V_C = \Delta V_{max} e^{-t/\tau}
+\label{Eq:V-discharge}
+\end{equation}
+where $\Delta V_{max}$ is the maximum voltage across the capacitor, i.e. the voltage to which the capacitor was charges, $t$ is the time and $\tau$ is the \textit{time constant} given by
+\begin{equation}
+\tau = R_{eq} C_{eq}
+\label{Eq:time-constant}
+\end{equation}
+where $R_{eq}$ and $C_{eq}$ are respectively the equivalent resistance and capacitance of the circuit. Although the theoretical discharge time is infinite, in practice we consider that the discharge is over when the voltage at the bounds of the capacitor is at $1\%$ of its maximal value. 
+
+\subsection{Kirchoff's Laws}
+The equivalent resistance and capacitance of a circuit can be found from Kirchoff's laws. The equivalent quantity is different depending on whether the resistors and capacitors are combined in series or in parallel. For resistors, the equivalent resistance is given as
+\begin{equation}
+R_{series} = R_1 + R_2 + R_3 + ... R_n = \displaystyle \sum_{i=1}^n R_i
+\end{equation}
+\begin{equation}
+\frac{1}{R_{parallel}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ... + \frac{1}{R_n} = \displaystyle \sum_{i=1}^n \frac{1}{R_i}
+\end{equation}
+
+For capacitors, the equivalent capacitance is given as
+\begin{equation}
+C_{parallel} = C_1 + C_2 + C_3 + ... C_n = \displaystyle \sum_{i=1}^n C_i
+\end{equation}
+\begin{equation}
+\frac{1}{C_{series}} =  \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + ... + \frac{1}{C_n} = \displaystyle  \sum_{i=1}^n \frac{1}{C_i}
+\end{equation}
+
+\subsection{Equipment}
+In this lab you will use the PASCO 850 Universal Interface to measure and plot voltages as a function of time in an RC circuit. The PASCO devices comes with two sets of wires. The first is the input/output voltage source. The other is a set of probe which measures the voltage across the capacitor of the circuit. \todo{Discuss standard deviation on PASCO}
+
+\section{Session \# 1}
+\noindent \large \textbf{Equipment} \normalsize \\
+During the first session, you will receive an RC circuit fastened onto a wooded board. Before proceeding with measurements related to charging and discharging capacitors, conduct the following steps:
+\begin{enumerate}
+\item Turn the wooden board over to reveal the circuit Fig.~\ref{Fig:lab2-session1-circuit1}. There are actually two circuits here, one consisting of a $100$k$\Omega$ rheostat (variable resistor) and the $100\mu$F capacitor, the other consisting of a $470\Omega$ resistor and a $0.1\mu$F capacitor.
+\item Connect the Output 1 of the PASCO 850 Universal Interface to the wooden board's terminals as well as the Analog Input A in order to complete the circuit as shown on Fig.~\ref{Fig:lab2-session1-circuit1}. The $100\mu$F capacitor can now charge through the rheostat (when in the ``charge" state) and discharge through the $150$k$\Omega$ resistor (when in the ``discharge" state). The charging voltage is read on the computer. The Input A measures the voltage through the 100$\mu$F capacitor. The Output 1 is the one with the red and black connectors and the analog inputs are the higher half of the interface and on the right.
+\end{enumerate}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\linewidth]{lab2-session1-circuit1}
+\caption{Circuit for session 1. This is currently connected to the rheostat.}
+\label{Fig:lab2-session1-circuit1}
+\end{figure}
+
+\begin{tcolorbox}[title=Session \#1]
+In this session you will supervise students as they perform the protocol below. When they change to a square wave input, make sure that they understand how to vary the parameters to obtain good data, i.e. changing the frequency of the function generator and the frequency of data acquisition.
+\end{tcolorbox}
+
+\noindent \large \textbf{Procedure} \normalsize \\
+You will execute the following steps in order to understand how to use the PASCO interface to characterize an RC circuit. For this session, you are expected to write down your observations in your log book and to answer the questions that appear in the following instructions. You should write down all that technical notes about the apparatus and how an RC circuit works in order for you to fast-track your manipulations for the next session.
+\begin{enumerate}
+\item Connect the circuit as shown in Fig.~\ref{Fig:lab2-session1-circuit1}.
+\item \todo{Where to get Pasco file}
+\item Turn on the PASCO and plug in the USB into the computer.
+\item On the software, open the ``Signal Generator" tool, which is located on the left hand side panel (\todo{symbol}) and make sure that the signal is set to be DC (Waveform option) and has amplitude of $6V$.
+\item Set the rheostat to its maximum value (turn fully clockwise).
+\item Press the red round Record button, on the bottom panel (\todo{symbol}) 
+\item On the computer, under the 850 Output 1, press On to turn on the power supply.
+\item Flip the switch to the ``Charge" position. A graph should slowly appear on your screen. Log the time it takes for the capacitor to charge.
+\item When the capacitor is charged, press the red button that now says Stop (\todo{symbol}).
+\item Press that same button that now says Record (\todo{symbol}) and set the switch to discharge the capacitor and notice the rate of the voltage drop. When the capacitor is discharged, stop the recording.
+\item Repeat steps 4 to 7 for the rheostat at approximately half its value and at its minimum value. Compare the charging rates from step 7 (with the maximum rheostat value) with these two new rheostat values. \todo{Questions of lab report?}
+\item Discharge the capacitor (steps 8,9) and record it for the minimum rheostat value. The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (on the right hand side of \todo{symbol}). The curve of Eq.~\ref{Eq:V-discharge} will be fit to the whole data set. To fit it on the right segment on the data set, use the highlighting tool (still on the right hand graph \todo{symbol}) and select/box the values that are most relevant. The time constant is given by the parameter $1/B$ in the curve fitting data window. Use Eq.~\ref{Eq:1/x error} to find the error on the time constant.
+\item \textbf{Determine the time constant $\tau$ of the circuit}. $\tau = RC$ is the time the voltage takes to decrease from its maximum value $V_0$ to $1/e$ of $V_0$ (see Section 19.6 of your notes). Use the discharge data from the PASCO in step 11 to determine this. How does the value obtained from the data compare to the fitting exponent provided by the software regression in Step 11?
+\item The capacitance value of $100 \mu$F is only approximate. \textbf{Determine} the true capacitance from the time constant measured in Step 12 and recalling that $\tau=RC$ (assume that the resistance of $150$k$\Omega$ is correct).
+\item When a capacitor is discharging, the formula is $Q=Q_{max} e^{-t/\tau}$ while when it is charging, the equation is $Q=Q_{max} (1 - e^{-t/\tau})$. What is the difference between the $(1-e^{-x})$ and $e^{-x}$ functions? Explain this in your log book.
+\item We will now consider the other circuit: we will connect the 470$\Omega$ resistor in series with the $0.1\mu$F capacitor as shown below.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\linewidth]{lab2-session1-circuit2}
+\caption{Connection of the circuit for the $470\Omega$ resistor in series with the $0.1\mu$F capacitor.}
+\label{Fig:lab2-session1-circuit2}
+\end{figure}
+
+\item Since the time constant is much smaller, the charging and discharging occurs very rapidly therefore it is more convenient to change the input source. Open the "Signal Generator" tool, and change the signal to "Positive Square Wave" with an amplitude of 6V and frequency of 100 Hz. This is equivalent turning on and off a DC voltage 100 times per second and therefore you will see both charging and discharging curves. You may change the data acquisition frequency found at the bottom of the interface to values that will help you visualize your data.
+\item With this input from the "Signal Generator" you won't use the "charge" and "discharge" switch from the wooded board. Instead you will simply turn On and Off the power supply under the 850 Output 1 panel before and after recording measurements.
+\item Since your time constant is very small, you will not need to record data for long. After turning on the signal generator, quickly press the record button twice to record and stop the recording.
+\item Zoom in on a region with both charging and discharging behaviours.
+\item For the charging part, measure the time difference between the moment the voltage starts increasing to the moment where the voltage is at a value $1-1/e$ of the maximum voltage $V_0$.
+\item For the discharging part, select the Curve fitting and highlighting tools to fit an exponential curve to the discharging region. Compare the time constants obtained from both the charging and discharging regions. You can repeat steps 20-22 for different segments of charging/discharging in your data if you want the consistency of your measurements.
+\item Answer the following in the results section of your log book. Your draft calculations can be shown in the ``General Notes" section of the log book. In the circuit of Fig.~\ref{Fig:lab2-session1-Rpractice}, how will the fully charged capacitor affect the current and potential in R6? Answer this in your log book.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\linewidth]{lab2-session1-Rpractice}
+\caption{Kirchoff's laws practice}
+\label{Fig:lab2-session1-Rpractice}
+\end{figure}
+
+\item Answer the following in the results section of your log book. Your draft calculations can be shown in the ``General Notes" section of the log book. Given Fig.~\ref{Fig:lab2-session1-tau-practice}, what must be the value of C2 such that the time constant is approximately $\tau=12.5$ms. If one replaces C2 by two capacitors in series, one of which has $C5=250\mu$F. What must be the capacitance of the second capacitor to preserve the same time constant?
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\linewidth]{lab2-session1-Cpractice}
+\caption{Time constant practice.}
+\label{Fig:lab2-session1-tau-practice}
+\end{figure}
+
+\begin{tcolorbox}[title=Answer]
+For the first part, $C2 \approx 50\mu$F. For the second part, $C2 \approx 61\mu$F.
+\end{tcolorbox}
+
+\item If you want to keep a trace of a graph produced by the PASCO, click on the Final results tab and select which graph you want by choosing the right run in the scrolling menu of the colored triangle. Click on the camera icon on the top panel. This will take a picture that will be accessible in the journal, on the right hand side, where it can be saved as jpeg or html. Alternatively, you can also save your whole set of measurements by going to the top left tab ``File", and select ``Save As".
+\end{enumerate}
+
+Once you have completed the above manipulations, make sure to note important technicalities of the time constant measuring methodology in order to accelerate your data acquisition process for the next session. You should perform any further tests that you believe would help you better understand the RC circuit in preparation for the next session.
+
+Resistors and capacitors can be found in the lab. Instructions about reading the resistance color-code for resistors can be found in the Appendix. We recommend that you try and read the resistance of a few resistors and confirm by using the in-lab multimeters. An exemplary circuit board that you must use during the next session will be available for you to contemplate. We recommend that you observe the set up of the circuit board and think about how you would connect the resistors and capacitors to obtain different equivalent resistance and capacitance setup.
+
+\section{Session \# 2}
+\begin{tcolorbox}[title=Session \#2]
+In this session you will help students connect their circuits and guide them through the analysis of their data. Through testing, we found that the internal impedance of the PASCO is not large enough to allow measurements of time constants of the order of 10s. To remedy the situation, one can add a large impedance to the probes of the PASCO. For more advanced students, push them to think of how the PASCO and multimeters measure voltages and hence the limitations of the setup.
+\end{tcolorbox}
+
+In this session, you are asked to build an RC circuit with a specific time constant. Your circuit will have two sub-circuits: one that consists only of resistors and another one that consists only of capacitors. You are to placed both of these in series with the PASCO source as shown in Fig.~\ref{Fig:lab2-session2-circuit}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\linewidth]{lab2-session2-circuit}
+\caption{RC Circuit. You are to assemble sub-circuits that produces an equivalent resistance $R_{eq}$ and capacitance $C_{eq}$.}
+\label{Fig:lab2-session2-circuit}
+\end{figure}
+
+There will be a few communal multimeters that allows to measure capacitance, while every team will have their own multimeter that can only measure resistance. There will be boxes containing different resistors and capacitors. Their values will be labelled but one can double-check their values using the multimeters. Note that we are using polarized capacitors and therefore one must be careful when connecting them to the circuit: the voltage input must be attached to a specific leg of the capacitor.
+
+While every team will have to build a different RC circuit, the time constants that we are asking are of the order of ms, and therefore you will have to use the "Positive Square Wave" input from the signal generator. You have the liberty to choose different values of frequency depending on your estimate time constant. Changing the frequency of the input source does not change the time constant: this only changes the duration that the source is "turned on".
+
+To confirm your time constant measurement, you should take two approaches. The first is to simply perform charging and discharging measurements multiple times and average the given time constant measurements.
+
+The second is to confirm your equivalent resistance and capacitance by varying time constant. Since the time constant is $\tau = RC$, if one varies the value of one of the parameters $R$ or $C$ and plot $\tau$ as a function of the varying parameter, one expects the data to show a linear trend where the slope is the value of the other parameter. By performing this test, you will firstly verify Eq.\ref{Eq:time-constant}. Furthermore, this is a complementary method to measure your effective resistance and capacitance which should match your measurements obtained by using the multimeter.
+
+To accelerate this measurement method, each team will have 5 capacitors of $10\pm 1\mu$F and 5 resistors of $50\pm 1 \ \Omega$. Since there is a limited quantity of multimeters that can measure capacitance, you can assume that these standard deviations are correct. A summary of the equipment for this session is shown in Table~\ref{Tab:Lab2-material}.
+\begin{table}[h]
+\centering
+\begin{tabular}{||c | c ||}
+\hline
+Individual station & Collective station\\ \hline
+Laptop & Assorted resistors \\
+PASCO 850 interface & Assorted capacitors \\
+Resistance multimeter & Capacitance multimeter \\
+Resistance and capacitance sub-circuit setups & \\
+Five $10\pm 1 \mu$F capacitors & \\
+Five $50 \pm 1 \ \Omega$ resistors &  \\
+\hline
+\end{tabular}
+\caption{Available material for Lab \# 2}
+\label{Tab:Lab2-material}
+\end{table}
+
+Document your results and argue whether or not your RC circuit has the demanded time constant. If you believe that it does, argue using standard data analysis methods. If it doesn't, explain why you didn't obtain the correct time constant. Explain what you must change in your circuit to remedy the situation. Also discuss whether you believe this experiment is adequate to obtain RC time constants. If possible, propose a better way to obtain time constants and/or decrease the error in your experiment.
+
+\chapter{Magnetism}
+\section{Learning objectives}
+\begin{itemize}
+\item Learn how to present vector data.
+\item Learn how to use the right hand rule.
+\end{itemize}
+\section{Introduction}
+\subsection{Pre-lab activity}
+
+\phantomsection
+\addcontentsline{toc}{part}{Appendix}
+\part*{Appendix} \label{Part:Appendix}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Introduction to Excel}
+\chapter*{Introduction to Excel}
+
+Firstly, every McGill student can obtain a free copy of Microsoft Offices software by clicking \href{http://kb.mcgill.ca/kb/article?ArticleId=5172&source=Article&c=12&cid=2}{here}. Excel spreadsheet boxes can take in strings of letters of numbers as input. If the input is a number, we can easily perform calculations.\\
+
+\noindent \large \textbf{Spreadsheet Calculations} \normalsize
+\begin{itemize}
+\item To initialize the math environment, simply click on a box, and press the ``=" key on your keyboard. Press ``Enter" when you are done.
+\item One can perform basic addition (+), subtraction (-), multiplication (*) and division (/) between two boxes. One can also take powers by using `` ^ " i.e. x^2 would be $x^2$. First, press ``=", click on the box of your first variable, choose one of the above manipulations and choose another box as your second variable.
+\item Excel obeys order of operators: multiplication and division come before addition and subtraction. Parentheses are done first.
+\item Note that the middle bar above states the equality function in terms of \textit{boxes} of the spreadsheet.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4 \textwidth]{Excel-tut-boxes.png}
+\caption{Example of multiplication between two variables $x$ and $y$. Notice that the selected box has a green border around which the bottom right corner has an enlarged square.}
+\label{Fig:Excel-boxes}
+\end{figure}
+\item It is useful to separate your data into columns. In this way, say your first two columns are your $x$ and $y$ variables that were obtained from a measurement. You should compute $f(x_i, y_i)$ in another column. Doing so, after performing the mathematical manipulation that you wish, you can click the bottom right green border of a box, and \textit{pull} down to the column to apply the same function along the columns of the input variables. In the example of Fig.~\ref{Fig:Excel-boxes}, one could obtain the multiplication of each element of columns A times those of column B displayed in column C.
+\item When defining a function with the intent of dragging the select-box down to apply the whole function to all elements of columns, it is sometimes useful to define a box that \underline{doesn't change} as you drag the select-box. To do so, one uses the \$ sign as in Fig.~\ref{Fig:Excel-fixed}.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Excel-tut-select-fixed}
+\caption{Fixing a box value when applying a function down a column. The \$ sign before the column letter means that we are fixing the column, and the \$ sign before the row number means that we are fixing the row. One can only use one \$ sign to fix either the column or row as desired.}
+\label{Fig:Excel-fixed}
+\end{figure}
+\item Excel also has functions that are included. Functions are called by some special command in all caps. One typically calls a function, for example the sum, as 
+\begin{verbatim}
+=SUM(B2:B5)
+\end{verbatim}
+The colon means that we take every box between B2 and B5. One could have also used that function by listing every box individually, separated by a coma. Alternatively, one could, after writing ``=SUM(", selected the boxes that one wants to be included in the function. This re-emphasizes the usefulness of arranging the data in columns.
+\item Other useful functions include:
+\begin{itemize}
+\item \verb|=STDEV.P(x)| to calculate the standard deviation of a fluctuation population as shown in Eq.~\ref{Eq:STDev.P}.
+\item \verb|=SQRT(x)| to calculate square root of $x$.
+\item \verb|=Exp(x)| to calculate exponentials $e^x$.
+\item \verb|PI()| to use the constant $\pi$. Note that there is no input.
+\item \verb|=Sin(x)| and \verb|=Cos(x)| to calculate values in radians. The input $x$ must be in radians.
+\item \verb|=AVERAGE(A2:A10)| computes the average of the boxes between A2 and A10.
+\end{itemize}
+There exists many other functions that could be useful.
+\end{itemize}
+
+\noindent \large \textbf{Figures} \normalsize
+
+One can also create figures from data sets in Excel. To do so, select too columns and go into the \textbf{Insert} tab as shown in Fig.~\ref{Fig:Excel-fig-insert} to choose the type of figure that you with to display. You can choose not-adjacent columns by selecting one column, press and hold Ctrl while selecting the other column.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8 \textwidth]{Excel-fig-insert}
+\caption{Creating a plot based on some data. After selecting your data, go into the \textbf{Insert} tab and choose the type of figure that you want. The red boxed symbol is the one for scatter plots, which will most likely be your most used data display option.}
+\label{Fig:Excel-fig-insert}
+\end{figure}
+
+Doing, so you should obtain something similar to Fig~\ref{Fig:Excel-fig}.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Excel-fig}
+\caption{Scatter plot from data}
+\label{Fig:Excel-fig}
+\end{figure}
+From here, one can do multiple things. 
+\begin{itemize}
+\item By clicking the green `` + " symbol to the top right of the figure, you can add titles to your axes, error bars, a legend and a trendline.
+\item By right-clicking the data points, you should see an option to ``Format Data Series". Clicking that, you will see a right bar appear, and in the ``Pain bucket" symbol, you can change the size, shape and colors of your markers.
+\item By right-clicking a data point, you can add a \textbf{trendline}, in which case a right bar will also appear. Here you can choose the type of equation that you wish to fit, and if you scroll down completely, you will have the option to set an intercept, display the equation on the chart, and display the R-squared value on the chart. You can also add multiple trendlines to a single dataset to compare different fits.
+\item If you right-click an empty space on the grid of the chart, you can add multiple data sets to a single chart by click ``Select Data". A pop-up window will appear with the option of renaming how your datasets will appear on the legend, and the ability to add/remove more datasets.
+\item Playing around with these options, you will have the ability to change the font size of titles, colors of data points and texts, as well as change the thickness of the data points and trendlines. You can move equations, legends or other things around your chart. Don't forget that data presented must be clear.
+\end{itemize}
+
+Finally, you can add data from .txt files. To do so, go into the data tab, and in the ``Get \& Transform Data" section, there will be an option to add .txt and other types of files. Once the popup screen to import data appears, you can click on ``Edit" in the bottom right corner to have more options to manipulate your data. A useful modification is to flip your rows and columns. To do so, after clicking ``Edit", go into the ``Transform" tab in the new window, and select ``Transpose". Go back to the ``Home" tab once you are done editing your file.
+
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Lab Equipment}
+\chapter*{Lab Equipment}
+
+\phantomsection
+\addcontentsline{toc}{section}{Multimeter}
+\section*{Multimeter}
+A multimeter allows one to measure various electronic properties. We will be mainly interested in measuring the resistance or resistors, the capacitance of capacitors and the voltage and current of a circuit. To use the multimeter, one must attach two wires into the input and output. One can have alligator clips to attach to conducting wires more easily if necessary.
+
+\todo{insert pic of multimeter. Box certain useful settings}
+
+To measure the resistance, simply take a resistor, turn the knob of the multimeter to the resistance seting ($\Omega$) and attach each wire to the two sides of a resistor. To measure the capacitance of a capacitor, simply do the same as for the resistor, but turning the knob to the capacitance setting.
+
+To measure the voltage and current of a circuit,
+
+\phantomsection
+\addcontentsline{toc}{section}{Arduino (Capacitance)}
+\section*{Arduino (Capacitance)}
+The Arduino unit requires the Arduino IDE software to run the desired scripts. Information about the Arduino code for the capacitance lab can be found \href{https://www.arduino.cc/en/Tutorial/CapacitanceMeter}{here}.
+
+The setup is schematically shown in Fig.~\ref{Fig:ArduinoSchem} where the example shows two resistors: one with a resistance of $400 \Omega$, the other is unspecified. We recommend using at least $10^6 \Omega$ for the unspecified resistor: you can choose different values to vary the time constant of the RC circuit. This will change the precision of your setup.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.85]{CapacitanceMeterSchem.png}
+\caption{Arduino circuit scheme. The labels are associated with the pins and wire colors of Fig.~\ref{Fig:Arduino-real.png}.}
+\label{Fig:ArduinoSchem}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8 \textwidth]{lab1-Arduino-circuit-board.jpg}
+\caption{Corresponding real setup of the Arduino unit. The red boxes label the pins while the purple boxes label the wiring that should make contact to each side of the capacitor.}
+\label{Fig:Arduino-real.png}
+\end{figure}
+
+To change the resistance of the resistor, you must also change the value in the Arduino script. See Fig.~\ref{Fig:ArduinoSchem}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9 \textwidth]{lab1-Arduino-resistance.png}
+\caption{Arduino resistor value. Change the value in the red box to the resistance value of your setup. We suggest using at least $10^6 \Omega$.}
+\label{Fig:ArduinoResistance}
+\end{figure}
+
+\phantomsection
+\addcontentsline{toc}{section}{Reading Resistors}
+\section*{Reading Resistors}
+
+\phantomsection
+\addcontentsline{toc}{section}{Arduino (Circuit Boards)}
+\section*{Circuit Boards}
+A circuit board is shown in Fig.~\todo{insert}. 
+
+\phantomsection
+\addcontentsline{toc}{chapter}{More statistics}
+\chapter*{More statistics}
+
+\noindent \large \textbf{Coefficient of determination} \normalsize
+
+To determine the precision of a fit, one can look at its $R^2$ value, also known as the \textit{coefficient of determination}. Consider a dataset of $N$ datapoints with values $y_i$, $i$ going from $1$ to $N$. We define the \textit{total sum of squares} as
+\begin{equation}
+SS_{tot} = \displaystyle \sum_{i=1}^N (y_i - \bar{y})^2 = (y_1 - \bar{y})^2 + (y_2 - \bar{y})^2 + ... (y_N - \bar{y})^2.
+\end{equation}
+This is a measure of how your dataset differs from its average.
+
+Now consider the values $f_i$ of a fit, where $i$ are the values of the fit corresponding to $x_i$ of $y_i$ value. We can also define the \textit{residual sum of squares} which is a measure of how your fit differs from your fit. This is given as
+\begin{equation}
+SS_{res} = \displaystyle \sum_{i=1}^{N} (y_i - f_i)^2 = (y_1 - f_1)^2 + (y_2 - f_2)^2 + ... (y_N - f_N)^2.
+\end{equation}
+
+Finally, given the results above, we can define the \textit{coefficient of determination} as
+\begin{equation}
+R^2 = 1 - \frac{SS_{res}}{SS_{tot}}
+\end{equation}
+which is a ratio of how your data fluctuations with respect to how you data differs from its fit. A good coefficient of determination is $R^2=1$. This can be computed automatically in Excel.
+
+
+
+%\bibliographystyle{naturemag}
+%\bibliography{references}
+
+\begin{appendices}
+
+\end{appendices}
+
+\end{document}
