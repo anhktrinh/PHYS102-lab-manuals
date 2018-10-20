@@ -254,6 +254,7 @@ The standard deviation value above is attributed to \underline{a single measurem
 For these labs, you will only need to know the following two error propagation formulas. Consider first the following function
 \begin{equation}
 f(x,y) = x \times y.
+\label{Eq:f=xy}
 \end{equation}
 The standard deviation $\sigma_f$ on $f$ will be
 \begin{equation}
@@ -265,6 +266,7 @@ This will be useful for example to calculate the error on the area given two len
 Consider also the function
 \begin{equation}
 f(x) = \frac{1}{x}.
+\label{Eq:f=1/x}
 \end{equation}
 The standard deviation for this case is
 \begin{equation}
@@ -309,15 +311,93 @@ As mentioned before, a good way to know whether your fit is correct is to comput
 \addcontentsline{toc}{part}{Lab Manuals}
 \part*{Lab Manuals} \label{Part:Labs}
 
-\chapter{Excel}
+\chapter{Data Analysis Practice}
 \section{Learning objectives}
 \begin{itemize}
-\item Learn how to use Excel
-\item Compute certain basic mathematical statistics
+\item Learn how to use Excel.
+\item Compute certain basic mathematical statistics.
+\item Introduction to data analysis.
 \end{itemize}
 
-\section{Content}
+\section{Introduction}
 This lab will be an interactive demo lab where teaching Assistants will help you  learn how to use Excel and to apply it to the concepts presented in the \textbf{Data analysis} chapter. We recommend that you read the \textbf{Data Analysis} and familiarize yourself to Excel before attending this session. This lab will be called "Lab 0" and will be scheduled in the Lab information document on MyCourses. 
+
+\section{Session a}
+In this session, you will familiarize yourself with Excel. You will be guided through this exercise by the TAs.
+
+\begin{itemize}
+\item Open the Excel document found at \todo{location}.
+\item Explore the user interface. Note that data is best presented in columns.
+\item Learn how to resize, split and merge cells.
+\item In a adjacent column, calculate the resistance $R$. 
+\item Calculate the sum of resistances $R$ by using  \verb|=SUM(x)|.
+\item Calculate the average resistance $\bar{R}$ in two ways: by using the integrated function  \verb|=AVERAGE(x)| and by dividing the sum that you calculated previously by the total number of cells.
+\item For each value of resistance $R_i$, calculate the difference
+\begin{equation}
+R_i - \bar{R},
+\end{equation}
+in a separate column by ``dragging" the first cell downwards.
+
+\item Calculated the square of the difference calculated above in another column.
+\item In two other columns, calculate the standard deviation by using Eq.~\eqref{Eq:STDev.P} with the values that you calculated previously, and by using the function \verb|=STDEV.P(x)|. 
+\end{itemize}
+
+\noindent Now we will learn how to plot data, and how to obtain a linear regression.
+\begin{itemize}
+\item Select the columns of $I$ and $V$, perform a scatter plot.
+\item Put in manual error bars.
+\item Display a linear trendline with the fit equation and its $R^2$ value. The fit coefficient is your ``fit resistance" $R_{fit}$.
+\end{itemize}
+
+\noindent Now we will compare this fit equation to our data. 
+\begin{itemize}
+\item To start, copy the $I$ column to another area of your spreadsheet.
+\item In the column next to it, write the fit equation such that this will be your ``Fit $V$" column.
+\item Plot $V$ vs $I$, and ``Fit $V$" vs $I$ on the same graph. Add error bars only on the $V$ vs $I$ dataset and compare the two graphs qualitatively.
+\end{itemize}
+
+\noindent Let us now compare resistances.
+\begin{itemize}
+\item On another area of your spreadsheet, write a column with the current values $I$. 
+\item In an adjacent column, rewrite the resistance $R_i$ calculated previously with its corresponding standard deviation.
+\item In another column, write the average resistance $\bar{R}$ for all values of $I$.
+\item In another column, write the fit resistance $R_{fit}$ for all values of $I$.
+\item Plot $R$ vs $I$ for all three datasets: the measurement $R_i$, the mean $\bar{R}$ and the fit $R_{fit}$. Compare them.
+\end{itemize}
+
+\section{Session b}
+In this session, you will analyse a given dataset. Consider a setup where one can measure the electric force between two charges as shown in Fig.~\ref{Fig:lab0-session2-setup}. 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{lab0-session2}
+\caption{Setup for the data of Session 2. Two charges $q_1$ and $q_2$ are separated by a distance $r$, and at an angle $\theta$ with respect to some axis horizontal to $q_1$.}
+\label{Fig:lab0-session2-setup}
+\end{figure}
+
+Given this dataset, you must find how the electric force on $q_1$ is affected by the following parameters:
+\begin{itemize}
+\item Charges $q_1$ and $q_2$.
+\item Distance $r$ between the charges.
+\item The angle $\theta$ with respect to a horizontal axis separating $q_1$ from $q_2$.
+\end{itemize}
+
+You are given a .txt files from which you are to import them into Excel. For all the .txt files, the charges are in Coulomb units, the forces are in Newton, the angle is in radians and the distance is in meters. \todo{Change .txt files to have the constant variables and the standard deviations.}
+
+We suggest that you start your analysis for fixed $r, \theta$, but varying $q_1$ and $q_2$. Find how the force $F$ depends on $q_1$ and $q_2$. Support your conclusion by performing appropriate fits to your equation and comparing them to the error bars. If you find that you can simplify their dependence by Eq.~\eqref{Eq:f=xy} or \eqref{Eq:f=1/x}, perform the appropriate error propagation equation to find the effective error of this composite quantity.
+
+After you have found the appropriate $q_1$ and $q_2$ dependence, find the dependence on $\theta$ by using appropriate data analysis techniques.
+
+Finally, find the appropriate dependence on $r$. Note that you have 3 different trials for this experiment: you must analyse all three and compare your findings to see if your analysis is self-consistent.
+
+After analysing the effect of the all previous variables, state the equation of the electric force $F(q_1,q_2,r,\theta)$ that best matches your findings. 
+
+Given your equation, what happens if the radius $r$ is much larger or smaller than $q1$ and $q_2$? Is this what you expect physically to occur?
+
+Your methodology can only find the dependence on the explicit variables that you analyse, but the physics can be shifted by an overall constant:
+\begin{equation}
+F(q_1, q_2, r, \theta) = k \times  f(q_1,q_2,r,\theta) +c.
+\end{equation}
+What is the significance of $c$? Given all your previous datasets, find the constant factor $k$. If you found the right dependence on your variables, this constant should be the same for all your datasets.
 
 \chapter{Capacitance}
 \section{Learning objectives}
@@ -390,7 +470,7 @@ where $k$ is Coulomb's constant $k = {1}/{4\pi \epsilon_0}$. This will have unit
 \label{Fig:ElectricPotential_point}
 \end{figure}
 
-Now consider a pair of parallel plates separated by a distance $d$ connected to a battery as shown in Fig. \ref{Fig:ParallelPlates}. A pair of parallel plates separated by air or another material can be assembled into a \textit{capacitor}: on each parallel plate, because of the battery, there will accumulate a number of electrons on the negative plate such that the total charge is $-Q$ and $+Q$ on the positive plate. Because of the gap between the plates, there now exists an electric potential between the plates, which is given by Eq. \ref{Eq:ElectricPotential}.
+Now consider a pair of parallel plates separated by a distance $d$ connected to a battery as shown in Fig. \ref{Fig:ParallelPlates}. A pair of parallel plates separated by air or another material can be assembled into a \textit{capacitor}: on each parallel plate, because of the battery, there will accumulate a number of electrons on the negative plate such that the total charge is $-Q$ and $+Q$ on the positive plate. Because of the gap between the plates, there now exists an electric potential between the plates, which is given by Eq. \eqref{Eq:ElectricPotential}.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.6]{lab1-parallel-plates.png}
@@ -447,11 +527,11 @@ Students are encouraged to discuss about other parameters such as shape, volume,
 
 
 \section{Protocol}
-\subsection{Session $\# 1$}
+\subsection{Session a}
 \begin{tcolorbox}[title=Session \#1]
 We suggest the following time distribution for this session:\\
 
-During the first 20mins, assemble everyone to the front and do a quick introduction, and maybe a demo of the manipulations. You should then ask everyone what they think could affect the capacitance of a capacitor, and push them to give a physical reason behind their hypothesis. We expect you to motivate the idea that electrical potential is given by the relative distance between two charged objects, and therefore, for parallel conducting plates, larger area would allow for more charges to accumulate, and by Eq.~\ref{Eq:ElectricPotential_point}, we expect there to be a $1/r$ factor. Recommend that they works together to cover more parameters e.g. one team takes care of area, the other does distance.
+During the first 20mins, assemble everyone to the front and do a quick introduction, and maybe a demo of the manipulations. You should then ask everyone what they think could affect the capacitance of a capacitor, and push them to give a physical reason behind their hypothesis. We expect you to motivate the idea that electrical potential is given by the relative distance between two charged objects, and therefore, for parallel conducting plates, larger area would allow for more charges to accumulate, and by Eq.~\eqref{Eq:ElectricPotential_point}, we expect there to be a $1/r$ factor. Recommend that they works together to cover more parameters e.g. one team takes care of area, the other does distance.
 \end{tcolorbox}
 
 \begin{tcolorbox}
@@ -531,7 +611,7 @@ While studying other parameters, if you are unsure of the standard deviation of 
 
 Enter your set up, measurement process and data in your log book. Before handing in your log book, be sure to write down your observations in the \textbf{General Notes} section of your log book, and a rough plan of what you intend to do during the next session in the \textbf{Conclusions and future work} section. The latter part should be done after discussions with at least one other group. You \textbf{do not need to include a results section} in your log book for this session.
 
-\subsection{Session $\# 2$}
+\subsection{Session b}
 We recommend that you bring whatever material that you think could help you acquire better data. At this point, you should know what parameters affect the capacitance, and therefore you should plan in advance your own ``protocol" to verify your hypothesis quantitatively with improved data. This protocol does \underline{not} have to match what you wrote in your log book during the last session, but if it does differ, you must explain what made you change your mind.
 
 \begin{tcolorbox}[title=Session \#2]
@@ -635,24 +715,24 @@ In this lab you will use the PASCO 850 Universal Interface to measure and plot v
 
 Given the nature on these measurements, there is an inherent fluctuation to the data that is difficult to characterize. During the first session, you are not required to produce quantitatively well supported data. But for the second session, you are to demonstrate that you've produced an RC circuit with the correct time constant. Therefore the following standard deviation rules for PASCO measurements have been adjusted (and tested) to time constants of this second session. This is to compensate for the fluctuation of the voltage measurements.
 
-For time difference measurements, the standard deviation will be $\sigma_t = 10^{-4} s$. To convert the error from the Curve fitting parameter $B$ to the time constant $\tau$, based on Eq.~\ref{Eq:1/x error}, one must take
-\begin{equation}
-\sigma_\tau = 100 \frac{\sigma_B}{B^2} \text{s}.
-\label{Eq:lab2-error-tau-fit}
-\end{equation}
-The factor of $100$ was found to appropriately adjust for voltage fluctuations.
+%For time difference measurements, the standard deviation will be $\sigma_t = 10^{-4} s$. To convert the error from the Curve fitting parameter $B$ to the time constant $\tau$, based on Eq.~\eqref{Eq:1/x error}, one must take
+%\begin{equation}
+%\sigma_\tau = 100 \frac{\sigma_B}{B^2} \text{s}.
+%\label{Eq:lab2-error-tau-fit}
+%\end{equation}
+%The factor of $100$ was found to appropriately adjust for voltage fluctuations.
 
-\section{Session \# 1}
+\section{Session a}
 \noindent \large \textbf{Equipment} \normalsize \\
 During the first session, you will receive an RC circuit fastened onto a wooded board. Before proceeding with measurements related to charging and discharging capacitors, conduct the following steps:
 \begin{enumerate}
-\item Turn the wooden board over to reveal the circuit Fig.~\ref{Fig:lab2-session1-circuit1}. There are actually two circuits here, one consisting of a $100$k$\Omega$ rheostat (variable resistor) and the $100\mu$F capacitor, the other consisting of a $470\Omega$ resistor and a $0.1\mu$F capacitor. We will not use the $0.1\mu$F capacitor.
-\item Connect the Output 1 of the PASCO 850 Universal Interface to the wooden board's terminals as well as the Analog Input A in order to complete the circuit as shown on Fig.~\ref{Fig:lab2-session1-circuit1}. The $100\mu$F capacitor can now charge through the rheostat (when in the ``charge" state) and discharge through the $150$k$\Omega$ resistor (when in the ``discharge" state). The charging voltage is read on the computer. The Input A measures the voltage through the 100$\mu$F capacitor. The Output 1 is the one with the red and black connectors and the analog inputs are the higher half of the interface and on the right.
+\item Turn the wooden board over to reveal the circuit Fig.~\ref{Fig:lab2-session1-circuit1}. There are actually two circuits here, one consisting of a $100$k$\Omega$ rheostat (variable resistor) and the $100\mu$F capacitor, the other consisting of a $470\Omega$ resistor and a $0.1\mu$F capacitor. We will not use the $0.1 \mu$F capacitor, or the rheostat.
+\item Connect the Output 1 of the PASCO 850 Universal Interface to the wooden board's terminals as well as the Analog Input A in order to complete the circuit as shown on Fig.~\ref{Fig:lab2-session1-circuit1}. The $100\mu$F capacitor can now charge through the $470\Omega$ resistor (when in the ``charge" state) and discharge through the $150$k$\Omega$ resistor (when in the ``discharge" state). The charging voltage is read on the computer. The Input A measures the voltage through the 100$\mu$F capacitor. The Output 1 is the one with the red and black connectors and the analog inputs are the higher half of the interface and on the right.
 \end{enumerate}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.75\linewidth]{lab2-session1-circuit1}
+\includegraphics[width=0.75\linewidth]{lab2-session1-circuit2}
 \caption{Circuit for session 1. This is currently connected to the rheostat.}
 \label{Fig:lab2-session1-circuit1}
 \end{figure}
@@ -667,22 +747,57 @@ You will execute the following steps in order to understand how to use the PASCO
 \item Connect the circuit as shown in Fig.~\ref{Fig:lab2-session1-circuit1}.
 \item \todo{Where to get Pasco file}
 \item Turn on the PASCO and plug in the USB into the computer.
-\item On the software, open the ``Signal Generator" tool, which is located on the left hand side panel and make sure that the signal is set to be DC (Waveform option), has an amplitude of $6V$ and has a data acquisition frequency of $10$ Hz. See Fig.~\ref{Fig:lab2-interface-dc}.
+%\item On the software, open the ``Signal Generator" tool, which is located on the left hand side panel and make sure that the signal is set to be DC (Waveform option), has an amplitude of $6V$ and has a data acquisition frequency of $10$ Hz. See Fig.~\ref{Fig:lab2-interface-dc}.
+%\begin{figure}[h]
+%\centering
+%\includegraphics[scale=0.5]{lab2-interface-dc}
+%\caption{Settings for a DC waveform input. To find this toolbar, select the ``Signal Generator" tool (yellow box). The red boxes are to set the waveform of the input and the amplitude. Set the data acquisition frequency to 10Hz (see green box). To turn On or Off the signal generator, see the orange box. To record data, select the red recording button (boxed in blue). }
+%\label{Fig:lab2-interface-dc}
+%\end{figure}
+
+%\item Set the rheostat to its maximum value (turn fully clockwise).
+%\item Press the red round Record button, on the bottom panel .
+%\item On the computer, under the 850 Output 1, press On to turn on the power supply.
+%\item Flip the switch to the ``Charge" position. A graph should slowly appear on your screen. Log the time it takes for the capacitor to charge.
+%\item When the capacitor is charged, press the red button that now says Stop.
+%\item Press that same button that now says Record and set the switch to discharge the capacitor and notice the rate of the voltage drop. When the capacitor is discharged, stop the recording.
+%\item Repeat steps 5 to 8 for the rheostat at approximately half its value and at its minimum value. Compare the charging rates from step 8 (with the maximum rheostat value) with these two new rheostat values. Discuss your qualitative observations in the ``General notes" section of your log book.
+%\item Discharge the capacitor (steps 9,10) and record it for the minimum rheostat value. 
+%The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of Eq.~\eqref{Eq:V-discharge} will be fit to the whole data set. To fit it on the right segment on the data set, use the highlighting tool and select/box the values that are most relevant. The time constant is given by the parameter $1/B$ in the curve fitting data window. The error is given by Eq.~\eqref{Eq:lab2-error-tau-fit}.
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.9 \linewidth]{lab2-interface-graph-tools}
+%\caption{Graphing toolbar. The toolbar appears when moving the mouse to the top of the graph. The red boxed icon is the Curve fitting tool. Select the ``Natural Exponential" function. The highlighting tool is boxed in green. This allows to select a smaller subset of data to apply the curve fitting.}
+%\label{Fig:lab2-interface-graph}
+%\end{figure}
+
+%\item \textbf{Determine the time constant $\tau$ of the circuit}. $\tau = RC$ is the time the voltage takes to decrease from its maximum value $V_0$ to $1/e$ of $V_0$ (see Section 19.6 of your notes). Use the discharge data from the PASCO in step 12 to determine this. How does the value obtained from the data compare to the fitting exponent provided by the software regression in step 12?
+%\item The capacitance value of $100 \mu$F is only approximate. \textbf{Determine} the true capacitance from the time constant measured in step 13 and recalling that $\tau=RC$ (assume that the resistance of $150$k$\Omega$ is correct).
+%\item When a capacitor is discharging, the formula is $Q=Q_{max} e^{-t/\tau}$ while when it is charging, the equation is $Q=Q_{max} (1 - e^{-t/\tau})$. What is the difference between the $(1-e^{-x})$ and $e^{-x}$ functions? Explain this in your log book.
+
+
+%\item We will now learn how to obtain time constants from square wave inputs: we must first connect the 470$\Omega$ resistor in series with the $100\mu$F capacitor as shown below.
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.75\linewidth]{lab2-session1-circuit2}
+%\caption{Connection of the circuit for the $470\Omega$ resistor in series with the $100\mu$F capacitor. By leaving the switch at the position shown, both charging and discharging constants should be the same.}
+%\label{Fig:lab2-session1-circuit2}
+%\end{figure}
+
+\item In the software, open the ``Signal Generator" tool, which is located on the left hand side panel and make sure that the signal is set to "Positive Square Wave" with an amplitude of 6V and frequency of 0.5 Hz. This is equivalent turning on and off a DC voltage 2 times per second. Change the data acquisition frequency found at the bottom of the interface to $1$kHz. See Fig.~\ref{Fig:lab2-interface-square-wave}.
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.5]{lab2-interface-dc}
-\caption{Settings for a DC waveform input. To find this toolbar, select the ``Signal Generator" tool (yellow box). The red boxes are to set the waveform of the input and the amplitude. Set the data acquisition frequency to 10Hz (see green box). To turn On or Off the signal generator, see the orange box. To record data, select the red recording button (boxed in blue). }
-\label{Fig:lab2-interface-dc}
+\includegraphics[scale=0.5]{lab2-interface-square-wave}
+\caption{Settings for a positive square wave input. You must first select the ``Signal Generator" setting in the yellow box. The red box allows to change the waveform. Change the frequency and amplitude according to the orange box. Change the data acquisition frequency to the values in the green box. Once you are ready to record your data, select the record button (blue box), and turn on the voltage source (pink box)}
+\label{Fig:lab2-interface-square-wave}
 \end{figure}
 
-\item Set the rheostat to its maximum value (turn fully clockwise).
-\item Press the red round Record button, on the bottom panel .
-\item On the computer, under the 850 Output 1, press On to turn on the power supply.
-\item Flip the switch to the ``Charge" position. A graph should slowly appear on your screen. Log the time it takes for the capacitor to charge.
-\item When the capacitor is charged, press the red button that now says Stop.
-\item Press that same button that now says Record and set the switch to discharge the capacitor and notice the rate of the voltage drop. When the capacitor is discharged, stop the recording.
-\item Repeat steps 5 to 8 for the rheostat at approximately half its value and at its minimum value. Compare the charging rates from step 8 (with the maximum rheostat value) with these two new rheostat values. Discuss your qualitative observations in the ``General notes" section of your log book.
-\item Discharge the capacitor (steps 9,10) and record it for the minimum rheostat value. The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of Eq.~\ref{Eq:V-discharge} will be fit to the whole data set. To fit it on the right segment on the data set, use the highlighting tool and select/box the values that are most relevant. The time constant is given by the parameter $1/B$ in the curve fitting data window. The error is given by Eq.~\ref{Eq:lab2-error-tau-fit}.
+\item With this input from the "Signal Generator" you won't use the "charge" and "discharge" switch from the wooded board. Instead you will simply turn On and Off (pink box) the power supply under the 850 Output 1 panel before and after recording measurements. So leave the switch on ``charge" for the rest of the experiment.
+%\item Since your time constant is smaller than what you observed from discharging through the $150$k$\Omega$ resistor, you will not need to record data for long.
+\item After turning on the signal generator, press the record button twice to record and stop the recording after observing a few charges/discharges.
+\item Zoom in on a region with both charging and discharging behaviours by rescaling the axes, and figure out which section corresponds to charging/discharging.
+\item For the charging part, measure the time difference between the moment the voltage starts increasing to the moment where the voltage is at a value $1-1/e$ of the maximum voltage $V_0$. You should understand why you are measuring this time difference.
+\item For the discharging part, you will use the Curve fitting tool. The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of Eq.~\eqref{Eq:V-discharge} will be fit to the whole data set. To fit it on the right segment on the data set, use the highlighting tool and select/box the values that are most relevant. The time constant is given by the parameter $1/B$ in the curve fitting data window.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9 \linewidth]{lab2-interface-graph-tools}
@@ -690,31 +805,20 @@ You will execute the following steps in order to understand how to use the PASCO
 \label{Fig:lab2-interface-graph}
 \end{figure}
 
-\item \textbf{Determine the time constant $\tau$ of the circuit}. $\tau = RC$ is the time the voltage takes to decrease from its maximum value $V_0$ to $1/e$ of $V_0$ (see Section 19.6 of your notes). Use the discharge data from the PASCO in step 12 to determine this. How does the value obtained from the data compare to the fitting exponent provided by the software regression in step 12?
-\item The capacitance value of $100 \mu$F is only approximate. \textbf{Determine} the true capacitance from the time constant measured in step 13 and recalling that $\tau=RC$ (assume that the resistance of $150$k$\Omega$ is correct).
-\item When a capacitor is discharging, the formula is $Q=Q_{max} e^{-t/\tau}$ while when it is charging, the equation is $Q=Q_{max} (1 - e^{-t/\tau})$. What is the difference between the $(1-e^{-x})$ and $e^{-x}$ functions? Explain this in your log book.
-\item We will now learn how to obtain time constants from square wave inputs: we must first connect the 470$\Omega$ resistor in series with the $100\mu$F capacitor as shown below.
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.75\linewidth]{lab2-session1-circuit2}
-\caption{Connection of the circuit for the $470\Omega$ resistor in series with the $100\mu$F capacitor. By leaving the switch at the position shown, both charging and discharging constants should be the same.}
-\label{Fig:lab2-session1-circuit2}
-\end{figure}
+Use this to fit an exponential curve to the discharging region. You will obtain the discharge time constant.
+\item Compare the time constants obtained from both the charging and discharging regions and by keeping track of the standard deviations as mentioned in section~\ref{Sect:lab2-equipment}. Calculate the theoretical time constant based on the known values of resistance and capacitance (see step 14). Recall that the standard deviation of the product of two variables is given by Eq.~\eqref{Eq:product error}. Can you explain difference in standard deviation, and why some are smaller/larger than the others? You can repeat steps 6-10 for different segments of charging/discharging in your data if you want to verify the consistency of your measurements.
+\item Answer the following questions in the results section of your log book. Should all the time constants be the same or different? Why and why not? What would happen if we had used the rheostat instead of the $470\Omega$ resistor in Fig.~\ref{Fig:lab2-session1-circuit1} and used a DC voltage source (with the On/Off switch on the board) instead of a wavefunction source: would we have the same time constant for both charging and discharging? What would happen to the time constant if we increased the resistance by using the rheostat? If you have time, you should test your hypotheses experimentally.
 
-\item Since the time constant is smaller, the charging and discharging occurs rapidly therefore it is more convenient to change the input source. Open the "Signal Generator" tool, and change the signal to "Positive Square Wave" with an amplitude of 6V and frequency of 0.5 Hz. This is equivalent turning on and off a DC voltage 2 times per second and therefore you will see both charging and discharging curves. Change the data acquisition frequency found at the bottom of the interface to $1$kHz. See Fig.~\ref{Fig:lab2-interface-square-wave}.
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.6]{lab2-interface-square-wave}
-\caption{Settings for a positive square wave input. The red box allows to change the waveform. Change the frequency and amplitude according to the orange box. Finally change the data acquisition frequency to the values in the green box.}
-\label{Fig:lab2-interface-square-wave}
-\end{figure}
+\begin{tcolorbox}[title=Answer]
+All the time constants should be the same because we are charging and discharging across the same resistor. If we had used the rheostat with a DC voltage and the On/Off switch, since we're charging and discharging across different resistors, the time constants should be different. By Eq.~\eqref{Eq:time-constant}, the resistance should affect the time constant linearly.
+\end{tcolorbox}
 
-\item With this input from the "Signal Generator" you won't use the "charge" and "discharge" switch from the wooded board. Instead you will simply turn On and Off the power supply under the 850 Output 1 panel before and after recording measurements.
-\item Since your time constant is smaller than what you observed from discharging through the $150$k$\Omega$ resistor, you will not need to record data for long. After turning on the signal generator, press the record button twice to record and stop the recording after observing a few charging/discharging ranges.
-\item Zoom in on a region with both charging and discharging behaviours.
-\item For the charging part, measure the time difference between the moment the voltage starts increasing to the moment where the voltage is at a value $1-1/e$ of the maximum voltage $V_0$.
-\item For the discharging part, select the Curve fitting and highlighting tools to fit an exponential curve to the discharging region. You will obtain the discharge time constant.
-\item Compare the time constants obtained from both the charging and discharging regions and by keeping track of the standard deviations as mentioned in section~\ref{Sect:lab2-equipment}. Calculate the theoretical time constant based on the known values of resistance and capacitance (see step 14). Recall that the standard deviation of the product of two variables is given by Eq.~\ref{Eq:product error}. You can repeat steps 20-23 for different segments of charging/discharging in your data if you want to verify the consistency of your measurements.
+\item Answer the following in the results section of your log book. Assuming the voltage, when completely charged, is set to $V_0 = 1$ and by considering the variables $\tau$ for time constant and $t$ for time, what are the equations for of charging and discharging? Support your answer by physical arguments.
+
+\begin{tcolorbox}[title=Answer]
+Discharging is $V = e^{-t/\tau}$ and charging goes as $V=1-e^{-t/\tau}$. At $t=0$, we expect the charging function to be $0$ and the discharging function to be $1$. Similarly, at $t\rightarrow \infty$, the reverse must be true.
+\end{tcolorbox}
+
 \item Answer the following in the results section of your log book. Your draft calculations can be shown in the ``General Notes" section of the log book. In the circuit of Fig.~\ref{Fig:lab2-session1-Rpractice}, how will the fully charged capacitor affect the current and potential in R6? Answer this in your log book.
 \begin{figure}[h]
 \centering
@@ -750,7 +854,7 @@ Once you have completed the above manipulations, make sure to note important tec
 
 Resistors and capacitors can be found in the lab. Instructions about reading the resistance color-code for resistors can be found in the Appendix. We recommend that you try and read the resistance of a few resistors and confirm by using the in-lab multimeters. An exemplary circuit board that you must use during the next session will be available for you to contemplate. We recommend that you observe the set up of the circuit board and think about how you would connect the resistors and capacitors to obtain different equivalent resistance and capacitance setup.
 
-\section{Session \# 2}
+\section{Session b}
 \begin{tcolorbox}[title=Session \#2]
 In this session you will help students connect their circuits and guide them through the analysis of their data.
 \end{tcolorbox}
@@ -781,7 +885,7 @@ While every team will have to build a different RC circuit, the time constants t
 
 To confirm your time constant measurement, you should take two approaches. The first is to simply perform charging and discharging measurements multiple times and average the given time constant measurements.
 
-The second is to confirm your equivalent resistance and capacitance by varying time constant. Since the time constant is $\tau = RC$, if one varies the value of one of the parameters $R$ or $C$ and plot $\tau$ as a function of the varying parameter, one expects the data to show a linear trend where the slope is the value of the other parameter. By performing this test, you will firstly verify Eq.\ref{Eq:time-constant}. Furthermore, this is a complementary method to measure your effective resistance and capacitance which should match your measurements obtained by using the multimeter.
+The second is to confirm your equivalent resistance and capacitance by varying time constant. Since the time constant is $\tau = RC$, if one varies the value of one of the parameters $R$ or $C$ and plot $\tau$ as a function of the varying parameter, one expects the data to show a linear trend where the slope is the value of the other parameter. By performing this test, you will firstly verify Eq.\eqref{Eq:time-constant}. Furthermore, this is a complementary method to measure your effective resistance and capacitance which should match your measurements obtained by using the multimeter.
 
 To accelerate this measurement method, each team will have 5 capacitors of $10\pm 1\mu$F and 5 resistors of $50\pm 1 \ \Omega$. Since there is a limited quantity of multimeters that can measure capacitance, you can assume that these standard deviations are correct. A summary of the equipment for this session is shown in Table~\ref{Tab:Lab2-material}.
 \begin{table}[h]
@@ -803,14 +907,117 @@ Five $50 \pm 1 \ \Omega$ resistors &  \\
 
 Document your results and argue whether or not your RC circuit has the demanded time constant. If you believe that it does, argue using standard data analysis methods. What is the most appropriate measure to characterize the error of your measurements (see ``Measurement analysis" section of the ``Basic statistics" section)? If your data doesn't produce the correct time constant, explain why. Explain what you must change in your circuit to remedy the situation. Also discuss whether you believe this experiment is adequate to obtain RC time constants. If possible, propose a better way to obtain time constants and/or decrease the error in your experiment.
 
-\chapter{Magnetism}
+\chapter{Magnetic Field of Solenoids and Coils}
 \section{Learning objectives}
 \begin{itemize}
+\item Learn about solenoids.
+\item Learn about electric motors.
 \item Learn how to present vector data.
 \item Learn how to use the right hand rule.
+\item Learn about limits.
 \end{itemize}
+
 \section{Introduction}
+The goal of this lab will be to learn about real-world applications of magnetism. In particular, we will study the solenoid in the first session, and the electric motor in the second. You will use your data analysis skills previously acquired from the other labs to characterize the magnetic field of these setups.
+
+In the first session, you will be asked to draw the magnetic field lines of the solenoid and to explain your findings in terms of the right hand rule. You will then quantitatively characterize your solenoid: you must verify the dependence of the magnetic field $B$ on the current $I$ through the solenoid and the the position $z$ from the end of the solenoid on its central axis.
+
+In the second session, having learned how magnetic field strength varies with distance, you will now use a permanent magnet to characterize an electric motor.
+
 \subsection{Pre-lab activity}
+\begin{enumerate}
+\item Question about magnetic field of straight wire
+\item Magnetic field due to stacking multiple wires together
+\item Force on magnetic field due to B field
+\end{enumerate}
+
+\section{Session a}
+\subsection{Solenoid setup}
+We will utilize the IOLab that you used in PHYS 101 last semester to measure magnetic field strengths.
+
+Includes equipment and how to set-up the apparatus...
+
+\subsection{Magnetic Field Lines}
+Once the solenoid has been properly connected, you are first asked to draw field lines on the graph paper. For this, we will use the compass and IOLab as shown in Fig.~\ref{YY}.
+
+First, chose at least a dozen points on the graph paper. For each point, you are to measure the orientation of the magnetic field with the compass, draw a vector line associated with your observation, and write next to the vector the measured strength of the the magnetic field. Recall that the total length of the magnetic field amplitude will be given by Pythagoras theorem:
+\begin{equation}
+| \mathbf{B} | = \sqrt{B_x^2 +B_y^2}.
+\end{equation}
+Both vector components can be obtained from the IOLab. Normally, one would draw the length of the vector in a way that is representative of the magnitude of the vector, however for the amount of vector lines you are asked to draw, we will simply write the magnitude next to the vector for this lab.
+
+Once you have enough points, and have explored the possible orientations of the magnetic field vector lines, answer the following questions in your log book:
+\begin{enumerate}
+\item Draw a diagram of the solenoid with the appropriate field lines.
+\item What is the magnetic field inside the solenoid? Support your claim of the field lines inside the solenoid in terms of the right hand rule.
+\item What happens if you swap the connections of the solenoid? What would change? Explain this in terms of the right hand rule.
+\item Do these field lines look like any known magnetic objects? Explain why this observation is true.
+\item What parameters do you expect to affect the strength of the magnetic field of the solenoid? Give a brief explanation for each parameter.
+\end{enumerate}
+
+\subsection{Current dependence}
+Now that you have a rough idea how a solenoid generates a magnetic field, we will quantitatively verify some of its possible parameters.
+
+We will first verify its dependence on the current through the wires. Place the IOLab on the ramp at a fixed distance away from one end of the solenoid (not too far) as shown in Fig.~\ref{YY}. Since the power supplies yields values of current between 0 and 6A, make incremental measurements of $B$ as a function of $I$ by increasing the current by $0.5$A incrementally. Verify how $B$ depends on $I$ using your data analysis skills from previous labs. Carefully support your claim of its parametric dependence by generating a graph with some fit. 
+
+\subsection{Distance dependence}
+We will now verify the magnetic field generated by a solenoid at a distance $z$ (on the central axis) away from the front of the solenoid. The TAs will write the equation of the magnetic field of a solenoid on the board and you are asked to verify the \textbf{far $z$ behaviour} of the magnetic field of the solenoid, that is for $z>4R$ \todo{verify range}.
+
+Place the ramp in front of the solenoid such that the IOLab sensor is centred in front the solenoid. Move the IOLab incrementally, and at each position, use the interface in order to obtain the average and standard deviation of the position and magnetic field of the measurement. You will not need to go further than 30 cm. We recommend that you perform multiple trials to obtain multiple data points.
+
+Does your data match the equation on the board? What about the far $z$ behaviour? Discuss your results.
+
+\section{Session b}
+\Large{\textbf{WARNING!}} \normalsize The permanent magnets used in this experiment are quite strong. Avoid bringing any magnetizable (made of iron/steel/Ni/Co, ID /credit cards) objects near the magnets. \textbf{Students with pacemakers could be excused from this lab.} \\
+
+In this session, we will study the electric motor. The electric motor is a device that converts electrical energy into mechanical energy. Electric motors and their counter-parts, electric generators, have been around for decades now and have become so ubiquitous in our daily lives that life without them would seem almost impossible. Over the years, these motors have grown in complexity and sophistication in order to perform a number of different tasks but the basic physical principles behind their operation have not changed.
+
+The goal of this lab is to provide a general understanding of how a simple DC motor works with the hope that it might lead to a better appreciation for the more sophisticated devices found all around us. This lab is not ``complicated" to do, but will require a number of different concepts in electricity, magnetism and circuit theory to complete.
+
+The main observable of this lab is the frequency of rotation $f$ of the motor. Similar to the first capacitance lab, you are also asked to find possible parameters that could affect the frequency of rotation of the motor.
+
+\subsection{Electric motor setup}
+Includes equipment and how to set-up the apparatus (oscilloscope)...
+
+For this lab, you are given a power supply, an oscilloscope, an electric motor and a magnet. 
+Fig.~\ref{YY} shows the schematic diagram of the setup we will use in this experiment and Fig.~\ref{YY} shows a photograph of the actual setup. To set up the apparatus:
+\begin{itemize}
+\item Make sure the power supply is turned off
+\item Connect the leads from the coil to the power supply.
+\item Instructions about oscilloscope...
+\end{itemize}
+\todo{Include figures}
+
+The coil current and the voltage will be read from the power supply meters. The coil's period of rotation will be measured by a photodiode detector connected to a CRO. The photodiode emits light and detects its reflection from the shiny strip covering one side of the coil. The other side is covered by a non-reflective strip. When the coil is rotating, a signal/pulse will be seen on the CRO screen every time the reflected light strikes the detector. The period will be the time interval between two reflected signals/pulses. From the period you can calculate the frequency. The performance of the motor and preciseness of measurements are extremely sensitive to the positions of the photodiode and brushes. \textbf{Please be careful with the apparatus, and do not make any adjustments from how it was set up.}
+
+In addition to the electric motor, you are given a magnet on a track. In the previous lab, you showed found that on its axis, the magnetic field generated by a solenoid decreases by a function similar to Fig.~\ref{YY}. In this figure, we are giving you the calibration of the magnetic field of the magnet as a function of position. You can use this to determine the strength of the magnetic field on the coil at a given distance. \todo{include calibration figure}.\\
+
+\large \textbf{Please respect the following instructions in order to avoid damaging the apparatus:} \normalsize
+\begin{itemize}
+\item Do not exceed a voltage of 10 V.
+\item Do not let the magnet be any closer than 1 cm to the coils.
+\item It may happen that for a large enough voltage and close enough distance, the magnet might vibrate or be pulled towards the coils. Do not let it be any closer than 1 cm to the coils! Hold your magnet in place if necessary.
+\item If you are using high voltages (greater than 8 V), try to move quickly through the higher voltages to reduce wear on the brushes.
+\item Remember to turn off the power supply after you have finished all your measurements.
+\end{itemize}
+
+
+\subsection{Protocol}
+Similar to the first lab, you are asked to find what parameters could affect the frequency of rotation of the motor $f$.
+
+To do this, recall that you must isolate your parameters and vary one of them at a time to acquire data that you could analyse. As a starting point, we suggest that you draw a force diagram of the coils of the motor. Recall your answers from the pre-lab activity.
+
+To make a measurement,
+\begin{enumerate}
+\item Make sure you read the previous instructions (above) in order to avoid damaging the apparatus.
+\item Set the magnet at a desired position (\textbf{greater than 1 cm away from the coils}).
+\item Turn the power supply to a desired voltage (\textbf{do not exceed 10 V}).
+\item The coil should start to rotate, though you will likely need to flick it gently with your finger to get it started.
+\item Measure the period $T$ from the time interval between two successive pulses from the CRO.
+\item For better precision, you may count the time interval between a few pulses and divide it by the number of intervals to get a better value for $T$. The frequency will be given by $f = 1/T$. Note the value of f in an Excel sheet with any other relevant parameters for this measurement.
+\end{enumerate}
+
+Through discussions with your lab partners, other teams and the TA, you must perform measurements to establish a (mathematical) relation between possible parameters that could affect the frequency of rotation of the electric motor. Support your claims based on data and figures as usual.
 
 \phantomsection
 \addcontentsline{toc}{part}{Appendix}
@@ -849,7 +1056,7 @@ Firstly, every McGill student can obtain a free copy of Microsoft Offices softwa
 The colon means that we take every box between B2 and B5. One could have also used that function by listing every box individually, separated by a coma. Alternatively, one could, after writing ``=SUM(", selected the boxes that one wants to be included in the function. This re-emphasizes the usefulness of arranging the data in columns.
 \item Other useful functions include:
 \begin{itemize}
-\item \verb|=STDEV.P(x)| to calculate the standard deviation of a fluctuation population as shown in Eq.~\ref{Eq:STDev.P}.
+\item \verb|=STDEV.P(x)| to calculate the standard deviation of a fluctuation population as shown in Eq.~\eqref{Eq:STDev.P}.
 \item \verb|=SQRT(x)| to calculate square root of $x$.
 \item \verb|=Exp(x)| to calculate exponentials $e^x$.
 \item \verb|PI()| to use the constant $\pi$. Note that there is no input.
