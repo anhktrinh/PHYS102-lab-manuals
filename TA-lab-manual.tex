@@ -30,7 +30,11 @@
 \usepackage{fancyhdr}
 \addto\captionsenglish{\renewcommand{\chaptername}{Lab}}
 \setcounter{chapter}{-1}
-\def \todo #1{\textcolor{red}{#1}}
+
+\def\cesar#1{{\color{blue}[#1]}}
+\def\anhkhoi#1{{\color{olive}[#1]}}
+\def\nik#1{{\color{red} [#1]}}
+
 \tcbset{colback=blue!5!white,colframe=blue!75!black,center,halign=justify,width=0.9\textwidth,fonttitle=\bfseries}
 
 \linespread{1.15}
@@ -111,7 +115,7 @@ Here is a list of general guidelines for your log book:
 \item Measurements must include an uncertainty (\textbf{standard deviation}).
 \item Tables (and any other data representation method) must also include appropriate labels, units and standard deviation.
 \item When comparing to a known quantity (theoretical value), the former does not have a standard deviation attributed to it, unless that information is found from an experiment, in which case there should be an associated standard deviation.
-\item If you quote results from elsewhere, you must include the source: \todo{how to quote sources}
+\item If you quote results from elsewhere, you must include the source: \anhkhoi{how to quote sources}
 \item Recall that vector-data has both a \textbf{magnitude} and a \textbf{direction}.
 \item Write down \underline{all} your observations and some commentary about them.
 \end{itemize}
@@ -326,7 +330,7 @@ This lab will be an interactive demo lab where teaching Assistants will help you
 In this session, you will familiarize yourself with Excel. You will be guided through this exercise by the TAs.
 
 \begin{itemize}
-\item Open the Excel document found at \todo{location}.
+\item Open the Excel document found at \anhkhoi{location}.
 \item Explore the user interface. Note that data is best presented in columns.
 \item Learn how to resize, split and merge cells.
 \item In a adjacent column, calculate the resistance $R$. 
@@ -339,7 +343,7 @@ R_i - \bar{R},
 in a separate column by ``dragging" the first cell downwards.
 
 \item Calculated the square of the difference calculated above in another column.
-\item In two other columns, calculate the standard deviation by using Eq.~\eqref{Eq:STDev.P} with the values that you calculated previously, and by using the function \verb|=STDEV.P(x)|. 
+\item In two other columns, calculate the standard deviation by using eq.~\eqref{Eq:STDev.P} with the values that you calculated previously, and by using the function \verb|=STDEV.P(x)|. 
 \end{itemize}
 
 \noindent Now we will learn how to plot data, and how to obtain a linear regression.
@@ -381,9 +385,9 @@ Given this dataset, you must find how the electric force on $q_1$ is affected by
 \item The angle $\theta$ with respect to a horizontal axis separating $q_1$ from $q_2$.
 \end{itemize}
 
-You are given a .txt files from which you are to import them into Excel. For all the .txt files, the charges are in Coulomb units, the forces are in Newton, the angle is in radians and the distance is in meters. \todo{Change .txt files to have the constant variables and the standard deviations.}
+You are given a .txt files from which you are to import them into Excel. For all the .txt files, the charges are in Coulomb units, the forces are in Newton, the angle is in radians and the distance is in meters. \anhkhoi{Change .txt files to have the constant variables and the standard deviations.}
 
-We suggest that you start your analysis for fixed $r, \theta$, but varying $q_1$ and $q_2$. Find how the force $F$ depends on $q_1$ and $q_2$. Support your conclusion by performing appropriate fits to your equation and comparing them to the error bars. If you find that you can simplify their dependence by Eq.~\eqref{Eq:f=xy} or \eqref{Eq:f=1/x}, perform the appropriate error propagation equation to find the effective error of this composite quantity.
+We suggest that you start your analysis for fixed $r, \theta$, but varying $q_1$ and $q_2$. Find how the force $F$ depends on $q_1$ and $q_2$. Support your conclusion by performing appropriate fits to your equation and comparing them to the error bars. If you find that you can simplify their dependence by eq.~\eqref{Eq:f=xy} or \eqref{Eq:f=1/x}, perform the appropriate error propagation equation to find the effective error of this composite quantity.
 
 After you have found the appropriate $q_1$ and $q_2$ dependence, find the dependence on $\theta$ by using appropriate data analysis techniques.
 
@@ -404,7 +408,7 @@ What is the significance of $c$? Given all your previous datasets, find the cons
 \begin{itemize}
 \item How to acquire data
 \item How to quantify error
-\item How to present basic data
+\item How to present data
 \item Learn about linear fits
 \item Confirm capacitance law
 \end{itemize}
@@ -417,13 +421,15 @@ In this lab you will be asked to accomplish the following tasks:
 \item Support your conclusion based on a quantitative evaluation of your data.
 \end{itemize}
 
-You will have to chose some parameters and quantify their affect on the capacitance. In the process, you will learn how to acquire good data and how to quantify and present your data. We would like to re-emphasize that collaborations and discussions are expected through the two-session lab process.
+You will have to chose some parameters and quantify their affect on the capacitance of the setup. In the process, you will learn how to acquire good data and how to quantify and present your data. We would like to re-emphasize that collaborations and discussions are encouraged and expected throughout the two sessions.
 
 \begin{tcolorbox}[title=Role as a TA]
-Your role as a TA will be to guide them through the ``script" that we present in the protocol section. You should guide them by asking questions and making them think about their results as opposed to giving them the right answer. You will also be required to bring teams together to collaborate with each other. You should clarify the grading method, and re-emphasize that the major part of their grade comes from the log book.
+Your role as a TA will be to guide them through the ``script" that we present in the protocol section. You should guide them by asking questions and making them think about their results as opposed to giving them the right answer immediately. You will also be required to bring teams together to collaborate with each other. You should clarify the grading method, and re-emphasize that the major part of their grade comes from the log book.
 \end{tcolorbox}
 
-In the first session, you will work together to find possible parameters that can affect the capacitance. Measurements at this stage may be crude; do not worry about that, we are {\it not} evaluating the goodness of data at this stage, rather the process of thinking about what this data {\it means} and your thinking process about how to improve your experiment to obtain better data. During the second session, you will be asked to obtain quantitatively improved data and to compare it with data from the previous session. You must conclude, based on a quantitative evaluation of your data, whether or not, and how, your chosen parameter affects the capacitance of a parallel plate capacitor.
+In the first session, you will work together to find possible parameters that can affect the capacitance of a pair of parallel plates. Measurements at this stage may be crude; do not worry about that, we are {\it not} evaluating the goodness of the data at this stage, rather the process of thinking about what this data {\it means}, and your thinking process about how to improve your experiment to obtain better data.
+
+During the second session, you will be asked to obtain quantitatively improved data and to compare it with data from the previous session. You must conclude, based on a quantitative evaluation of your data, whether or not, and how, your chosen parameter affects the capacitance of a parallel plate capacitor.
 
 
 \subsection{Pre-lab activity}
@@ -433,13 +439,13 @@ To answer some of these questions, we encourage you to read the \textbf{Data Ana
 \begin{tcolorbox}[title=Answer]
 This is more open-ended. Measurements can be taught of as quantifying observations. Measurements must come with an inherent uncertainty.
 \end{tcolorbox}
-\item Two engineers must measure the distance between the McGill metro station to the athletic centre to build an underground tunnel. One engineer finds that the distance is $9134 \pm 5$m while the other finds that the distance is $915 \pm 2 \times 10^1$m. In what ways can they compare their measurements? Do their measurements agree? Explain.
+\item Two engineers must measure the distance between the McGill metro station to the athletic centre to build an underground tunnel. One engineer finds that the distance is $9134 \pm 5$m while the other finds that the distance is $(915 \pm 2) \times 10^1$m. In what ways can they compare their measurements? Do their measurements agree? Explain.
 \begin{tcolorbox}[title=Answer]
 They should compare the standard deviations to conclude that the measurements of the two engineers agree.
 \end{tcolorbox}
 \item The city considers to build a metro line between McGill station and the station at University of Montreal. To do this, an engineer decides to use a km-long ruler whose smallest divider is a meter. She \textit{did not} use any other measuring devices. She takes her measurements and presents her findings to her team as $3653.4500$m. What is the uncertainty on this measurement? Did she present enough, too little or too many digits about her measurement? Why?
 \begin{tcolorbox}[title=Answer]
-The correct way to present this measurement is $3653 \pm 1$m since the smallest increment on her measuring instrument is a meter. She presented too many digits since she cannot know of smaller distances than a meter.
+The correct way to present this measurement is $3653 \pm 1$m since the smallest increment on her measuring instrument is a meter. She presented too many digits since her measuring tool cannot give such precision.
 \end{tcolorbox}
 \item Two groups of researchers are trying to test their new methodology to measure the speed of light $c$. Current data shows that the speed of light is roughly $c=2.99 792 \times 10^8$ m/s. The first group finds that $c=2.88 \pm 0.02 \times 10^8$ m/s while the second group finds that $c=3.0 \pm 0.2 \times 10^8$ m/s. What do these measurements tell you about their methodology? What type of mistake may have caused the discrepancy in the first group's results?
 \begin{tcolorbox}[title=Answer]
@@ -452,7 +458,7 @@ They should say something about the standard deviation and fit coefficient of de
 \end{enumerate}
 
 \subsection{What is a capacitor?}
-You have learned in class that charges can attract and repel each other. This is because point charges source \textit{electric fields} that apply a force on a test charge. Since there can exist a force between two point charges, there exists a \textit{potential energy} between two point charges $\Delta U$ due to this force. One defines the \textit{electrical potential} as \textit{the potential energy change \underline{per unit charge}} as
+You have learned in class that charges can attract and repel each other. This is because point charges source \textit{electric fields} that apply a force on a test charge. Since there can exist a force between two point charges, there exists a \textit{potential energy} between two point charges $\Delta U$ due to this force. We define the \textit{electrical potential} as \textit{the potential energy change \underline{per unit charge}} as
 \begin{equation}
 \Delta V = \frac{\Delta U}{q}
 \label{Eq:ElectricPotential}
@@ -470,11 +476,11 @@ where $k$ is Coulomb's constant $k = {1}/{4\pi \epsilon_0}$. This will have unit
 \label{Fig:ElectricPotential_point}
 \end{figure}
 
-Now consider a pair of parallel plates separated by a distance $d$ connected to a battery as shown in Fig. \ref{Fig:ParallelPlates}. A pair of parallel plates separated by air or another material can be assembled into a \textit{capacitor}: on each parallel plate, because of the battery, there will accumulate a number of electrons on the negative plate such that the total charge is $-Q$ and $+Q$ on the positive plate. Because of the gap between the plates, there now exists an electric potential between the plates, which is given by Eq. \eqref{Eq:ElectricPotential}.
+Now consider a pair of parallel plates separated by a distance $d$ connected to a battery as shown in Fig.~\ref{Fig:ParallelPlates}. A pair of parallel plates separated by air or another material can be assembled into a \textit{capacitor}: on each parallel plate, because of the battery, there will accumulate a number of electrons on the negative plate such that the total charge is $-Q$ and $+Q$ on the positive plate. Because of the gap between the plates, there now exists an electric potential between the plates, which is given by eq.~\eqref{Eq:ElectricPotential}.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.6]{lab1-parallel-plates.png}
-\caption{Capacitor plate setup. The battery with voltage $V$ creates a flow of electrons such that there will accumulate a total charge of $-Q$ on one plate, and $+Q$ on the positive plate. Since the plates are separated by a distance $d$, there will be a electrical potential difference between the two plates.}
+\caption{Parallel plate setup. The battery with voltage $V$ creates a flow of electrons such that there will accumulate a total charge of $-Q$ on one plate, and $+Q$ on the positive plate. Since the plates are separated by a distance $d$, there will be a electrical potential difference between the two plates.}
 \label{Fig:ParallelPlates}
 \end{figure}
 
@@ -494,27 +500,27 @@ where $\epsilon$ is the \textit{relative} permittivity. They should be able to t
 \end{tcolorbox}
 
 \begin{tcolorbox}
-We expect them to plot their data and fit a linear regression with standard deviation error bars as shown in Fig.~\ref{Fig:Lab1-results-area}. They can also plot a comparison with the mean to see the consistency of their results as shown in Fig.~\ref{Fig:Lab1-results-area2}.
+We expect them to plot their data and fit a linear regression with standard deviation error bars as shown in Fig.~\ref{Fig:Lab1-results-area}. Knowing the distance between the plates, they can also plot the relative permittivity versus the area, and compare with the mean value of $\epsilon$ to see the consistency of their results as shown in Fig.~\ref{Fig:Lab1-results-area2}.
 \end{tcolorbox}
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{lab1-results-area}
-\caption{Data of capacitance versus area. We expect them to display the equation and $R^2$ value. They should be able to find a good linear fit.}
+\caption{[Figure only available to TAs] Data of capacitance versus area. We expect them to display the equation and $R^2$ value. They should be able to find a good linear fit.}
 \label{Fig:Lab1-results-area}
 \end{figure}
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{lab1-results-area2}
-\caption{Comparison of the capacitance area data versus its mean. The average $\epsilon$ is $3.4 \pm 0.3 \times 10^{-12}$ F/m.}
+\caption{[Figure only available to TAs] Data of the relative permittivity versus the area, compared to the mean value. The average $\epsilon$ is $3.4 \pm 0.3 \times 10^{-12}$ F/m.}
 \label{Fig:Lab1-results-area2}
 \end{figure}
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{lab1-results-distance}
-\caption{Data of $C/A$ versus $1/r$. The data points in orange are those of the first three layers. The linear fit matches the average $\epsilon$ found from the area experiment.}
+\caption{[Figure only available to TAs] Data of $C/A$ versus $1/r$. The data points in orange are those of the first three layers. The linear fit matches the average $\epsilon$ found from the area experiment.}
 \label{Fig:Lab1-results-distance}
 \end{figure}
 
 \begin{tcolorbox}
-In our testing showed that for $n>3$ sheets, there seems to be a $1/\sqrt{d}$ correction that appears, and therefore students aren't expected to find a perfect fit for large distances of $d$. This is mostly due to some polarization effect from stacking the dielectrics, and therefore one should view the $1/d$ dependence as a ``small distance" approximation. You should encourage students to find this disparity between experiment and theory and encourage them to discuss the cause of this. The data is shown in Fig.~\ref{Fig:Lab1-results-distance}.
+When testing for the $d$ dependence, the data showed that for $n>3$ sheets, there seems to be a $1/\sqrt{d}$ correction that appears, and therefore students aren't expected to find a perfect fit for large distances of $d$. This is mostly due to some polarization effect from stacking the dielectrics, and therefore one should view the $1/d$ dependence as a ``small distance" approximation. You should encourage students to find this disparity between experiment and theory and encourage them to discuss the cause of this. The data is shown in Fig.~\ref{Fig:Lab1-results-distance}.
 \end{tcolorbox}
 
 \begin{tcolorbox}
@@ -531,11 +537,11 @@ Students are encouraged to discuss about other parameters such as shape, volume,
 \begin{tcolorbox}[title=Session \#1]
 We suggest the following time distribution for this session:\\
 
-During the first 20mins, assemble everyone to the front and do a quick introduction, and maybe a demo of the manipulations. You should then ask everyone what they think could affect the capacitance of a capacitor, and push them to give a physical reason behind their hypothesis. We expect you to motivate the idea that electrical potential is given by the relative distance between two charged objects, and therefore, for parallel conducting plates, larger area would allow for more charges to accumulate, and by Eq.~\eqref{Eq:ElectricPotential_point}, we expect there to be a $1/r$ factor. Recommend that they works together to cover more parameters e.g. one team takes care of area, the other does distance.
+During the first 20mins, assemble everyone to the front and do a quick introduction, and maybe a demo of the manipulations. You should then ask everyone what they think could affect the capacitance of a capacitor, and push them to give a physical reason behind their hypotheses. We expect you to motivate the idea that electrical potential is given by the relative distance between two charged objects, and therefore, for parallel conducting plates, larger area would allow for more charges to accumulate, and by eq.~\eqref{Eq:ElectricPotential_point}, we expect there to be a $1/r$ dependence. Recommend that they works together to cover more parameters e.g. one team takes care of area, the other does distance.
 \end{tcolorbox}
 
 \begin{tcolorbox}
-Give them about 60-75mins to perform their measurements while walking around, answering questions and facilitating discussions between teams and teammates. In the meantime, don't forget to verify that students have done their pre-labs.
+Give them about 60-75mins to perform their measurements while walking around, answering questions and facilitating discussions between teams and teammates. During this period, make sure that everyone makes at least three measurements of varying area with the two plates perfectly aligned. This will serve as a baseline to put them on the right track. Also, do not forget to verify that students have done their pre-labs.
 \end{tcolorbox}
 
 \begin{tcolorbox}
@@ -570,7 +576,7 @@ Paper sheets & Extra wires \\
 \begin{enumerate}
 \item Plug the USB-port into the laptop
 \item Open the Arduino Genuino application on the laptop.
-\item Open the capacitanceMeter.ino file found in \todo{location}.
+\item Open the capacitanceMeter.ino file found in \anhkhoi{location}.
 
 \item In the tabs above, go into the drop-down menu Tools $\rightarrow$ Port. Choose whichever COM is labelled by ``(Arduino/Genuino Uno)".
 \begin{figure}[H]
@@ -590,22 +596,22 @@ Paper sheets & Extra wires \\
 \label{Fig:Arduino-Monitor}
 \end{figure}
 
-\item Take the two wires (see Fig.~\todo{updated setup}) and simply touch each side of the parallel plates: you should see a multitude of measurements scrolling down the monitor window. If you do not see many measurements scrolling in the monitor window, it is likely that the plates are touching each other. \todo{input new setup pic}
+\item Take the two wires (see Fig.~\anhkhoi{updated setup}) and simply touch each side of the parallel plates: you should see a multitude of measurements scrolling down the monitor window. If you do not see many measurements scrolling in the monitor window, it is likely that the plates are touching each other. \anhkhoi{input new setup pic}
 \item You can stop the auto-scroll by clicking the bottom-left box to better see your results (see Fig.~\ref{Fig:Arduino-Monitor}).
 \end{enumerate}
 
-Notice that in Fig.~\ref{Fig:Arduino-Monitor}, the data fluctuates. You will have to determine how many capacitance measurements should you average over to acquire a good representation of that capacitance measurement. We refer you to the ``\textbf{Error Analysis}" section of the lab manual. Using this setup, proceed to conduct you experiments and collect data that will let you evaluate $C$ in in Eq.~\ref{capacitor_formula}. 
+Notice that in Fig.~\ref{Fig:Arduino-Monitor}, the data fluctuates. You will have to determine how many capacitance measurements should you average over to acquire a good representation of that capacitance measurement. We refer you to the ``\textbf{Error Analysis}" section of the lab manual. Using this setup, proceed to conduct you experiments and collect data that will let you evaluate $C$ in in eq.~\ref{capacitor_formula}. 
 
 You will have the opportunity to test whatever hypothesis you may have, however \textbf{every group must take a capacitance measurement for at least \underline{three} different pairs of plate sizes while inserting a single sheet of plastic between them. The plates must be perfectly aligned on top of each other}. After doing so, you may explore in more details the consequences of these measurements, or you may study other possible parameters that could affect the capacitance.
+
+\begin{tcolorbox}
+The three area measurements will serve as a baseline for students in case some of them attempt to test unconventional hypotheses.
+\end{tcolorbox}
 
 Given the measurement of the two sides $L_1$ and $L_2$ of a rectangle and their corresponding standard deviations $\sigma_{L_1}$ and $\sigma_{L_2}$, the standard deviation on the area is given by
 \begin{equation}
 \sigma_A = \sqrt{ \left( L_1 \sigma_{L_2} \right)^2 + \left( L_2 \sigma_{L_1} \right)^2 }.
 \end{equation}
-
-\begin{tcolorbox}
-The three area measurements will serve as a baseline for students in case some of them attempt to test unconventional hypotheses.
-\end{tcolorbox}
 
 While studying other parameters, if you are unsure of the standard deviation of a certain parameter, you may ask the TAs to derive the appropriate derived standard deviation for that parameter.
 
@@ -633,16 +639,17 @@ Once you have some result from your data, you must offer a physical explanation 
 \chapter{RC Circuits}
 \section{Learning objectives}
 \begin{itemize}
-\item Learn about exponential functions.
-\item Learn about RC circuits.
+\item Learn how to connect circuits
+\item Learn about exponential functions
+\item Learn about RC circuits
 \item Learn about equivalent resistance and capacitance
 \end{itemize}
 
 \section{Introduction}
-In this lab you will characterize an RC circuit. An RC circuit is a circuit that contains a resistor (R) and a capacitor (C). The analysis tool we will use is called a PASCO 850 Universal Interface, the use of which explained below. Specifically, we will also use a voltmeter and a
+In this lab you will characterize an RC circuit. An RC circuit is a circuit that contains a resistor (R) and a capacitor (C). The analysis tool we will use is called a PASCO 850 Universal Interface, the use of which will be explained below. Specifically, we will also use a voltmeter and a
 signal generator tool to examine the charging and discharging of a capacitor. 
 
-In the first session, you will be asked to \textbf{measure the time constant} of a given RC circuit. You will learn how to measure time constants and understand subtleties in the data acquisition apparatus. This session will be a more traditional lab where you will follow well outlined instructions. 
+In the first session, you will be asked to \textbf{measure the time constant} of a given RC circuit. In the process, you will learn how to measure time constants and understand subtleties in the data acquisition apparatus. This session will be a more traditional lab where you will follow well outlined instructions. 
 
 In the second session, you will be asked to \textbf{build an RC circuit with a specific time constant} and to show, based on well supported data, that your circuit has the appropriate time constant. When you arrive at the second session, you will receive a sheet that asks you to build an RC circuit with a specific number of parallel branches. You are to choose an appropriate number of resistors and capacitors to obtain a specific time constant.
 
@@ -672,7 +679,7 @@ Recall that the capacitance is defined as the proportionality constant between t
 \begin{equation}
 Q = C \Delta V.
 \end{equation}
-In this equation, the charge $Q$ is expressed in Coulomb (C), the tension $\Delta V$, in volts (V) and the capacitance $C$ in farads (F).
+In this equation, the charge $Q$ is expressed in Coulomb (C), the voltage $\Delta V$, in volts (V) and the capacitance $C$ in farads (F).
 
 In this lab you will study both the \textit{charging} and \textit{discharging} process of an RC circuit. During the charging process, charges accumulate on each sides of the parallel plate capacitor. During the discharging process, the capacitor releases all its charges into the circuit. Capacitors charge and discharge exponentially in time. During the \textit{discharge} of a capacitor, the instantaneous voltage $\Delta V_C$ between the ends of the capacitor also drops and is given by
 \begin{equation}
@@ -704,7 +711,7 @@ C_{parallel} = C_1 + C_2 + C_3 + ... C_n = \displaystyle \sum_{i=1}^n C_i
 \end{equation}
 
 \subsection{Equipment} \label{Sect:lab2-equipment}
-In this lab you will use the PASCO 850 Universal Interface to measure and plot voltages as a function of time in an RC circuit. The PASCO devices comes with two sets of wires (see Fig.~\ref{Fig:lab2-PASCO}. The first is the input/output voltage source. The other is a set of probe which measures the voltage across the capacitor of the circuit. 
+In this lab you will use the PASCO 850 Universal Interface to measure and plot voltages as a function of time in an RC circuit. The PASCO devices comes with two sets of wires (see Fig.~\ref{Fig:lab2-PASCO}). The first is the input/output voltage source. The other is a set of probe which measures the voltage across the capacitor of the circuit. 
 
 \begin{figure}[h]
 \centering
@@ -713,9 +720,10 @@ In this lab you will use the PASCO 850 Universal Interface to measure and plot v
 \label{Fig:lab2-PASCO}
 \end{figure}
 
-Given the nature on these measurements, there is an inherent fluctuation to the data that is difficult to characterize. During the first session, you are not required to produce quantitatively well supported data. But for the second session, you are to demonstrate that you've produced an RC circuit with the correct time constant. Therefore the following standard deviation rules for PASCO measurements have been adjusted (and tested) to time constants of this second session. This is to compensate for the fluctuation of the voltage measurements.
+Given the nature on these measurements, there is an inherent fluctuation to the data that is difficult to characterize. During the first session, you are not required to produce quantitatively well supported data. But for the second session, you are to demonstrate that you've produced an RC circuit with the correct time constant. 
+%Therefore the following standard deviation rules for PASCO measurements have been adjusted (and tested) to time constants of this second session. This is to compensate for the fluctuation of the voltage measurements.
 
-%For time difference measurements, the standard deviation will be $\sigma_t = 10^{-4} s$. To convert the error from the Curve fitting parameter $B$ to the time constant $\tau$, based on Eq.~\eqref{Eq:1/x error}, one must take
+%For time difference measurements, the standard deviation will be $\sigma_t = 10^{-4} s$. To convert the error from the Curve fitting parameter $B$ to the time constant $\tau$, based on eq.~\eqref{Eq:1/x error}, one must take
 %\begin{equation}
 %\sigma_\tau = 100 \frac{\sigma_B}{B^2} \text{s}.
 %\label{Eq:lab2-error-tau-fit}
@@ -738,14 +746,14 @@ During the first session, you will receive an RC circuit fastened onto a wooded 
 \end{figure}
 
 \begin{tcolorbox}[title=Session \#1]
-In this session you will supervise students as they perform the protocol below. When they change to a square wave input, make sure that they understand how to vary the parameters to obtain good data, i.e. changing the frequency of the function generator and the frequency of data acquisition.
+In this session you will supervise students as they perform the protocol below. You may gather students in the beginning to give a brief introduction and summary of the lab. By the end, they should be comfortable measuring charging/discharging time constants. When they use the square wave input, make sure that they understand how to vary the parameters to obtain good data, i.e. changing the frequency of the function generator and the frequency of data acquisition.
 \end{tcolorbox}
 
 \noindent \large \textbf{Procedure} \normalsize \\
 You will execute the following steps in order to understand how to use the PASCO interface to characterize an RC circuit. For this session, you are expected to write down your observations in your log book and to answer the questions that appear in the following instructions. You should write down all that technical notes about the apparatus and how an RC circuit works in order for you to fast-track your manipulations for the next session.
 \begin{enumerate}
 \item Connect the circuit as shown in Fig.~\ref{Fig:lab2-session1-circuit1}.
-\item \todo{Where to get Pasco file}
+\item \anhkhoi{Where to get Pasco file}
 \item Turn on the PASCO and plug in the USB into the computer.
 %\item On the software, open the ``Signal Generator" tool, which is located on the left hand side panel and make sure that the signal is set to be DC (Waveform option), has an amplitude of $6V$ and has a data acquisition frequency of $10$ Hz. See Fig.~\ref{Fig:lab2-interface-dc}.
 %\begin{figure}[h]
@@ -763,7 +771,7 @@ You will execute the following steps in order to understand how to use the PASCO
 %\item Press that same button that now says Record and set the switch to discharge the capacitor and notice the rate of the voltage drop. When the capacitor is discharged, stop the recording.
 %\item Repeat steps 5 to 8 for the rheostat at approximately half its value and at its minimum value. Compare the charging rates from step 8 (with the maximum rheostat value) with these two new rheostat values. Discuss your qualitative observations in the ``General notes" section of your log book.
 %\item Discharge the capacitor (steps 9,10) and record it for the minimum rheostat value. 
-%The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of Eq.~\eqref{Eq:V-discharge} will be fit to the whole data set. To fit it on the right segment on the data set, use the highlighting tool and select/box the values that are most relevant. The time constant is given by the parameter $1/B$ in the curve fitting data window. The error is given by Eq.~\eqref{Eq:lab2-error-tau-fit}.
+%The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of eq.~\eqref{Eq:V-discharge} will be fit to the whole data set. To fit it on the right segment on the data set, use the highlighting tool and select/box the values that are most relevant. The time constant is given by the parameter $1/B$ in the curve fitting data window. The error is given by eq.~\eqref{Eq:lab2-error-tau-fit}.
 %\begin{figure}[h]
 %\centering
 %\includegraphics[width=0.9 \linewidth]{lab2-interface-graph-tools}
@@ -797,7 +805,7 @@ You will execute the following steps in order to understand how to use the PASCO
 \item After turning on the signal generator, press the record button twice to record and stop the recording after observing a few charges/discharges.
 \item Zoom in on a region with both charging and discharging behaviours by rescaling the axes, and figure out which section corresponds to charging/discharging.
 \item For the charging part, measure the time difference between the moment the voltage starts increasing to the moment where the voltage is at a value $1-1/e$ of the maximum voltage $V_0$. You should understand why you are measuring this time difference.
-\item For the discharging part, you will use the Curve fitting tool. The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of Eq.~\eqref{Eq:V-discharge} will be fit to the whole data set. To fit it on the right segment on the data set, use the highlighting tool and select/box the values that are most relevant. The time constant is given by the parameter $1/B$ in the curve fitting data window.
+\item For the discharging part, you will use the Curve fitting tool. The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of eq.~\eqref{Eq:V-discharge} will be fit to the whole data set. To fit it on the right segment on the data set, use the highlighting tool and select/box the values that are most relevant. The time constant is given by the parameter $1/B$ in the curve fitting data window.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9 \linewidth]{lab2-interface-graph-tools}
@@ -806,11 +814,11 @@ You will execute the following steps in order to understand how to use the PASCO
 \end{figure}
 
 Use this to fit an exponential curve to the discharging region. You will obtain the discharge time constant.
-\item Compare the time constants obtained from both the charging and discharging regions and by keeping track of the standard deviations as mentioned in section~\ref{Sect:lab2-equipment}. Calculate the theoretical time constant based on the known values of resistance and capacitance (see step 14). Recall that the standard deviation of the product of two variables is given by Eq.~\eqref{Eq:product error}. Can you explain difference in standard deviation, and why some are smaller/larger than the others? You can repeat steps 6-10 for different segments of charging/discharging in your data if you want to verify the consistency of your measurements.
+\item Compare the time constants obtained from both the charging and discharging regions and by keeping track of the standard deviations as mentioned in section~\ref{Sect:lab2-equipment}. Calculate the theoretical time constant based on the known values of resistance and capacitance (see step 14). Recall that the standard deviation of the product of two variables is given by eq.~\eqref{Eq:product error}. Can you explain difference in standard deviation, and why some are smaller/larger than the others? You can repeat steps 6-10 for different segments of charging/discharging in your data if you want to verify the consistency of your measurements.
 \item Answer the following questions in the results section of your log book. Should all the time constants be the same or different? Why and why not? What would happen if we had used the rheostat instead of the $470\Omega$ resistor in Fig.~\ref{Fig:lab2-session1-circuit1} and used a DC voltage source (with the On/Off switch on the board) instead of a wavefunction source: would we have the same time constant for both charging and discharging? What would happen to the time constant if we increased the resistance by using the rheostat? If you have time, you should test your hypotheses experimentally.
 
 \begin{tcolorbox}[title=Answer]
-All the time constants should be the same because we are charging and discharging across the same resistor. If we had used the rheostat with a DC voltage and the On/Off switch, since we're charging and discharging across different resistors, the time constants should be different. By Eq.~\eqref{Eq:time-constant}, the resistance should affect the time constant linearly.
+All the time constants should be the same because we are charging and discharging across the same resistor. If we had used the rheostat with a DC voltage and the On/Off switch, since we're charging and discharging across different resistors, the time constants should be different. By eq.~\eqref{Eq:time-constant}, the resistance should affect the time constant linearly.
 \end{tcolorbox}
 
 \item Answer the following in the results section of your log book. Assuming the voltage, when completely charged, is set to $V_0 = 1$ and by considering the variables $\tau$ for time constant and $t$ for time, what are the equations for of charging and discharging? Support your answer by physical arguments.
@@ -852,6 +860,10 @@ For the first part, $C2 \approx 50\mu$F. For the second part, $C2 \approx 61\mu$
 
 Once you have completed the above manipulations, make sure to note important technicalities of the time constant measuring methodology in order to accelerate your data acquisition process for the next session. You should perform any further tests that you believe would help you better understand the RC circuit in preparation for the next session.
 
+\begin{tcolorbox}
+You may want to pull their attention towards quantifying their errors, in preparation to the next session. Note that the standard deviation from the PASCO fit is significantly smaller than that obtained from measuring the time difference at $V=V_0 (1-e^{-1})$. Discuss the disparity between the error of each methods.
+\end{tcolorbox}
+
 Resistors and capacitors can be found in the lab. Instructions about reading the resistance color-code for resistors can be found in the Appendix. We recommend that you try and read the resistance of a few resistors and confirm by using the in-lab multimeters. An exemplary circuit board that you must use during the next session will be available for you to contemplate. We recommend that you observe the set up of the circuit board and think about how you would connect the resistors and capacitors to obtain different equivalent resistance and capacitance setup.
 
 \section{Session b}
@@ -877,15 +889,17 @@ In this session, you are asked to build an RC circuit with a specific time const
 \label{Fig:lab2-session2-circuit}
 \end{figure}
 
-The demanded time constants are consistent with the standard deviations outlined in section~\ref{Sect:lab2-equipment}. In this lab, you will only use the ``Positive Square Wave" input. Recall from the previous session that we had to change the data acquisition frequency and waveform frequency. Adjust them accordingly to your estimated calculated theoretical time constant for each measurement. Sometimes, the data fitting tool cannot give standard deviations: this is because the data acquisition frequency isn't properly set. Change it until you see a standard deviation in the $B$ parameter from the Curve fitting window.
+In this lab, you will only use the ``Positive Square Wave" input. Adjust them accordingly to your estimated calculated theoretical time constant for each measurement. Sometimes, the data fitting tool cannot give standard deviations: this is because the data acquisition frequency isn't properly set. Change it until you see a standard deviation in the $B$ parameter from the Curve fitting window.
 
-There will be a few communal multimeters that allows to measure capacitance, while every team will have their own multimeter that can only measure resistance. There will be boxes containing different resistors and capacitors. Their values will be labelled but one can double-check their values using the multimeters. Note that we are using polarized capacitors and therefore one must be careful when connecting them to the circuit: the voltage input must be attached to a specific leg of the capacitor.
+There will be a few communal multimeters that allows to measure capacitance, while every team will have their own multimeter that can only measure resistance. There will be boxes containing different resistors and capacitors. Their values will be labelled but you can double-check their values using the multimeters. Note that we are using polarized capacitors and therefore you must be careful when connecting them to the circuit: the voltage input must be attached to a specific leg of the capacitor.
 
 While every team will have to build a different RC circuit, the time constants that we are asking are of the order of ms, and therefore you will have to use the "Positive Square Wave" input from the signal generator. You have the liberty to choose different values of frequency depending on your estimate time constant. Changing the frequency of the input source does not change the time constant: this only changes the duration that the source is "turned on".
 
+\anhkhoi{Should we tell them the two methods to confirm their measurements? Or should the TAs talk them through it to find the second way?}
+
 To confirm your time constant measurement, you should take two approaches. The first is to simply perform charging and discharging measurements multiple times and average the given time constant measurements.
 
-The second is to confirm your equivalent resistance and capacitance by varying time constant. Since the time constant is $\tau = RC$, if one varies the value of one of the parameters $R$ or $C$ and plot $\tau$ as a function of the varying parameter, one expects the data to show a linear trend where the slope is the value of the other parameter. By performing this test, you will firstly verify Eq.\eqref{Eq:time-constant}. Furthermore, this is a complementary method to measure your effective resistance and capacitance which should match your measurements obtained by using the multimeter.
+The second is to confirm your equivalent resistance and capacitance by varying time constant. Since the time constant is $\tau = RC$, if one varies the value of one of the parameters $R$ or $C$ and plot $\tau$ as a function of the varying parameter, one expects the data to show a linear trend where the slope is the value of the other parameter. By performing this test, you will firstly verify eq.\eqref{Eq:time-constant}. Furthermore, this is a complementary method to measure your effective resistance and capacitance which should match your measurements obtained by using the multimeter.
 
 To accelerate this measurement method, each team will have 5 capacitors of $10\pm 1\mu$F and 5 resistors of $50\pm 1 \ \Omega$. Since there is a limited quantity of multimeters that can measure capacitance, you can assume that these standard deviations are correct. A summary of the equipment for this session is shown in Table~\ref{Tab:Lab2-material}.
 \begin{table}[h]
@@ -911,10 +925,10 @@ Document your results and argue whether or not your RC circuit has the demanded 
 \section{Learning objectives}
 \begin{itemize}
 \item Learn about solenoids.
-\item Learn about electric motors.
-\item Learn how to present vector data.
 \item Learn how to use the right hand rule.
+\item Learn about vector fields.
 \item Learn about limits.
+\item Learn about electric motors.
 \end{itemize}
 
 \section{Introduction}
@@ -933,7 +947,7 @@ In the second session, having learned how magnetic field strength varies with di
 
 \section{Session a}
 \subsection{Solenoid setup}
-We will utilize the IOLab that you used in PHYS 101 last semester to measure magnetic field strengths.
+In this session, you will use the IOLab that you previously used in PHYS 101 last semester to measure magnetic field strengths.
 
 Includes equipment and how to set-up the apparatus...
 
@@ -961,7 +975,7 @@ Now that you have a rough idea how a solenoid generates a magnetic field, we wil
 We will first verify its dependence on the current through the wires. Place the IOLab on the ramp at a fixed distance away from one end of the solenoid (not too far) as shown in Fig.~\ref{YY}. Since the power supplies yields values of current between 0 and 6A, make incremental measurements of $B$ as a function of $I$ by increasing the current by $0.5$A incrementally. Verify how $B$ depends on $I$ using your data analysis skills from previous labs. Carefully support your claim of its parametric dependence by generating a graph with some fit. 
 
 \subsection{Distance dependence}
-We will now verify the magnetic field generated by a solenoid at a distance $z$ (on the central axis) away from the front of the solenoid. The TAs will write the equation of the magnetic field of a solenoid on the board and you are asked to verify the \textbf{far $z$ behaviour} of the magnetic field of the solenoid, that is for $z>4R$ \todo{verify range}.
+We will now verify the magnetic field generated by a solenoid at a distance $z$ (on the central axis) away from the front of the solenoid. The TAs will write the equation of the magnetic field of a solenoid on the board and you are asked to verify the \textbf{far $z$ behaviour} of the magnetic field of the solenoid, that is for $z>4R$ \anhkhoi{verify range}.
 
 Place the ramp in front of the solenoid such that the IOLab sensor is centred in front the solenoid. Move the IOLab incrementally, and at each position, use the interface in order to obtain the average and standard deviation of the position and magnetic field of the measurement. You will not need to go further than 30 cm. We recommend that you perform multiple trials to obtain multiple data points.
 
@@ -986,11 +1000,11 @@ Fig.~\ref{YY} shows the schematic diagram of the setup we will use in this exper
 \item Connect the leads from the coil to the power supply.
 \item Instructions about oscilloscope...
 \end{itemize}
-\todo{Include figures}
+\anhkhoi{Include figures}
 
 The coil current and the voltage will be read from the power supply meters. The coil's period of rotation will be measured by a photodiode detector connected to a CRO. The photodiode emits light and detects its reflection from the shiny strip covering one side of the coil. The other side is covered by a non-reflective strip. When the coil is rotating, a signal/pulse will be seen on the CRO screen every time the reflected light strikes the detector. The period will be the time interval between two reflected signals/pulses. From the period you can calculate the frequency. The performance of the motor and preciseness of measurements are extremely sensitive to the positions of the photodiode and brushes. \textbf{Please be careful with the apparatus, and do not make any adjustments from how it was set up.}
 
-In addition to the electric motor, you are given a magnet on a track. In the previous lab, you showed found that on its axis, the magnetic field generated by a solenoid decreases by a function similar to Fig.~\ref{YY}. In this figure, we are giving you the calibration of the magnetic field of the magnet as a function of position. You can use this to determine the strength of the magnetic field on the coil at a given distance. \todo{include calibration figure}.\\
+In addition to the electric motor, you are given a magnet on a track. In the previous lab, you showed found that on its axis, the magnetic field generated by a solenoid decreases by a function similar to Fig.~\ref{YY}. In this figure, we are giving you the calibration of the magnetic field of the magnet as a function of position. You can use this to determine the strength of the magnetic field on the coil at a given distance. \anhkhoi{include calibration figure}.\\
 
 \large \textbf{Please respect the following instructions in order to avoid damaging the apparatus:} \normalsize
 \begin{itemize}
@@ -1056,7 +1070,7 @@ Firstly, every McGill student can obtain a free copy of Microsoft Offices softwa
 The colon means that we take every box between B2 and B5. One could have also used that function by listing every box individually, separated by a coma. Alternatively, one could, after writing ``=SUM(", selected the boxes that one wants to be included in the function. This re-emphasizes the usefulness of arranging the data in columns.
 \item Other useful functions include:
 \begin{itemize}
-\item \verb|=STDEV.P(x)| to calculate the standard deviation of a fluctuation population as shown in Eq.~\eqref{Eq:STDev.P}.
+\item \verb|=STDEV.P(x)| to calculate the standard deviation of a fluctuation population as shown in eq.~\eqref{Eq:STDev.P}.
 \item \verb|=SQRT(x)| to calculate square root of $x$.
 \item \verb|=Exp(x)| to calculate exponentials $e^x$.
 \item \verb|PI()| to use the constant $\pi$. Note that there is no input.
@@ -1104,7 +1118,7 @@ Finally, you can add data from .txt files. To do so, go into the data tab, and i
 \section*{Multimeter}
 A multimeter allows one to measure various electronic properties. We will be mainly interested in measuring the resistance or resistors, the capacitance of capacitors and the voltage and current of a circuit. To use the multimeter, one must attach two wires into the input and output. One can have alligator clips to attach to conducting wires more easily if necessary.
 
-\todo{insert pic of multimeter. Box certain useful settings}
+\anhkhoi{insert pic of multimeter. Box certain useful settings}
 
 To measure the resistance, simply take a resistor, turn the knob of the multimeter to the resistance seting ($\Omega$) and attach each wire to the two sides of a resistor. To measure the capacitance of a capacitor, simply do the same as for the resistor, but turning the knob to the capacitance setting.
 
@@ -1144,9 +1158,13 @@ To change the resistance of the resistor, you must also change the value in the 
 \section*{Reading Resistors}
 
 \phantomsection
-\addcontentsline{toc}{section}{Arduino (Circuit Boards)}
+\addcontentsline{toc}{section}{Circuit Boards}
 \section*{Circuit Boards}
-A circuit board is shown in Fig.~\todo{insert}. 
+A circuit board is shown in Fig.~\anhkhoi{insert}. 
+
+\phantomsection
+\addcontentsline{toc}{section}{IOLab}
+\section*{IOLab}
 
 \phantomsection
 \addcontentsline{toc}{chapter}{More statistics}

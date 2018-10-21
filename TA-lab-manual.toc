@@ -19,17 +19,17 @@
 \contentsline {section}{\numberline {1.2}Introduction}{20}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Pre-lab activity}{21}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}What is a capacitor?}{22}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Protocol}{25}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Session a}{25}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Session b}{30}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Measurement Analysis}{30}{section.1.4}
+\contentsline {section}{\numberline {1.3}Protocol}{26}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Session a}{26}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Session b}{31}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Measurement Analysis}{31}{section.1.4}
 \contentsline {chapter}{\numberline {2}RC Circuits}{32}{chapter.2}
 \contentsline {section}{\numberline {2.1}Learning objectives}{32}{section.2.1}
 \contentsline {section}{\numberline {2.2}Introduction}{32}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Pre-lab activity}{32}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Pre-lab activity}{33}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}RC Circuits}{33}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Equivalent resistance and capacitance}{34}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Equipment}{34}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.4}Equipment}{35}{subsection.2.2.4}
 \contentsline {section}{\numberline {2.3}Session a}{35}{section.2.3}
 \contentsline {section}{\numberline {2.4}Session b}{41}{section.2.4}
 \contentsline {chapter}{\numberline {3}Magnetic Field of Solenoids and Coils}{44}{chapter.3}
@@ -50,5 +50,6 @@
 \contentsline {section}{Multimeter}{54}{section*.47}
 \contentsline {section}{Arduino (Capacitance)}{54}{section*.48}
 \contentsline {section}{Reading Resistors}{56}{section*.52}
-\contentsline {section}{Arduino (Circuit Boards)}{56}{section*.53}
-\contentsline {chapter}{More statistics}{56}{section*.54}
+\contentsline {section}{Circuit Boards}{56}{section*.53}
+\contentsline {section}{IOLab}{56}{section*.54}
+\contentsline {chapter}{More statistics}{56}{section*.55}
