@@ -36,20 +36,21 @@
 \contentsline {section}{\numberline {3.1}Learning objectives}{44}{section.3.1}
 \contentsline {section}{\numberline {3.2}Introduction}{44}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Pre-lab activity}{44}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Session a}{45}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Solenoid setup}{45}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Magnetic Field Lines}{45}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Current dependence}{46}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Distance dependence}{46}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Session b}{46}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Electric motor setup}{47}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Protocol}{48}{subsection.3.4.2}
-\contentsline {part}{Appendix}{48}{section*.37}
-\contentsline {chapter}{Introduction to Excel}{50}{section*.39}
-\contentsline {chapter}{Lab Equipment}{53}{section*.45}
-\contentsline {section}{Multimeter}{54}{section*.47}
-\contentsline {section}{Arduino (Capacitance)}{54}{section*.48}
-\contentsline {section}{Reading Resistors}{56}{section*.52}
-\contentsline {section}{Circuit Boards}{56}{section*.53}
-\contentsline {section}{IOLab}{56}{section*.54}
-\contentsline {chapter}{More statistics}{56}{section*.55}
+\contentsline {section}{\numberline {3.3}Session a}{46}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Solenoid setup}{46}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Magnetic Field Lines}{47}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Current dependence}{48}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Distance dependence}{48}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Session b}{50}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Electric motor setup}{51}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Protocol}{53}{subsection.3.4.2}
+\contentsline {part}{Appendix}{54}{section*.42}
+\contentsline {chapter}{Introduction to Excel}{56}{section*.44}
+\contentsline {chapter}{Lab Equipment}{59}{section*.50}
+\contentsline {section}{Multimeter}{60}{section*.52}
+\contentsline {section}{Arduino (Capacitance)}{60}{section*.53}
+\contentsline {section}{Reading Resistors}{62}{section*.57}
+\contentsline {section}{Circuit Boards}{62}{section*.58}
+\contentsline {section}{IOLab}{62}{section*.59}
+\contentsline {section}{Oscilloscope}{62}{section*.60}
+\contentsline {chapter}{More statistics}{63}{section*.63}

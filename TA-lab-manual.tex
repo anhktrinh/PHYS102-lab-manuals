@@ -940,46 +940,146 @@ In the second session, having learned how magnetic field strength varies with di
 
 \subsection{Pre-lab activity}
 \begin{enumerate}
-\item Question about magnetic field of straight wire
-\item Magnetic field due to stacking multiple wires together
-\item Force on magnetic field due to B field
+\item How would you present data that consists of vectors?
+
+\begin{tcolorbox}[title=Answer]
+Any vector data consists of information about its \textbf{magnitude} and \textbf{orientation}. This can be presented as a vector diagram, or tabulated into a table.
+\end{tcolorbox}
+
+\item What is a vector diagram? What needs to be present when drawing a vector diagram?
+
+\begin{tcolorbox}[title=Answer]
+Magnitude and orientation. Typically, vectors are connected end-to-end, or from a common origin.
+\end{tcolorbox}
+
+\item Given the wire below, draw the field lines of the magnetic field generated from the current in the wire.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{lab3-wire}
+\caption{Wire with a current $I$ going from right to left.}
+\label{Fig:lab3-prelab-wire}
+\end{figure}
+
+\item Does the strength of the magnetic field increase, decrease or is it constant as we go further away from the wire?
+
+\item Imagine stacking multiple wires similar to that of Fig.~\ref{Fig:lab3-prelab-wire} parallel to each other, with the current of each all running in the same direction. Would the magnetic field close to the stack of wires  be greater, equal or smaller than the scenario with a single wire?
+
+\item Given the wire below with a constant magnetic field $B$ pointing downwards, what is the direction of the magnetic force that $B$ exerts on the wire?
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.85]{lab3-wire-bfield-force}
+\caption{A wire has a current running through it, hence electrons are running from right to left. A constant magnetic field is present and points downwards.}
+\end{figure}
+
+\item \anhkhoi{Question related to limits: If you have a very complicated system with many possible parameters that could affect it, how would you try to understand it? Take ``extreme" regimes where the system simplifies.}
+
 \end{enumerate}
 
 \section{Session a}
 \subsection{Solenoid setup}
 In this session, you will use the IOLab that you previously used in PHYS 101 last semester to measure magnetic field strengths.
 
-Includes equipment and how to set-up the apparatus...
+Each team will posses two solenoids as shown in Fig.~\ref{YY} \anhkhoi{Pic solenoid on graph paper}. We will mostly use the one with a smaller radius. You are to connect the two leads to the power supply. This will generate a current through the wires.
+
+\anhkhoi{Explain how the power supply works}
+
+To gather data, you will use the IOLab:
+\begin{enumerate}
+\item Connect the IOLab USB to your laptop and open the IOLab software.
+\item Calibrate your IOLab as shown in Fig.~\ref{YY} 
+
+\anhkhoi{Include calibration pic from software}
+
+\item On the left of the interface, select the ``Magnetometer" and ``\anhkhoi{Position?}" sensors. We will only need the position data, not the velocity or acceleration plots.
+
+\item When you are ready to acquire data, you can start recording by clicking on \anhkhoi{button...}.
+\end{enumerate}
+
+The protocol is straightforward: you will move the IOLab to a given position and observe the magnetic field strength at that position. Leave the IOLab at that position for a few seconds so that you can select that interval in your data to obtain the standard deviation and mean of that measurement (see the appendix for details). Repeat the above for all the positions that you wish to measure the magnetic field.
+
+Further comments about the IOLab can be found in the appendix.
 
 \subsection{Magnetic Field Lines}
-Once the solenoid has been properly connected, you are first asked to draw field lines on the graph paper. For this, we will use the compass and IOLab as shown in Fig.~\ref{YY}.
+\begin{tcolorbox}
+For this part of the lab, you will mostly help them understand the right hand rule. Push them to think about the direction of the $B$ field inside and outside the solenoid, and its origin in terms of the right-hand rule.
+\end{tcolorbox}
 
-First, chose at least a dozen points on the graph paper. For each point, you are to measure the orientation of the magnetic field with the compass, draw a vector line associated with your observation, and write next to the vector the measured strength of the the magnetic field. Recall that the total length of the magnetic field amplitude will be given by Pythagoras theorem:
+Once the solenoid has been properly connected, you are asked to draw field lines on the graph paper. For this, we will use the compass and IOLab as shown in Fig.~\ref{YY} \anhkhoi{Figure of IOLab with compass}. Note that the magnetometer isn't centered in the IOLab, but is located at the position shown in the figure below.
+
+First, chose at least a dozen points on the graph paper. For each point, you are to measure the orientation of the magnetic field with the compass, draw a vector line associated with your observation, and write next to the vector the measured strength of the the magnetic field. Recall that the total magnitude of the magnetic field will be given by Pythagoras theorem:
 \begin{equation}
 | \mathbf{B} | = \sqrt{B_x^2 +B_y^2}.
 \end{equation}
-Both vector components can be obtained from the IOLab. Normally, one would draw the length of the vector in a way that is representative of the magnitude of the vector, however for the amount of vector lines you are asked to draw, we will simply write the magnitude next to the vector for this lab.
+Both vector components can be obtained from the IOLab. Normally, one would draw the length of the vector in a way that is representative of the magnitude of the vector, however for the amount of vector lines you are asked to draw, we will simply write the magnitude next to the drawn vector.
 
 Once you have enough points, and have explored the possible orientations of the magnetic field vector lines, answer the following questions in your log book:
 \begin{enumerate}
 \item Draw a diagram of the solenoid with the appropriate field lines.
+
 \item What is the magnetic field inside the solenoid? Support your claim of the field lines inside the solenoid in terms of the right hand rule.
 \item What happens if you swap the connections of the solenoid? What would change? Explain this in terms of the right hand rule.
-\item Do these field lines look like any known magnetic objects? Explain why this observation is true.
+\item Do these field lines look like any other magnetic object that you've seen? Explain why this observation is true.
+
+\begin{tcolorbox}
+They should be reminded of the field lines of a magnet. Make them consider why the field lines must loop around instead of simply diverging.
+\end{tcolorbox}
+
 \item What parameters do you expect to affect the strength of the magnetic field of the solenoid? Give a brief explanation for each parameter.
+
+\begin{tcolorbox}
+We expect them to consider the current $I$, the distance $z$ away, and the number of turns $N$. We expect them to motivate the $N$ dependence from a physical motivation (either increasing or decreasing with $N$), but we want them to verify the $I$ and $B$ dependence explicitly.
+\end{tcolorbox}
+
 \end{enumerate}
 
 \subsection{Current dependence}
+\anhkhoi{In retrospect, after writing this out explicitly, I feel this lab will be way too long. Should we cut this part and keep the position dependence?}
+
 Now that you have a rough idea how a solenoid generates a magnetic field, we will quantitatively verify some of its possible parameters.
 
-We will first verify its dependence on the current through the wires. Place the IOLab on the ramp at a fixed distance away from one end of the solenoid (not too far) as shown in Fig.~\ref{YY}. Since the power supplies yields values of current between 0 and 6A, make incremental measurements of $B$ as a function of $I$ by increasing the current by $0.5$A incrementally. Verify how $B$ depends on $I$ using your data analysis skills from previous labs. Carefully support your claim of its parametric dependence by generating a graph with some fit. 
+We will first verify its dependence on the current through the wires. Place the IOLab on the ramp at a fixed distance away from one end of the solenoid (not too far) as shown in Fig.~\ref{YY}, and increase the current through the wires with the power supply. 
+
+\anhkhoi{Include pic}
+
+Verify how $B$ depends on $I$ using your data analysis skills from previous labs. Find the parametric dependence on the current $I$ and carefully support your claim by generating a graph with an appropriate fit. 
+
+\begin{tcolorbox}
+By taking increments of $0.5$A, the data should be near perfect as the dependence was found to be linear with an approximate $R^2 \approx 0.99$ accuracy.
+\end{tcolorbox}
 
 \subsection{Distance dependence}
-We will now verify the magnetic field generated by a solenoid at a distance $z$ (on the central axis) away from the front of the solenoid. The TAs will write the equation of the magnetic field of a solenoid on the board and you are asked to verify the \textbf{far $z$ behaviour} of the magnetic field of the solenoid, that is for $z>4R$ \anhkhoi{verify range}.
+We will now verify the magnetic field generated by a solenoid at a distance $z$ (on the central axis) away from the front of the solenoid.
 
-Place the ramp in front of the solenoid such that the IOLab sensor is centred in front the solenoid. Move the IOLab incrementally, and at each position, use the interface in order to obtain the average and standard deviation of the position and magnetic field of the measurement. You will not need to go further than 30 cm. We recommend that you perform multiple trials to obtain multiple data points.
+Place the ramp in front of the solenoid such that the IOLab sensor is centred in front the solenoid. Move the IOLab incrementally, and at each position, use the interface in order to obtain the average and standard deviation of the position and magnetic field of the measurement. You will not need to go further than 30 cm. We recommend that you perform multiple trials to obtain many data points. We expect you to find a $1/z^3$ dependence. 
 
-Does your data match the equation on the board? What about the far $z$ behaviour? Discuss your results.
+Once you have data for the magnetic field for all positions $z<30$cm, we will first restrict our analysis to the far $z$ behaviour. We expect the data to show a $1/z^3$ behaviour. Select appropriate data points (equivalent to ``far $z$") such that you see a good $1/z^3$ fit. Can you explain the minimum value of $z$ for which you performed a cutoff in your data? You may perform this analysis again with the other solenoid if you wish.
+
+\begin{tcolorbox}
+There are many subtleties in this experiment. Firstly, they won't be able to find the correct $1/z^3$ dependence without subtracting off background field measurements: we found that surrounding electronics (laptop, phone, etc.) will affect the magnitude of $B$. They must perform a run with and without the $B$ field of the solenoid turned on.
+\end{tcolorbox}
+\begin{tcolorbox}
+Having done that, through testing, we found that the far $z$ behaviour corresponds to $z>4R$, where $R$ is the radius of the solenoid. We don't expect them to explain the factor of $4$, but they should understand that it depends on $R$, and it should be $z \gg R$. Make them consider the consequences of the near $z$ behaviour, that is $z \rightarrow 0$.
+\end{tcolorbox}
+
+Once you have obtained data for the far behavior, the TAs will write the equation of the magnetic field of a solenoid on the board and you are asked to compare the intermediate regime to this equation: write the equation in Excel and compare your plots with your data.
+
+\begin{tcolorbox}
+Write the equation once a first team has finished obtaining the far behaviour data. Let the solenoid be centered at the origin $z=0$, and $z_L,z_R$ are the two ends of the solenoid. Define $L$ as the length of the solenoid $L=z_R-z_L$, $N$ the number of turns, $I$ the current, then we have
+\begin{align}
+dB_z&= \frac{\mu_0 N I}{2 L} R^2 \frac{dx}{((z-x)^2+R^2)^{3/2}} \nonumber \\
+B_z &=\frac{\mu_0 N I}{2 L} \left( \frac{z-z_L}{\sqrt{(z-z_L)^2+R^2}} - \frac{z-z_R}{\sqrt{(z-z_R)^2+R^2}} \right) \nonumber \\
+B_z &\approx \frac{\mu_0 N I}{L} \frac{R^2}{z^3} + \mathcal{O}\left( \frac{1}{z^5}\right).
+\end{align}
+In the last line, we expanded to leading order in the limit $z\rightarrow \infty$. We want them to see that taking appropriate limits, the equation simplifies greatly. Since they don't know calculus, you can show the first and last line of the equation above which makes the relation obvious when $z$ is large.
+\end{tcolorbox}
+
+Does your data match the equation on the board? What about the far $z$ behaviour? Why is it useful to restrict to the far $z$ regime? Discuss your results.
+
+\begin{tcolorbox}
+The lesson here is that given a measurement and analysis, we can only be confident in its description once we know the regime of validity, and the whole expression may be much more complicated if we attempt to find the ``general case". Taking limits of a system allows to find the boundary conditions of the model which will constrain the general case. In practice, we start with the boundary conditions since it is simpler to analyse, and we generalize from there.
+\end{tcolorbox}
 
 \section{Session b}
 \Large{\textbf{WARNING!}} \normalsize The permanent magnets used in this experiment are quite strong. Avoid bringing any magnetizable (made of iron/steel/Ni/Co, ID /credit cards) objects near the magnets. \textbf{Students with pacemakers could be excused from this lab.} \\
@@ -990,21 +1090,57 @@ The goal of this lab is to provide a general understanding of how a simple DC mo
 
 The main observable of this lab is the frequency of rotation $f$ of the motor. Similar to the first capacitance lab, you are also asked to find possible parameters that could affect the frequency of rotation of the motor.
 
-\subsection{Electric motor setup}
-Includes equipment and how to set-up the apparatus (oscilloscope)...
+\begin{tcolorbox}
+We expect them to find that the the torque
+\begin{equation}
+\tau = N A B I,
+\end{equation}
+where $N$ is the number of turns, $A$ is the area of the loop, $B$ is the magnetic field and $I$ is the current through the coil. They can't vary the first two parameters, but since the latter two are linearly dependent, the data analysis should be familiar for them by now.
+Since this is the last lab session, you should give them less advice as they should know how to analyse linear fits.
+\end{tcolorbox}
 
-For this lab, you are given a power supply, an oscilloscope, an electric motor and a magnet. 
-Fig.~\ref{YY} shows the schematic diagram of the setup we will use in this experiment and Fig.~\ref{YY} shows a photograph of the actual setup. To set up the apparatus:
+\subsection{Electric motor setup}
+For this lab, you are given a power supply, a cathode ray oscilloscope (CRO), an electric motor and a magnet. 
+Fig.~\ref{Fig:lab3-sessionb-diagram} shows the schematic diagram of the setup we will use in this experiment and Fig.~\ref{Fig:lab3-sessionb-setup} shows a photograph of the actual setup. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1.1]{lab3-sessionb-diagram}
+\caption{Circuit diagram of the setup (front view)}
+\label{Fig:lab3-sessionb-diagram}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.9]{lab3-sessionb-setup}
+\caption{Photograph of the setup}
+\label{Fig:lab3-sessionb-setup}
+\end{figure}
+
+To set up the apparatus:
 \begin{itemize}
 \item Make sure the power supply is turned off
 \item Connect the leads from the coil to the power supply.
-\item Instructions about oscilloscope...
+\item \anhkhoi{Instructions about oscilloscope... See appendix}
 \end{itemize}
-\anhkhoi{Include figures}
 
 The coil current and the voltage will be read from the power supply meters. The coil's period of rotation will be measured by a photodiode detector connected to a CRO. The photodiode emits light and detects its reflection from the shiny strip covering one side of the coil. The other side is covered by a non-reflective strip. When the coil is rotating, a signal/pulse will be seen on the CRO screen every time the reflected light strikes the detector. The period will be the time interval between two reflected signals/pulses. From the period you can calculate the frequency. The performance of the motor and preciseness of measurements are extremely sensitive to the positions of the photodiode and brushes. \textbf{Please be careful with the apparatus, and do not make any adjustments from how it was set up.}
 
-In addition to the electric motor, you are given a magnet on a track. In the previous lab, you showed found that on its axis, the magnetic field generated by a solenoid decreases by a function similar to Fig.~\ref{YY}. In this figure, we are giving you the calibration of the magnetic field of the magnet as a function of position. You can use this to determine the strength of the magnetic field on the coil at a given distance. \anhkhoi{include calibration figure}.\\
+In addition to the electric motor, you are given a magnet on a track. 
+Below (Fig.~\ref{Fig:lab3-sessionb-calibration-bfield}) is a calibration of the magnet. This should remind you of your data in the last session. \\
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.8]{lab3-sessionb-calibration-bfield}
+\caption{$B$ field as a function of distance from the face of the magnet.}
+\label{Fig:lab3-sessionb-calibration-bfield}
+\end{figure}
+
+%In the previous lab, you showed found that on its axis, the magnetic field generated by a solenoid decreases by a function similar to Fig.~\ref{YY}. In this figure, we are giving you the calibration of the magnetic field of the magnet as a function of position. You can use this to determine the strength of the magnetic field on the coil at a given distance.\\
+
+\begin{tcolorbox}
+The main concern for this lab is the equipment. It has been reported that students tend to easily damage the apparatus and therefore you must be vigilant of any deviations to the instructions.
+\end{tcolorbox}
 
 \large \textbf{Please respect the following instructions in order to avoid damaging the apparatus:} \normalsize
 \begin{itemize}
@@ -1017,9 +1153,9 @@ In addition to the electric motor, you are given a magnet on a track. In the pre
 
 
 \subsection{Protocol}
-Similar to the first lab, you are asked to find what parameters could affect the frequency of rotation of the motor $f$.
+Similar to the first lab, you are asked to find what parameters affect the frequency of rotation of the motor $f$.
 
-To do this, recall that you must isolate your parameters and vary one of them at a time to acquire data that you could analyse. As a starting point, we suggest that you draw a force diagram of the coils of the motor. Recall your answers from the pre-lab activity.
+To do this, recall that you must isolate your system and vary one parameter at a time in order to perform the analysis. As a starting point, we suggest that you draw a force diagram of the coils of the motor. Recall your answers from the pre-lab activity.
 
 To make a measurement,
 \begin{enumerate}
@@ -1033,9 +1169,13 @@ To make a measurement,
 
 Through discussions with your lab partners, other teams and the TA, you must perform measurements to establish a (mathematical) relation between possible parameters that could affect the frequency of rotation of the electric motor. Support your claims based on data and figures as usual.
 
+
 \phantomsection
 \addcontentsline{toc}{part}{Appendix}
 \part*{Appendix} \label{Part:Appendix}
+
+\renewcommand\thefigure{\thepart.\arabic{figure}}
+\setcounter{figure}{1}  
 
 \phantomsection
 \addcontentsline{toc}{chapter}{Introduction to Excel}
@@ -1165,6 +1305,43 @@ A circuit board is shown in Fig.~\anhkhoi{insert}.
 \phantomsection
 \addcontentsline{toc}{section}{IOLab}
 \section*{IOLab}
+Here are additional comments about the functionality of the IOLab
+
+\begin{itemize}
+\item You can zoom in and out
+\item How to get STD and mean
+\item How to load previous datasets
+\end{itemize}
+
+\phantomsection
+\addcontentsline{toc}{section}{Oscilloscope}
+\section*{Oscilloscope}
+In lab 3, we will use a cathode ray oscilloscope (CRO). The CRO is a valuable tool often used in many applications. Its most important function is the
+ability to measure voltages that vary in time. The oscilloscope allows us to ``visualize" how this
+voltage changes. To fully characterize a voltage that varies in time using a hand-held voltmeter,
+you would have to plot how the readings change with time on a graph. This is not only time
+consuming, but impossible to do if the voltage changes too rapidly (for example, the voltage
+from a wall socket changes sinusoidally from +115 V to -115 V and back to +115 V in 1/60th of
+a second). The CRO report voltage by tracking the vertical position of an electron beam rapidly
+sticking a fluorescent screen as it exists the space between two charged parallel conducting
+plates as is illustrated in Fig.~\ref{Fig:Appendix-CRO-data}. It plots the voltage on a screen along a vertical axis, and can
+also track changes of this voltage in time (horizontal axis) in a fraction of a microsecond.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1.2]{appendix-cro-data}
+\caption{Operation of a CRO}
+\label{Fig:Appendix-CRO-data}
+\end{figure}
+
+To use the oscilloscope...
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{appendix-cro-pic}
+\caption{Photograph of one CRO model}
+\label{Fig:Appendix-CRO}
+\end{figure}
 
 \phantomsection
 \addcontentsline{toc}{chapter}{More statistics}
