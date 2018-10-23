@@ -39,18 +39,18 @@
 \contentsline {section}{\numberline {3.3}Session a}{46}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Solenoid setup}{46}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Magnetic Field Lines}{47}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Current dependence}{48}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Distance dependence}{48}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Session b}{50}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Electric motor setup}{51}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Protocol}{53}{subsection.3.4.2}
-\contentsline {part}{Appendix}{54}{section*.42}
-\contentsline {chapter}{Introduction to Excel}{56}{section*.44}
-\contentsline {chapter}{Lab Equipment}{59}{section*.50}
-\contentsline {section}{Multimeter}{60}{section*.52}
-\contentsline {section}{Arduino (Capacitance)}{60}{section*.53}
-\contentsline {section}{Reading Resistors}{62}{section*.57}
-\contentsline {section}{Circuit Boards}{62}{section*.58}
-\contentsline {section}{IOLab}{62}{section*.59}
-\contentsline {section}{Oscilloscope}{62}{section*.60}
-\contentsline {chapter}{More statistics}{63}{section*.63}
+\contentsline {subsection}{\numberline {3.3.3}Current dependence}{49}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Distance dependence}{50}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Session b}{52}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Electric motor setup}{53}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Protocol}{55}{subsection.3.4.2}
+\contentsline {part}{Appendix}{56}{section*.47}
+\contentsline {chapter}{Introduction to Excel}{58}{section*.49}
+\contentsline {chapter}{Lab Equipment}{61}{section*.55}
+\contentsline {section}{Multimeter}{62}{section*.57}
+\contentsline {section}{Arduino (Capacitance)}{62}{section*.58}
+\contentsline {section}{Reading Resistors}{64}{section*.62}
+\contentsline {section}{Circuit Boards}{64}{section*.63}
+\contentsline {section}{IOLab}{64}{section*.64}
+\contentsline {section}{Oscilloscope}{64}{section*.65}
+\contentsline {chapter}{More statistics}{65}{section*.68}

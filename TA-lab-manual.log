@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.1)  22 OCT 2018 18:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.1)  23 OCT 2018 12:35
 entering extended mode
 **./TA-lab-manual.tex
 (TA-lab-manual.tex
@@ -2888,154 +2888,183 @@ Package pdftex.def Info: lab3-wire-bfield-force.png  used on input line 972.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<lab3-sessiona-solenoid1.jpg, id=637, 1606.0pt x 1204.5pt>
+File: lab3-sessiona-solenoid1.jpg Graphic file (type jpg)
+<use lab3-sessiona-solenoid1.jpg>
+Package pdftex.def Info: lab3-sessiona-solenoid1.jpg  used on input line 987.
+(pdftex.def)             Requested size: 211.38832pt x 158.53868pt.
+<lab3-sessiona-solenoid2.jpg, id=638, 1606.0pt x 1204.5pt>
+File: lab3-sessiona-solenoid2.jpg Graphic file (type jpg)
+<use lab3-sessiona-solenoid2.jpg>
+Package pdftex.def Info: lab3-sessiona-solenoid2.jpg  used on input line 990.
+(pdftex.def)             Requested size: 211.38832pt x 158.53868pt.
 [45 <./lab3-wire.png>]
+<lab3-sessiona-interface1.png, id=653, 641.39626pt x 337.76187pt>
+File: lab3-sessiona-interface1.png Graphic file (type png)
+<use lab3-sessiona-interface1.png>
+Package pdftex.def Info: lab3-sessiona-interface1.png  used on input line 1007.
 
-LaTeX Warning: Reference `YY' on page 46 undefined on input line 984.
+(pdftex.def)             Requested size: 375.80544pt x 197.9017pt.
+ [46 <./lab3-wire-bfield-force.png> <./lab3-sessiona-solenoid1.jpg> <./lab3-ses
+siona-solenoid2.jpg>]
+<lab3-sessiona-iolab-interface2.png, id=663, 661.97313pt x 388.45125pt>
+File: lab3-sessiona-iolab-interface2.png Graphic file (type png)
+<use lab3-sessiona-iolab-interface2.png>
+Package pdftex.def Info: lab3-sessiona-iolab-interface2.png  used on input line
+ 1019.
+(pdftex.def)             Requested size: 375.80544pt x 220.52448pt.
 
 
-LaTeX Warning: Reference `YY' on page 46 undefined on input line 991.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[46 <./lab3-wire-bfield-force.png>]
+[47 <./lab3-sessiona-interface1.png>]
+<lab3-sessiona-iolab-sensor.jpg, id=675, 602.25pt x 562.1pt>
+File: lab3-sessiona-iolab-sensor.jpg Graphic file (type jpg)
+<use lab3-sessiona-iolab-sensor.jpg>
+Package pdftex.def Info: lab3-sessiona-iolab-sensor.jpg  used on input line 103
+7.
+(pdftex.def)             Requested size: 180.67639pt x 168.6313pt.
+ [48 <./lab3-sessiona-iolab-interface2.png> <./lab3-sessiona-iolab-sensor.jpg>]
 
-LaTeX Warning: Reference `YY' on page 47 undefined on input line 1009.
 
-[47]
+LaTeX Warning: Reference `YY' on page 49 undefined on input line 1073.
 
-LaTeX Warning: Reference `YY' on page 48 undefined on input line 1042.
-
-[48] [49]
-Underfull \hbox (badness 10000) in paragraph at lines 1085--1086
+[49]
+<lab3-sessiona-ramp.jpg, id=694, 803.0pt x 482.80376pt>
+File: lab3-sessiona-ramp.jpg Graphic file (type jpg)
+<use lab3-sessiona-ramp.jpg>
+Package pdftex.def Info: lab3-sessiona-ramp.jpg  used on input line 1088.
+(pdftex.def)             Requested size: 375.80544pt x 225.96008pt.
+ [50 <./lab3-sessiona-ramp.jpg>] [51]
+Underfull \hbox (badness 10000) in paragraph at lines 1123--1124
 
  []
 
-[50]
-<lab3-sessionb-diagram.jpg, id=686, 173.9298pt x 225.0006pt>
+[52]
+<lab3-sessionb-diagram.jpg, id=713, 173.9298pt x 225.0006pt>
 File: lab3-sessionb-diagram.jpg Graphic file (type jpg)
 <use lab3-sessionb-diagram.jpg>
-Package pdftex.def Info: lab3-sessionb-diagram.jpg  used on input line 1108.
+Package pdftex.def Info: lab3-sessionb-diagram.jpg  used on input line 1146.
 (pdftex.def)             Requested size: 191.32336pt x 247.5014pt.
-<lab3-sessionb-setup.jpg, id=687, 310.5201pt x 251.7405pt>
+<lab3-sessionb-setup.jpg, id=714, 310.5201pt x 251.7405pt>
 File: lab3-sessionb-setup.jpg Graphic file (type jpg)
 <use lab3-sessionb-setup.jpg>
-Package pdftex.def Info: lab3-sessionb-setup.jpg  used on input line 1115.
+Package pdftex.def Info: lab3-sessionb-setup.jpg  used on input line 1153.
 (pdftex.def)             Requested size: 279.4655pt x 226.56433pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1129--1131
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1169
 
  []
 
-<lab3-sessionb-calibration-bfield.jpg, id=689, 439.6425pt x 295.5843pt>
+<lab3-sessionb-calibration-bfield.jpg, id=716, 439.6425pt x 295.5843pt>
 File: lab3-sessionb-calibration-bfield.jpg Graphic file (type jpg)
 <use lab3-sessionb-calibration-bfield.jpg>
 Package pdftex.def Info: lab3-sessionb-calibration-bfield.jpg  used on input li
-ne 1134.
+ne 1172.
 (pdftex.def)             Requested size: 351.71446pt x 236.46776pt.
-[51 <./lab3-sessionb-diagram.jpg>]
+[53 <./lab3-sessionb-diagram.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[52 <./lab3-sessionb-setup.jpg>] [53 <./lab3-sessionb-calibration-bfield.jpg>]
-[54] [55
+[54 <./lab3-sessionb-setup.jpg>] [55 <./lab3-sessionb-calibration-bfield.jpg>]
+[56] [57
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1184--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1222--1223
 
  []
 
-<Excel-tut-boxes.png, id=722, 273.4215pt x 174.05025pt>
+<Excel-tut-boxes.png, id=749, 273.4215pt x 174.05025pt>
 File: Excel-tut-boxes.png Graphic file (type png)
 <use Excel-tut-boxes.png>
-Package pdftex.def Info: Excel-tut-boxes.png  used on input line 1194.
+Package pdftex.def Info: Excel-tut-boxes.png  used on input line 1232.
 (pdftex.def)             Requested size: 187.89914pt x 119.61409pt.
-[56
+[58
 
  <./Excel-tut-boxes.png>]
-<Excel-tut-select-fixed.png, id=731, 505.89pt x 178.86826pt>
+<Excel-tut-select-fixed.png, id=758, 505.89pt x 178.86826pt>
 File: Excel-tut-select-fixed.png Graphic file (type png)
 <use Excel-tut-select-fixed.png>
-Package pdftex.def Info: Excel-tut-select-fixed.png  used on input line 1202.
+Package pdftex.def Info: Excel-tut-select-fixed.png  used on input line 1240.
 (pdftex.def)             Requested size: 375.80544pt x 132.87627pt.
- [57 <./Excel-tut-select-fixed.png>]
-<Excel-fig-insert.png, id=739, 608.2725pt x 142.131pt>
+ [59 <./Excel-tut-select-fixed.png>]
+<Excel-fig-insert.png, id=766, 608.2725pt x 142.131pt>
 File: Excel-fig-insert.png Graphic file (type png)
 <use Excel-fig-insert.png>
-Package pdftex.def Info: Excel-fig-insert.png  used on input line 1228.
+Package pdftex.def Info: Excel-fig-insert.png  used on input line 1266.
 (pdftex.def)             Requested size: 375.80544pt x 87.8145pt.
-<Excel-fig.png, id=741, 754.017pt x 573.94424pt>
+<Excel-fig.png, id=768, 754.017pt x 573.94424pt>
 File: Excel-fig.png Graphic file (type png)
 <use Excel-fig.png>
-Package pdftex.def Info: Excel-fig.png  used on input line 1236.
+Package pdftex.def Info: Excel-fig.png  used on input line 1274.
 (pdftex.def)             Requested size: 375.80544pt x 286.06061pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[58 <./Excel-fig-insert.png>] [59 <./Excel-fig.png>]
-<CapacitanceMeterSchem.png, id=755, 396.88275pt x 198.7425pt>
+[60 <./Excel-fig-insert.png>] [61 <./Excel-fig.png>]
+<CapacitanceMeterSchem.png, id=783, 396.88275pt x 198.7425pt>
 File: CapacitanceMeterSchem.png Graphic file (type png)
 <use CapacitanceMeterSchem.png>
-Package pdftex.def Info: CapacitanceMeterSchem.png  used on input line 1276.
+Package pdftex.def Info: CapacitanceMeterSchem.png  used on input line 1314.
 (pdftex.def)             Requested size: 337.35193pt x 168.93192pt.
- [60
+ [62
 
 ]
-<lab1-Arduino-circuit-board.jpg, id=765, 3774.1pt x 2818.53pt>
+<lab1-Arduino-circuit-board.jpg, id=792, 3774.1pt x 2818.53pt>
 File: lab1-Arduino-circuit-board.jpg Graphic file (type jpg)
 <use lab1-Arduino-circuit-board.jpg>
-Package pdftex.def Info: lab1-Arduino-circuit-board.jpg  used on input line 128
-3.
+Package pdftex.def Info: lab1-Arduino-circuit-board.jpg  used on input line 132
+1.
 (pdftex.def)             Requested size: 375.80544pt x 280.6223pt.
-<lab1-Arduino-resistance.png, id=767, 619.113pt x 220.4235pt>
+<lab1-Arduino-resistance.png, id=794, 619.113pt x 220.4235pt>
 File: lab1-Arduino-resistance.png Graphic file (type png)
 <use lab1-Arduino-resistance.png>
-Package pdftex.def Info: lab1-Arduino-resistance.png  used on input line 1291.
+Package pdftex.def Info: lab1-Arduino-resistance.png  used on input line 1329.
 (pdftex.def)             Requested size: 422.77664pt x 150.52502pt.
- [61 <./CapacitanceMeterSchem.png> <./lab1-Arduino-circuit-board.jpg>] [62 <./l
+ [63 <./CapacitanceMeterSchem.png> <./lab1-Arduino-circuit-board.jpg>] [64 <./l
 ab1-Arduino-resistance.png>]
-<appendix-cro-data.jpg, id=780, 261.1356pt x 160.9212pt>
+<appendix-cro-data.jpg, id=807, 261.1356pt x 160.9212pt>
 File: appendix-cro-data.jpg Graphic file (type jpg)
 <use appendix-cro-data.jpg>
-Package pdftex.def Info: appendix-cro-data.jpg  used on input line 1332.
+Package pdftex.def Info: appendix-cro-data.jpg  used on input line 1370.
 (pdftex.def)             Requested size: 313.36113pt x 193.10448pt.
-<appendix-cro-pic.jpg, id=781, 443.0151pt x 278.7213pt>
+<appendix-cro-pic.jpg, id=808, 443.0151pt x 278.7213pt>
 File: appendix-cro-pic.jpg Graphic file (type jpg)
 <use appendix-cro-pic.jpg>
-Package pdftex.def Info: appendix-cro-pic.jpg  used on input line 1341.
+Package pdftex.def Info: appendix-cro-pic.jpg  used on input line 1379.
 (pdftex.def)             Requested size: 443.01402pt x 278.72061pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[63 <./appendix-cro-data.jpg>] [64 <./appendix-cro-pic.jpg>] [65
+[65 <./appendix-cro-data.jpg>] [66 <./appendix-cro-pic.jpg>] [67
 
 ]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1416.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1416.
 
-Package caption Warning: Unused \captionsetup[sub] on input line 28.
-See the caption package documentation for explanation.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1378.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1378.
 (TA-lab-manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1378.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1378.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1416.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1416.
 
 Package rerunfilecheck Info: File `TA-lab-manual.out' has not changed.
-(rerunfilecheck)             Checksum: 4F5BF2900911FB4B3E27C377B35E38F5;3574.
+(rerunfilecheck)             Checksum: A05A5E5B06F02AB625D1B60F68359888;3574.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1378.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1416.
  ) 
 Here is how much of TeX's memory you used:
- 37292 strings out of 492973
- 690918 string characters out of 3126693
- 810684 words of memory out of 3000000
- 40181 multiletter control sequences out of 15000+200000
+ 37338 strings out of 492973
+ 692207 string characters out of 3126693
+ 811931 words of memory out of 3000000
+ 40214 multiletter control sequences out of 15000+200000
  551053 words of font info for 136 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,77p,1652b,617s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3057,9 +3086,9 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users
 pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmtt12.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/cm-super/sfrm1200.pfb>
-Output written on TA-lab-manual.pdf (66 pages, 7575067 bytes).
+Output written on TA-lab-manual.pdf (68 pages, 8910716 bytes).
 PDF statistics:
- 903 PDF objects out of 1000 (max. 8388607)
- 258 named destinations out of 1000 (max. 500000)
- 16992 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 933 PDF objects out of 1000 (max. 8388607)
+ 265 named destinations out of 1000 (max. 500000)
+ 17022 words of extra memory for PDF output out of 17280 (max. 10000000)
 
