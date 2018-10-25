@@ -27,10 +27,6 @@
 \usepackage{color,empheq,enumitem,forloop,graphicx,microtype,subcaption,verbatim,wrapfig,pdfpages,titlesec}
 \usepackage{array,booktabs,multicol,multirow,tabularx} 
 
-\usepackage{fancyhdr}
-\addto\captionsenglish{\renewcommand{\chaptername}{Lab}}
-\setcounter{chapter}{-1}
-
 \def\cesar#1{{\color{blue}[#1]}}
 \def\anhkhoi#1{{\color{olive}[#1]}}
 \def\nik#1{{\color{red} [#1]}}
@@ -39,24 +35,18 @@
 
 \linespread{1.15}
 \title{PHYS 102: TA Lab Manual}
-\author{Nikolas Provatas, Anh-Khoi Trinh}
+\author{Nikolas Provatas, Anh-Khoi Trinh, Cesar Daniel Rodriguez Rosenblueth}
 
 \begin{document}
 \maketitle
 
 \tableofcontents
 
-\phantomsection
-\addcontentsline{toc}{part}{Introduction}
-\part*{Introduction} \label{Sec:Intro}
+\part{Introduction} \label{Sec:Intro}
 
-\phantomsection
-\addcontentsline{toc}{chapter}{Lab Format}
-\chapter*{Lab Format}
+\chapter{Lab Format}
 
-\phantomsection
-\addcontentsline{toc}{section}{Introduction, Learning Objectives and Lab Structure}
-\section*{Introduction, Learning Objectives and Lab Structure}
+\section{Introduction, Learning Objectives and Lab Structure}
 Welcome to PHYS 102! The focus of these lab session will be to teach you how to think critically about  data collected from experiments, a skill that can be applied in many other STEM fields and in your own personal lives. You will learn how to acquire and analyse data quantitatively in experiments pertaining to electromagnetism experiments. \\
 
 \noindent \large \textbf{Learning objectives} \normalsize
@@ -81,9 +71,7 @@ Given the focus on critical thinking, the instructions for each lab will be mini
 
 At the start of the first session, each student will be asked to submit their pre-lab answers to specific questions posed. Students will then be asked to divide into pairs and perform  measurements as a team to collect data related to the posed question(s). All methods, experimental data collected, and interpretations will be written in log book. By the end of the first session, students are asked to hand in \underline{a single} log book \underline{per team}. While you cannot bring the log book home, you are allowed (and encouraged) to take pictures of the log book to think about your results between the two sessions and plan ahead what you intend to do in the second session to improve your experiments. Although you will work with one teammate, and submit one joint journal, as is common in scientific research, we highly encourage discussions with other teams and students outside of the lab session. Such discussions will start in the lab, where TAs will facilitate group discussions between groups to help students troubleshoot their experiments and understand sources of error. You will receive your log book again at the start of the second session to document your improved experiment, new data collected and any revised interpretations. By the end of the second session, students will again submit their log book for evaluation. For most labs, there will be an individual work station and a collective work station. The former offers the base materials and supplies for each group to successfully finish the lab, while the collective work station offers additional material that can be used to improve your data.
 
-\phantomsection
-\addcontentsline{toc}{section}{Lab Log Look}
-\section*{Lab Log Books}
+\section{Lab Log Books}
 The log book will be your primary source of evaluation. You will be asked to submit a log book entry by the end of each session. We will distribute at the start of each session the following structured log book:
  
 \noindent \textbf{i) Introduction (5\%)}\\
@@ -102,13 +90,9 @@ We encourage you to write your measurements and rough calculations as you do you
 \noindent \textbf{iv) Conclusions and future work (30\%)}\\
 \noindent In this section, you will state your conclusion, and offer possible follow-ups to this lab. This can include other physical properties to study, or to offer a better methodology to study this phenomenon. You must motivate your proposed follow-up project by clearly stating what you expect to observe (a hypothesis) and support your claim based on your current experiment. The proposed future projects must be realistically performed by your peers, and must not assume an unrealistic sum of budgetary support or higher level of experimental expertise such that you or your peers are not acquainted to. For your lab report submitted at the end of the first session, be mindful that you must execute your proposed improvements during the second session.
 
-\phantomsection
-\addcontentsline{toc}{chapter}{Data Analysis}
-\chapter*{Data Analysis}
+\chapter{Data Analysis}
 
-\phantomsection
-\addcontentsline{toc}{section}{General Guidelines}
-\section*{General Guidelines}
+\section{General Guidelines}
 Here is a list of general guidelines for your log book:
 \begin{itemize}
 \item Measurements must always include \textbf{units}.
@@ -132,9 +116,7 @@ Here is a list of general guidelines for your log book:
 \item Not have joint data points (unless necessary).
 \end{itemize}
 
-\phantomsection
-\addcontentsline{toc}{section}{Data Presentation}
-\section*{Data Presentation}
+\section{Data Presentation}
 One of the most important aspects of doing research is to be able to communicate efficiently your findings. In physics, this is done mostly by means of one of the following:
 \begin{itemize}
 \item A quoted result
@@ -178,9 +160,7 @@ A scatter plot allows you to see the general trend of your data. If you expect a
 
 In summary, to present your data, you will need to know certain things: how to perform an average and other basic statistics, how to evaluate the uncertainty in your measurements and by extension, your final result, how many digits to display in your final answer, and most importantly, how to analyse your data. This will be the subject of the following sections.
 
-\phantomsection
-\addcontentsline{toc}{section}{Basic Statistics}
-\section*{Basic Statistics}
+\section{Basic Statistics}
 
 \noindent \large \textbf{Mean} \normalsize
 
@@ -228,9 +208,7 @@ T = 2 \pi \sqrt{\frac{L}{g}}.
 \end{equation}
 If one incorrectly measured the length $L$ of the string, then the results would be offset by a constant factor of $\sqrt{L_{good}- L_{bad}}$. \\
 
-\phantomsection
-\addcontentsline{toc}{section}{Error Analysis}
-\section*{Error Analysis} \label{Sec:ErrorAnalysis}
+\section{Error Analysis} \label{Sec:ErrorAnalysis}
 
 \noindent \large \textbf{Standard deviation of a measurement} \normalsize
 
@@ -311,97 +289,9 @@ You will have to recognize which one of the above is useful and representative o
 As mentioned before, a good way to know whether your fit is correct is to compute the coefficient of determination $R^2$. To compare your fit to your data, you should see whether your data points all (or mostly) fall within one standard deviation of the fitted equation, that is if the standard deviation error should be less than 1 $\sigma$ for all data points when compared to $y_{fit}$.
 
 
-\phantomsection
-\addcontentsline{toc}{part}{Lab Manuals}
-\part*{Lab Manuals} \label{Part:Labs}
-
-\chapter{Data Analysis Practice}
-\section{Learning objectives}
-\begin{itemize}
-\item Learn how to use Excel.
-\item Compute certain basic mathematical statistics.
-\item Introduction to data analysis.
-\end{itemize}
-
-\section{Introduction}
-This lab will be an interactive demo lab where teaching Assistants will help you  learn how to use Excel and to apply it to the concepts presented in the \textbf{Data analysis} chapter. We recommend that you read the \textbf{Data Analysis} and familiarize yourself to Excel before attending this session. This lab will be called "Lab 0" and will be scheduled in the Lab information document on MyCourses. 
-
-\section{Session a}
-In this session, you will familiarize yourself with Excel. You will be guided through this exercise by the TAs.
-
-\begin{itemize}
-\item Open the Excel document found at \anhkhoi{location}.
-\item Explore the user interface. Note that data is best presented in columns.
-\item Learn how to resize, split and merge cells.
-\item In a adjacent column, calculate the resistance $R$. 
-\item Calculate the sum of resistances $R$ by using  \verb|=SUM(x)|.
-\item Calculate the average resistance $\bar{R}$ in two ways: by using the integrated function  \verb|=AVERAGE(x)| and by dividing the sum that you calculated previously by the total number of cells.
-\item For each value of resistance $R_i$, calculate the difference
-\begin{equation}
-R_i - \bar{R},
-\end{equation}
-in a separate column by ``dragging" the first cell downwards.
-
-\item Calculated the square of the difference calculated above in another column.
-\item In two other columns, calculate the standard deviation by using eq.~\eqref{Eq:STDev.P} with the values that you calculated previously, and by using the function \verb|=STDEV.P(x)|. 
-\end{itemize}
-
-\noindent Now we will learn how to plot data, and how to obtain a linear regression.
-\begin{itemize}
-\item Select the columns of $I$ and $V$, perform a scatter plot.
-\item Put in manual error bars.
-\item Display a linear trendline with the fit equation and its $R^2$ value. The fit coefficient is your ``fit resistance" $R_{fit}$.
-\end{itemize}
-
-\noindent Now we will compare this fit equation to our data. 
-\begin{itemize}
-\item To start, copy the $I$ column to another area of your spreadsheet.
-\item In the column next to it, write the fit equation such that this will be your ``Fit $V$" column.
-\item Plot $V$ vs $I$, and ``Fit $V$" vs $I$ on the same graph. Add error bars only on the $V$ vs $I$ dataset and compare the two graphs qualitatively.
-\end{itemize}
-
-\noindent Let us now compare resistances.
-\begin{itemize}
-\item On another area of your spreadsheet, write a column with the current values $I$. 
-\item In an adjacent column, rewrite the resistance $R_i$ calculated previously with its corresponding standard deviation.
-\item In another column, write the average resistance $\bar{R}$ for all values of $I$.
-\item In another column, write the fit resistance $R_{fit}$ for all values of $I$.
-\item Plot $R$ vs $I$ for all three datasets: the measurement $R_i$, the mean $\bar{R}$ and the fit $R_{fit}$. Compare them.
-\end{itemize}
-
-\section{Session b}
-In this session, you will analyse a given dataset. Consider a setup where one can measure the electric force between two charges as shown in Fig.~\ref{Fig:lab0-session2-setup}. 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{lab0-session2}
-\caption{Setup for the data of Session 2. Two charges $q_1$ and $q_2$ are separated by a distance $r$, and at an angle $\theta$ with respect to some axis horizontal to $q_1$.}
-\label{Fig:lab0-session2-setup}
-\end{figure}
-
-Given this dataset, you must find how the electric force on $q_1$ is affected by the following parameters:
-\begin{itemize}
-\item Charges $q_1$ and $q_2$.
-\item Distance $r$ between the charges.
-\item The angle $\theta$ with respect to a horizontal axis separating $q_1$ from $q_2$.
-\end{itemize}
-
-You are given a .txt files from which you are to import them into Excel. For all the .txt files, the charges are in Coulomb units, the forces are in Newton, the angle is in radians and the distance is in meters. \anhkhoi{Change .txt files to have the constant variables and the standard deviations.}
-
-We suggest that you start your analysis for fixed $r, \theta$, but varying $q_1$ and $q_2$. Find how the force $F$ depends on $q_1$ and $q_2$. Support your conclusion by performing appropriate fits to your equation and comparing them to the error bars. If you find that you can simplify their dependence by eq.~\eqref{Eq:f=xy} or \eqref{Eq:f=1/x}, perform the appropriate error propagation equation to find the effective error of this composite quantity.
-
-After you have found the appropriate $q_1$ and $q_2$ dependence, find the dependence on $\theta$ by using appropriate data analysis techniques.
-
-Finally, find the appropriate dependence on $r$. Note that you have 3 different trials for this experiment: you must analyse all three and compare your findings to see if your analysis is self-consistent.
-
-After analysing the effect of the all previous variables, state the equation of the electric force $F(q_1,q_2,r,\theta)$ that best matches your findings. 
-
-Given your equation, what happens if the radius $r$ is much larger or smaller than $q1$ and $q_2$? Is this what you expect physically to occur?
-
-Your methodology can only find the dependence on the explicit variables that you analyse, but the physics can be shifted by an overall constant:
-\begin{equation}
-F(q_1, q_2, r, \theta) = k \times  f(q_1,q_2,r,\theta) +c.
-\end{equation}
-What is the significance of $c$? Given all your previous datasets, find the constant factor $k$. If you found the right dependence on your variables, this constant should be the same for all your datasets.
+\part{Lab Manuals} \label{Part:Labs}
+\renewcommand{\chaptername}{Lab}
+\setcounter{chapter}{0}
 
 \chapter{Capacitance}
 \section{Learning objectives}
@@ -1208,16 +1098,13 @@ To make a measurement,
 Through discussions with your lab partners, other teams and the TA, you must perform measurements to establish a (mathematical) relation between possible parameters that could affect the frequency of rotation of the electric motor. Support your claims based on data and figures as usual.
 
 
-\phantomsection
-\addcontentsline{toc}{part}{Appendix}
-\part*{Appendix} \label{Part:Appendix}
+\part{Appendix} \label{Part:Appendix}
 
-\renewcommand\thefigure{\thepart.\arabic{figure}}
-\setcounter{figure}{1}  
+\renewcommand{\chaptername}{Appendix}
+\renewcommand{\thechapter}{\Alph{chapter}}
+\setcounter{chapter}{0}
 
-\phantomsection
-\addcontentsline{toc}{chapter}{Introduction to Excel}
-\chapter*{Introduction to Excel}
+\chapter{Introduction to Excel}
 
 Firstly, every McGill student can obtain a free copy of Microsoft Offices software by clicking \href{http://kb.mcgill.ca/kb/article?ArticleId=5172&source=Article&c=12&cid=2}{here}. Excel spreadsheet boxes can take in strings of letters of numbers as input. If the input is a number, we can easily perform calculations.\\
 
@@ -1287,13 +1174,9 @@ From here, one can do multiple things.
 Finally, you can add data from .txt files. To do so, go into the data tab, and in the ``Get \& Transform Data" section, there will be an option to add .txt and other types of files. Once the popup screen to import data appears, you can click on ``Edit" in the bottom right corner to have more options to manipulate your data. A useful modification is to flip your rows and columns. To do so, after clicking ``Edit", go into the ``Transform" tab in the new window, and select ``Transpose". Go back to the ``Home" tab once you are done editing your file.
 
 
-\phantomsection
-\addcontentsline{toc}{chapter}{Lab Equipment}
-\chapter*{Lab Equipment}
+\chapter{Lab Equipment}
 
-\phantomsection
-\addcontentsline{toc}{section}{Multimeter}
-\section*{Multimeter}
+\section{Multimeter}
 A multimeter allows one to measure various electronic properties. We will be mainly interested in measuring the resistance or resistors, the capacitance of capacitors and the voltage and current of a circuit. To use the multimeter, one must attach two wires into the input and output. One can have alligator clips to attach to conducting wires more easily if necessary.
 
 \anhkhoi{insert pic of multimeter. Box certain useful settings}
@@ -1302,9 +1185,7 @@ To measure the resistance, simply take a resistor, turn the knob of the multimet
 
 To measure the voltage and current of a circuit,
 
-\phantomsection
-\addcontentsline{toc}{section}{Arduino (Capacitance)}
-\section*{Arduino (Capacitance)}
+\section{Arduino}
 The Arduino unit requires the Arduino IDE software to run the desired scripts. Information about the Arduino code for the capacitance lab can be found \href{https://www.arduino.cc/en/Tutorial/CapacitanceMeter}{here}.
 
 The setup is schematically shown in Fig.~\ref{Fig:ArduinoSchem} where the example shows two resistors: one with a resistance of $400 \Omega$, the other is unspecified. We recommend using at least $10^6 \Omega$ for the unspecified resistor: you can choose different values to vary the time constant of the RC circuit. This will change the precision of your setup.
@@ -1331,18 +1212,12 @@ To change the resistance of the resistor, you must also change the value in the 
 \label{Fig:ArduinoResistance}
 \end{figure}
 
-\phantomsection
-\addcontentsline{toc}{section}{Reading Resistors}
-\section*{Reading Resistors}
+\section{Reading Resistors}
 
-\phantomsection
-\addcontentsline{toc}{section}{Circuit Boards}
-\section*{Circuit Boards}
+\section{Bread Boards}
 A circuit board is shown in Fig.~\anhkhoi{insert}. 
 
-\phantomsection
-\addcontentsline{toc}{section}{IOLab}
-\section*{IOLab}
+\section{IOLab}
 Here are additional comments about the functionality of the IOLab
 
 \begin{itemize}
@@ -1351,9 +1226,7 @@ Here are additional comments about the functionality of the IOLab
 \item How to load previous datasets
 \end{itemize}
 
-\phantomsection
-\addcontentsline{toc}{section}{Oscilloscope}
-\section*{Oscilloscope}
+\section{Oscilloscope}
 In lab 3, we will use a cathode ray oscilloscope (CRO). The CRO is a valuable tool often used in many applications. Its most important function is the
 ability to measure voltages that vary in time. The oscilloscope allows us to ``visualize" how this
 voltage changes. To fully characterize a voltage that varies in time using a hand-held voltmeter,
@@ -1381,9 +1254,7 @@ To use the oscilloscope...
 \label{Fig:Appendix-CRO}
 \end{figure}
 
-\phantomsection
-\addcontentsline{toc}{chapter}{More statistics}
-\chapter*{More statistics}
+\chapter{More statistics}
 
 \noindent \large \textbf{Coefficient of determination} \normalsize
 
