@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.1)  25 OCT 2018 11:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.1)  27 OCT 2018 14:54
 entering extended mode
 **./TA-lab-manual.tex
 (TA-lab-manual.tex
@@ -2925,116 +2925,136 @@ File: lab3-sessiona-solenoid2.jpg Graphic file (type jpg)
 Package pdftex.def Info: lab3-sessiona-solenoid2.jpg  used on input line 880.
 (pdftex.def)             Requested size: 211.38832pt x 158.53868pt.
 [41 <./lab3-wire.png>]
-<lab3-sessiona-interface1.png, id=582, 641.39626pt x 337.76187pt>
-File: lab3-sessiona-interface1.png Graphic file (type png)
-<use lab3-sessiona-interface1.png>
-Package pdftex.def Info: lab3-sessiona-interface1.png  used on input line 897.
-(pdftex.def)             Requested size: 375.80544pt x 197.9017pt.
- [42 <./lab3-wire-bfield-force.png> <./lab3-sessiona-solenoid1.jpg> <./lab3-ses
-siona-solenoid2.jpg>]
-<lab3-sessiona-iolab-interface2.png, id=593, 661.97313pt x 388.45125pt>
-File: lab3-sessiona-iolab-interface2.png Graphic file (type png)
-<use lab3-sessiona-iolab-interface2.png>
-Package pdftex.def Info: lab3-sessiona-iolab-interface2.png  used on input line
- 909.
-(pdftex.def)             Requested size: 375.80544pt x 220.52448pt.
+<lab3-power-supply.jpg, id=581, 803.0pt x 602.25pt>
+File: lab3-power-supply.jpg Graphic file (type jpg)
+<use lab3-power-supply.jpg>
+Package pdftex.def Info: lab3-power-supply.jpg  used on input line 890.
+(pdftex.def)             Requested size: 321.1943pt x 240.89572pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[43 <./lab3-sessiona-interface1.png>]
-<lab3-sessiona-iolab-sensor.jpg, id=605, 602.25pt x 562.1pt>
+[42 <./lab3-wire-bfield-force.png> <./lab3-sessiona-solenoid1.jpg> <./lab3-sess
+iona-solenoid2.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 900--901
+
+ []
+
+<lab3-sessiona-interface1.png, id=594, 641.39626pt x 337.76187pt>
+File: lab3-sessiona-interface1.png Graphic file (type png)
+<use lab3-sessiona-interface1.png>
+Package pdftex.def Info: lab3-sessiona-interface1.png  used on input line 910.
+(pdftex.def)             Requested size: 375.80544pt x 197.9017pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<lab3-sessiona-iolab-interface2.png, id=596, 661.97313pt x 388.45125pt>
+File: lab3-sessiona-iolab-interface2.png Graphic file (type png)
+<use lab3-sessiona-iolab-interface2.png>
+Package pdftex.def Info: lab3-sessiona-iolab-interface2.png  used on input line
+ 922.
+(pdftex.def)             Requested size: 375.80544pt x 220.52448pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[43 <./lab3-power-supply.jpg>]
+<lab3-sessiona-iolab-sensor.jpg, id=612, 602.25pt x 562.1pt>
 File: lab3-sessiona-iolab-sensor.jpg Graphic file (type jpg)
 <use lab3-sessiona-iolab-sensor.jpg>
-Package pdftex.def Info: lab3-sessiona-iolab-sensor.jpg  used on input line 927
+Package pdftex.def Info: lab3-sessiona-iolab-sensor.jpg  used on input line 940
 .
 (pdftex.def)             Requested size: 180.67639pt x 168.6313pt.
- [44 <./lab3-sessiona-iolab-interface2.png> <./lab3-sessiona-iolab-sensor.jpg>]
 
 
-LaTeX Warning: Reference `YY' on page 45 undefined on input line 963.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[45]
-<lab3-sessiona-ramp.jpg, id=623, 803.0pt x 482.80376pt>
+[44 <./lab3-sessiona-interface1.png>] [45 <./lab3-sessiona-iolab-interface2.png
+>]
+
+LaTeX Warning: Reference `YY' on page 46 undefined on input line 976.
+
+<lab3-sessiona-ramp.jpg, id=630, 803.0pt x 482.80376pt>
 File: lab3-sessiona-ramp.jpg Graphic file (type jpg)
 <use lab3-sessiona-ramp.jpg>
-Package pdftex.def Info: lab3-sessiona-ramp.jpg  used on input line 978.
+Package pdftex.def Info: lab3-sessiona-ramp.jpg  used on input line 991.
 (pdftex.def)             Requested size: 375.80544pt x 225.96008pt.
- [46 <./lab3-sessiona-ramp.jpg>] [47]
-Underfull \hbox (badness 10000) in paragraph at lines 1013--1014
+[46 <./lab3-sessiona-iolab-sensor.jpg>] [47 <./lab3-sessiona-ramp.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1027
 
  []
 
 [48]
-<lab3-sessionb-diagram.jpg, id=643, 173.9298pt x 225.0006pt>
+<lab3-sessionb-diagram.jpg, id=650, 173.9298pt x 225.0006pt>
 File: lab3-sessionb-diagram.jpg Graphic file (type jpg)
 <use lab3-sessionb-diagram.jpg>
-Package pdftex.def Info: lab3-sessionb-diagram.jpg  used on input line 1036.
+Package pdftex.def Info: lab3-sessionb-diagram.jpg  used on input line 1049.
 (pdftex.def)             Requested size: 191.32336pt x 247.5014pt.
-<lab3-sessionb-setup.jpg, id=644, 310.5201pt x 251.7405pt>
-File: lab3-sessionb-setup.jpg Graphic file (type jpg)
-<use lab3-sessionb-setup.jpg>
-Package pdftex.def Info: lab3-sessionb-setup.jpg  used on input line 1043.
-(pdftex.def)             Requested size: 279.4655pt x 226.56433pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<lab3-sessionb-setup.jpg, id=651, 310.5201pt x 251.7405pt>
+File: lab3-sessionb-setup.jpg Graphic file (type jpg)
+<use lab3-sessionb-setup.jpg>
+Package pdftex.def Info: lab3-sessionb-setup.jpg  used on input line 1056.
+(pdftex.def)             Requested size: 279.4655pt x 226.56433pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1057--1059
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 1070--1072
 
  []
 
-<lab3-sessionb-calibration-bfield.jpg, id=646, 439.6425pt x 295.5843pt>
+<lab3-sessionb-calibration-bfield.jpg, id=660, 439.6425pt x 295.5843pt>
 File: lab3-sessionb-calibration-bfield.jpg Graphic file (type jpg)
 <use lab3-sessionb-calibration-bfield.jpg>
 Package pdftex.def Info: lab3-sessionb-calibration-bfield.jpg  used on input li
-ne 1062.
+ne 1075.
 (pdftex.def)             Requested size: 351.71446pt x 236.46776pt.
-[49 <./lab3-sessionb-diagram.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[50 <./lab3-sessionb-setup.jpg>] [51 <./lab3-sessionb-calibration-bfield.jpg>]
-[52] [53
+[50 <./lab3-sessionb-diagram.jpg>] [51 <./lab3-sessionb-setup.jpg>] [52 <./lab3
+-sessionb-calibration-bfield.jpg>] [53
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{chapter.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1107 \chapter{Introduction to Excel}
+l.1120 \chapter{Introduction to Excel}
                                       
 Appendix A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1109--1110
+Underfull \hbox (badness 10000) in paragraph at lines 1122--1123
 
  []
 
-<Excel-tut-boxes.png, id=677, 273.4215pt x 174.05025pt>
+<Excel-tut-boxes.png, id=685, 273.4215pt x 174.05025pt>
 File: Excel-tut-boxes.png Graphic file (type png)
 <use Excel-tut-boxes.png>
-Package pdftex.def Info: Excel-tut-boxes.png  used on input line 1119.
+Package pdftex.def Info: Excel-tut-boxes.png  used on input line 1132.
 (pdftex.def)             Requested size: 187.89914pt x 119.61409pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Excel-tut-select-fixed.png, id=680, 505.89pt x 178.86826pt>
+<Excel-tut-select-fixed.png, id=688, 505.89pt x 178.86826pt>
 File: Excel-tut-select-fixed.png Graphic file (type png)
 <use Excel-tut-select-fixed.png>
-Package pdftex.def Info: Excel-tut-select-fixed.png  used on input line 1127.
+Package pdftex.def Info: Excel-tut-select-fixed.png  used on input line 1140.
 (pdftex.def)             Requested size: 375.80544pt x 132.87627pt.
 [54
 
 ] [55 <./Excel-tut-boxes.png> <./Excel-tut-select-fixed.png>]
-<Excel-fig-insert.png, id=694, 608.2725pt x 142.131pt>
+<Excel-fig-insert.png, id=702, 608.2725pt x 142.131pt>
 File: Excel-fig-insert.png Graphic file (type png)
 <use Excel-fig-insert.png>
-Package pdftex.def Info: Excel-fig-insert.png  used on input line 1153.
+Package pdftex.def Info: Excel-fig-insert.png  used on input line 1166.
 (pdftex.def)             Requested size: 375.80544pt x 87.8145pt.
-<Excel-fig.png, id=696, 754.017pt x 573.94424pt>
+<Excel-fig.png, id=704, 754.017pt x 573.94424pt>
 File: Excel-fig.png Graphic file (type png)
 <use Excel-fig.png>
-Package pdftex.def Info: Excel-fig.png  used on input line 1161.
+Package pdftex.def Info: Excel-fig.png  used on input line 1174.
 (pdftex.def)             Requested size: 375.80544pt x 286.06061pt.
 
 
@@ -3045,81 +3065,94 @@ ination with the same identifier (name{chapter.2}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.1177 \chapter{Lab Equipment}
+l.1190 \chapter{Lab Equipment}
                               
 Appendix B.
 pdfTeX warning (ext4): destination with the same identifier (name{section.2.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1179 \section{Multimeter}
+l.1192 \section{Multimeter}
                            pdfTeX warning (ext4): destination with the same ide
 ntifier (name{section.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1188 \section{Arduino}
+l.1201 \section{Arduino}
                         
-<CapacitanceMeterSchem.png, id=710, 396.88275pt x 198.7425pt>
+<CapacitanceMeterSchem.png, id=718, 396.88275pt x 198.7425pt>
 File: CapacitanceMeterSchem.png Graphic file (type png)
 <use CapacitanceMeterSchem.png>
-Package pdftex.def Info: CapacitanceMeterSchem.png  used on input line 1195.
+Package pdftex.def Info: CapacitanceMeterSchem.png  used on input line 1208.
 (pdftex.def)             Requested size: 337.35193pt x 168.93192pt.
  [58
 
 ]
-<lab1-Arduino-circuit-board.jpg, id=718, 3774.1pt x 2818.53pt>
+<lab1-Arduino-circuit-board.jpg, id=726, 3774.1pt x 2818.53pt>
 File: lab1-Arduino-circuit-board.jpg Graphic file (type jpg)
 <use lab1-Arduino-circuit-board.jpg>
-Package pdftex.def Info: lab1-Arduino-circuit-board.jpg  used on input line 120
-2.
+Package pdftex.def Info: lab1-Arduino-circuit-board.jpg  used on input line 121
+5.
 (pdftex.def)             Requested size: 375.80544pt x 280.6223pt.
-<lab1-Arduino-resistance.png, id=720, 619.113pt x 220.4235pt>
+<lab1-Arduino-resistance.png, id=728, 619.113pt x 220.4235pt>
 File: lab1-Arduino-resistance.png Graphic file (type png)
 <use lab1-Arduino-resistance.png>
-Package pdftex.def Info: lab1-Arduino-resistance.png  used on input line 1210.
+Package pdftex.def Info: lab1-Arduino-resistance.png  used on input line 1223.
 (pdftex.def)             Requested size: 422.77664pt x 150.52502pt.
  [59 <./CapacitanceMeterSchem.png> <./lab1-Arduino-circuit-board.jpg>]pdfTeX wa
 rning (ext4): destination with the same identifier (name{section.2.3}) has been
  already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1215 \section{Reading Resistors}
+l.1228 \section{Reading Resistors}
                                   pdfTeX warning (ext4): destination with the s
 ame identifier (name{section.2.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1217 \section{Bread Boards}
-                              [60 <./lab1-Arduino-resistance.png>]
-<appendix-cro-data.jpg, id=734, 261.1356pt x 160.9212pt>
-File: appendix-cro-data.jpg Graphic file (type jpg)
-<use appendix-cro-data.jpg>
-Package pdftex.def Info: appendix-cro-data.jpg  used on input line 1243.
-(pdftex.def)             Requested size: 313.36113pt x 193.10448pt.
-<appendix-cro-pic.jpg, id=735, 443.0151pt x 278.7213pt>
-File: appendix-cro-pic.jpg Graphic file (type jpg)
-<use appendix-cro-pic.jpg>
-Package pdftex.def Info: appendix-cro-pic.jpg  used on input line 1252.
-(pdftex.def)             Requested size: 443.01402pt x 278.72061pt.
+l.1231 \section{Bread Boards}
+                             
+<lab2-bread-board.jpg, id=736, 3468.96pt x 4625.28pt>
+File: lab2-bread-board.jpg Graphic file (type jpg)
+<use lab2-bread-board.jpg>
+Package pdftex.def Info: lab2-bread-board.jpg  used on input line 1235.
+(pdftex.def)             Requested size: 208.12862pt x 277.50482pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[61 <./appendix-cro-data.jpg>] [62 <./appendix-cro-pic.jpg>]pdfTeX warning (ext
-4): destination with the same identifier (name{chapter.3}) has been already use
-d, duplicate ignored
+[60 <./lab1-Arduino-resistance.png>]
+<appendix-cro-data.jpg, id=745, 261.1356pt x 160.9212pt>
+File: appendix-cro-data.jpg Graphic file (type jpg)
+<use appendix-cro-data.jpg>
+Package pdftex.def Info: appendix-cro-data.jpg  used on input line 1272.
+(pdftex.def)             Requested size: 313.36113pt x 193.10448pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<appendix-cro-pic.jpg, id=746, 443.0151pt x 278.7213pt>
+File: appendix-cro-pic.jpg Graphic file (type jpg)
+<use appendix-cro-pic.jpg>
+Package pdftex.def Info: appendix-cro-pic.jpg  used on input line 1281.
+(pdftex.def)             Requested size: 443.01402pt x 278.72061pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[61 <./lab2-bread-board.jpg>] [62 <./appendix-cro-data.jpg> <./appendix-cro-pic
+.jpg>]pdfTeX warning (ext4): destination with the same identifier (name{chapter
+.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1257 \chapter{More statistics}
+l.1286 \chapter{More statistics}
                                 
 Appendix C.
 [63
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1287.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1287.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1316.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1316.
  (TA-lab-manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1287.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1287.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1316.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1316.
 
 Package rerunfilecheck Info: File `TA-lab-manual.out' has not changed.
 (rerunfilecheck)             Checksum: AC6FA1956053D26D6B39879044052DA9;3179.
@@ -3127,13 +3160,13 @@ Package rerunfilecheck Info: File `TA-lab-manual.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1287.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1316.
  ) 
 Here is how much of TeX's memory you used:
- 37150 strings out of 492973
- 689861 string characters out of 3126693
- 809724 words of memory out of 3000000
- 40067 multiletter control sequences out of 15000+200000
+ 37169 strings out of 492973
+ 690218 string characters out of 3126693
+ 808844 words of memory out of 3000000
+ 40077 multiletter control sequences out of 15000+200000
  551053 words of font info for 136 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,77p,1652b,615s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3155,9 +3188,9 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users
 pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmtt12.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/cm-super/sfrm1200.pfb>
-Output written on TA-lab-manual.pdf (64 pages, 8885503 bytes).
+Output written on TA-lab-manual.pdf (64 pages, 13768517 bytes).
 PDF statistics:
- 851 PDF objects out of 1000 (max. 8388607)
- 229 named destinations out of 1000 (max. 500000)
- 16977 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 863 PDF objects out of 1000 (max. 8388607)
+ 236 named destinations out of 1000 (max. 500000)
+ 16987 words of extra memory for PDF output out of 17280 (max. 10000000)
 
