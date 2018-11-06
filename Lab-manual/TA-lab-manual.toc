@@ -27,25 +27,25 @@
 \contentsline {subsection}{\numberline {2.2.4}Equipment}{31}{subsection.2.2.4}
 \contentsline {section}{\numberline {2.3}Session a}{31}{section.2.3}
 \contentsline {section}{\numberline {2.4}Session b}{37}{section.2.4}
-\contentsline {chapter}{\numberline {3}Magnetic Field of Solenoids and Coils}{40}{chapter.3}
-\contentsline {section}{\numberline {3.1}Learning objectives}{40}{section.3.1}
-\contentsline {section}{\numberline {3.2}Introduction}{40}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Pre-lab activity}{40}{subsection.3.2.1}
+\contentsline {chapter}{\numberline {3}Magnetic Field of Solenoids and Coils}{41}{chapter.3}
+\contentsline {section}{\numberline {3.1}Learning objectives}{41}{section.3.1}
+\contentsline {section}{\numberline {3.2}Introduction}{41}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Pre-lab activity}{41}{subsection.3.2.1}
 \contentsline {section}{\numberline {3.3}Session a}{42}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Solenoid setup}{42}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Magnetic Field Lines}{44}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Current dependence}{46}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.2}Magnetic Field Lines}{45}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Current dependence}{47}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Distance dependence}{47}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Session b}{49}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Electric motor setup}{49}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Protocol}{51}{subsection.3.4.2}
-\contentsline {part}{III\hspace {1em}Appendix}{53}{part.3}
-\contentsline {chapter}{\numberline {A}Introduction to Excel}{54}{chapter.1}
-\contentsline {chapter}{\numberline {B}Lab Equipment}{58}{chapter.2}
-\contentsline {section}{\numberline {B.1}Multimeter}{58}{section.2.1}
-\contentsline {section}{\numberline {B.2}Arduino}{58}{section.2.2}
-\contentsline {section}{\numberline {B.3}Reading Resistors}{60}{section.2.3}
-\contentsline {section}{\numberline {B.4}Bread Boards}{61}{section.2.4}
-\contentsline {section}{\numberline {B.5}IOLab}{61}{section.2.5}
-\contentsline {section}{\numberline {B.6}Oscilloscope}{62}{section.2.6}
-\contentsline {chapter}{\numberline {C}More statistics}{64}{chapter.3}
+\contentsline {section}{\numberline {3.4}Session b}{50}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Electric motor setup}{50}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Protocol}{52}{subsection.3.4.2}
+\contentsline {part}{III\hspace {1em}Appendix}{54}{part.3}
+\contentsline {chapter}{\numberline {A}Introduction to Excel}{55}{chapter.1}
+\contentsline {chapter}{\numberline {B}Lab Equipment}{59}{chapter.2}
+\contentsline {section}{\numberline {B.1}Multimeter}{59}{section.2.1}
+\contentsline {section}{\numberline {B.2}Arduino}{59}{section.2.2}
+\contentsline {section}{\numberline {B.3}Reading Resistors}{61}{section.2.3}
+\contentsline {section}{\numberline {B.4}Bread Boards}{62}{section.2.4}
+\contentsline {section}{\numberline {B.5}IOLab}{62}{section.2.5}
+\contentsline {section}{\numberline {B.6}Oscilloscope}{63}{section.2.6}
+\contentsline {chapter}{\numberline {C}More statistics}{65}{chapter.3}

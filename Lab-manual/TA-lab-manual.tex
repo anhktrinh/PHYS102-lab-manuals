@@ -28,7 +28,7 @@
 \usepackage{array,booktabs,multicol,multirow,tabularx} 
 
 \def\cesar#1{{\color{blue}[#1]}}
-\def\anhkhoi#1{{\color{olive}[#1]}}
+\def\anhkhoi#1{{\color{purple}[#1]}}
 \def\nik#1{{\color{red} [#1]}}
 
 \tcbset{colback=blue!5!white,colframe=blue!75!black,center,halign=justify,width=0.9\textwidth,fonttitle=\bfseries}
@@ -93,8 +93,10 @@ We encourage you to write your measurements and rough calculations as you do you
 \noindent In this section, you will state your conclusion, and offer possible follow-ups to this lab. This can include other physical properties to study, or to offer a better methodology to study this phenomenon. You must motivate your proposed follow-up project by clearly stating what you expect to observe (a hypothesis) and support your claim based on your current experiment. The proposed future projects must be realistically performed by your peers, and must not assume an unrealistic sum of budgetary support or higher level of experimental expertise such that you or your peers are not acquainted to. For your lab report submitted at the end of the first session, be mindful that you must execute your proposed improvements during the second session.
 
 \chapter{Data Analysis}
+\label{Ch:Data-analysis}
 
 \section{General Guidelines}
+\label{Sec:General-guidelines}
 Here is a list of general guidelines for your log book:
 \begin{itemize}
 \item Measurements must always include \textbf{units}.
@@ -379,7 +381,7 @@ Now consider a pair of parallel plates separated by a distance $d$ connected to 
 One defines the \textit{capacitance} of a capacitor as the constant of proportionality between the total number of charges $Q$ and the electric potential $V$ stored between the plates, i.e. 
 \begin{equation}
 Q = C V.
-\label{capacitor_formula}
+\label{Eq:lab1-Q=CV}
 \end{equation}
 Capacitance is measured in Farads F. A useful constant in such setup is the \textit{vacuum permittivity} $\epsilon = 8.85 \times 10^{-12}$F/m. In this lab, you will be asked to verify \textit{what} affects the capacitance $C$ of a parallel plate capacitor system.
 
@@ -492,7 +494,8 @@ Paper sheets & Extra wires \\
 \item You can stop the auto-scroll by clicking the bottom-left box to better see your results (see Fig.~\ref{Fig:Arduino-Monitor}).
 \end{enumerate}
 
-Notice that in Fig.~\ref{Fig:Arduino-Monitor}, the data fluctuates. You will have to determine how many capacitance measurements should you average over to acquire a good representation of that capacitance measurement. We refer you to the ``\textbf{Error Analysis}" section of the lab manual. Using this setup, proceed to conduct you experiments and collect data that will let you evaluate $C$ in in eq.~\ref{capacitor_formula}. 
+Notice that in Fig.~\ref{Fig:Arduino-Monitor}, the data fluctuates. You will have to determine how many capacitance measurements should you average over to acquire a good representation of that capacitance measurement. 
+We refer you to the Part I, section \ref{Sec:ErrorAnalysis} of the lab manual. Using this setup, proceed to conduct you experiments and collect data that will let you evaluate $C$ in eq.~\ref{Eq:lab1-Q=CV}. 
 
 You will have the opportunity to test whatever hypothesis you may have, however \textbf{every group must take a capacitance measurement for at least \underline{three} different pairs of plate sizes while inserting a single sheet of plastic between them. The plates must be perfectly aligned on top of each other}. After doing so, you may explore in more details the consequences of these measurements, or you may study other possible parameters that could affect the capacitance.
 
@@ -523,7 +526,9 @@ During this lab, you will have to use data analysis techniques to understand you
 
 To study a system, one typically isolates as many variables as possible to see each of its individual affect on the whole system. If we are able to isolate such a variable, mathematically, that is the equivalent of finding some $f(x)$ that depends just on one variable $x$. In this lab, you will find as many variables that can affect the capacitance as possible by isolating each parameter one at a time.
 
-For each dataset, corresponding to each parameter you measure, you must abide by the error analysis rules outlined in the first part of the lab manual. The data analysis can be done much more rapidly with spreadsheets, therefore we highly recommend that you read that section (\textbf{Introduction to Excel}) which can be found in the appendix of the lab manual. When analysing your data, you must follow the norms established in the \textbf{Data Analysis} chapter to understand the significance of your data. 
+For each dataset, corresponding to each parameter you measure, you must abide by the error analysis rules outlined in the first part of the lab manual. 
+The data analysis can be done much more rapidly with spreadsheets, therefore we highly recommend that you read appendix \ref{App:Excel}. 
+When analysing your data, you must follow the norms established in Part I, chapter \ref{Ch:Data-analysis} of the manual to understand the significance of your data. 
 
 Once you have some result from your data, you must offer a physical explanation that supports your results. Explain why physically each parameter affects the capacitance of the system. Support your claim by proposing a possible experiment to test your claims, and offer possible outcomes that one could observe from your experiment. Recall that bouncing your ideas off peers is an invaluable way to actually test the rational of your hypothesis.
 
@@ -538,12 +543,18 @@ Once you have some result from your data, you must offer a physical explanation 
 \end{itemize}
 
 \section{Introduction}
-In this lab you will characterize an RC circuit. An RC circuit is a circuit that contains a resistor (R) and a capacitor (C). The analysis tool we will use is called a PASCO 850 Universal Interface, the use of which will be explained below. Specifically, we will also use a voltmeter and a
+In this lab you will characterize an RC circuit. An RC circuit is a circuit that contains a resistor (R) and a capacitor (C). 
+The analysis tool we will use is called a PASCO 850 Universal Interface, the use of which will be explained below. 
+Specifically, we will also use a voltmeter and a 
 signal generator tool to examine the charging and discharging of a capacitor. 
 
-In the first session, you will be asked to \textbf{measure the time constant} of a given RC circuit. In the process, you will learn how to measure time constants and understand subtleties in the data acquisition apparatus. This session will be a more traditional lab where you will follow well outlined instructions. 
+In the first session, you will be asked to \textbf{measure the time constant} $\tau$ of a given RC circuit. 
+In the process, you will learn how to measure time constants and understand subtleties in the data acquisition apparatus. 
+This session will be a more traditional lab where you will follow well outlined instructions. 
 
-In the second session, you will be asked to \textbf{build an RC circuit with a specific time constant} and to show, based on well supported data, that your circuit has the appropriate time constant. When you arrive at the second session, you will receive a sheet that asks you to build an RC circuit with a specific number of parallel branches. You are to choose an appropriate number of resistors and capacitors to obtain a specific time constant.
+In the second session, you will be asked to \textbf{build an RC circuit with a specific time constant} and to show, based on well supported data, that your circuit has the appropriate time constant. 
+When you arrive at the second session, you will receive a sheet that asks you to build an RC circuit with a specific number of parallel branches. 
+You are to choose an appropriate number of resistors and capacitors to obtain a specific time constant.
 
 \subsection{Pre-lab activity}
 \begin{enumerate}
@@ -557,10 +568,10 @@ Curve fitting allows one to match data to a quantitative theoretical model. A go
 \begin{equation}
 f(x) = a e^{b x}+c
 \end{equation}
-\item What is the difference between these two plots: \cesar{We should add labels and a legend to the plot}
+\item What is the difference between these two plots:
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\linewidth]{lab2-prelab}
+\includegraphics[width=0.8\linewidth]{lab2-prelab}
 \caption{Exponential functions.}
 \label{Fig:lab2-prelab}
 \end{figure}
@@ -573,7 +584,11 @@ Q = C \Delta V.
 \end{equation}
 In this equation, the charge $Q$ is expressed in Coulomb (C), the voltage $\Delta V$, in volts (V) and the capacitance $C$ in farads (F).
 
-In this lab you will study both the \textit{charging} and \textit{discharging} process of an RC circuit. During the charging process, charges accumulate on each sides of the parallel plate capacitor. During the discharging process, the capacitor releases all its charges into the circuit. Capacitors charge and discharge exponentially in time. During the \textit{discharge} of a capacitor, the instantaneous voltage $\Delta V_C$ between the ends of the capacitor also drops and is given by
+In this lab you will study both the \textit{charging} and \textit{discharging} process of an RC circuit. 
+During the charging process, charges accumulate on each sides of the parallel plate capacitor.
+During the discharging process, the capacitor releases all its charges into the circuit. 
+Capacitors charge and discharge exponentially in time. 
+During the \textit{discharge} of a capacitor, the instantaneous voltage $\Delta V_C$ between the ends of the capacitor also drops and is given by
 \begin{equation}
 \Delta V_C = \Delta V_{max} e^{-t/\tau}
 \label{Eq:V-discharge}
@@ -583,10 +598,12 @@ where $\Delta V_{max}$ is the maximum voltage across the capacitor, i.e. the vol
 \tau = R_{eq} C_{eq}
 \label{Eq:time-constant}
 \end{equation}
-where $R_{eq}$ and $C_{eq}$ are respectively the equivalent resistance and capacitance of the circuit. Although the theoretical discharge time is infinite, in practice we consider that the discharge is over when the voltage at the bounds of the capacitor is at $1\%$ of its maximal value. 
+where $R_{eq}$ and $C_{eq}$ are respectively the equivalent resistance and capacitance of the circuit. 
+Although the theoretical discharge time is infinite, in practice we consider that the discharge is over when the voltage at the bounds of the capacitor is at $1\%$ of its maximal value. 
 
 \subsection{Equivalent resistance and capacitance}
-To find the equivalent resistance and capacitance of a circuit, one must apply the correct equations to sum the contributions of all the components.. The equivalent quantity differs depending on whether the resistors and capacitors are combined in series or in parallel. For resistors, the equivalent resistance is given as
+To find the equivalent resistance and capacitance of a circuit, one must apply the correct equations to sum the contributions of all the components. 
+The equivalent quantity differs depending on whether the resistors and capacitors are combined in series or in parallel. For resistors, the equivalent resistance is given as
 \begin{equation}
 R_{series} = R_1 + R_2 + R_3 + ... R_n = \displaystyle \sum_{i=1}^n R_i
 \end{equation}
@@ -603,7 +620,9 @@ C_{parallel} = C_1 + C_2 + C_3 + ... C_n = \displaystyle \sum_{i=1}^n C_i
 \end{equation}
 
 \subsection{Equipment} \label{Sect:lab2-equipment}
-In this lab you will use the PASCO 850 Universal Interface to measure and plot voltages as a function of time in an RC circuit. The PASCO devices comes with two sets of wires (see Fig.~\ref{Fig:lab2-PASCO}). The first is the input/output voltage source. The other is a set of probe which measures the voltage across the capacitor of the circuit. 
+In this lab you will use the PASCO 850 Universal Interface to measure and plot voltages as a function of time in an RC circuit. 
+The PASCO devices comes with two sets of wires (see Fig.~\ref{Fig:lab2-PASCO}). The first is the input/output voltage source. 
+The other is a set of probe which measures the voltage across the capacitor of the circuit. 
 
 \begin{figure}[h]
 \centering
@@ -612,7 +631,8 @@ In this lab you will use the PASCO 850 Universal Interface to measure and plot v
 \label{Fig:lab2-PASCO}
 \end{figure}
 
-Given the nature on these measurements, there is an inherent fluctuation to the data that is difficult to characterize. During the first session, you are not required to produce quantitatively well supported data. But for the second session, you are to demonstrate that you've produced an RC circuit with the correct time constant. 
+Given the nature on these measurements, there is an inherent fluctuation to the data that is difficult to characterize. 
+During the first session, you are not required to produce quantitatively well supported data. But for the second session, you are to demonstrate that you've produced an RC circuit with the correct time constant. 
 %Therefore the following standard deviation rules for PASCO measurements have been adjusted (and tested) to time constants of this second session. This is to compensate for the fluctuation of the voltage measurements.
 
 %For time difference measurements, the standard deviation will be $\sigma_t = 10^{-4} s$. To convert the error from the Curve fitting parameter $B$ to the time constant $\tau$, based on eq.~\eqref{Eq:1/x error}, one must take
@@ -624,10 +644,16 @@ Given the nature on these measurements, there is an inherent fluctuation to the 
 
 \section{Session a}
 \noindent \large \textbf{Equipment} \normalsize \\
-During the first session, you will receive an RC circuit fastened onto a wooded board. Before proceeding with measurements related to charging and discharging capacitors, conduct the following steps:
+During the first session, you will receive an RC circuit fastened onto a wooded board. 
+Before proceeding with measurements related to charging and discharging capacitors, conduct the following steps:
 \begin{enumerate}
-\item Turn the wooden board over to reveal the circuit Fig.~\ref{Fig:lab2-session1-circuit1}. There are actually two circuits here, one consisting of a $100$k$\Omega$ rheostat (variable resistor) and the $100\mu$F capacitor, the other consisting of a $470\Omega$ resistor and a $0.1\mu$F capacitor. We will not use the $0.1 \mu$F capacitor, or the rheostat.
-\item Connect the Output 1 of the PASCO 850 Universal Interface to the wooden board's terminals as well as the Analog Input A in order to complete the circuit as shown on Fig.~\ref{Fig:lab2-session1-circuit1}. The $100\mu$F capacitor can now charge through the $470\Omega$ resistor (when in the ``charge" state) and discharge through the $150$k$\Omega$ resistor (when in the ``discharge" state). The charging voltage is read on the computer. The Input A measures the voltage through the 100$\mu$F capacitor. The Output 1 is the one with the red and black connectors and the analog inputs are the higher half of the interface and on the right.
+\item Turn the wooden board over to reveal the circuit Fig.~\ref{Fig:lab2-session1-circuit1}. 
+There are actually two circuits here, one consisting of a $100$k$\Omega$ rheostat (variable resistor) and the $100\mu$F capacitor, the other consisting of a $470\Omega$ resistor and a $0.1\mu$F capacitor. 
+We will not use the $0.1 \mu$F capacitor, or the rheostat.
+\item Connect the Output 1 of the PASCO 850 Universal Interface to the wooden board's terminals as well as the Analog Input A in order to complete the circuit as shown on Fig.~\ref{Fig:lab2-session1-circuit1}. 
+The $100\mu$F capacitor can now charge through the $470\Omega$ resistor (when in the ``charge" state) and discharge through the $150$k$\Omega$ resistor (when in the ``discharge" state). 
+The charging voltage is read on the computer. The Input A measures the voltage through the 100$\mu$F capacitor. 
+The Output 1 is the one with the red and black connectors and the analog inputs are the higher half of the interface and on the right.
 \end{enumerate}
 
 \begin{figure}[h]
@@ -638,11 +664,15 @@ During the first session, you will receive an RC circuit fastened onto a wooded 
 \end{figure}
 
 \begin{tcolorbox}[title=Session \#1]
-In this session you will supervise students as they perform the protocol below. You may gather students in the beginning to give a brief introduction and summary of the lab. By the end, they should be comfortable measuring charging/discharging time constants. When they use the square wave input, make sure that they understand how to vary the parameters to obtain useful data, i.e. changing the frequency of the function generator and the frequency of data acquisition.
+In this session you will supervise students as they perform the protocol below. You may gather students in the beginning to give a brief introduction and summary of the lab. 
+By the end, they should be comfortable measuring charging/discharging time constants. 
+When they use the square wave input, make sure that they understand how to vary the parameters to obtain useful data, i.e. changing the frequency of the function generator and the frequency of data acquisition.
 \end{tcolorbox}
 
 \noindent \large \textbf{Procedure} \normalsize \\
-You will execute the following steps in order to understand how to use the PASCO interface to characterize an RC circuit. For this session, you are expected to write down your observations in your log book and to answer the questions that appear in the following instructions. You should write down all that technical notes about the apparatus and how an RC circuit works in order for you to fast-track your manipulations for the next session.
+You will execute the following steps in order to understand how to use the PASCO interface to characterize an RC circuit. 
+For this session, you are expected to write down your observations in your log book and to answer the questions that appear in the following instructions. 
+You should write down all that technical notes about the apparatus and how an RC circuit works in order for you to fast-track your manipulations for the next session.
 \begin{enumerate}
 \item Connect the circuit as shown in Fig.~\ref{Fig:lab2-session1-circuit1}.
 \item \anhkhoi{Where to get Pasco file}
@@ -684,42 +714,63 @@ You will execute the following steps in order to understand how to use the PASCO
 %\label{Fig:lab2-session1-circuit2}
 %\end{figure}
 
-\item In the software, open the ``Signal Generator" tool, which is located on the left hand side panel and make sure that the signal is set to "Positive Square Wave" with an amplitude of 6V and frequency of 0.5 Hz. This is equivalent turning on and off a DC voltage 2 times per second. Change the data acquisition frequency found at the bottom of the interface to $1$kHz. See Fig.~\ref{Fig:lab2-interface-square-wave}.
+\item In the software, open the ``Signal Generator" tool, which is located on the left hand side panel and make sure that the signal is set to "Positive Square Wave" with an amplitude of 6V and frequency of 0.5 Hz. 
+This is equivalent turning on and off a DC voltage 2 times per second. Change the data acquisition frequency found at the bottom of the interface to $1$kHz. See Fig.~\ref{Fig:lab2-interface-square-wave}.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{lab2-interface-square-wave}
-\caption{Settings for a positive square wave input. You must first select the ``Signal Generator" setting in the yellow box. The red box allows to change the waveform. Change the frequency and amplitude according to the orange box. Change the data acquisition frequency to the values in the green box. Once you are ready to record your data, select the record button (blue box), and turn on the voltage source (pink box)}
+\caption{Settings for a positive square wave input. You must first select the ``Signal Generator" setting in the yellow box. 
+The red box allows to change the waveform. Change the frequency and amplitude according to the orange box. 
+Change the data acquisition frequency to the values in the green box. Once you are ready to record your data, select the record button (blue box), and turn on the voltage source (pink box)}
 \label{Fig:lab2-interface-square-wave}
 \end{figure}
 
 \item With this input from the "Signal Generator" you won't use the "charge" and "discharge" switch from the wooded board. Instead you will simply turn On and Off (pink box) the power supply under the 850 Output 1 panel before and after recording measurements. So leave the switch on ``charge" for the rest of the experiment.
 %\item Since your time constant is smaller than what you observed from discharging through the $150$k$\Omega$ resistor, you will not need to record data for long.
+
 \item After turning on the signal generator, press the record button twice to record and stop the recording after observing a few charges/discharges.
+
 \item Zoom in on a region with both charging and discharging behaviours by rescaling the axes, and figure out which section corresponds to charging/discharging.
-\item For the charging part, measure the time difference between the moment the voltage starts increasing to the moment where the voltage is at a value $1-1/e$ of the maximum voltage $V_0$. You should understand why you are measuring this time difference.
-\item For the discharging part, you will use the Curve fitting tool. The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of eq.~\eqref{Eq:V-discharge} will be fit to the whole data set. To fit it on the right segment on the data set, use the highlighting tool and select/box the values that are most relevant. Verify that the time constant corresponds to the parameter $1/B$ in the curve fitting data window.
+
+\item For the charging part, measure the time difference between the moment the voltage starts increasing to the moment where the voltage is at a value $1-1/e$ of the maximum voltage $V_0$. 
+You should understand why you are measuring this time difference.
+
+\item For the discharging part, you will use the Curve fitting tool. The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of eq.~\eqref{Eq:V-discharge} will be fit to the whole data set. 
+To fit it on the right segment on the data set, use the highlighting tool and select/box the values that are most relevant. 
+Verify that the time constant corresponds to the parameter $1/B$ in the curve fitting data window.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9 \linewidth]{lab2-interface-graph-tools}
-\caption{Graphing toolbar. The toolbar appears when moving the mouse to the top of the graph. The red boxed icon is the Curve fitting tool. Select the ``Natural Exponential" function. The highlighting tool is boxed in green. This allows to select a smaller subset of data to apply the curve fitting.}
+\caption{Graphing toolbar. The toolbar appears when moving the mouse to the top of the graph. The red boxed icon is the Curve fitting tool. Select the ``Natural Exponential" function. 
+The highlighting tool is boxed in green. This allows to select a smaller subset of data to apply the curve fitting.}
 \label{Fig:lab2-interface-graph}
 \end{figure}
 
 Use this to fit an exponential curve to the discharging region. You will obtain the discharge time constant.
-\item Compare the time constants obtained from both the charging and discharging regions and by keeping track of the standard deviations as mentioned in section~\ref{Sect:lab2-equipment}. Calculate the theoretical time constant based on the known values of resistance and capacitance (see step 14). Recall that the standard deviation of the product of two variables is given by eq.~\eqref{Eq:product error}. Can you explain difference in standard deviation, and why some are smaller/larger than the others? You can repeat steps 6-10 for different segments of charging/discharging in your data if you want to verify the consistency of your measurements.
-\item Answer the following questions in the results section of your log book. Should all the time constants be the same or different? Why and why not? What would happen if we had used the rheostat instead of the $470\Omega$ resistor in Fig.~\ref{Fig:lab2-session1-circuit1} and used a DC voltage source (with the On/Off switch on the board) instead of a wavefunction source: would we have the same time constant for both charging and discharging? What would happen to the time constant if we increased the resistance by using the rheostat? If you have time, you should test your hypotheses experimentally.
+\item Compare the time constants obtained from both the charging and discharging regions and by keeping track of the standard deviations as mentioned in section~\ref{Sect:lab2-equipment}. 
+Calculate the theoretical time constant based on the known values of resistance and capacitance (see step 14). Recall that the standard deviation of the product of two variables is given by eq.~\eqref{Eq:product error}. 
+Can you explain difference in standard deviation, and why some are smaller/larger than the others? 
+You can repeat steps 6-10 for different segments of charging/discharging in your data if you want to verify the consistency of your measurements.
+
+\item Answer the following questions in the results section of your log book. Should all the time constants be the same or different? Why and why not? 
+What would happen if we had used the rheostat instead of the $470\Omega$ resistor in Fig.~\ref{Fig:lab2-session1-circuit1} and used a DC voltage source (with the On/Off switch on the board) instead of a wavefunction source: would we have the same time constant for both charging and discharging? 
+What would happen to the time constant if we increased the resistance by using the rheostat? If you have time, you should test your hypotheses experimentally.
 
 \begin{tcolorbox}[title=Answer]
-All the time constants should be the same because we are charging and discharging across the same resistor. If we had used the rheostat with a DC voltage and the On/Off switch, since we're charging and discharging across different resistors, the time constants should be different. By eq.~\eqref{Eq:time-constant}, the resistance should affect the time constant linearly.
+All the time constants should be the same because we are charging and discharging across the same resistor. 
+If we had used the rheostat with a DC voltage and the On/Off switch, since we're charging and discharging across different resistors, the time constants should be different. By eq.~\eqref{Eq:time-constant}, the resistance should affect the time constant linearly.
 \end{tcolorbox}
 
-\item Answer the following in the results section of your log book. Assuming the voltage, when completely charged, is set to $V_0 = 1$ and by considering the variables $\tau$ for time constant and $t$ for time, what are the equations for of charging and discharging? Support your answer by physical arguments.
+\item Answer the following in the results section of your log book. 
+Assuming the voltage, when completely charged, is set to $V_0 = 1$ and by considering the variables $\tau$ for time constant and $t$ for time, what are the equations for of charging and discharging? 
+Support your answer by physical arguments.
 
 \begin{tcolorbox}[title=Answer]
 Discharging is $V = e^{-t/\tau}$ and charging goes as $V=1-e^{-t/\tau}$. At $t=0$, we expect the charging function to be $0$ and the discharging function to be $1$. Similarly, at $t\rightarrow \infty$, the reverse must be true.
 \end{tcolorbox}
 
-\item Answer the following in the results section of your log book. Your draft calculations can be shown in the ``General Notes" section of the log book. In the circuit of Fig.~\ref{Fig:lab2-session1-Rpractice}, how will the fully charged capacitor affect the current and potential in R6? Answer this in your log book.
+\item Answer the following in the results section of your log book. Your draft calculations can be shown in the ``General Notes" section of the log book. 
+In the circuit of Fig.~\ref{Fig:lab2-session1-Rpractice}, how will the fully charged capacitor affect the current and potential in R6? Answer this in your log book.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\linewidth]{lab2-session1-Rpractice}
@@ -735,7 +786,8 @@ The current is defined as the change in charge over time. In other words,
 Therefore if the capacitor is fully charged, the change in voltage vanishes and so the current also vanishes: it is then considered like an open-circuit. Thus the potential across R6 vanishes.
 \end{tcolorbox}
 
-\item Answer the following in the results section of your log book. Your draft calculations can be shown in the ``General Notes" section of the log book. Given Fig.~\ref{Fig:lab2-session1-tau-practice}, what must be the value of C2 such that the time constant is approximately $\tau=12.5$ms. If one replaces C2 by two capacitors in series, one of which has $C5=250\mu$F. What must be the capacitance of the second capacitor to preserve the same time constant?
+\item Answer the following in the results section of your log book. Your draft calculations can be shown in the ``General Notes" section of the log book. Given Fig.~\ref{Fig:lab2-session1-tau-practice}, what must be the value of C2 such that the time constant is approximately $\tau=12.5$ms. 
+If one replaces C2 by two capacitors in series, one of which has $C5=250\mu$F. What must be the capacitance of the second capacitor to preserve the same time constant?
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\linewidth]{lab2-session1-Cpractice}
@@ -747,16 +799,23 @@ Therefore if the capacitor is fully charged, the change in voltage vanishes and 
 For the first part, $C2 \approx 50\mu$F. For the second part, $C2 \approx 61\mu$F.
 \end{tcolorbox}
 
-\item If you want to keep a trace of a graph produced by the PASCO, click on the Final results tab and select which graph you want by choosing the right run in the scrolling menu of the colored triangle. Click on the camera icon on the top panel. This will take a picture that will be accessible in the journal, on the right hand side, where it can be saved as jpeg or html. Alternatively, you can also save your whole set of measurements by going to the top left tab ``File", and select ``Save As".
+\item If you want to keep a trace of a graph produced by the PASCO, click on the Final results tab and select which graph you want by choosing the right run in the scrolling menu of the colored triangle. 
+Click on the camera icon on the top panel. This will take a picture that will be accessible in the journal, on the right hand side, where it can be saved as jpeg or html. 
+Alternatively, you can also save your whole set of measurements by going to the top left tab ``File", and select ``Save As".
 \end{enumerate}
 
-Once you have completed the above manipulations, make sure to note important technicalities of the time constant measuring methodology in order to accelerate your data acquisition process for the next session. You should perform any further tests that you believe would help you better understand the RC circuit in preparation for the next session.
+Once you have completed the above manipulations, make sure to note important technicalities of the time constant measuring methodology in order to accelerate your data acquisition process for the next session. 
+You should perform any further tests that you believe would help you better understand the RC circuit in preparation for the next session.
 
 \begin{tcolorbox}
-You may want to pull their attention towards quantifying their errors, in preparation to the next session. Note that the standard deviation from the PASCO fit is significantly smaller than that obtained from measuring the time difference at $V=V_0 (1-e^{-1})$. Discuss the disparity between the error of each methods.
+You may want to pull their attention towards quantifying their errors, in preparation to the next session. 
+Note that the standard deviation from the PASCO fit is significantly smaller than that obtained from measuring the time difference at $V=V_0 (1-e^{-1})$. Discuss the disparity between the error of each methods.
 \end{tcolorbox}
 
-Resistors and capacitors can be found in the lab. Instructions about reading the resistance color-code for resistors can be found in the Appendix. We recommend that you try and read the resistance of a few resistors and confirm by using the in-lab multimeters. An exemplary circuit board that you must use during the next session will be available for you to contemplate. We recommend that you observe the set up of the circuit board and think about how you would connect the resistors and capacitors to obtain different equivalent resistance and capacitance setup. \cesar{Session a - seems a bit long for me but it might just be the manual}
+Resistors and capacitors can be found in the lab. Instructions about reading the resistance color-code for resistors can be found in the Appendix. 
+We recommend that you try and read the resistance of a few resistors and confirm by using the in-lab multimeters. 
+An exemplary circuit board that you must use during the next session will be available for you to contemplate. 
+We recommend that you observe the set up of the circuit board and think about how you would connect the resistors and capacitors to obtain different equivalent resistance and capacitance setup.
 
 \section{Session b}
 \begin{tcolorbox}[title=Session \#2]
@@ -772,7 +831,8 @@ We expect students to consider the possibility of internal impedance from the PA
 Through testing, we found that the internal impedance of the PASCO is not large enough to allow measurements of time constants of the order of 10s. To remedy the situation, one can add a large impedance to the probes of the PASCO. For more advanced students, push them to think of how the PASCO and multimeters measure voltages and hence the limitations of the setup.
 \end{tcolorbox}
 
-In this session, you are asked to build an RC circuit with a specific time constant \cesar{given in other sheets?}. Your circuit will have two sub-circuits: one that consists only of resistors and another one that consists only of capacitors. You are to placed both of these in series with the PASCO source as shown in Fig.~\ref{Fig:lab2-session2-circuit}.
+In this session, you are asked to build an RC circuit with a specific time constant. When you enter the lab, each station will receive a unique circuit design and a given time constant. 
+Your circuit will have two sub-circuits: one that consists only of resistors and another one that consists only of capacitors. You are to placed both of these in series with the PASCO source as shown in Fig.~\ref{Fig:lab2-session2-circuit}.
 
 \begin{figure}[h]
 \centering
@@ -781,20 +841,34 @@ In this session, you are asked to build an RC circuit with a specific time const
 \label{Fig:lab2-session2-circuit}
 \end{figure}
 
-In this lab, you will only use the ``Positive Square Wave" input. Adjust them accordingly to your calculated theoretical time constant for each measurement. Sometimes, the data fitting tool cannot give standard deviations: this is because the data acquisition frequency isn't properly set. Change it until you see an uncertainty in the $B$ parameter from the curve fitting window.
+You will only use the ``Positive Square Wave" input for this lab. 
+Adjust them accordingly to your calculated theoretical time constant for each measurement. 
+Sometimes, the data fitting tool cannot give standard deviations: this is because the data acquisition frequency isn't properly set. Change it until you see an uncertainty in the $B$ parameter from the curve fitting window.
 %standard deviation
+\begin{tcolorbox}
+You should test this subtlety in adjusting the acquisition frequency in order to obtain the fit parameter.
+\end{tcolorbox}
 
-There will be a few communal multimeters that allows to measure capacitance, while every team will have their own multimeter that can only measure resistance. There will be boxes containing different resistors and capacitors. Their values will be labelled but you can double-check their values using the multimeters. Note that we are using polarized capacitors and therefore you must be careful when connecting them to the circuit: the voltage input must be attached to a specific leg of the capacitor.
+There will be a few communal multimeters that allows to measure capacitance, while every team will have their own multimeter that can only measure resistance. 
+There will also be boxes containing different resistors and capacitors. Their values will be labelled but you can double-check their values using the multimeters. 
+Note that we are using polarized capacitors and therefore you must be careful when connecting them to the circuit: the voltage input must be attached to a specific leg of the capacitor.
+\begin{tcolorbox}
+You should verify how polarized capacitors work, and explain to them the proper way to connect them.
+\end{tcolorbox}
 
-While every team will have to build a different RC circuit, the time constants that we are asking are of the order of ms, and therefore you will have to use the "Positive Square Wave" input from the signal generator. You have the liberty to choose different values of frequency depending on your estimate time constant. Changing the frequency of the input source does not change the time constant: this only changes the duration that the source is "turned on".
+While every team will have to build a different RC circuit, the time constants that we are asking are of the order of ms, and therefore you will have to use the "Positive Square Wave" input from the signal generator. 
+You have the liberty to choose different values of frequency depending on your estimate time constant. 
+Changing the frequency of the input source does not change the time constant: this only changes the duration that the source is "turned on".
 
-\anhkhoi{Should we tell them the two methods to confirm their measurements? Or should the TAs talk them through it to find the second way?}
+%\anhkhoi{Should we tell them the two methods to confirm their measurements? Or should the TAs talk them through it to find the second way?}
+%
+%To confirm your time constant measurement, you should take two approaches. The first is to simply perform charging and discharging measurements multiple times and average the given time constant measurements.
+%
+%The second is to confirm your equivalent resistance and capacitance by varying time constant. Since the time constant is $\tau = RC$, if one varies the value of one of the parameters $R$ or $C$ and plot $\tau$ as a function of the varying parameter, one expects the data to show a linear trend where the slope is the value of the other parameter. By performing this test, you will firstly verify eq.\eqref{Eq:time-constant}. Furthermore, this is a complementary method to measure your effective resistance and capacitance which should match your measurements obtained by using the multimeter.
 
-To confirm your time constant measurement, you should take two approaches. The first is to simply perform charging and discharging measurements multiple times and average the given time constant measurements.
-
-The second is to confirm your equivalent resistance and capacitance by varying time constant. Since the time constant is $\tau = RC$, if one varies the value of one of the parameters $R$ or $C$ and plot $\tau$ as a function of the varying parameter, one expects the data to show a linear trend where the slope is the value of the other parameter. By performing this test, you will firstly verify eq.\eqref{Eq:time-constant}. Furthermore, this is a complementary method to measure your effective resistance and capacitance which should match your measurements obtained by using the multimeter.
-
-To accelerate this measurement method, each team will have 5 capacitors of $10\pm 1\mu$F and 5 resistors of $50\pm 1 \ \Omega$. Since there is a limited quantity of multimeters that can measure capacitance, you can assume that these standard deviations are correct. A summary of the equipment for this session is shown in Table~\ref{Tab:Lab2-material}.
+%To accelerate this measurement method,
+Each team will have 5 capacitors of $10\pm 1\mu$F and 5 resistors of $50\pm 1 \ \Omega$. Since there is a limited quantity of multimeters that can measure capacitance, you can assume that these standard deviations are correct.
+A summary of the equipment for this session is shown in Table~\ref{Tab:Lab2-material}.
 \begin{table}[h]
 \centering
 \begin{tabular}{||c | c ||}
@@ -811,6 +885,17 @@ Five $50 \pm 1 \ \Omega$ resistors &  \\
 \caption{Available material for Lab \# 2}
 \label{Tab:Lab2-material}
 \end{table}
+
+The goal of this lab is for you to \textit{convince} us that you've constructed the right RC circuit with the required time constant. 
+You should discuss among yourselves and the TAs in order to find appropriate tests to support your claim.
+
+\begin{tcolorbox}
+We want them to provide (at least) two arguments. The first is to simply measure the effective resistance and capacitance of the circuit, and show a sample of their time constant measurement.
+\end{tcolorbox}
+\begin{tcolorbox}
+The second is to incrementally increase the resistance and capacitance separately. Doing so, and plotting $\tau$ as a function of the varying parameter, they should find that the slope is the effective resistance or capacitance.
+This provides an alternative approach to measuring the effective resistance and capacitance of their setup, one that has more data points. The easiest approach is to connect resistors (the 50$\Omega$ ones) in series to the original effective resistor, and capacitors in parallel (the $10\mu$F ones) in parallel to the initial capacitance.
+\end{tcolorbox}
 
 Document your results and argue whether or not your RC circuit has the demanded time constant. If you believe that it does, argue using standard data analysis methods. What is the most appropriate measure to characterize the error of your measurements (see ``Measurement analysis" section of the ``Basic statistics" section)? If your data doesn't produce the correct time constant, explain why. Explain what you must change in your circuit to remedy the situation. Also discuss whether you believe this experiment is adequate to obtain RC time constants. If possible, propose a better way to obtain time constants and/or decrease the error in your experiment.
 
@@ -866,8 +951,6 @@ Magnitude and orientation. Typically, vectors are connected end-to-end, or from 
 \caption{A wire has a current running through it, hence electrons are running from right to left. A constant magnetic field is present and points downwards.}
 \end{figure}
 
-\item \anhkhoi{Question related to limits: If you have a very complicated system with many possible parameters that could affect it, how would you try to understand it? Take ``extreme" regimes where the system simplifies.}
-
 \end{enumerate}
 
 \section{Session a}
@@ -882,7 +965,7 @@ In this session, you will use the IOLab that you previously used in PHYS 101 las
 \begin{subfigure}{0.45 \textwidth}
 \includegraphics[width=\textwidth]{lab3-sessiona-solenoid2}
 \end{subfigure}
-\caption{Available solenoids. The one one the left has a smaller radius \anhkhoi{Give number of turns for each} \cesar{Magnetic field below the wire?}}
+\caption{Available solenoids. The one one the left has a smaller radius ($1.9$ cm radius, 550 turns, $15$ cm of length, \#19 gauge wire) \anhkhoi{to be reverified}, while the one on the right is larger ($3$ cm radius, 560 turns and $15$ cm of length, \#16 gauge wire).}
 \label{Fig:lab3-sessiona-solenoids}
 \end{figure}
 
@@ -923,13 +1006,11 @@ To gather data, you will use the IOLab:
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{lab3-sessiona-iolab-interface2}
-\caption{Data sample. You can select an interval of your data. Doing so, you can obtain directly the average ($\mu$) and the standard deviation ($\sigma$) of your data within that interval.}
+\caption{Data sample. You can select an interval of your data. Doing so, you can obtain directly the average ($\mu$) and the standard deviation ($\sigma$) of your data within that interval. For this lab, you should move the IOLab to a desired position, and wait a few seconds before moving it again. This way, you can obtain an averaged value of the B-field at that position. In the figure above, you would see a plateau. By doing this incrementally, your data should look like a staircase as a function of time.}
 \label{Fig:lab3-sessiona-iolab-interface2}
 \end{figure}
 
 The protocol is straightforward: you will move the IOLab to a given position and observe the magnetic field strength at that position. Leave the IOLab at that position for a few seconds so that you can select that interval in your data to obtain the standard deviation ($\sigma$) and mean ($\mu$) of that measurement. Repeat the above for all the positions that you wish to measure the magnetic field.
-
-\cesar{We should add a picture of the data should look in the iolab menu.}
 
 Further comments about the IOLab can be found in the appendix.
 
@@ -974,13 +1055,16 @@ We expect them to consider the current $I$, the distance $z$ away, and the numbe
 \end{enumerate}
 
 \subsection{Current dependence}
-\anhkhoi{In retrospect, after writing this out explicitly, I feel this lab will be way too long. Should we cut this part and keep the position dependence?}
-
 Now that you have a rough idea how a solenoid generates a magnetic field, we will quantitatively verify some of its possible parameters.
 
-We will first verify its dependence on the current through the wires. Place the IOLab on the ramp at a fixed distance away from one end of the solenoid (not too far) as shown in Fig.~\ref{YY}, and increase the current through the wires with the power supply. 
+We will first verify its dependence on the current through the wires. Place the IOLab on the ramp at a fixed distance away from one end of the solenoid (not too far) as shown in Fig.~\ref{Fig:lab3-sessiona-ramp}, and increase the current through the wires with the power supply. 
 
-\anhkhoi{Include pic}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{lab3-sessiona-ramp}
+\caption{Measuring the distance dependence of the magnetic field. Place the ramp in front of the solenoid and use it as a guide for the IOLab.}
+\label{Fig:lab3-sessiona-ramp}
+\end{figure}
 
 Verify how $B$ depends on $I$ using your data analysis skills from previous labs. Find the parametric dependence on the current $I$ and carefully support your claim by generating a graph with an appropriate fit. 
 
@@ -990,13 +1074,6 @@ By taking increments of $0.5$A, the data should be near perfect as the dependenc
 
 \subsection{Distance dependence}
 We will now verify the magnetic field generated by a solenoid at a distance $z$ (on the central axis) away from the front of the solenoid.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{lab3-sessiona-ramp}
-\caption{Measuring the distance dependence of the magnetic field. Place the ramp in front of the solenoid and use it as a guide for the IOLab.}
-\label{Fig:lab3-sessiona-ramp}
-\end{figure}
 
 Place the ramp in front of the solenoid such that the IOLab sensor is centred in front the solenoid (see Fig.~\ref{Fig:lab3-sessiona-ramp}). Recall that the sensor isn't centered. Move the IOLab incrementally, and at each position, use the interface in order to obtain the average and standard deviation of the position and magnetic field of the measurement. You will not need to go further than 30 cm. We recommend that you perform multiple trials to obtain many data points. We expect you to find a $1/z^3$ dependence. 
 
@@ -1067,7 +1144,7 @@ To set up the apparatus:
 \begin{itemize}
 \item Make sure the power supply is turned off
 \item Connect the leads from the coil to the power supply.
-\item \anhkhoi{Instructions about oscilloscope... See appendix}
+\item See the instructions for the CRO in the appendix.
 \end{itemize}
 
 The coil current and the voltage will be read from the power supply meters. The coil's period of rotation will be measured by a photodiode detector connected to a CRO. The photodiode emits light and detects its reflection from the shiny strip covering one side of the coil. The other side is covered by a non-reflective strip. When the coil is rotating, a signal/pulse will be seen on the CRO screen every time the reflected light strikes the detector. The period will be the time interval between two reflected signals/pulses. From the period you can calculate the frequency. The performance of the motor and preciseness of measurements are extremely sensitive to the positions of the photodiode and brushes. \textbf{Please be careful with the apparatus, and do not make any adjustments from how it was set up.}
@@ -1123,6 +1200,7 @@ Through discussions with your lab partners, other teams and the TA, you must per
 \setcounter{chapter}{0}
 
 \chapter{Introduction to Excel}
+\label{App:Excel}
 
 Firstly, every McGill student can obtain a free copy of Microsoft Offices software by clicking \href{http://kb.mcgill.ca/kb/article?ArticleId=5172&source=Article&c=12&cid=2}{here}. Excel spreadsheet boxes can take in strings of letters of numbers as input. If the input is a number, we can easily perform calculations.\\
 
@@ -1231,10 +1309,9 @@ To change the resistance of the resistor, you must also change the value in the 
 \end{figure}
 
 \section{Reading Resistors}
-%\cesar{To-do}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=1.0]{resistors.png}
+	\includegraphics[scale=1.0]{appendix-resistor-chart.png}
 	\caption{Resistor color chart.}
 	\label{Fig:resistor-chart}
 \end{figure}
