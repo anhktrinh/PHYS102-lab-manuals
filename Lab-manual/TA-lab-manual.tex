@@ -42,7 +42,7 @@
 
 \tableofcontents
 
-\part{Introduction} \label{Sec:Intro}
+\part{General Guidelines} \label{Sec:Intro}
 
 \chapter{Lab Format}
 
@@ -294,10 +294,8 @@ As mentioned before, a good way to know whether your fit is correct is to comput
 
 
 \part{Lab Manuals} \label{Part:Labs}
-\renewcommand{\chaptername}{Lab}
-\setcounter{chapter}{0}
 
-\chapter{Capacitance}
+\chapter{Lab 1 - Capacitance}
 \section{Learning objectives}
 \begin{itemize}
 \item How to acquire data
@@ -495,9 +493,10 @@ Paper sheets & Extra wires \\
 \end{enumerate}
 
 Notice that in Fig.~\ref{Fig:Arduino-Monitor}, the data fluctuates. You will have to determine how many capacitance measurements should you average over to acquire a good representation of that capacitance measurement. 
-We refer you to the Part I, section \ref{Sec:ErrorAnalysis} of the lab manual. Using this setup, proceed to conduct you experiments and collect data that will let you evaluate $C$ in eq.~\ref{Eq:lab1-Q=CV}. 
+We refer you to the Part I, section \ref{Sec:ErrorAnalysis} of the lab manual. Using this setup, proceed to conduct you experiments and collect data that will let you evaluate $C$ in eq.~\eqref{Eq:lab1-Q=CV}. 
 
-You will have the opportunity to test whatever hypothesis you may have, however \textbf{every group must take a capacitance measurement for at least \underline{three} different pairs of plate sizes while inserting a single sheet of plastic between them. The plates must be perfectly aligned on top of each other}. After doing so, you may explore in more details the consequences of these measurements, or you may study other possible parameters that could affect the capacitance.
+You will have the opportunity to test whatever hypothesis you may have, however {\color{blue}\textbf{every group must take a capacitance measurement for at least \underline{three} different pairs of plate sizes while inserting a single sheet of plastic between them. 
+The plates must be perfectly aligned on top of each other}}. After doing so, you may explore in more details the consequences of these measurements, or you may study other possible parameters that could affect the capacitance.
 
 \begin{tcolorbox}
 The three area measurements will serve as a baseline for students in case some of them attempt to test unconventional hypotheses.
@@ -508,32 +507,36 @@ Given the measurement of the two sides $L_1$ and $L_2$ of a rectangle and their 
 \sigma_A = \sqrt{ \left( L_1 \sigma_{L_2} \right)^2 + \left( L_2 \sigma_{L_1} \right)^2 }.
 \end{equation}
 
-While studying other parameters, if you are unsure of the standard deviation of a certain parameter, you may ask the TAs to derive the appropriate derived standard deviation for that parameter.
+While studying other parameters, if you are unsure of the standard deviation of a certain parameter, you may ask the TAs to help derive the appropriate derived standard deviation for that parameter.
 
-Enter your set up, measurement process and data in your log book. Before handing in your log book, be sure to write down your observations in the \textbf{General Notes} section of your log book, and a rough plan of what you intend to do during the next session in the \textbf{Conclusions and future work} section. The latter part should be done after discussions with at least one other group. You \textbf{do not need to include a results section} in your log book for this session.
+To analyse your data, we refer you to section \ref{Sec:lab1-analysis}.
+{\color{blue}Enter your set up, measurement process and data in your log book.} Before handing in your log book, be sure to write down your {\color{blue}observations in the \textbf{General Notes} section of your log book, and a rough plan of what you intend to do during the next session in the \textbf{Conclusions and future work} section}. The latter part should be done after discussions with at least one other group.
+%You \textbf{do not need to include a results section} in your log book for this session.
 
 \subsection{Session b}
-We recommend that you bring whatever material that you think could help you acquire better data. At this point, you should know what parameters affect the capacitance, and therefore you should plan in advance your own ``protocol" to verify your hypothesis quantitatively with improved data. This protocol does \underline{not} have to match what you wrote in your log book during the last session, but if it does differ, you must explain what made you change your mind.
+We recommend that you bring whatever material that you think could help you acquire better data. 
+At this point, you should know what parameters affect the capacitance, and therefore you should plan in advance your own ``protocol" to verify your hypothesis quantitatively with improved data. 
+This protocol does \underline{not} have to match what you wrote in your log book during the last session, but if it does differ, you must explain what made you change your mind.
 
 \begin{tcolorbox}[title=Session \#2]
 In this session, you should remind everyone that last time, you discovered together that $C \propto A/d$, so this session should be simpler as they will know what to do.
 \end{tcolorbox}
 
-Be mindful that you will be evaluated based on your data presentation, data analysis and explanation of the physics, therefore be certain to \textit{fully, but succinctly, describe} your thought process. 
+{\color{blue}Be mindful that you will be evaluated based on your data presentation, data analysis and explanation of the physics, therefore be certain to \textit{fully, but succinctly, describe} your thought process.} 
 
 \section{Measurement Analysis}
+\label{Sec:lab1-analysis}
 During this lab, you will have to use data analysis techniques to understand your data. For \underline{each session}, we recommend that you analyse your data as follows.
 
 To study a system, one typically isolates as many variables as possible to see each of its individual affect on the whole system. If we are able to isolate such a variable, mathematically, that is the equivalent of finding some $f(x)$ that depends just on one variable $x$. In this lab, you will find as many variables that can affect the capacitance as possible by isolating each parameter one at a time.
 
-For each dataset, corresponding to each parameter you measure, you must abide by the error analysis rules outlined in the first part of the lab manual. 
+For each dataset, corresponding to each parameter you measure, you must abide by the error analysis rules outlined in chapter \ref{Ch:Data-analysis}. 
 The data analysis can be done much more rapidly with spreadsheets, therefore we highly recommend that you read appendix \ref{App:Excel}. 
-When analysing your data, you must follow the norms established in Part I, chapter \ref{Ch:Data-analysis} of the manual to understand the significance of your data. 
 
-Once you have some result from your data, you must offer a physical explanation that supports your results. Explain why physically each parameter affects the capacitance of the system. Support your claim by proposing a possible experiment to test your claims, and offer possible outcomes that one could observe from your experiment. Recall that bouncing your ideas off peers is an invaluable way to actually test the rational of your hypothesis.
+Once you have some result from your data, you must offer a physical explanation that supports your results. {\color{blue} Explain why physically each parameter affects the capacitance of the system. Support your claim by proposing a possible experiment to test your claims, and offer possible outcomes that one could observe from your experiment.} Recall that bouncing your ideas off peers is an invaluable way to actually test the rational of your hypothesis.
 
 
-\chapter{RC Circuits}
+\chapter{Lab 2 - RC Circuits}
 \section{Learning objectives}
 \begin{itemize}
 \item Learn how to connect circuits
@@ -671,8 +674,10 @@ When they use the square wave input, make sure that they understand how to vary 
 
 \noindent \large \textbf{Procedure} \normalsize \\
 You will execute the following steps in order to understand how to use the PASCO interface to characterize an RC circuit. 
-For this session, you are expected to write down your observations in your log book and to answer the questions that appear in the following instructions. 
-You should write down all that technical notes about the apparatus and how an RC circuit works in order for you to fast-track your manipulations for the next session.
+For this session, we recommend that you {\color{blue} record your measurements in an Excel spreadsheet, and rewrite the relevant results in your log book.
+You are expected to write down your observations in your log book and to answer the questions that appear in the following instructions. 
+You should write down all that technical notes about the apparatus and how an RC circuit works in order for you to fast-track your manipulations for the next session.}
+
 \begin{enumerate}
 \item Connect the circuit as shown in Fig.~\ref{Fig:lab2-session1-circuit1}.
 \item \anhkhoi{Where to get Pasco file}
@@ -732,10 +737,11 @@ Change the data acquisition frequency to the values in the green box. Once you a
 
 \item Zoom in on a region with both charging and discharging behaviours by rescaling the axes, and figure out which section corresponds to charging/discharging.
 
-\item For the charging part, measure the time difference between the moment the voltage starts increasing to the moment where the voltage is at a value $1-1/e$ of the maximum voltage $V_0$. 
+\item For the charging part, {\color{blue} measure and record the time difference between the moment the voltage starts increasing to the moment where the voltage is at a value $1-1/e$ of the maximum voltage $V_0$. }
 You should understand why you are measuring this time difference.
 
-\item For the discharging part, you will use the Curve fitting tool. The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of eq.~\eqref{Eq:V-discharge} will be fit to the whole data set. 
+\item For the discharging part, you will use the Curve fitting tool. The software can perform an exponential regression on the data you record. 
+To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of eq.~\eqref{Eq:V-discharge} will be fit to the whole data set. 
 To fit it on the right segment on the data set, use the highlighting tool and select/box the values that are most relevant. 
 Verify that the time constant corresponds to the parameter $1/B$ in the curve fitting data window.
 \begin{figure}[h]
@@ -746,13 +752,14 @@ The highlighting tool is boxed in green. This allows to select a smaller subset 
 \label{Fig:lab2-interface-graph}
 \end{figure}
 
-Use this to fit an exponential curve to the discharging region. You will obtain the discharge time constant.
-\item Compare the time constants obtained from both the charging and discharging regions and by keeping track of the standard deviations as mentioned in section~\ref{Sect:lab2-equipment}. 
-Calculate the theoretical time constant based on the known values of resistance and capacitance (see step 14). Recall that the standard deviation of the product of two variables is given by eq.~\eqref{Eq:product error}. 
-Can you explain difference in standard deviation, and why some are smaller/larger than the others? 
+Use this to fit an exponential curve to the discharging region, and {\color{blue} record the value of the parameter $B$}. You will obtain the discharge time constant.
+
+\item {\color{blue} Compare the time constants obtained from both the charging and discharging regions and by keeping track of the standard deviations as mentioned in section~\ref{Sect:lab2-equipment}. 
+Calculate the theoretical time constant based on the known values of resistance and capacitance.} Recall that the standard deviation of the product of two variables is given by eq.~\eqref{Eq:product error}. 
+{\color{blue} Can you explain difference in standard deviation, and why some are smaller/larger than the others? }
 You can repeat steps 6-10 for different segments of charging/discharging in your data if you want to verify the consistency of your measurements.
 
-\item Answer the following questions in the results section of your log book. Should all the time constants be the same or different? Why and why not? 
+\item {\color{blue}Answer the following questions in the results section of your log book.} Should all the time constants be the same or different? Why and why not? 
 What would happen if we had used the rheostat instead of the $470\Omega$ resistor in Fig.~\ref{Fig:lab2-session1-circuit1} and used a DC voltage source (with the On/Off switch on the board) instead of a wavefunction source: would we have the same time constant for both charging and discharging? 
 What would happen to the time constant if we increased the resistance by using the rheostat? If you have time, you should test your hypotheses experimentally.
 
@@ -761,7 +768,7 @@ All the time constants should be the same because we are charging and dischargin
 If we had used the rheostat with a DC voltage and the On/Off switch, since we're charging and discharging across different resistors, the time constants should be different. By eq.~\eqref{Eq:time-constant}, the resistance should affect the time constant linearly.
 \end{tcolorbox}
 
-\item Answer the following in the results section of your log book. 
+\item {\color{blue}Answer the following in the results section of your log book. }
 Assuming the voltage, when completely charged, is set to $V_0 = 1$ and by considering the variables $\tau$ for time constant and $t$ for time, what are the equations for of charging and discharging? 
 Support your answer by physical arguments.
 
@@ -769,7 +776,7 @@ Support your answer by physical arguments.
 Discharging is $V = e^{-t/\tau}$ and charging goes as $V=1-e^{-t/\tau}$. At $t=0$, we expect the charging function to be $0$ and the discharging function to be $1$. Similarly, at $t\rightarrow \infty$, the reverse must be true.
 \end{tcolorbox}
 
-\item Answer the following in the results section of your log book. Your draft calculations can be shown in the ``General Notes" section of the log book. 
+\item {\color{blue}Answer the following in the results section of your log book.} Your draft calculations can be shown in the ``General Notes" section of the log book. 
 In the circuit of Fig.~\ref{Fig:lab2-session1-Rpractice}, how will the fully charged capacitor affect the current and potential in R6? Answer this in your log book.
 \begin{figure}[h]
 \centering
@@ -786,7 +793,7 @@ The current is defined as the change in charge over time. In other words,
 Therefore if the capacitor is fully charged, the change in voltage vanishes and so the current also vanishes: it is then considered like an open-circuit. Thus the potential across R6 vanishes.
 \end{tcolorbox}
 
-\item Answer the following in the results section of your log book. Your draft calculations can be shown in the ``General Notes" section of the log book. Given Fig.~\ref{Fig:lab2-session1-tau-practice}, what must be the value of C2 such that the time constant is approximately $\tau=12.5$ms. 
+\item {\color{blue}Answer the following in the results section of your log book.} Your draft calculations can be shown in the ``General Notes" section of the log book. Given Fig.~\ref{Fig:lab2-session1-tau-practice}, what must be the value of C2 such that the time constant is approximately $\tau=12.5$ms?
 If one replaces C2 by two capacitors in series, one of which has $C5=250\mu$F. What must be the capacitance of the second capacitor to preserve the same time constant?
 \begin{figure}[h]
 \centering
@@ -832,7 +839,8 @@ Through testing, we found that the internal impedance of the PASCO is not large 
 \end{tcolorbox}
 
 In this session, you are asked to build an RC circuit with a specific time constant. When you enter the lab, each station will receive a unique circuit design and a given time constant. 
-Your circuit will have two sub-circuits: one that consists only of resistors and another one that consists only of capacitors. You are to placed both of these in series with the PASCO source as shown in Fig.~\ref{Fig:lab2-session2-circuit}.
+Your circuit will have two sub-circuits: one that consists only of resistors and another one that consists only of capacitors. 
+You are to place both of these in series with the PASCO source as shown in Fig.~\ref{Fig:lab2-session2-circuit}.
 
 \begin{figure}[h]
 \centering
@@ -886,20 +894,20 @@ Five $50 \pm 1 \ \Omega$ resistors &  \\
 \label{Tab:Lab2-material}
 \end{table}
 
-The goal of this lab is for you to \textit{convince} us that you've constructed the right RC circuit with the required time constant. 
-You should discuss among yourselves and the TAs in order to find appropriate tests to support your claim.
+{\color{blue}The goal of this lab is for you to \textit{convince} us that you've constructed the right RC circuit with the required time constant. 
+You should discuss among yourselves and the TAs in order to find appropriate tests to support your claim.}
 
 \begin{tcolorbox}
-We want them to provide (at least) two arguments. The first is to simply measure the effective resistance and capacitance of the circuit, and show a sample of their time constant measurement.
+You must lead the discussion here. We want them to provide (at least) two arguments. The first is to simply measure the effective resistance and capacitance of the circuit, and show a sample of their time constant measurement.
 \end{tcolorbox}
 \begin{tcolorbox}
 The second is to incrementally increase the resistance and capacitance separately. Doing so, and plotting $\tau$ as a function of the varying parameter, they should find that the slope is the effective resistance or capacitance.
 This provides an alternative approach to measuring the effective resistance and capacitance of their setup, one that has more data points. The easiest approach is to connect resistors (the 50$\Omega$ ones) in series to the original effective resistor, and capacitors in parallel (the $10\mu$F ones) in parallel to the initial capacitance.
 \end{tcolorbox}
 
-Document your results and argue whether or not your RC circuit has the demanded time constant. If you believe that it does, argue using standard data analysis methods. What is the most appropriate measure to characterize the error of your measurements (see ``Measurement analysis" section of the ``Basic statistics" section)? If your data doesn't produce the correct time constant, explain why. Explain what you must change in your circuit to remedy the situation. Also discuss whether you believe this experiment is adequate to obtain RC time constants. If possible, propose a better way to obtain time constants and/or decrease the error in your experiment.
+{\color{blue}Document your results and argue whether or not your RC circuit has the demanded time constant. If you believe that it does, argue using standard data analysis methods. What is the most appropriate measure to characterize the error of your measurements (see ``Measurement analysis" section of the ``Basic statistics" section)? If your data doesn't produce the correct time constant, explain why. Explain what you must change in your circuit to remedy the situation. Also discuss whether you believe this experiment is adequate to obtain RC time constants. If possible, propose a better way to obtain time constants and/or decrease the error in your experiment.}
 
-\chapter{Magnetic Field of Solenoids and Coils}
+\chapter{Lab 3 - Magnetic Field of Solenoids and Coils}
 \section{Learning objectives}
 \begin{itemize}
 \item Learn about solenoids.
@@ -1034,7 +1042,7 @@ First, chose at least a dozen points on the graph paper. For each point, you are
 \end{equation}
 Both vector components can be obtained from the IOLab (see Fig.~\ref{Fig:lab3-sessiona-iolab-interface2}). Normally, one would draw the length of the vector in a way that is representative of the magnitude of the vector, however for the amount of vector lines you are asked to draw, we will simply write the magnitude next to the drawn vector.
 
-Once you have enough points, and have explored the possible orientations of the magnetic field vector lines, answer the following questions in your log book:
+Once you have enough points, and have explored the possible orientations of the magnetic field vector lines, {\color{blue}answer the following questions in your log book:}
 \begin{enumerate}
 \item Draw a diagram of the solenoid with the appropriate field lines.
 
@@ -1066,7 +1074,7 @@ We will first verify its dependence on the current through the wires. Place the 
 \label{Fig:lab3-sessiona-ramp}
 \end{figure}
 
-Verify how $B$ depends on $I$ using your data analysis skills from previous labs. Find the parametric dependence on the current $I$ and carefully support your claim by generating a graph with an appropriate fit. 
+{\color{blue}Verify how $B$ depends on $I$ using your data analysis skills from previous labs. Find the parametric dependence on the current $I$ and carefully support your claim by generating a graph with an appropriate fit. }
 
 \begin{tcolorbox}
 By taking increments of $0.5$A, the data should be near perfect as the dependence was found to be linear with an approximate $R^2 \approx 0.99$ accuracy.
@@ -1075,9 +1083,15 @@ By taking increments of $0.5$A, the data should be near perfect as the dependenc
 \subsection{Distance dependence}
 We will now verify the magnetic field generated by a solenoid at a distance $z$ (on the central axis) away from the front of the solenoid.
 
-Place the ramp in front of the solenoid such that the IOLab sensor is centred in front the solenoid (see Fig.~\ref{Fig:lab3-sessiona-ramp}). Recall that the sensor isn't centered. Move the IOLab incrementally, and at each position, use the interface in order to obtain the average and standard deviation of the position and magnetic field of the measurement. You will not need to go further than 30 cm. We recommend that you perform multiple trials to obtain many data points. We expect you to find a $1/z^3$ dependence. 
+Place the ramp in front of the solenoid such that the IOLab sensor is centred in front the solenoid (see Fig.~\ref{Fig:lab3-sessiona-ramp}). 
+Recall that the sensor isn't centered. Move the IOLab incrementally, and {\color{blue}at each position, use the interface in order to obtain the average and standard deviation of the position and magnetic field of the measurement. }
+You will not need to go further than 30 cm. We recommend that you perform multiple trials to obtain many data points.
 
-Once you have data for the magnetic field for all positions $z<30$cm, we will first restrict our analysis to the far $z$ behaviour. We expect the data to show a $1/z^3$ behaviour. Select appropriate data points (equivalent to ``far $z$") such that you see a good $1/z^3$ fit. Can you explain the minimum value of $z$ for which you performed a cutoff in your data? You may perform this analysis again with the other solenoid if you wish.
+Once you have data for the magnetic field for all positions $z<30$cm, we will first restrict our analysis to the far $z$ behaviour. 
+We expect the data to show a $1/z^3$ behaviour. 
+{\color{blue}Select appropriate data points (equivalent to ``far $z$") such that you see a good $1/z^3$ fit. Can you explain the minimum value of $z$ for which you performed a cutoff in your data?} You may perform this analysis again with the other solenoid if you wish.
+
+
 
 \begin{tcolorbox}
 There are many subtleties in this experiment. Firstly, they won't be able to find the correct $1/z^3$ dependence without subtracting off background field measurements: we found that surrounding electronics (laptop, phone, etc.) will affect the magnitude of $B$. They must perform a run with and without the $B$ field of the solenoid turned on.
@@ -1086,10 +1100,19 @@ There are many subtleties in this experiment. Firstly, they won't be able to fin
 Having done that, through testing, we found that the far $z$ behaviour corresponds to $z>4R$, where $R$ is the radius of the solenoid. We don't expect them to explain the factor of $4$, but they should understand that it depends on $R$, and it should be $z \gg R$. Make them consider the consequences of the near $z$ behaviour, that is $z \rightarrow 0$.
 \end{tcolorbox}
 
-Once you have obtained data for the far behavior, the TAs will write the equation of the magnetic field of a solenoid on the board and you are asked to compare the intermediate regime to this equation: write the equation in Excel and compare your plots with your data.
+%Once you have obtained data for the far behavior, the TAs will write the equation of the magnetic field of a solenoid on the board and you are asked to compare the intermediate regime to this equation: write the equation in Excel and compare your plots with your data.
+
+{\color{blue} Why do you think that we find a $1/z^3$ behaviour far away?
+Why doesn't this fit work for other regimes of $z$?
+Can you compare the $1/z^3$ behaviour to other electromagnetic systems that you may know: the electric field of a point charge, the magnetic field from a line
+%, a plane wave
+?}
+\begin{tcolorbox}
+For most students, we expect them to find the $1/z^3$ behaviour, and you are to lead a discussion about why this fit only works for $z\gg R$.
+\end{tcolorbox}
 
 \begin{tcolorbox}
-Write the equation once a first team has finished obtaining the far behaviour data. Let the solenoid be centered at the origin $z=0$, and $z_L,z_R$ are the two ends of the solenoid. Define $L$ as the length of the solenoid $L=z_R-z_L$, $N$ the number of turns, $I$ the current, then we have
+For the ambitious students, you can write down the equation of $B$ for a solenoid on the board, and they can try to compare their data to this theoretical curve. Let the solenoid be centered at the origin $z=0$, and $z_L,z_R$ are the two ends of the solenoid. Define $L$ as the length of the solenoid $L=z_R-z_L$, $N$ the number of turns, $I$ the current, then we have
 \begin{align}
 dB_z&= \frac{\mu_0 N I}{2 L} R^2 \frac{dx}{((z-x)^2+R^2)^{3/2}} \nonumber \\
 B_z &=\frac{\mu_0 N I}{2 L} \left( \frac{z-z_L}{\sqrt{(z-z_L)^2+R^2}} - \frac{z-z_R}{\sqrt{(z-z_R)^2+R^2}} \right) \nonumber \\
@@ -1098,11 +1121,11 @@ B_z &\approx \frac{\mu_0 N I}{L} \frac{R^2}{z^3} + \mathcal{O}\left( \frac{1}{z^
 In the last line, we expanded to leading order in the limit $z\rightarrow \infty$. We want them to see that taking appropriate limits, the equation simplifies greatly. Since they don't know calculus, you can show the first and last line of the equation above which makes the relation obvious when $z$ is large.
 \end{tcolorbox}
 
-Does your data match the equation on the board? What about the far $z$ behaviour? Why is it useful to restrict to the far $z$ regime? Discuss your results.
+%Does your data match the equation on the board? What about the far $z$ behaviour? Why is it useful to restrict to the far $z$ regime? Discuss your results.
 
-\begin{tcolorbox}
-The lesson here is that given a measurement and analysis, we can only be confident in its description once we know the regime of validity, and the whole expression may be much more complicated if we attempt to find the ``general case". Taking limits of a system allows to find the boundary conditions of the model which will constrain the general case. In practice, we start with the boundary conditions since it is simpler to analyse, and we generalize from there.
-\end{tcolorbox}
+%\begin{tcolorbox}
+%The lesson here is that given a measurement and analysis, we can only be confident in its description once we know the regime of validity, and the whole expression may be much more complicated if we attempt to find the ``general case". Taking limits of a system allows to find the boundary conditions of the model which will constrain the general case. In practice, we start with the boundary conditions since it is simpler to analyse, and we generalize from there.
+%\end{tcolorbox}
 
 \section{Session b}
 \Large{\textbf{WARNING!}} \normalsize The permanent magnets used in this experiment are quite strong. Avoid bringing any magnetizable (made of iron/steel/Ni/Co, ID /credit cards) objects near the magnets. \textbf{Students with pacemakers could be excused from this lab.} \\
@@ -1190,14 +1213,18 @@ To make a measurement,
 \item For better precision, you may count the time interval between a few pulses and divide it by the number of intervals to get a better value for $T$. The frequency will be given by $f = 1/T$. Note the value of f in an Excel sheet with any other relevant parameters for this measurement.
 \end{enumerate}
 
-Through discussions with your lab partners, other teams and the TA, you must perform measurements to establish a (mathematical) relation between possible parameters that could affect the frequency of rotation of the electric motor. Support your claims based on data and figures as usual.
+{\color{blue} Through discussions with your lab partners, other teams and the TA, you must perform measurements to establish a (mathematical) relation between possible parameters that could affect the frequency of rotation of the electric motor. 
+Support your claims based on data and figures as usual.}
 
 
-\part{Appendix} \label{Part:Appendix}
 
-\renewcommand{\chaptername}{Appendix}
-\renewcommand{\thechapter}{\Alph{chapter}}
-\setcounter{chapter}{0}
+\part{Appendix}
+\label{Part:Appendix}
+\begin{appendix}
+
+%\renewcommand{\chaptername}{Appendix}
+%\renewcommand{\thechapter}{\Alph{chapter}}
+%\setcounter{chapter}{0}
 
 \chapter{Introduction to Excel}
 \label{App:Excel}
@@ -1395,12 +1422,9 @@ R^2 = 1 - \frac{SS_{res}}{SS_{tot}}
 which is a ratio of how your data fluctuations with respect to how you data differs from its fit. A good coefficient of determination is $R^2=1$. This can be computed automatically in Excel.
 
 
+\end{appendix}
 
 %\bibliographystyle{naturemag}
 %\bibliography{references}
-
-\begin{appendices}
-
-\end{appendices}
 
 \end{document}
