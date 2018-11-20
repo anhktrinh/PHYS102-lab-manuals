@@ -29,13 +29,14 @@
 
 \def\cesar#1{{\color{blue}[#1]}}
 \def\anhkhoi#1{{\color{purple}[#1]}}
-\def\nik#1{{\color{red} [#1]}}
+\def\nikr#1{{\color{red} #1}}
+\def\nikb#1{{\color{magenta} (#1)}}
 
 \tcbset{colback=blue!5!white,colframe=blue!75!black,center,halign=justify,width=0.9\textwidth,fonttitle=\bfseries}
 
 \linespread{1.15}
 \title{PHYS 102: TA Lab Manual}
-\author{Nikolas Provatas, Anh-Khoi Trinh, Cesar Daniel Rodriguez Rosenblueth}
+\author{Nikolas Provatas (Instructor), \\ Anh-Khoi Trinh, Cesar Daniel Rodriguez Rosenblueth}
 
 \begin{document}
 \maketitle
@@ -47,63 +48,127 @@
 \chapter{Lab Format}
 
 \section{Introduction, Learning Objectives and Lab Structure}
-Welcome to PHYS 102! The focus of these lab session will be to teach you how to think critically about  data collected from experiments, a skill that can be applied in many other STEM fields and in your own personal lives. You will learn how to acquire and analyse data quantitatively in experiments pertaining to electromagnetism experiments. \\
+Welcome to PHYS 102! The focus of these lab sessions will be to practice critical thinking about data collected from experiments, a skill that can be applied in many other STEM fields and in your own personal lives. You will also learn how to acquire and analyse data quantitatively in experiments pertaining to electromagnetism experiments. \\
 
 \noindent \large \textbf{Learning objectives} \normalsize
 
-Whether it is in your professional or personal lives, the ability to analyse and think critically about information, particularly information in the form of data, is a valuable one. In an age where one can feel overwhelmed by the prevalence of information from documentaries, non-fiction books, online websites and politicians, one must find a way to sift through this sea of information to determine objective truths. As scientists, we recommend the \textit{scientific method}.
+In an age where information has never been so accessible, one might feel overwhelmed by the abundance of information and misinformation.
+As scientists, we are trained to evaluate data on a daily basis in order to discover objective truths.
+The goal of these labs is to teach you how to evaluate data. 
 
-While the labs will be related to electromagnetism topics that you will learn about in class, the main focus of these labs will be for you to be acquainted with the scientific method. This methodology will be used to answer a question posed to you through data collected and observations you make. The first step is to conjecture a \textit{falsifiable} hypothesis to answer this question. One then performs an experiment to verify said hypothesis. After that, one can make a conclusion based on the data. In these labs, you will be asked to apply the scientific method \underline{quantitatively} to electromagnetism experiments. \\
+While the labs will be related to electromagnetism topics that you will learn about in class, the main focus of these labs will be for you to learn how to \textit{properly acquire} data, and then \textit{evaluate} it. Along the way, you will also learn how to properly take notes during experiments, present your data and conclusions, and most importantly, \textit{collaborate with peers}. \\
+
+%Whether it is in your professional or personal lives, the ability to analyse and think critically about information, particularly information in the form of data, is a valuable one. In an age where one can feel overwhelmed by the prevalence of information from documentaries, non-fiction books, online websites and politicians, one must find a way to sift through this sea of information to determine objective truths. As scientists, we recommend the \textit{scientific method}.
+
+%While the labs will be related to electromagnetism topics that you will learn about in class, the main focus of these labs will be for you to be acquainted with the scientific method. 
+%This methodology is used to answer a question posed to you through data collected and observations you make. The first step in this process is to conjecture a \textit{falsifiable} hypothesis to answer this question. One then performs an experiment to verify said hypothesis. After that, one can make a conclusion based on the data. In these labs, you will be asked to apply the scientific method \underline{quantitatively} to electromagnetism experiments. \\
 
 \noindent \large \textbf{Lab structure} \normalsize
 
-In these labs, you will have two 2-hour sessions to complete your labs: one session per week over the span of two weeks. You will have different tasks to accomplish per session. The goal of this two-session setup is to allow students to make mistakes during the first session, think critically about these, and improve your experimental data and or interpretation of these in the second session. Contrary to other lab courses that you may have taken, the emphasis here is to evaluate a student's critical thinking \textit{process}. This is best achieved when acquiring crude or bad data at first, and leaving room for follow up and subsequent improvement. The critical thinking process of improving one's data is the main focus of these labs.
+In these labs, you will have two 2-hour sessions to complete each lab: there is one session per week over the span of two weeks. 
+You will have different tasks to accomplish per session. The goal of this two-session format is to allow students to make mistakes in their experimental procedure and interpretation during the first session, think critically about these, and improve your experimental data and or interpretation of these in the second session. 
+In some labs, the first session serves as a practice round where students will familiarize themselves with the setup and concepts, and during the second session, they must apply what they've learned from the previous session.
+Contrary to other lab courses that you may have taken, the emphasis here is to evaluate a student's critical thinking \textit{process}. This is best achieved when acquiring crude or bad data at first (relative to a hypothesis  in question), thinking about sources of error, and following up with subsequent improvement. 
+The critical thinking process of improving one's data, and interpretations from that data, is the main focus of these labs.
 
-To evaluate a student's critical thinking process, we will resort to the following grading rubric:
-\begin{itemize}
-\item $15 \%$ for attendance (to both sessions of a given lab)
-\item $15 \%$ for a pre-lab analysis
-\item $10 \%$ for participation in group discussions
-\item $60 \%$ for the content of your log book
-\end{itemize}
+To evaluate your critical thinking, you will be solely graded on the content of your log book.
+\anhkhoi{Do we want to give some percentage for attendance? See grading rubric.}
+Given the focus on critical thinking, the instructions for each lab will be minimal. 
+Students are therefore encouraged to learn to acquire meaningful data to test a hypothesis. \underline{Discussions with peers and TAs are crucial and} \underline{strongly encouraged}. 
+To properly evaluate you, students' thinking process must  be reflected in their log book with enough clarity, organization and precision to allow  evaluation of their thought process. The TAs main involvement will be to guide students throughout discussion about the labs. 
 
-Given the focus on critical thinking, the instructions for each lab will be minimal. Students must learn how to acquire meaningful data on their own. Their thinking process must therefore be reflected in their log book with enough clarity, organization and precision to allow us evaluate their ability to think critically. TAs will be more involved that in typical labs in order to guide students throughout the labs.
+To ensure that you are discussing the appropriate concepts during each session, {\color{blue}we expect you to either answer a question or to write down some discussion when the text has a blue font.} 
+Be warned if you intend to print the manual using black/white ink.
 
-At the start of the first session, each student will be asked to submit their pre-lab answers to specific questions posed. Students will then be asked to divide into groups of three, and perform  measurements as a team to collect data related to the posed question(s). All methods, experimental data collected, and interpretations will be written in log book. By the end of the first session, students are asked to hand in \underline{a single} log book \underline{per team}. While you cannot bring the log book home, you are allowed (and encouraged) to take pictures of the log book to think about your results between the two sessions and plan ahead what you intend to do in the second session to improve your experiments. Although you will work with one teammate, and submit one joint journal, as is common in scientific research, we highly encourage discussions with other teams and students outside of the lab session. Such discussions will start in the lab, where TAs will facilitate group discussions between groups to help students troubleshoot their experiments and understand sources of error. You will receive your log book again at the start of the second session to document your improved experiment, new data collected and any revised interpretations. By the end of the second session, students will again submit their log book for evaluation. For most labs, there will be an individual work station and a collective work station. The former offers the base materials and supplies for each group to successfully finish the lab, while the collective work station offers additional material that can be used to improve your data.
+At the start of the first session, each student will be asked to answer in their log book some basic pre-lab questions posed in the lab manual. Student groups of three (to be determined in a so-called Lab 0 prior to the start of labs) will then perform measurements as a team to collect data related to the posed question(s). 
+All methods, experimental data collected, and interpretations should be written in a log book. 
+The log book will be in a Word file on the lab computer. By the end of the first session, students are asked to upload \underline{a single} log book \underline{per team} to Crowdmark. You should not edit the log file after upload, however, you are allowed (and encouraged) to take pictures of the log book to think about your results between the two sessions and plan ahead what you intend to do in the second session to improve your experiments. 
+Although you will work with two teammates, and submit one joint log book, as is common in scientific research, we highly encourage discussions with other teams and students outside of the lab session. Such discussions will start in session a, where TAs will facilitate group discussions between groups to help students troubleshoot their experiments and understand sources of error. 
+
+In second session of the same lab, you will resume on the same log book in session b (saved on the computer at the end of session a), where you will document your improved experiment, collect new data and any revise any interpretations necessary. 
+By the end of the second session, students will again submit their log book for evaluation. For most labs, there will be an individual work station and a collective work station. The former offers the base materials and supplies for each group to successfully finish the lab, while the collective work station offers additional material that can be used to improve your data.
+
+\begin{tcolorbox}[title=Comments for TAs]
+Throughout this lab manual, blue boxes will appear. These are instructions specific to TAs and will not be available in the student version of the lab manual.
+These are additional information on the data acquired and expected discussions for all the labs.
+You will also find figures, appropriately labelled, that are only made available to the TA version of the lab manual.
+Note that this may shift certain equation and figure numbers relative to the student's version.
+\end{tcolorbox}
 
 \section{Lab Log Books}
-The log book will be your primary source of evaluation. You will be asked to submit a log book entry by the end of each session. We will distribute at the start of each session the following structured log book:
-
-\cesar{We still have to discuss the grading scheme}
+The log book will be your primary source of evaluation. You will be asked to submit the log book to Crowdmark twice, each time at the end of a session, and each time containing entries in different parts. You can access the log book on the lab computer. The structure of the log book is as follows:\\
  
-\noindent \textbf{i) Introduction (5\%)}\\
-\noindent Clearly state your goal. This can be a brief re-statement of the question, or of your method to improve your data. Clearly state your hypotheses. Write down what you intend to verify experimentally, and why this method is an appropriate verification of your hypothesis. This part may differ for the second session since you may be more acquainted with the theory and experiment. \\
+\noindent \textbf{i) Introduction (Both sessions)} \\
+\noindent We expect a few lines. Clearly state your hypotheses. Write down what you intend to verify experimentally, and why the method you use is an appropriate verification of your hypothesis. Clearly state your experimental goal. This can be a brief re-statement of the question, or of your method chosen to obtain good data to prove the hypothesis.
+For the log book during the second session, you may summarize what you've learned from the last session. \\
 
-\noindent \textbf{ii) General Notes: Methodology and Rough data (35\%)}\\
-In this section, we expect you to write all your observations so that we can see your thought process as you are performing the lab. 
+\noindent \textbf{ii) General Notes: Methodology and Rough data (Both sessions)} \\
+In this section of the log book, you are  expected to succinctly write all your observations so that we can see your thought process as you are performing the lab. 
 
-As opposed to other lab reports that you may have submitted, we do not expect a clean point-by-point list of manipulations. In fact, you may start following a set of protocol and realize you made some mistakes and therefore should change your original protocol. We recommend writing short sentences and/or intelligible and readable notes of what your are doing. If you do encounter unexpected problems, please write down what they were, and how you resolved them.
+As opposed to other lab reports that you may have submitted, we do not expect a clean point-by-point list of manipulations. In fact, you may start following one protocol and realize it contained  some errors, necessitating that you change your original protocol. We recommend writing short sentence to this effect (in intelligible and readable notes) and continue. Similarly, if you do encounter unexpected problems, always write down what they were, and how you resolved them.
 
-We encourage you to write your measurements and rough calculations as you do your measurements. If you choose to compile your data in Excel, you should simply write a few sample calculations. These sample calculations do not need to follow the significant figure rules to be outlined later. More importantly, \textbf{you should write down \underline{all} your observations}. This part can be messy, but as long as the information that you want to convey is clear. We recommend boxing, colouring, underlining and/or labelling important measurements, calculations or observations. \\
+We encourage you to record your measurements and rough calculations in your log book as you perform your experiments. If you choose to compile and analyze your data in Excel, you should simply write out a few sample calculations in the log book. These sample calculations do not need to follow the rules  in Chapter \ref{Ch:Data-analysis}. \textbf{ The important thing is that you should write down \underline{all} your observations and sample calculations}. 
 
-\noindent \textbf{iii) Results (30\%)}\\
-\noindent In this section, you will present your data \underline{in its most presentable form}. This differs from the previous section by the way that you present your data: significant figures, graph rules, etc. have to be followed. You will also state your observation and analysis in this part. We expect you to be able to present your data adequately according to instructions from the \textbf{Data Analysis} section. For electronic files such as Excel documents, a TA will have a USB drive onto which you are to upload your documents.\\
+Measurements, discussions, calculations and plots reported in your log book can be somewhat messy, as long as the information that you want to convey is reasonably clear.  
+We recommend boxing, colouring, underlining and/or labelling important measurements, calculations or observations. 
+Discussions with other groups and the TAs is strongly encouraged (in both sessions) in order to learn. 
+It is expected that each group discuss their observations and experiments with at least one other group in each session. Students must report within their log book notes what other groups they discussed their observations, procedure and results with.
+ \\
 
-\noindent \textbf{iv) Conclusions and future work (30\%)}\\
-\noindent In this section, you will state your conclusion, and offer possible follow-ups to this lab. This can include other physical properties to study, or to offer a better methodology to study this phenomenon. You must motivate your proposed follow-up project by clearly stating what you expect to observe (a hypothesis) and support your claim based on your current experiment. The proposed future projects must be realistically performed by your peers, and must not assume an unrealistic sum of budgetary support or higher level of experimental expertise such that you or your peers are not acquainted to. For your lab report submitted at the end of the first session, be mindful that you must execute your proposed improvements during the second session.
+\noindent \textbf{iii) Presentation of Results (Only Session b*)}\\
+\noindent {\color{blue} In session a, you must simply answer questions, or discuss topics written written in a blue font in the text when applicable.} We do not expect you to present all your results for this session.
+
+In session b, you will present your data and discussions \underline{in their final form to be assessed}. This differs from session a in the way that you present your results and interpretations; here significant figures, graph rules, etc., have to be followed, see sections \ref{Sec:General-guidelines}-\ref{Sec:Data-presentation}. 
+You will also state your observation and analysis in this part, refined from what you learned in discussions during session a. {\color{blue} Be sure to answer questions in or discuss topics with a blue font in the text.} \\
+
+\noindent \textbf{iv) Conclusions and future work (Both sessions) }\\
+\noindent In this section, you will conclude how well your experimental data support the hypotheses you set out to prove. Also included here can be a brief discussion on other physical properties that can be studied, or offering a better methodology to study this phenomenon.
+
+You must motivate your proposed follow-up project by clearly stating what you expect to observe (a hypothesis) and support your claim based on your current experiment. The proposed future projects must be \textbf{realistically performed by your peers}. Whenever this applies, for your lab report submitted at the end of the first session, be mindful that you must execute your proposed improvements/protocol during the second session.
+As discussed earlier, if you decide to change protocols in the second session relative to what you wrote in your conclusion of the first session, you must explain what made you change your mind.
+
+\section{Grading Rubric}
+The point distribution will vary per lab, but the overall format will remain the same. We will attribute points to the following rubric:
+\begin{itemize}
+\item Pre-lab activity \\
+We expect that you complete your pre-lab activity.
+
+\item General log book structure \\
+We expect that you follow the structure of the log book outlined above. As quint as the introduction and conclusion sections might seem, we value the evolution of your thought process, and therefore we expect the outline above to be followed.
+
+\begin{tcolorbox}
+Here we expect them to simply write an appropriate introduction and conclusion. This is more for them to write something down, so that you can engage in a discussion and stimulate their critical thinking process.
+We expect everyone to have appropriate \textbf{General Notes} and \textbf{Results}. sections.
+\end{tcolorbox}
+
+\item Conceptual questions and Critical thinking \\
+We will evaluate your understanding and ability to evaluate your data. {\color{blue} We expect that you answer the questions and respond to the discussions in blue fonts.}
+We further expect you to appropriately analyze your data, and pull appropriate conclusions from them.
+
+\item Data presentation \\
+We expect that you be able to present your data appropriately in your \textbf{Results} section by following the guidelines in sections \ref{Sec:General-guidelines}-\ref{Sec:Data-presentation}. We also expect that your calculations be done correctly by following the instructions in Chapter \ref{Ch:Data-analysis}.
+
+\begin{tcolorbox}
+While we expect them to perform appropriate calculations, it is unreasonable to ask you to check all of it. Simply verify if their calculations make sense, and correct them if they don't. You must however be aware of the standards that we ask of them.
+\end{tcolorbox}
+
+\end{itemize}
+
+\anhkhoi{Do we need to tell them this?} Our point system is distributed into four categories with varying weights per lab: unsatisfactory, minimally satisfactory, satisfactory and exceeding expectations (bonus points).
+
 
 \chapter{Data Analysis}
 \label{Ch:Data-analysis}
 
 \section{General Guidelines}
 \label{Sec:General-guidelines}
-Here is a list of general guidelines for your log book:
+The following is a list of general guidelines for your log book:
 \begin{itemize}
 \item Measurements must always include \textbf{units}.
-\item Measurements must include an uncertainty (\textbf{standard deviation}).
+\item Measurements must include an uncertainty (\textbf{standard deviation}). We will sometimes use interchangeably the terms ``uncertainty", ``standard deviation" and ``error". The use of this terminology will be emphasized in section \ref{Sec:ErrorAnalysis}.
 \item Tables (and any other data representation method) must also include appropriate labels, units and standard deviation.
 \item When comparing to a known quantity (theoretical value), the former does not have a standard deviation attributed to it, unless that information is found from an experiment, in which case there should be an associated standard deviation.
-\item If you quote results from elsewhere, you must include the source: \anhkhoi{how to quote sources}
+%\item If you quote results from elsewhere, you must include the source: \anhkhoi{how to quote sources}
 \item Recall that vector-data has both a \textbf{magnitude} and a \textbf{direction}.
 \item Write down \underline{all} your observations and some commentary about them.
 \end{itemize}
@@ -117,10 +182,9 @@ Here is a list of general guidelines for your log book:
 \item Use an appropriate scale.
 \item Include a legend for the different curves shown on a single plot.
 \item Fit equation (and $R^2$ value) if a fit was used.
-\item Not have joint data points (unless necessary).
 \end{itemize}
 
-\section{Data Presentation}
+\section{Data Presentation} \label{Sec:Data-presentation}
 One of the most important aspects of doing research is to be able to communicate efficiently your findings. In physics, this is done mostly by means of one of the following:
 \begin{itemize}
 \item A quoted result
@@ -132,7 +196,8 @@ As emphasized previously, all quoted results must include an uncertainty i.e. a 
 \begin{equation}
 g = 9.8 \pm 0.2 \ m/s^2.
 \end{equation}
-Usually, if you have a single result, you must explain what it is: was it from a single measurement? Was it an average or did you obtain it from some other method? Whatever the method that you used, there is a specific way to obtain the correct uncertainties. This will be explained in the next sections.
+Usually, if you have a single result, you must explain whether it came from a single measurement, or some type of analysis (average, fit, other).
+Whatever the method that you used, there is a specific way to obtain the correct uncertainties. This will be explained in the next sections.
 
 On rare occasions, there are certain quantities that do not need a standard deviation. This could include percentages of error or absolute error differences.
 
@@ -146,13 +211,13 @@ Voltage ($\pm 0.2$ V) & Current ($\pm 0.1$ A) \\ \hline
 5.4 & 25.2 \\
 7.3 & 35.6 \\ \hline
 \end{tabular}
-\caption{Example of a table where all measurements have the same standard deviation. If they didn't, you must still include them individually.}
+\caption{Example of a table where all measurements have the same standard deviation. If they didn't, you must still include them individually next to each entry.}
 \label{Table:Presentation-Example}
 \end{table}
 
 Tables are useful to show the explicit values of your results. However sometimes the exact values aren't as important as the general trend. In this case, you would opt to present your data in chart form.
 
-There are many types of possible charts. The most useful one for us will be the scatter plot. An example of a scatter plot is shown in Fig.~\ref{Fig:Example-Scatter}.
+There are many types of charts. The most useful one for us will be the scatter plot. An example of a scatter plot is shown in Fig.~\ref{Fig:Example-Scatter}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9\textwidth]{intro-example-scatter}
@@ -162,13 +227,13 @@ There are many types of possible charts. The most useful one for us will be the 
 
 A scatter plot allows you to see the general trend of your data. If you expect a specific behaviour, you can fit a trendline to your data to match a specific equation. By further plotting error bars, you can compare how far away your data points are from the expected trendline. This gives you some insight into whether your data matches your expected trend. From the trendline, you can also see the actual coefficient of the fit. As shown in Fig.~\ref{Fig:Example-Scatter}, you can also display a $R^2$ value, which is called the coefficient of determination. This tells you how good your fit was to your data. A perfect $R^2$ value is $1$. For the example of Fig.~\ref{Fig:Example-Scatter}, the $R^2$ value is good and most of the measurements fall within a standard deviation of the fit, therefore this says that the current is proportional to the voltage by a proportionality factor of $3.0371$. 
 
-In summary, to present your data, you will need to know certain things: how to perform an average and other basic statistics, how to evaluate the uncertainty in your measurements and by extension, your final result, how many digits to display in your final answer, and most importantly, how to analyse your data. This will be the subject of the following sections.
+In summary, to present your data, you will need to know certain things: how to perform an average and other basic statistics, how to evaluate the uncertainty in your measurements and by extension, the final results you obtain from these, how many digits to display in your final answer, and most importantly, how to analyse your data. This will be the subject of the following sections.
 
-\section{Basic Statistics}
+\section{Basic Statistics} \label{Sect:Basic-statistics}
 
-\noindent \large \textbf{Mean} \normalsize
+\noindent \large \textbf{Mean (Average)} \normalsize
 
-Let $y(x)$ be a function of $x_i$ datapoints. The value of $y$ for $x_i$ can be denoted by $y(x_i)$ or $y_i$. The mean, or average, denoted by $\bar{y}$ of a dataset with $N$ datapoints is given by
+Let $y(x)$ be a function of $x_i$ data points. The value of $y$ for $x_i$ can be denoted by $y(x_i)$ or $y_i$. The mean, or average, denoted by $\bar{y}$ of a dataset with $N$ datapoints is given by
 \begin{equation}
 \bar{y} = \frac{1}{N} \displaystyle \sum_{i}^N y(x_i) = \frac{1}{N} \left( y(x_1) + y(x_2) +... + y(x_N) \right).
 \end{equation}
@@ -179,11 +244,12 @@ The standard deviation of a function $y(x)$ is denoted by $\sigma_y$. One says t
 \begin{equation}
 y_i \pm \sigma_{y_i}.
 \end{equation}
-The standard deviation tells you up to what value is your data precise: your data point can vary between $y_i + \sigma_{y_i}$ and $y_i - \sigma_{y_i}$. This means that your measurement $y_i$ can vary by $2 \sigma_{y_i}$. A good set of measurement would have a very small standard deviation: this gives you the bounds under which your measurement is considered precise. You will see in section ``\textbf{Error Analysis}" how to quantify this quantity. \\
+The standard deviation tells you up to what value is your data precise: your data point can vary between $y_i + \sigma_{y_i}$ and $y_i - \sigma_{y_i}$. This means that your measurement $y_i$ can vary by $2 \sigma_{y_i}$. A good set of measurement would have a very small standard deviation: this gives you the bounds under which your measurement is considered precise. You will see in section ``\textbf{Error Analysis}" how to calculate this quantity. \\
 
 \noindent \large \textbf{Significant Numbers} \normalsize
 
-To present results, one must present an appropriate number of significant numbers. In this course, we will not be concerned with the \textit{number of significant digits}, but more with the precision attributed to a measurement. When quoting a measurement, the last digit should be fixed by the uncertainty of the measurement: it must match the order of magnitude of the standard deviation. In other words, the standard deviation fixes up to what precision (roughly decimal place) you can quote your results. Table~\ref{Tab:SigFigs} lists some common mistakes and how to present those results appropriately. In the context of this course, we will simplify our conventions by \underline{keeping only one significant number for the standard deviation}. Recall that leading zeros do not count as a significant number and trailing zeros (after the precision of the standard deviation) should be discarded.
+To present results, one must present an appropriate number of significant numbers. In this course, we will not be concerned with the \textit{number of significant digits}, but more with consistency in reporting the precision attributed to a measurement. 
+When quoting a measurement, the last digit should be fixed by the uncertainty of the measurement: it must match the order of magnitude of the standard deviation. In other words, the standard deviation fixes up to what precision (roughly decimal place) you can quote your results. Table~\ref{Tab:SigFigs} lists some common mistakes and how to present those results appropriately. In the context of this course, we will simplify our conventions by \underline{keeping only one significant number for the standard deviation}. Recall that leading zeros do not count as a significant number and trailing zeros (after the precision of the standard deviation) should be discarded.
 
 \begin{table}[h]
 \centering
@@ -192,7 +258,7 @@ To present results, one must present an appropriate number of significant number
 Incorrect & Correct \\ \hline
 $324.9453 \pm 0.02$m & $324.95 \pm 0.02$m \\
 $20 \pm 0.1$\$ & $20.0 \pm 0.1$\$ \\
-$3 \times 10^4 \pm 2$N & $3000 \pm 2$N \\
+ $3 \times 10^4 \pm 2$N & $3000 \pm 2$N \\
 $31.02 \pm 0.10$\$ & $31.0 \pm 0.1$\$ \\
 $0.003564 \pm 0.00012$m/s & $0.0036 \pm 0.0001$m/s \\ \hline
 \end{tabular}
@@ -214,13 +280,19 @@ If one incorrectly measured the length $L$ of the string, then the results would
 
 \section{Error Analysis} \label{Sec:ErrorAnalysis}
 
+Measurements carry an inherent uncertainty to them.
+To characterize this uncertainty, we write attribute them a value to which the measurement can vary. This standard variation is called a \textit{standard deviation}. For this reason, we will often use is interchangeably with the term \textit{uncertainty}. 
+Note that there is a formal mathematical definition of the concept of standard deviation, but for the context of this course, we will abstain of such definition.
+Sometimes, a measurement must be manipulated with other measurements in order to obtain another variable. To keep track of how the uncertainty of each measurement is propagate through this manipulation, we use \textit{error propagation} techniques. This characterizes the \textit{error} on this derived quantity, and therefore, it is another type of uncertainty.
+Thus, we will also use the term \textit{error} interchangeably with \textit{uncertainty}.\\
+
 \noindent \large \textbf{Standard deviation of a measurement} \normalsize
 
 The \textit{rule of thumb} for finding the standard deviation of measurements is as follows: each measurement can vary by \textit{half} of the smallest available precision from your measuring instrument, and you must add the uncertainties of the measurement. Consider the example of measuring a distance with a 30cm ruler. The smallest increment is a mm. When you measure a distance between \underline{two points}, you take \underline{two} measurements: one at each point. Thus the uncertainty on the measurement is $2 \times 0.5$mm, so $1$mm. This is exactly the smallest available increment of your measuring device. Therefore, unless otherwise specified, the \textit{standard deviation of a measurement is the smallest available measurable value allowed by your instrument}. 
 
 Another example is measuring the time difference between two events. Again, there will be two measurements: the initial and end time. Stopwatches often allow one to view up to ms precision. However, the average visual time reaction is roughly $0.3$s, and therefore each initial and final time measurement varies by $0.15$s and so the uncertainty for the whole measurement is $0.3$s. \\
 
-\noindent \textbf{Standard deviation for fluctuating data}
+\noindent \large \textbf{Standard deviation for fluctuating data} \normalsize
 
 For fluctuating datasets where \textit{each measurement is independent of the previous}, to reliably represent your data, you should take some form of average over some number of measurements. Measurements that are random are said to follow a \textit{Poisson distribution}. To study these types of measurements, one typically chooses a subset of $N$ data points, and calculate its mean. Given the mean, one must approximate the error as
 \begin{equation}
@@ -291,6 +363,8 @@ You will have to recognize which one of the above is useful and representative o
 \noindent \large \textbf{Fit analysis} \normalsize
 
 As mentioned before, a good way to know whether your fit is correct is to compute the coefficient of determination $R^2$. To compare your fit to your data, you should see whether your data points all (or mostly) fall within one standard deviation of the fitted equation, that is if the standard deviation error should be less than 1 $\sigma$ for all data points when compared to $y_{fit}$.
+Note that for small $R^2$, it could be possible that the fit falls within the error bars of your graph, and therefore
+one would like to obtain $R^2\approx 1$ with small error bars.
 
 
 \part{Lab Manuals} \label{Part:Labs}
@@ -313,33 +387,32 @@ In this lab you will be asked to accomplish the following tasks:
 \item Support your conclusion based on a quantitative evaluation of your data.
 \end{itemize}
 
-You will have to chose some parameters and quantify their affect on the capacitance of the setup. In the process, you will learn how to acquire good data and how to quantify and present your data. We would like to re-emphasize that collaborations and discussions are encouraged and expected throughout the two sessions.
-
-\begin{tcolorbox}[title=Role as a TA]
-Your role as a TA will be to guide them through the ``script" that we present in the protocol section. You should guide them by asking questions and making them think about their results as opposed to giving them the right answer immediately. You will also be required to bring teams together to collaborate with each other. You should clarify the grading method, and re-emphasize that the major part of their grade comes from the log book.
-\end{tcolorbox}
+You will have to chose some parameters and quantify their affect on the capacitance of the setup. In the process, you will learn how to acquire good data and how to quantify and present your data. We would like to re-emphasize that collaborations and discussions are encouraged and expected throughout the two sessions of the lab.
 
 In the first session, you will work together to find possible parameters that can affect the capacitance of a pair of parallel plates. Measurements at this stage may be crude; do not worry about that, we are {\it not} evaluating the usefulness of the data at this stage, rather the process of thinking about what this data {\it means}, and your thinking process about how to improve your experiment to obtain better data.
 
-During the second session, you will be asked to obtain quantitatively improved data and to compare it with data from the previous session. You must conclude, based on a quantitative evaluation of your data, whether or not, and how, your chosen parameter affects the capacitance of a parallel plate capacitor.
+During the second session, you will be asked to obtain quantitatively improved data and to compare it with data from the previous session. You must then conclude, based on a quantitative evaluation of your data, whether or not, and how, your chosen parameter affects the capacitance of a parallel plate capacitor. \\
 
+\begin{tcolorbox}[title=Role as a TA]
+Your role as a TA will be to guide them through the ``script" that we present in this protocol. You should guide them by asking questions and making them think about their results as opposed to giving them the right answer immediately. You are also required to bring teams together to collaborate/discuss with each other. You should clarify the grading method,  emphasizing that the major part of their grade comes from the materials presented in the log book.
+\end{tcolorbox}
 
 \subsection{Pre-lab activity}
-To answer some of these questions, we encourage you to read the \textbf{Data Analysis} chapter of the lab manual.
+To answer some of these questions, we encourage you to review Chapter \ref{Ch:Data-analysis} of the lab manual on  \textbf{Data Analysis}.
 \begin{enumerate}
 \item What is a measurement? Give your own definition of what constitutes a measurement based on your previous courses with lab components (biology, chemistry, physics).
 \begin{tcolorbox}[title=Answer]
 This is more open-ended. Measurements can be taught of as quantifying observations. Measurements must come with an inherent uncertainty.
 \end{tcolorbox}
-\item Two engineers must measure the distance between the McGill metro station to the athletic centre to build an underground tunnel. One engineer finds that the distance is $9134 \pm 5$m while the other finds that the distance is $(915 \pm 2) \times 10^1$m. In what ways can they compare their measurements? Do their measurements agree? Explain.
+\item Two engineers must measure the distance between the McGill metro station to the athletic centre to build an underground tunnel. One engineer finds that the distance is $9134 \pm 5$m while the other finds that the distance is $9150 \pm 20$m. In what ways can they compare their measurements? Do their measurements agree? Explain.
 \begin{tcolorbox}[title=Answer]
 They should compare the standard deviations to conclude that the measurements of the two engineers agree.
 \end{tcolorbox}
-\item The city considers to build a metro line between McGill station and the station at University of Montreal. To do this, an engineer decides to use a km-long ruler whose smallest divider is a meter. She \textit{did not} use any other measuring devices. She takes her measurements and presents her findings to her team as $3653.4500$m. What is the uncertainty on this measurement? Did she present enough, too little or too many digits about her measurement? Why?
+\item The city is considering to build a metro line between McGill station and the station at University of Montreal. To do this, an engineer decides to use a km-long ruler whose smallest divider is a meter. She \textit{did not} use any other measuring devices. She takes her measurements and presents her findings to her team as $3653.4500$m. What is the uncertainty on this measurement? Did she present enough, too little or too many digits about her measurement? Why?
 \begin{tcolorbox}[title=Answer]
 The correct way to present this measurement is $3653 \pm 1$m since the smallest increment on her measuring instrument is a meter. She presented too many digits since her measuring tool cannot give such precision.
 \end{tcolorbox}
-\item Two groups of researchers are trying to test their new methodology to measure the speed of light $c$. Current data shows that the speed of light is roughly $c=2.99 792 \times 10^8$ m/s. The first group finds that $c=2.88 \pm 0.02 \times 10^8$ m/s while the second group finds that $c=3.0 \pm 0.2 \times 10^8$ m/s. What do these measurements tell you about their methodology? What type of mistake may have caused the discrepancy in the first group's results?
+\item Two groups of researchers are trying to test their new methodology to measure the speed of light $c$. Current research shows that the speed of light is roughly $c=2.99 792 \times 10^8$ m/s. The first group finds that $c=2.88 \pm 0.02 \times 10^8$ m/s while the second group finds that $c=3.0 \pm 0.2 \times 10^8$ m/s. What do these measurements tell you about their methodology in the context of precision and accuracy? What type of mistake may have caused the discrepancy in the first group's results?
 \begin{tcolorbox}[title=Answer]
 These measurements show that the first group has a more \textbf{precise} methodology, while the second team has a more \textbf{accurate} one. The first group probably has a \textbf{systematic error} that causes this offset.
 \end{tcolorbox}
@@ -350,12 +423,12 @@ They should say something about the standard deviation and fit coefficient of de
 \end{enumerate}
 
 \subsection{What is a capacitor?}
-You have learned in class that charges can attract and repel each other. This is because point charges source \textit{electric fields} that apply a force on a test charge. Since there can exist a force between two point charges, there exists a \textit{potential energy} between two point charges $\Delta U$ due to this force. We define the \textit{electrical potential} as \textit{the potential energy change \underline{per unit charge}} as
+You  learned in class that charges can attract and repel each other. This is because point charges source \textit{electric fields} that apply a force on a test charge. Since there exists a force between two point charges, there exists a \textit{potential energy difference}  $\Delta U$ between two point charges (relative to some reference separation) due to this force. We define  \textit{electrical potential difference} as \textit{the potential energy difference  \underline{per unit charge}}, 
 \begin{equation}
 \Delta V = \frac{\Delta U}{q}
 \label{Eq:ElectricPotential}
 \end{equation}
-where $q$ is the \textit{test particle's charge}. In practice, it is more useful to define an electrical potential difference to move \textit{\underline{any} test charge} $q$ from $r=\infty$ to a distance $R$ from a source charge $Q$ as
+where here $q$ is the \textit{charge of a test particle} displaced in the electric field of a source charge $Q$. In practice, it is more useful to define an electrical potential difference to move \textit{\underline{any} test charge} $q$ from $r=\infty$ to a distance $R$ from a source charge $Q$ as
 \begin{equation}
 V = \frac{k Q}{R}
 \label{Eq:ElectricPotential_point}
@@ -368,31 +441,32 @@ where $k$ is Coulomb's constant $k = {1}/{4\pi \epsilon_0}$. This will have unit
 \label{Fig:ElectricPotential_point}
 \end{figure}
 
-Now consider a pair of parallel plates separated by a distance $d$ connected to a battery as shown in Fig.~\ref{Fig:ParallelPlates}. A pair of parallel plates separated by air or another material can be assembled into a \textit{capacitor}: on each parallel plate, because of the battery, there will accumulate a number of electrons on the negative plate such that the total charge is $-Q$ and $+Q$ on the positive plate. Because of the gap between the plates, there now exists an electric potential between the plates, which is given by eq.~\eqref{Eq:ElectricPotential}.
+Now consider a pair of parallel conducting plates separated by a distance $d$ connected to a battery as shown in Fig.~\ref{Fig:ParallelPlates}. A pair of parallel plates separated by air or another (non-conducting) material can be assembled into a \textit{capacitor}: on each parallel plate, because of the battery, there will accumulate a number of equal and opposite charges: electrons on the negative plate such that the total charge is $-Q$, and $+Q$ will accumulate on the positive plate. Because of the gap (separation) between the plates, there now exists an electric potential between the plates, which is given by eq.~\eqref{Eq:ElectricPotential}.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.6]{lab1-parallel-plates.png}
-\caption{Parallel plate setup. The battery with voltage $V$ creates a flow of electrons such that there will accumulate a total charge of $-Q$ on one plate, and $+Q$ on the positive plate. Since the plates are separated by a distance $d$, there will be a electrical potential difference between the two plates.}
+\caption{Parallel plate setup. The battery with voltage $V$ creates a flow of electrons such that there will accumulate a total charge of $-Q$ on the negative plate, and $+Q$ on the positive plate. Since the plates are separated by a distance $d$, there will be a electrical potential difference between the two plates.}
 \label{Fig:ParallelPlates}
 \end{figure}
 
-One defines the \textit{capacitance} of a capacitor as the constant of proportionality between the total number of charges $Q$ and the electric potential $V$ stored between the plates, i.e. 
+One defines the \textit{capacitance} of a capacitor as the constant of proportionality between the total number of charges $Q$ (same magnitude on either plate) and the electric potential $V$ stored between the plates, i.e. 
 \begin{equation}
 Q = C V.
 \label{Eq:lab1-Q=CV}
 \end{equation}
-Capacitance is measured in Farads F. A useful constant in such setup is the \textit{vacuum permittivity} $\epsilon = 8.85 \times 10^{-12}$F/m. In this lab, you will be asked to verify \textit{what} affects the capacitance $C$ of a parallel plate capacitor system.
+Capacitance is measured in Farads F.  In this lab, you will be asked to verify \textit{what} affects the capacitance $C$ of a parallel plate capacitor system. (A useful constant in such setup is the \textit{vacuum permittivity} $\epsilon = 8.85 \times 10^{-12}$F/m.)
 
 \begin{tcolorbox}[title=Expected result]
 We expect them to find
 \begin{equation}
-C = \epsilon \frac{A}{d}, \nonumber
+C = \epsilon \frac{A}{d}
+\label{Eq:Capacitance-A/d}
 \end{equation}
-where $\epsilon$ is the \textit{relative} permittivity. They should be able to test the area correlation with the plates given, and the distance one by stacking multiple sheets of dielectric between the plates.
+where $\epsilon$ is the \textit{relative} permittivity. They should be able to test the area correlation with the plates given, and the distance correlation  by stacking multiple sheets of dielectric between the plates.
 \end{tcolorbox}
 
 \begin{tcolorbox}
-We expect them to plot their data and fit a linear regression with standard deviation error bars as shown in Fig.~\ref{Fig:Lab1-results-area}. Knowing the distance between the plates, they can also plot the relative permittivity versus the area, and compare with the mean value of $\epsilon$ to see the consistency of their results as shown in Fig.~\ref{Fig:Lab1-results-area2}.
+We expect them to plot their data and fit a linear regression between $C$ and $A$ with standard deviation error bars as shown in Fig.~\ref{Fig:Lab1-results-area}. Knowing the distance between the plates, they can also plot the relative permittivity versus the area, and compare with the mean value of $\epsilon$ to see the consistency of their results as shown in Fig.~\ref{Fig:Lab1-results-area2}. You should encourage them to compare the $R^2$ of the linear fit relative to comparison with a constant value.
 \end{tcolorbox}
 
 \begin{figure}[h]
@@ -402,7 +476,8 @@ We expect them to plot their data and fit a linear regression with standard devi
 \end{figure}
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{lab1-results-area2}
-\caption{[Figure only available to TAs] Data of the relative permittivity versus the area, compared to the mean value. The average $\epsilon$ is $3.4 \pm 0.3 \times 10^{-12}$ F/m.}
+\caption{[Figure only available to TAs] Data of the relative permittivity versus the area, compared to the mean value, and a  linear regression fit. The average $\epsilon$ from the data is $3.4 \pm 0.3 \times 10^{-12}$ F/m.
+They should find that it is a constant since by definition, this is the constant of proportionality of eq.~\eqref{Eq:Capacitance-A/d}, and we expect theirs results to be similar.}
 \label{Fig:Lab1-results-area2}
 \end{figure}
 \begin{figure}[h]
@@ -412,24 +487,25 @@ We expect them to plot their data and fit a linear regression with standard devi
 \end{figure}
 
 \begin{tcolorbox}
-When testing for the $d$ dependence, the data showed that for $n>3$ sheets, there seems to be a $1/\sqrt{d}$ correction that appears, and therefore students aren't expected to find a perfect fit for large distances of $d$. This is mostly due to some polarization effect from stacking the dielectrics, and therefore one should view the $1/d$ dependence as a ``small distance" approximation. You should encourage students to find this disparity between experiment and theory and encourage them to discuss the cause of this. The data is shown in Fig.~\ref{Fig:Lab1-results-distance}.
+When testing for the $d$ dependence, the data showed that for $n>3$ sheets, there seems to be a $1/\sqrt{d}$ correction that appears, and therefore students aren't expected to find a perfect fit for large distances of $d$. This is mostly due to some polarization effect from stacking the dielectrics, and therefore one should view the $1/d$ dependence as a ``small distance" approximation. You should encourage students to find this disparity between experiment and theory and encourage them to discuss the cause of this. The data is shown in Fig.~\ref{Fig:Lab1-results-distance}. 
+They may struggle with this part since it won't be a simple linear fit and they will not know about polarization, etc. 
+But encourage them to take data diligently and discuss with others, and then you can coax them into the correct interpretation at the end during the discussion phase.
 \end{tcolorbox}
 
 \begin{tcolorbox}
-Students are encouraged to discuss about other parameters such as shape, volume, mass applied to the dielectric, and the use of other dielectrics, but these aren't easily quantifiable parameters.
+Students are also encouraged to discuss about other parameters such as shape, volume, mass applied to the dielectric, and the use of other dielectrics, but these aren't easily quantifiable parameters.
 \end{tcolorbox}
 
 %\begin{equation}
 %C = \epsilon \frac{A}{d}, \qquad \epsilon = \kappa \epsilon_0
 %\end{equation}
 
-
 \section{Protocol}
 \subsection{Session a}
 \begin{tcolorbox}[title=Session \#1]
 We suggest the following time distribution for this session:\\
 
-During the first 20mins, assemble everyone to the front and do a quick introduction, and maybe a demo of the manipulations. You should then ask everyone what they think could affect the capacitance of a capacitor, and push them to give a physical reason behind their hypotheses. We expect you to motivate the idea that electrical potential is given by the relative distance between two charged objects, and therefore, for parallel conducting plates, larger area would allow for more charges to accumulate, and by eq.~\eqref{Eq:ElectricPotential_point}, we expect there to be a $1/r$ dependence. Recommend that they works together to cover more parameters e.g. one team takes care of area, the other does distance.
+During the first 20mins, assemble everyone to the front and do a quick introduction, and maybe a  demo of the manipulations. You should then ask everyone what they think could affect the capacitance of a capacitor, and push them to give a physical reason behind their hypotheses. Have them consider the units of capacitance $[Q/V]$, and thus motivate that for parallel conducting plates, larger area would allow for more charges to accumulate, and since electrical potential is given by the relative distance between two charged objects eq.~\eqref{Eq:ElectricPotential_point} suggests that there may be $1/r$ dependence to capacitance. Recommend that they work together to cover more parameters e.g. one team takes care of area, the other does distance.
 \end{tcolorbox}
 
 \begin{tcolorbox}
@@ -437,14 +513,14 @@ Give them about 60-75mins to perform their measurements while walking around, an
 \end{tcolorbox}
 
 \begin{tcolorbox}
-After about 90mins of the 2-hour session, call everyone to the front and ask people to describe their findings. List on the board what could affect capacitance and why. Make sure that they support their findings with statistics (standard deviations and fits), and ask them whether the correlations that they find are well supported and warrant extra verification during the next session. After this discussion period, make sure that everyone understands that they have to be looking to verify the effects of area and distance of the plates during the next session.
+After about 90mins of the 2-hour session, sk your assigned groups to describe their findings. Enumerate what could affect capacitance and why. Make sure that they support their findings with statistics (standard deviations and fits), and ask them whether the correlations that they find are well supported and which warrant extra verification during the next session. After this discussion period, make sure that everyone understands what they have to be looking for to verify the effects of area and distance of the plates during the next session.
 \end{tcolorbox}
 
 \begin{tcolorbox}
-For the remainder of the time, students can try and take additional measurements, and prepare notes for the next session. Don't forget to pick up every teams' log book by the end of the session.
+For the remainder of the time, students can try and take additional measurements, and prepare notes for the next session. Do not forget to ask the students to upload the log book to crowdmark.
 \end{tcolorbox}
 
-The available material is listed in Table \ref{Tab:Lab1-material}. The metallic rectangular plates will be of varying dimensions. The manipulations are straightforward: insert either a plastic or paper sheet between the two plates and use the Arduino unit (see below) to measure the capacitance. At this point, you do not need to know how the Arduino unit works, simply how to use it. You will learn how it works in the next lab. The plates must not touch each other in order for you to see a measurement: this causes a short-circuit and therefore you will not see a capacitance measurement. You can assume that the distance between the plates is the thickness of the plastic or paper sheet.
+The available materials to be used in your experiments are listed in Table \ref{Tab:Lab1-material}. The metallic rectangular plates will be of varying dimensions. The manipulations are straightforward: insert either a plastic or paper sheet between the two plates and use the Arduino unit (see below) to measure the capacitance. At this point, you do not need to know how the Arduino unit works, simply how to use it. You will learn how it works in the next lab. The plates must not touch each, otherwise you will not see a measurement: this causes a short-circuit and therefore you will not see a capacitance measurement. You can assume that the distance between the plates is the thickness of the plastic or paper sheet.
 \begin{table}[h]
 \centering
 \begin{tabular}{||c | c ||}
@@ -453,7 +529,7 @@ Individual station & Collective station\\ \hline
 Laptop & Aluminum foil \\
 Arduino capacitance setup & Blocks of wood \\
 Metallic plates & Small weights \\
-Ruler (?) & Assorted capacitors \\
+30cm ruler & Assorted capacitors \\
 Plastic sheets & Assorted resistors \\
 Paper sheets & Extra wires \\
 & Micrometer \\
@@ -464,7 +540,7 @@ Paper sheets & Extra wires \\
 \label{Tab:Lab1-material}
 \end{table}
 
-\noindent Information about the Arduino code can be found \href{https://www.arduino.cc/en/Tutorial/CapacitanceMeter}{here}. To use the Arduino unit:
+\noindent Information about using the Arduino code can be found \href{https://www.arduino.cc/en/Tutorial/CapacitanceMeter}{here}. To use the Arduino unit:
 \begin{enumerate}
 \item Plug the USB-port into the laptop
 \item Open the Arduino Genuino application on the laptop.
@@ -478,28 +554,28 @@ Paper sheets & Extra wires \\
 \label{Fig:ArduinoMenuBar}
 \end{figure}
 
-\item Verify the script by clicking the icon with a checkmark. If there is an error, call the TA.
+\item Verify the script by clicking the icon with the checkmark. If there is an error, call the TA.
 \item Upload the script by clicking the icon with the right arrow.
-\item In the tabs above, go into Tools $\rightarrow$ Serial Monitor (or on your keyboard, press Ctrl+Shift+M).
+\item In the tabs above, go into Tools $\rightarrow$ Serial Monitor (or on your keyboard, press Ctrl+Shift+M). You should see that a window open as follows (without the numbers):
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.85 \textwidth]{lab1-Arduino-monitor.png}
-\caption{Arduino Serial Monitor. This is a pop-up screen where you will see your capacitance measurements scroll by. The Arduino unit takes a capcitance measurement at a fixed frequency. Unless otherwise specified, the output is in nanoFarads. Units aren't display as to simplify the transfer from the monitor screen to Excel, but one could display the units by changing the command in the Arduino script. To stop the scrolling of measurements, click on the Autoscroll box.}
+\caption{Arduino Serial Monitor. This is a pop-up screen where you will see your capacitance measurements scroll by. The Arduino unit takes a capcitance measurement at a fixed frequency. Unless otherwise specified, the output is in nanoFarads. Units aren't displayed so as to simplify the transfer from the monitor screen to Excel, but one could display the units by changing the command in the Arduino script. To stop the scrolling of measurements, click on the Autoscroll box.}
 \label{Fig:Arduino-Monitor}
 \end{figure}
 
-\item Take the two wires (see Fig.~\anhkhoi{updated setup}) and simply touch each side of the parallel plates: you should see a multitude of measurements scrolling down the monitor window. If you do not see many measurements scrolling in the monitor window, it is likely that the plates are touching each other and you therefore have a short circuit. \anhkhoi{input new setup pic}
+\item Take the two wires (see Fig.~\anhkhoi{updated setup}) and simply touch each side of the parallel plates: you should see a multitude of measurements scrolling down the monitor window, as in Fig.~\ref{Fig:Arduino-Monitor}. If you do not see many measurements scrolling in the monitor window, it is likely that the plates are touching each other and you therefore have a short circuit. \anhkhoi{input new setup pic}
 \item You can stop the auto-scroll by clicking the bottom-left box to better see your results (see Fig.~\ref{Fig:Arduino-Monitor}).
 \end{enumerate}
 
-Notice that in Fig.~\ref{Fig:Arduino-Monitor}, the data fluctuates. You will have to determine how many capacitance measurements should you average over to acquire a good representation of that capacitance measurement. 
-We refer you to the Part I, section \ref{Sec:ErrorAnalysis} of the lab manual. Using this setup, proceed to conduct you experiments and collect data that will let you evaluate $C$ in eq.~\eqref{Eq:lab1-Q=CV}. 
+Notice that in Fig.~\ref{Fig:Arduino-Monitor}, the data fluctuates. You will have to determine how many capacitance measurements  you should average over to acquire a good representation of a particular capacitance measurement. 
+We refer you to the Part I, section \ref{Sec:ErrorAnalysis} of the lab manual. Using this setup, proceed to conduct you experiments and collect data that will let you evaluate $C$ in eq.~\eqref{Eq:lab1-Q=CV} as a function of different geometrical parameters of the capacitor system. 
 
-You will have the opportunity to test whatever hypothesis you may have, however {\color{blue}\textbf{every group must take a capacitance measurement for at least \underline{three} different pairs of plate sizes while inserting a single sheet of plastic between them. 
-The plates must be perfectly aligned on top of each other}}. After doing so, you may explore in more details the consequences of these measurements, or you may study other possible parameters that could affect the capacitance.
+You will have the opportunity to test whatever hypothesis you may have, however \textbf{every group must at least include a capacitance measurements for \underline{three} or more different pairs of plate sizes while inserting a single sheet of plastic between them. 
+The plates must be perfectly aligned on top of each other}. After doing so, you may explore in more details the consequences of these measurements, or you may study other possible parameters that could affect the capacitance.
 
 \begin{tcolorbox}
-The three area measurements will serve as a baseline for students in case some of them attempt to test unconventional hypotheses.
+The three area measurements will serve as a baseline for students in case some of them attempt to test unconventional hypotheses. 
 \end{tcolorbox}
 
 Given the measurement of the two sides $L_1$ and $L_2$ of a rectangle and their corresponding standard deviations $\sigma_{L_1}$ and $\sigma_{L_2}$, the standard deviation on the area is given by
@@ -511,29 +587,29 @@ While studying other parameters, if you are unsure of the standard deviation of 
 
 To analyse your data, we refer you to section \ref{Sec:lab1-analysis}.
 {\color{blue}Enter your set up, measurement process and data in your log book.} Before handing in your log book, be sure to write down your {\color{blue}observations in the \textbf{General Notes} section of your log book, and a rough plan of what you intend to do during the next session in the \textbf{Conclusions and future work} section}. The latter part should be done after discussions with at least one other group.
-%You \textbf{do not need to include a results section} in your log book for this session.
 
 \subsection{Session b}
-We recommend that you bring whatever material that you think could help you acquire better data. 
-At this point, you should know what parameters affect the capacitance, and therefore you should plan in advance your own ``protocol" to verify your hypothesis quantitatively with improved data. 
-This protocol does \underline{not} have to match what you wrote in your log book during the last session, but if it does differ, you must explain what made you change your mind.
 
 \begin{tcolorbox}[title=Session \#2]
-In this session, you should remind everyone that last time, you discovered together that $C \propto A/d$, so this session should be simpler as they will know what to do.
+In this session, you should remind everyone that last time, you discovered together that $C \propto A/d$, so this session should be simpler as they will know what to do, and will simply have to improve on the data and interpretations, particularly with regards to the $1/d$ measurements.
 \end{tcolorbox}
 
-{\color{blue}Be mindful that you will be evaluated based on your data presentation, data analysis and explanation of the physics, therefore be certain to \textit{fully, but succinctly, describe} your thought process.} 
+We recommend that you bring whatever material that you think could help you acquire better data in Session b. 
+By now, you should know what parameters affect the capacitance, and therefore you should plan in advance your own ``protocol" to verify your hypothesis quantitatively with improved data, compared to that in Session a. 
+This protocol does \underline{not} have to match what you wrote in your log book in Session a, but if it does differ, you must explain what made you change your mind.
+
+{\color{blue}Be mindful that you will be evaluated based on your data presentation, data analysis and explanation of the physics from this session, therefore be certain to \textit{fully, but succinctly, describe} your thought process.} 
 
 \section{Measurement Analysis}
 \label{Sec:lab1-analysis}
 During this lab, you will have to use data analysis techniques to understand your data. For \underline{each session}, we recommend that you analyse your data as follows.
 
-To study a system, one typically isolates as many variables as possible to see each of its individual affect on the whole system. If we are able to isolate such a variable, mathematically, that is the equivalent of finding some $f(x)$ that depends just on one variable $x$. In this lab, you will find as many variables that can affect the capacitance as possible by isolating each parameter one at a time.
+To study a system, one typically isolates as many variables as possible to see each of its individual affect on the whole system. If we are able to isolate such a variable, mathematically, that is the equivalent of finding some $f(x)$ that depends just on one variable $x$. In this lab, you will find as many variables that can affect the capacitance as possible by isolating each such variable, one at a time.
 
 For each dataset, corresponding to each parameter you measure, you must abide by the error analysis rules outlined in chapter \ref{Ch:Data-analysis}. 
-The data analysis can be done much more rapidly with spreadsheets, therefore we highly recommend that you read appendix \ref{App:Excel}. 
+The data analysis can be done much more rapidly with Execl spreadsheets, therefore we highly recommend that you read appendix \ref{App:Excel}. 
 
-Once you have some result from your data, you must offer a physical explanation that supports your results. {\color{blue} Explain why physically each parameter affects the capacitance of the system. Support your claim by proposing a possible experiment to test your claims, and offer possible outcomes that one could observe from your experiment.} Recall that bouncing your ideas off peers is an invaluable way to actually test the rational of your hypothesis.
+Once you have  result from your data, you must offer a physical explanation that supports your results. {\color{blue} Explain why physically each parameter affects the capacitance of the system. Support any claims you make by proposing a possible experiment to test your claims, and offer possible outcomes that one could observe from your experiment.} Recall that bouncing your ideas off peers is an invaluable way to actually test the rational of your hypothesis.
 
 
 \chapter{Lab 2 - RC Circuits}
@@ -546,18 +622,18 @@ Once you have some result from your data, you must offer a physical explanation 
 \end{itemize}
 
 \section{Introduction}
-In this lab you will characterize an RC circuit. An RC circuit is a circuit that contains a resistor (R) and a capacitor (C). 
-The analysis tool we will use is called a PASCO 850 Universal Interface, the use of which will be explained below. 
-Specifically, we will also use a voltmeter and a 
+In this lab you will characterize an RC circuit. An RC circuit is a circuit that contains a resistor (R) and a capacitor (C), connected in series with an EMF source during charging and without the battery during discharging.  
+The data analysis tool we will use is called a PASCO 850 Universal Interface, the use of which will be explained below. 
+Specifically, we will  use a voltmeter and a 
 signal generator tool to examine the charging and discharging of a capacitor. 
 
-In the first session, you will be asked to \textbf{measure the time constant} $\tau$ of a given RC circuit. 
+In the first lab session, you will be asked to \textbf{measure the time constant} $\tau$ of a given RC circuit (more on tbis below). 
 In the process, you will learn how to measure time constants and understand subtleties in the data acquisition apparatus. 
-This session will be a more traditional lab where you will follow well outlined instructions. 
+This session will be more like a traditional lab where you will follow well outlined instructions. 
 
 In the second session, you will be asked to \textbf{build an RC circuit with a specific time constant} and to show, based on well supported data, that your circuit has the appropriate time constant. 
 When you arrive at the second session, you will receive a sheet that asks you to build an RC circuit with a specific number of parallel branches. 
-You are to choose an appropriate number of resistors and capacitors to obtain a specific time constant.
+You will have to deduce how to choose an appropriate number of resistors and capacitors for these branches to obtain a specific time constant.
 
 \subsection{Pre-lab activity}
 \begin{enumerate}
@@ -581,27 +657,27 @@ f(x) = a e^{b x}+c
 \end{enumerate}
 
 \subsection{RC Circuits}
-Recall that the capacitance is defined as the proportionality constant between the total charge accumulated by a capacitor and the voltage across the circuit
+Recall that the capacitance is defined as the proportionality constant between the total charge accumulated by a capacitor and the voltage difference across the circuit
 \begin{equation}
 Q = C \Delta V.
 \end{equation}
 In this equation, the charge $Q$ is expressed in Coulomb (C), the voltage $\Delta V$, in volts (V) and the capacitance $C$ in farads (F).
 
 In this lab you will study both the \textit{charging} and \textit{discharging} process of an RC circuit. 
-During the charging process, charges accumulate on each sides of the parallel plate capacitor.
-During the discharging process, the capacitor releases all its charges into the circuit. 
+During the charging process, an electrical EMF source accumulates charges  on each side of the parallel plate capacitor.
+During the discharging process, the capacitor releases all its charges into the circuit (which now does not contain the battery). 
 Capacitors charge and discharge exponentially in time. 
 During the \textit{discharge} of a capacitor, the instantaneous voltage $\Delta V_C$ between the ends of the capacitor also drops and is given by
 \begin{equation}
 \Delta V_C = \Delta V_{max} e^{-t/\tau}
 \label{Eq:V-discharge}
 \end{equation}
-where $\Delta V_{max}$ is the maximum voltage across the capacitor, i.e. the voltage to which the capacitor was charged, $t$ is the time and $\tau$ is the \textit{time constant} given by
+where $\Delta V_{max}$ is the maximum voltage across the capacitor, i.e. the voltage to which the capacitor was initially charged, $t$ is the time and $\tau$ is the \textit{time constant} given by
 \begin{equation}
 \tau = R_{eq} C_{eq}
 \label{Eq:time-constant}
 \end{equation}
-where $R_{eq}$ and $C_{eq}$ are respectively the equivalent resistance and capacitance of the circuit. 
+where $R_{eq}$ and $C_{eq}$ are, respectively, the equivalent resistance and capacitance to which we can reduce the circuit. 
 Although the theoretical discharge time is infinite, in practice we consider that the discharge is over when the voltage at the bounds of the capacitor is at $1\%$ of its maximal value. 
 
 \subsection{Equivalent resistance and capacitance}
@@ -622,10 +698,11 @@ C_{parallel} = C_1 + C_2 + C_3 + ... C_n = \displaystyle \sum_{i=1}^n C_i
 \frac{1}{C_{series}} =  \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + ... + \frac{1}{C_n} = \displaystyle  \sum_{i=1}^n \frac{1}{C_i}
 \end{equation}
 
-\subsection{Equipment} \label{Sect:lab2-equipment}
+\subsection{Data Acquisition  Equipment} \label{Sect:lab2-equipment}
 In this lab you will use the PASCO 850 Universal Interface to measure and plot voltages as a function of time in an RC circuit. 
-The PASCO devices comes with two sets of wires (see Fig.~\ref{Fig:lab2-PASCO}). The first is the input/output voltage source. 
-The other is a set of probe which measures the voltage across the capacitor of the circuit. 
+We will use two terminals of the PASCO device. The first connects to the input/output voltage source. 
+The other (Analog connectors) is a pair of probes which measures the voltage across the capacitor of the circuit. 
+See Fig.~\ref{Fig:lab2-PASCO} for location of terminals.
 
 \begin{figure}[h]
 \centering
@@ -635,18 +712,12 @@ The other is a set of probe which measures the voltage across the capacitor of t
 \end{figure}
 
 Given the nature on these measurements, there is an inherent fluctuation to the data that is difficult to characterize. 
-During the first session, you are not required to produce quantitatively well supported data. But for the second session, you are to demonstrate that you've produced an RC circuit with the correct time constant. 
-%Therefore the following standard deviation rules for PASCO measurements have been adjusted (and tested) to time constants of this second session. This is to compensate for the fluctuation of the voltage measurements.
+During the first session, you are not required to produce quantitatively well supported data: unless otherwise specified, you will not need to keep track of standard deviations.
+For the second session, you can completely ignore standard deviations. You are still required to generate $R^2$ values or other quantities that might be relevant to your goal. 
 
-%For time difference measurements, the standard deviation will be $\sigma_t = 10^{-4} s$. To convert the error from the Curve fitting parameter $B$ to the time constant $\tau$, based on eq.~\eqref{Eq:1/x error}, one must take
-%\begin{equation}
-%\sigma_\tau = 100 \frac{\sigma_B}{B^2} \text{s}.
-%\label{Eq:lab2-error-tau-fit}
-%\end{equation}
-%The factor of $100$ was found to appropriately adjust for voltage fluctuations.
 
 \section{Session a}
-\noindent \large \textbf{Equipment} \normalsize \\
+\noindent \large \textbf{Hooking up the Equipment} \normalsize \\
 During the first session, you will receive an RC circuit fastened onto a wooded board. 
 Before proceeding with measurements related to charging and discharging capacitors, conduct the following steps:
 \begin{enumerate}
@@ -654,17 +725,22 @@ Before proceeding with measurements related to charging and discharging capacito
 There are actually two circuits here, one consisting of a $100$k$\Omega$ rheostat (variable resistor) and the $100\mu$F capacitor, the other consisting of a $470\Omega$ resistor and a $0.1\mu$F capacitor. 
 We will not use the $0.1 \mu$F capacitor, or the rheostat.
 \item Connect the Output 1 of the PASCO 850 Universal Interface to the wooden board's terminals as well as the Analog Input A in order to complete the circuit as shown on Fig.~\ref{Fig:lab2-session1-circuit1}. 
-The $100\mu$F capacitor can now charge through the $470\Omega$ resistor (when in the ``charge" state) and discharge through the $150$k$\Omega$ resistor (when in the ``discharge" state). 
-The charging voltage is read on the computer. The Input A measures the voltage through the 100$\mu$F capacitor. 
-The Output 1 is the one with the red and black connectors and the analog inputs are the higher half of the interface and on the right.
+The $100\mu$F capacitor can now charge through the $470\Omega$ resistor (when in the ``charge" state on the wooden board) and discharge through the $150$k$\Omega$ resistor (when in the ``discharge" state). 
+The charging voltage is read on the computer as Input A measures the voltage across the 100$\mu$F capacitor. 
+The Output 1 is the one with the red and black connectors and the analog inputs are labelled with letters on upper half of the interface and on the right.
 \end{enumerate}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.75\linewidth]{lab2-session1-circuit2}
-\caption{Circuit for session 1. This is currently connected to the rheostat.}
+\caption{Circuit for session 1.}
 \label{Fig:lab2-session1-circuit1}
 \end{figure}
+
+
+\noindent \large \textbf{Protocol} \normalsize \\
+You will execute the following steps in order to understand how to use the PASCO interface to characterize an RC circuit. 
+For this session, we recommend that you {\color{blue} record your measurements in an Excel spreadsheet, and rewrite the relevant results in your log book. You are expected to write down your observations in your log book and to answer the questions that are embedded in the following instructions. You should also write down all that technical notes about the apparatus and how an RC circuit works in order for you to fast-track your manipulations for the next session.}
 
 \begin{tcolorbox}[title=Session \#1]
 In this session you will supervise students as they perform the protocol below. You may gather students in the beginning to give a brief introduction and summary of the lab. 
@@ -672,14 +748,8 @@ By the end, they should be comfortable measuring charging/discharging time const
 When they use the square wave input, make sure that they understand how to vary the parameters to obtain useful data, i.e. changing the frequency of the function generator and the frequency of data acquisition.
 \end{tcolorbox}
 
-\noindent \large \textbf{Procedure} \normalsize \\
-You will execute the following steps in order to understand how to use the PASCO interface to characterize an RC circuit. 
-For this session, we recommend that you {\color{blue} record your measurements in an Excel spreadsheet, and rewrite the relevant results in your log book.
-You are expected to write down your observations in your log book and to answer the questions that appear in the following instructions. 
-You should write down all that technical notes about the apparatus and how an RC circuit works in order for you to fast-track your manipulations for the next session.}
-
 \begin{enumerate}
-\item Connect the circuit as shown in Fig.~\ref{Fig:lab2-session1-circuit1}.
+\item Connect the circuit as shown in Fig.~\ref{Fig:lab2-session1-circuit1} and explained above.
 \item \anhkhoi{Where to get Pasco file}
 \item Turn on the PASCO and plug in the USB into the computer.
 %\item On the software, open the ``Signal Generator" tool, which is located on the left hand side panel and make sure that the signal is set to be DC (Waveform option), has an amplitude of $6V$ and has a data acquisition frequency of $10$ Hz. See Fig.~\ref{Fig:lab2-interface-dc}.
@@ -730,20 +800,21 @@ Change the data acquisition frequency to the values in the green box. Once you a
 \label{Fig:lab2-interface-square-wave}
 \end{figure}
 
-\item With this input from the "Signal Generator" you won't use the "charge" and "discharge" switch from the wooded board. Instead you will simply turn On and Off (pink box) the power supply under the 850 Output 1 panel before and after recording measurements. So leave the switch on ``charge" for the rest of the experiment.
+\item With this input from the "Signal Generator" you won't need to use the "charge" and "discharge" switch from the wooded board. Instead you will simply turn On and Off (pink box) the power supply under the 850 Output 1 panel above the 850 Output 2 panel before and after recording measurements. So leave the switch on ``charge" for the rest of the experiment.
 %\item Since your time constant is smaller than what you observed from discharging through the $150$k$\Omega$ resistor, you will not need to record data for long.
 
-\item After turning on the signal generator, press the record button twice to record and stop the recording after observing a few charges/discharges.
+\item After turning on the signal generator, press the record button twice to record and stop the recording after observing a few charge/discharge cycles.
 
-\item Zoom in on a region with both charging and discharging behaviours by rescaling the axes, and figure out which section corresponds to charging/discharging.
+\item Zoom in on a region with both charging and discharging behaviours by rescaling the axes, and figure out which section corresponds to charging/discharging. Ask a TA about axis rescaling if necessary.
 
-\item For the charging part, {\color{blue} measure and record the time difference between the moment the voltage starts increasing to the moment where the voltage is at a value $1-1/e$ of the maximum voltage $V_0$. }
+\item For the charging part, {\color{blue} measure and record the time difference between the moment the voltage starts increasing to the moment where the voltage is at a value $1-1/e$ of the maximum voltage $V_0$. 
 You should understand why you are measuring this time difference.
+Further calculate the standard deviation for a time constant measurement using the techniques in Chapter \ref{Ch:Data-analysis}. We do not need the exact number, only its order of magnitude.}
+\begin{tcolorbox}
+Since we are measuring the difference in time between $V_0$ and $V(t=\tau)$, we expect them to use the standard deviation technique described in the beginning of section \ref{Sec:ErrorAnalysis} of chapter \ref{Ch:Data-analysis}.
+\end{tcolorbox}
 
-\item For the discharging part, you will use the Curve fitting tool. The software can perform an exponential regression on the data you record. 
-To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of eq.~\eqref{Eq:V-discharge} will be fit to the whole data set. 
-To fit it on the right segment on the data set, use the highlighting tool and select/box the values that are most relevant. 
-Verify that the time constant corresponds to the parameter $1/B$ in the curve fitting data window.
+\item For the discharging part, you will use the Curve fitting tool in the software. The software can perform an exponential regression on the data you record. To make good use of that, activate the Curve Fitting option (see Fig.~\ref{Fig:lab2-interface-graph}). The curve of eq.~\eqref{Eq:V-discharge} will be fit to the whole data set. To fit it on the right segment on the data set, use the highlighting tool and select/box the values that are most relevant.  Verify that the time constant corresponds to the parameter $1/B$ in the curve fitting data window.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9 \linewidth]{lab2-interface-graph-tools}
@@ -752,16 +823,23 @@ The highlighting tool is boxed in green. This allows to select a smaller subset 
 \label{Fig:lab2-interface-graph}
 \end{figure}
 
-Use this to fit an exponential curve to the discharging region, and {\color{blue} record the value of the parameter $B$}. You will obtain the discharge time constant.
+Use this to fit an exponential curve to the discharging region, and {\color{blue} record the value of the parameter $B$ and the order of magnitude of the standard deviation}.
 
-\item {\color{blue} Compare the time constants obtained from both the charging and discharging regions and by keeping track of the standard deviations as mentioned in section~\ref{Sect:lab2-equipment}. 
-Calculate the theoretical time constant based on the known values of resistance and capacitance.} Recall that the standard deviation of the product of two variables is given by eq.~\eqref{Eq:product error}. 
-{\color{blue} Can you explain difference in standard deviation, and why some are smaller/larger than the others? }
+\item {\color{blue} Compare the time constants obtained from both the charging and discharging regions. 
+Can you explain the difference in order of magnitude between the standard deviation of the charging versus the discharging measurements?
+\begin{tcolorbox}[title=Answer]
+They should find that the time constants are the same.
+For the standard deviation, the charging measurement relies on the difference of two data points, thus the standard deviation $\sigma$ is larger than the discharging measurement where the PASCO interface fits $N \gg 2$ data points to generate $\sigma$.
+\end{tcolorbox}
+\begin{tcolorbox}
+They should also note that the standard deviation pulled from the discharge fit is insignificant relative to the amplitude of the measurements, thus it isn't useful to use it as error bars.
+\end{tcolorbox}
+Calculate the theoretical time constant based on the known values of resistance and capacitance.} 
 You can repeat steps 6-10 for different segments of charging/discharging in your data if you want to verify the consistency of your measurements.
 
 \item {\color{blue}Answer the following questions in the results section of your log book.} Should all the time constants be the same or different? Why and why not? 
 What would happen if we had used the rheostat instead of the $470\Omega$ resistor in Fig.~\ref{Fig:lab2-session1-circuit1} and used a DC voltage source (with the On/Off switch on the board) instead of a wavefunction source: would we have the same time constant for both charging and discharging? 
-What would happen to the time constant if we increased the resistance by using the rheostat? If you have time, you should test your hypotheses experimentally.
+If you have time, you should test your hypotheses experimentally.
 
 \begin{tcolorbox}[title=Answer]
 All the time constants should be the same because we are charging and discharging across the same resistor. 
@@ -793,7 +871,7 @@ The current is defined as the change in charge over time. In other words,
 Therefore if the capacitor is fully charged, the change in voltage vanishes and so the current also vanishes: it is then considered like an open-circuit. Thus the potential across R6 vanishes.
 \end{tcolorbox}
 
-\item {\color{blue}Answer the following in the results section of your log book.} Your draft calculations can be shown in the ``General Notes" section of the log book. Given Fig.~\ref{Fig:lab2-session1-tau-practice}, what must be the value of C2 such that the time constant is approximately $\tau=12.5$ms?
+\item {\color{blue}Answer the following in the results section of your log book.} Your draft calculations can be shown in the ``General Notes" section of the log book. Given Fig.~\ref{Fig:lab2-session1-tau-practice}, what must be the value of C2 such that the time constant of the equivalent circuit is approximately $\tau=12.5$ms?
 If one replaces C2 by two capacitors in series, one of which has $C5=250\mu$F. What must be the capacitance of the second capacitor to preserve the same time constant?
 \begin{figure}[h]
 \centering
@@ -811,17 +889,12 @@ Click on the camera icon on the top panel. This will take a picture that will be
 Alternatively, you can also save your whole set of measurements by going to the top left tab ``File", and select ``Save As".
 \end{enumerate}
 
-Once you have completed the above manipulations, make sure to note important technicalities of the time constant measuring methodology in order to accelerate your data acquisition process for the next session. 
+Note: as you step through he above manipulations, make sure to record important technicalities of the time constant measuring methodology in order to accelerate your data acquisition process for the next session. 
 You should perform any further tests that you believe would help you better understand the RC circuit in preparation for the next session.
 
-\begin{tcolorbox}
-You may want to pull their attention towards quantifying their errors, in preparation to the next session. 
-Note that the standard deviation from the PASCO fit is significantly smaller than that obtained from measuring the time difference at $V=V_0 (1-e^{-1})$. Discuss the disparity between the error of each methods.
-\end{tcolorbox}
-
-Resistors and capacitors can be found in the lab. Instructions about reading the resistance color-code for resistors can be found in the Appendix. 
+Resistors and capacitors can be found in the lab. Instructions about reading the resistance color-code for resistors can be found in the Appendix.
 We recommend that you try and read the resistance of a few resistors and confirm by using the in-lab multimeters. 
-An exemplary circuit board that you must use during the next session will be available for you to contemplate. 
+An example circuit board that you will use during the next session will be available for you to contemplate. 
 We recommend that you observe the set up of the circuit board and think about how you would connect the resistors and capacitors to obtain different equivalent resistance and capacitance setup.
 
 \section{Session b}
@@ -829,7 +902,7 @@ We recommend that you observe the set up of the circuit board and think about ho
 In this session you will help students connect their circuits and guide them through the analysis of their data.
 \end{tcolorbox}
 \begin{tcolorbox}
-By using small time constants, we expect each measurement to fluctuate by $\pm 5$\% from the theoretical value. It may be that some  measurements don't fall within a standard deviations of the line of best fit, but the percentage error should remain small.
+By using small time constants, we expect each measurement to fluctuate by $\pm 5$\% from the theoretical value. It may be that some  measurements don't fall within a standard deviation of the line of best fit, but if you plot your graphs using error bars showing percentage error instead of standard deviation error, the data should look good.
 \end{tcolorbox}
 \begin{tcolorbox}
 We expect students to consider the possibility of internal impedance from the PASCO unit. We expect them to propose possible methods to extract the internal impedance of the PASCO. Testing showed that a rigorous experiment to extract the internal impedance would be too time consuming for these lab sessions.
@@ -845,21 +918,22 @@ You are to place both of these in series with the PASCO source as shown in Fig.~
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9\linewidth]{lab2-session2-circuit}
-\caption{RC Circuit. You are to assemble sub-circuits that produces an equivalent resistance $R_{eq}$ and capacitance $C_{eq}$.}
+\caption{RC Circuit. You are to assemble sub-circuits that produces an equivalent resistance $R_{eq}$ and capacitance $C_{eq}$, in such a way as to obtain a desired time constant of the equivalent circuit.}
 \label{Fig:lab2-session2-circuit}
 \end{figure}
 
 You will only use the ``Positive Square Wave" input for this lab. 
-Adjust them accordingly to your calculated theoretical time constant for each measurement. 
-Sometimes, the data fitting tool cannot give standard deviations: this is because the data acquisition frequency isn't properly set. Change it until you see an uncertainty in the $B$ parameter from the curve fitting window.
+Adjust the frequency and amplitude settings accordingly to your calculated theoretical time constant for each measurement. 
+Sometimes, the data fitting tool cannot give standard deviations: this is because the data acquisition frequency isn't properly set. 
+Modify the frequency setting until the PASCO's fit function gives an uncertainty for the $B$ parameter. 
 %standard deviation
 \begin{tcolorbox}
-You should test this subtlety in adjusting the acquisition frequency in order to obtain the fit parameter.
+Be aware that this is an issue we couldn't completely resolve. So as TAs, you must practice this in advance to see what parameters are optimal for measuring roughly 10ms time constants.
 \end{tcolorbox}
 
-There will be a few communal multimeters that allows to measure capacitance, while every team will have their own multimeter that can only measure resistance. 
+There will be a few communal multimeters that allow you to measure capacitance, while every team will have their own multimeter that can only measure resistance. 
 There will also be boxes containing different resistors and capacitors. Their values will be labelled but you can double-check their values using the multimeters. 
-Note that we are using polarized capacitors and therefore you must be careful when connecting them to the circuit: the voltage input must be attached to a specific leg of the capacitor.
+Note that we are using so-called {\it polarized} capacitors and therefore you must be careful when connecting them to the circuit: the voltage input must be attached to a specific leg of the capacitor. If not the capacitor might explode. If you are unsure, ask the TAs for help. 
 \begin{tcolorbox}
 You should verify how polarized capacitors work, and explain to them the proper way to connect them.
 \end{tcolorbox}
@@ -875,7 +949,7 @@ Changing the frequency of the input source does not change the time constant: th
 %The second is to confirm your equivalent resistance and capacitance by varying time constant. Since the time constant is $\tau = RC$, if one varies the value of one of the parameters $R$ or $C$ and plot $\tau$ as a function of the varying parameter, one expects the data to show a linear trend where the slope is the value of the other parameter. By performing this test, you will firstly verify eq.\eqref{Eq:time-constant}. Furthermore, this is a complementary method to measure your effective resistance and capacitance which should match your measurements obtained by using the multimeter.
 
 %To accelerate this measurement method,
-Each team will have 5 capacitors of $10\pm 1\mu$F and 5 resistors of $50\pm 1 \ \Omega$. Since there is a limited quantity of multimeters that can measure capacitance, you can assume that these standard deviations are correct.
+Each team will have 5 capacitors of $10\pm 1\mu$F and 5 resistors of $50\pm 1 \ \Omega$ from which to construct equivalent resistors and capacitors in their circuits. Since there is a limited quantity of multimeters that can measure capacitance, you can assume that these standard deviations are correct.
 A summary of the equipment for this session is shown in Table~\ref{Tab:Lab2-material}.
 \begin{table}[h]
 \centering
@@ -894,7 +968,7 @@ Five $50 \pm 1 \ \Omega$ resistors &  \\
 \label{Tab:Lab2-material}
 \end{table}
 
-{\color{blue}The goal of this lab is for you to \textit{convince} us that you've constructed the right RC circuit with the required time constant. 
+{\color{blue}The goal of this lab is for you to \textit{demonstrate} that you've constructed the right RC circuit with the required time constant. 
 You should discuss among yourselves and the TAs in order to find appropriate tests to support your claim.}
 
 \begin{tcolorbox}
@@ -905,24 +979,24 @@ The second is to incrementally increase the resistance and capacitance separatel
 This provides an alternative approach to measuring the effective resistance and capacitance of their setup, one that has more data points. The easiest approach is to connect resistors (the 50$\Omega$ ones) in series to the original effective resistor, and capacitors in parallel (the $10\mu$F ones) in parallel to the initial capacitance.
 \end{tcolorbox}
 
-{\color{blue}Document your results and argue whether or not your RC circuit has the demanded time constant. If you believe that it does, argue using standard data analysis methods. What is the most appropriate measure to characterize the error of your measurements (see ``Measurement analysis" section of the ``Basic statistics" section)? If your data doesn't produce the correct time constant, explain why. Explain what you must change in your circuit to remedy the situation. Also discuss whether you believe this experiment is adequate to obtain RC time constants. If possible, propose a better way to obtain time constants and/or decrease the error in your experiment.}
+{\color{blue}Document your results and argue whether or not your RC circuit has the required time constant. If you believe that it does, argue using standard data analysis methods. What is the most appropriate measure to characterize the error of your measurements (see ``Measurement analysis" section of the ``Basic statistics" section)? If your data doesn't produce the correct time constant, explain why. Explain what you must change in your circuit to remedy the situation. Also discuss whether you believe this experiment is adequate to obtain RC time constants. If possible, propose a better way to obtain time constants and/or decrease the error in your experiment.}
+
 
 \chapter{Lab 3 - Magnetic Field of Solenoids and Coils}
 \section{Learning objectives}
 \begin{itemize}
 \item Learn about solenoids.
 \item Learn how to use the right hand rule.
-\item Learn about vector fields.
-\item Learn about limits.
+\item Learn about vector nature if magnetic field.
 \item Learn about electric motors.
 \end{itemize}
 
 \section{Introduction}
-The goal of this lab will be to learn about real-world applications of magnetism. In particular, we will study the solenoid in the first session, and the electric motor in the second. You will use your data analysis skills previously acquired from the other labs to characterize the magnetic field of these setups.
+The goal of this lab will be to learn about real-world applications of magnetism. In particular, we will study the solenoid in the first session, and build on this to study the electric motor in the second. You will use your data analysis skills previously acquired from the other labs to characterize the magnetic field in these setups.
 
-In the first session, you will be asked to draw the magnetic field lines of the solenoid and to explain your findings in terms of the right hand rule. You will then quantitatively characterize your solenoid: you must verify the dependence of the magnetic field $B$ on the current $I$ through the solenoid and the the position $z$ from the end of the solenoid on its central axis.
+In the first session, you will be asked to draw the magnetic field lines of the solenoid and to explain your findings in terms of the right hand rule. You will then quantitatively characterize your solenoid's magnetic field. Namely, you will verify the dependence of the magnetic field $B$ of the solenoid on the current $I$ through the solenoid and on the the position $z$ from the end of the solenoid's central axis.
 
-In the second session, having learned how magnetic field strength varies with distance, you will now use a permanent magnet to characterize an electric motor.
+In the second session, having learned how the magnetic field strength of the solenoid varies with distance, you will now use a permanent magnet to construct and characterize an electric motor.
 
 \subsection{Pre-lab activity}
 \begin{enumerate}
@@ -935,7 +1009,7 @@ Any vector data consists of information about its \textbf{magnitude} and \textbf
 \item What is a vector diagram? What needs to be present when drawing a vector diagram?
 
 \begin{tcolorbox}[title=Answer]
-Magnitude and orientation. Typically, vectors are connected end-to-end, or from a common origin.
+Magnitude and orientation. Typically, vectors are connected end-to-end, or drawn from a common origin.
 \end{tcolorbox}
 
 \item Given the wire below, draw the field lines of the magnetic field generated from the current in the wire.
@@ -956,14 +1030,14 @@ Magnitude and orientation. Typically, vectors are connected end-to-end, or from 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.85]{lab3-wire-bfield-force}
-\caption{A wire has a current running through it, hence electrons are running from right to left. A constant magnetic field is present and points downwards.}
+\caption{A wire has a current running through it, hence electrons are running from right to left. A constant magnetic field is present and points downwards. The circles are electrons.}
 \end{figure}
 
 \end{enumerate}
 
 \section{Session a}
 \subsection{Solenoid setup}
-In this session, you will use the IOLab that you previously used in PHYS 101 last semester to measure magnetic field strengths.
+In this session, you will use the IOLab that you previously used in PHYS 101 last semester to measure magnetic field strength of a solenoid at different locations around the solenoid.
 
 \begin{figure}[h]
 \centering
@@ -973,11 +1047,11 @@ In this session, you will use the IOLab that you previously used in PHYS 101 las
 \begin{subfigure}{0.45 \textwidth}
 \includegraphics[width=\textwidth]{lab3-sessiona-solenoid2}
 \end{subfigure}
-\caption{Available solenoids. The one one the left has a smaller radius ($1.9$ cm radius, 550 turns, $15$ cm of length, \#19 gauge wire) \anhkhoi{to be reverified}, while the one on the right is larger ($3$ cm radius, 560 turns and $15$ cm of length, \#16 gauge wire).}
+\caption{Available solenoids. The one one the left has a smaller radius ($1.9$ cm radius, 550 turns of wire, $15$ cm of length, \#19 gauge wire) \anhkhoi{to be reverified}, while the one on the right is larger ($3$ cm radius, 560 turns and $15$ cm of length, \#16 gauge wire).}
 \label{Fig:lab3-sessiona-solenoids}
 \end{figure}
 
-Each team will posses two solenoids as shown in Fig.~\ref{Fig:lab3-sessiona-solenoids}. We will mostly use the one with the smaller radius. You are to connect the two leads to the power supply. This will generate a current through the wires.
+Each team will posses two solenoids as shown in Fig.~\ref{Fig:lab3-sessiona-solenoids}. We will mostly use the one with the smaller radius. You are to connect the two leads to the power supply. This will generate a current through the wire turns.
 
 \begin{figure}[h]
 \centering
@@ -985,10 +1059,10 @@ Each team will posses two solenoids as shown in Fig.~\ref{Fig:lab3-sessiona-sole
 \caption{Power supply.}
 \label{Fig:lab3-power-supply}
 \end{figure}
-Fig.~\ref{Fig:lab3-power-supply} shows a typical power supply used for this lab. To use the power supply,
+Fig.~\ref{Fig:lab3-power-supply} shows a typical power supply used for this lab. To use the power supply:
 \begin{enumerate}
 \item Make sure both knobs (red and green box) on the ``master" side are completely turned down.
-\item Connect your wires in the orange box terminal (red for input, black for output).
+\item Connect your wires to terminals in the orange box (red for input, black for output).
 \item Make sure to press down on both buttons in the blue box so that the power supply is set on ``parallel". This will allow you to go up to 6A of current.
 \item Turn the voltage knob to halfway (green box). This sets the maximum amount of voltage allowed.
 \item You will control the voltage and current of the power supply by slowly turning the current knob (red box).\\
@@ -1018,16 +1092,16 @@ To gather data, you will use the IOLab:
 \label{Fig:lab3-sessiona-iolab-interface2}
 \end{figure}
 
-The protocol is straightforward: you will move the IOLab to a given position and observe the magnetic field strength at that position. Leave the IOLab at that position for a few seconds so that you can select that interval in your data to obtain the standard deviation ($\sigma$) and mean ($\mu$) of that measurement. Repeat the above for all the positions that you wish to measure the magnetic field.
+The protocol is straightforward: you will move the IOLab to a given position and observe the magnetic field strength at that position. Leave the IOLab at that position for a few seconds so that you can select that interval in your data to obtain the standard deviation ($\sigma$) and mean ($\mu$) of that measurement (See Fig.~\ref{Fig:lab3-sessiona-iolab-interface2}). Repeat the above for all the positions that you wish to measure the magnetic field.
 
-Further comments about the IOLab can be found in the appendix.
+Further details about the IOLab can be found in the appendix.
 
 \subsection{Magnetic Field Lines}
 \begin{tcolorbox}
-For this part of the lab, you will mostly help them understand the right hand rule. Push them to think about the direction of the $B$ field inside and outside the solenoid, and its origin in terms of the right-hand rule.
+For this part of the lab, you will mostly help them understand the right hand rule and how this can be used to determine the $\mathbf{B}$ field of a solenoid. As they progress with the protocol below and answering the questions, push them to think about the direction of the $\mathbf{B}$ field from one wire, and then that same wire as it loops on  itself. After that, have them deduce how $\mathbf{B}$ must point inside and outside the solenoid, and its origin in terms of the right-hand rule.
 \end{tcolorbox}
 
-Once the solenoid has been properly connected, you are asked to draw field lines on the graph paper. For this, we will use the compass and IOLab. Place the compass on top of the sensor. Note that the magnetometer isn't centered in the IOLab; the magnetometer sensor of the IOLab is located in one of the corner of the device as shown in Fig.~\ref{Fig:lab3-sessiona-iolab-sensor}.
+Once the solenoid has been properly connected, you are asked to draw field lines on the graph paper on which the solenoid is placed as shown in Fig.~\ref{Fig:lab3-sessiona-solenoids}. For this, we will use the compass and IOLab. Place the compass on top of the sensor. Note that the magnetometer isn't centered in the IOLab; the magnetometer sensor of the IOLab is located in one of the corners of the device as shown in Fig.~\ref{Fig:lab3-sessiona-iolab-sensor}.
 
 \begin{figure}[h]
 \centering
@@ -1036,45 +1110,45 @@ Once the solenoid has been properly connected, you are asked to draw field lines
 \label{Fig:lab3-sessiona-iolab-sensor}
 \end{figure}
 
-First, chose at least a dozen points on the graph paper. For each point, you are to measure the orientation of the magnetic field with the compass, draw a vector line associated with your observation, and write next to the vector the measured strength of the the magnetic field. Recall that the total magnitude of the magnetic field will be given by Pythagoras theorem:
+First, chose at least a dozen points on the graph paper to place the IOLab. For each point, you are to measure the orientation of the magnetic field with the compass, draw a vector arrow associated with your observation, and write next to the vector the measured strength of the the magnetic field. Recall that the total magnitude of the magnetic field will be given by Pythagoras' theorem:
 \begin{equation}
 | \mathbf{B} | = \sqrt{B_x^2 +B_y^2}.
 \end{equation}
-Both vector components can be obtained from the IOLab (see Fig.~\ref{Fig:lab3-sessiona-iolab-interface2}). Normally, one would draw the length of the vector in a way that is representative of the magnitude of the vector, however for the amount of vector lines you are asked to draw, we will simply write the magnitude next to the drawn vector.
+Both vector components can be obtained from the IOLab (see Fig.~\ref{Fig:lab3-sessiona-iolab-interface2}). Normally, one would draw the length of the vector to represent the magnitude of the vector, however for the amount of vector lines you are asked to draw, we will simply write the magnitude next to the drawn vector.
 
-Once you have enough points, and have explored the possible orientations of the magnetic field vector lines, {\color{blue}answer the following questions in your log book:}
+Once you have measured $\mathbf{B}$ of the solenoid at enough points, and have explored the possible orientations of the magnetic field vector lines, {\color{blue}answer the following questions in your log book:}
 \begin{enumerate}
-\item Draw a diagram of the solenoid with the appropriate field lines.
+\item Draw a diagram of the solenoid with the appropriate field lines surrounding it.
 
-\item What is the magnetic field inside the solenoid? Support your claim of the field lines inside the solenoid in terms of the right hand rule.
+\item What is the behaviour of the magnetic field inside the solenoid? Support your claim of the field lines inside the solenoid in terms of the right hand rule.
 \item What happens if you swap the connections of the solenoid? What would change? Explain this in terms of the right hand rule.
 \item Do these field lines look like any other magnetic object that you've seen? Explain why this observation is true.
 
 \begin{tcolorbox}
-They should be reminded of the field lines of a magnet. Make them consider why the field lines must loop around instead of simply diverging.
+They should be reminded of the field lines of a bar magnet. Encourage them to consider why the field lines must loop around instead of simply diverging.
 \end{tcolorbox}
 
 \item What parameters do you expect to affect the strength of the magnetic field of the solenoid? Give a brief explanation for each parameter.
 
 \begin{tcolorbox}
-We expect them to consider the current $I$, the distance $z$ away, and the number of turns $N$. We expect them to motivate the $N$ dependence from a physical motivation (either increasing or decreasing with $N$), but we want them to verify the $I$ and $B$ dependence explicitly.
+We expect them to consider the current $I$, the number of turns $N$ and the distance $z$ away from the central axis (and distance in general). We expect them to motivate the $N$ dependence from a physical motivation (either increasing or decreasing with $N$), and we will ask them to verify the $I$ and $\textbf{B}$ dependence explicitly below.
 \end{tcolorbox}
 
 \end{enumerate}
 
 \subsection{Current dependence}
-Now that you have a rough idea how a solenoid generates a magnetic field, we will quantitatively verify some of its possible parameters.
+Now that you have a qualitative idea how a solenoid generates a magnetic field, we will quantitatively verify its dependence on some of the possible parameters of this set up.
 
-We will first verify its dependence on the current through the wires. Place the IOLab on the ramp at a fixed distance away from one end of the solenoid (not too far) as shown in Fig.~\ref{Fig:lab3-sessiona-ramp}, and increase the current through the wires with the power supply. 
+We will first verify the $B$ dependence of the solenoid on the current through the wires. Place the IOLab on the ramp at a fixed distance away from one end of the solenoid (not too far) as shown in Fig.~\ref{Fig:lab3-sessiona-ramp}, and increase the current through the wires with the power supply. 
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{lab3-sessiona-ramp}
-\caption{Measuring the distance dependence of the magnetic field. Place the ramp in front of the solenoid and use it as a guide for the IOLab.}
+\caption{Measuring the distance dependence of the magnetic field. Place the ramp in front of the solenoid and use it as a guide for moving the IOLab.}
 \label{Fig:lab3-sessiona-ramp}
 \end{figure}
 
-{\color{blue}Verify how $B$ depends on $I$ using your data analysis skills from previous labs. Find the parametric dependence on the current $I$ and carefully support your claim by generating a graph with an appropriate fit. }
+{\color{blue}Verify how $\mathbf{B}$ depends on $I$ using your data analysis skills from previous labs. Find the parametric dependence on the current $I$ and carefully support your claim by generating a graph with an appropriate fit and error analysis. }
 
 \begin{tcolorbox}
 By taking increments of $0.5$A, the data should be near perfect as the dependence was found to be linear with an approximate $R^2 \approx 0.99$ accuracy.
@@ -1087,17 +1161,16 @@ Place the ramp in front of the solenoid such that the IOLab sensor is centred in
 Recall that the sensor isn't centered. Move the IOLab incrementally, and {\color{blue}at each position, use the interface in order to obtain the average and standard deviation of the position and magnetic field of the measurement. }
 You will not need to go further than 30 cm. We recommend that you perform multiple trials to obtain many data points.
 
-Once you have data for the magnetic field for all positions $z<30$cm, we will first restrict our analysis to the far $z$ behaviour. 
-We expect the data to show a $1/z^3$ behaviour. 
-{\color{blue}Select appropriate data points (equivalent to ``far $z$") such that you see a good $1/z^3$ fit. Can you explain the minimum value of $z$ for which you performed a cutoff in your data?} You may perform this analysis again with the other solenoid if you wish.
+Once you have data for the magnetic field for numerous positions $z<30$cm, we will first restrict our analysis to the behaviour of $\mathbf{B}$ at large distances $z$. It turns out that the $B$ field should follow a $1/z^3$ behaviour as $z$ moves far from the centre of the solenoid. 
+{\color{blue}Select appropriate data points that are far enough away (called the "far $z$" region) such that you see a good $1/z^3$ fit. Can you explain the minimum value of $z$ for which you performed a cutoff in your data?} You may perform this analysis again with the other solenoid if you wish.
 
 
 
 \begin{tcolorbox}
-There are many subtleties in this experiment. Firstly, they won't be able to find the correct $1/z^3$ dependence without subtracting off background field measurements: we found that surrounding electronics (laptop, phone, etc.) will affect the magnitude of $B$. They must perform a run with and without the $B$ field of the solenoid turned on.
+There are many subtleties in this experiment. Firstly, they won't be able to find the correct $1/z^3$ dependence without subtracting off background field measurements: we found that surrounding electronics (laptop, phone, etc.) will affect the magnitude of $\mathbf{B}$. They must perform a run with and without the $\mathbf{B}$ field of the solenoid turned on. Make sure you tell them this after a brief discussion to try and get them to deduce it.
 \end{tcolorbox}
 \begin{tcolorbox}
-Having done that, through testing, we found that the far $z$ behaviour corresponds to $z>4R$, where $R$ is the radius of the solenoid. We don't expect them to explain the factor of $4$, but they should understand that it depends on $R$, and it should be $z \gg R$. Make them consider the consequences of the near $z$ behaviour, that is $z \rightarrow 0$.
+Having done that, through testing, we found that the far $z$ behaviour corresponds to $z>4R$, where $R$ is the radius of the solenoid. We don't expect them to explain the factor of $4$, but they should appreciate  that it depends on $R$, and it should be $z \gg R$. Make them consider the consequences of the near $z$ behaviour, that is $z \rightarrow 0$.
 \end{tcolorbox}
 
 %Once you have obtained data for the far behavior, the TAs will write the equation of the magnetic field of a solenoid on the board and you are asked to compare the intermediate regime to this equation: write the equation in Excel and compare your plots with your data.
@@ -1108,13 +1181,13 @@ Can you compare the $1/z^3$ behaviour to other electromagnetic systems that you 
 %, a plane wave
 ?}
 \begin{tcolorbox}
-For most students, we expect them to find the $1/z^3$ behaviour, and you are to lead a discussion about why this fit only works for $z\gg R$.
+For most students, we expect them to find the $1/z^3$ behaviour, and you are to lead a discussion about why this fit only works for $z\gg R$. They should at least deduce, or be pushed to deduce, that the real $B$ equation is more complex than a simple power law.
 \end{tcolorbox}
 
 \begin{tcolorbox}
-For the ambitious students, you can write down the equation of $B$ for a solenoid on the board, and they can try to compare their data to this theoretical curve. Let the solenoid be centered at the origin $z=0$, and $z_L,z_R$ are the two ends of the solenoid. Define $L$ as the length of the solenoid $L=z_R-z_L$, $N$ the number of turns, $I$ the current, then we have
+For the ambitious students: you can write down the equation of $\mathbf{B}$ for a solenoid on the board, and they can try to compare their data to this theoretical curve. Let the solenoid be centered at the origin $z=0$, and $z_L,z_R$ are the two ends of the solenoid. Define $L$ as the length of the solenoid $L=z_R-z_L$, $N$ the number of turns, $I$ the current, then we have
 \begin{align}
-dB_z&= \frac{\mu_0 N I}{2 L} R^2 \frac{dx}{((z-x)^2+R^2)^{3/2}} \nonumber \\
+%dB_z&= \frac{\mu_0 N I}{2 L} R^2 \frac{dx}{((z-x)^2+R^2)^{3/2}} \nonumber \\
 B_z &=\frac{\mu_0 N I}{2 L} \left( \frac{z-z_L}{\sqrt{(z-z_L)^2+R^2}} - \frac{z-z_R}{\sqrt{(z-z_R)^2+R^2}} \right) \nonumber \\
 B_z &\approx \frac{\mu_0 N I}{L} \frac{R^2}{z^3} + \mathcal{O}\left( \frac{1}{z^5}\right).
 \end{align}
@@ -1128,7 +1201,7 @@ In the last line, we expanded to leading order in the limit $z\rightarrow \infty
 %\end{tcolorbox}
 
 \section{Session b}
-\Large{\textbf{WARNING!}} \normalsize The permanent magnets used in this experiment are quite strong. Avoid bringing any magnetizable (made of iron/steel/Ni/Co, ID /credit cards) objects near the magnets. \textbf{Students with pacemakers could be excused from this lab.} \\
+\Large{\textbf{WARNING!}} \normalsize The permanent magnets used in this experiment are quite strong. Avoid bringing any objects that are magnetizable (made of iron/steel/Ni/Co, ID /credit cards)  near the magnets. \textbf{Students with pacemakers could be excused from this lab.} \\
 
 In this session, we will study the electric motor. The electric motor is a device that converts electrical energy into mechanical energy. Electric motors and their counter-parts, electric generators, have been around for decades now and have become so ubiquitous in our daily lives that life without them would seem almost impossible. Over the years, these motors have grown in complexity and sophistication in order to perform a number of different tasks but the basic physical principles behind their operation have not changed.
 
@@ -1137,12 +1210,18 @@ The goal of this lab is to provide a general understanding of how a simple DC mo
 The main observable of this lab is the frequency of rotation $f$ of the motor. Similar to the first capacitance lab, you are also asked to find possible parameters that could affect the frequency of rotation of the motor.
 
 \begin{tcolorbox}
-We expect them to find that the the torque
+First, recall that by definition, the torque is given by
 \begin{equation}
-\tau = N A B I,
+\bm{\tau} = \frac{d \bm{L}}{dt} = I \bm{\alpha} + 2r p_{\parallel} \bm{\omega},
 \end{equation}
-where $N$ is the number of turns, $A$ is the area of the loop, $B$ is the magnetic field and $I$ is the current through the coil. They can't vary the first two parameters, but since the latter two are linearly dependent, the data analysis should be familiar for them by now.
-Since this is the last lab session, you should give them less advice as they should know how to analyse linear fits.
+where $\bm{L}$ is the angular momentum, $\alpha$ is the angular acceleration, $p_{\parallel}$ is the parallel component of the linear momentum, $r$ is the distance between the axis of rotation and where the force is applied, and $\omega=2\pi f$ is the angular velocity.
+Since $\alpha$ vanishes for a fixed $B$ and $I$ value, we find that $\tau$ is proportional to $\bm{\omega}$, and we will not care about the overall factor.
+We expect them to find that the torque is given by
+\begin{equation}
+\bm{\tau} = N A B I \sin(\theta),
+\end{equation}
+where $N$ is the number of turns, $A$ is the area of the loop, $B$ is the magnetic field, $I$ is the current through the coil and $\theta$ is the angle coming from the cross product of $B$ and $I$. They can't vary the first two parameters, but since the latter two scale linearly, the data analysis should be familiar to them by now.
+Since this is the last lab session, you should try and give them less advice as they should know how to analyse linear fits.
 \end{tcolorbox}
 
 \subsection{Electric motor setup}
@@ -1159,7 +1238,7 @@ Fig.~\ref{Fig:lab3-sessionb-diagram} shows the schematic diagram of the setup we
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.9]{lab3-sessionb-setup}
-\caption{Photograph of the setup}
+\caption{Photograph of the setup (CRO out of the picture range.)}
 \label{Fig:lab3-sessionb-setup}
 \end{figure}
 
@@ -1170,15 +1249,17 @@ To set up the apparatus:
 \item See the instructions for the CRO in the appendix.
 \end{itemize}
 
-The coil current and the voltage will be read from the power supply meters. The coil's period of rotation will be measured by a photodiode detector connected to a CRO. The photodiode emits light and detects its reflection from the shiny strip covering one side of the coil. The other side is covered by a non-reflective strip. When the coil is rotating, a signal/pulse will be seen on the CRO screen every time the reflected light strikes the detector. The period will be the time interval between two reflected signals/pulses. From the period you can calculate the frequency. The performance of the motor and preciseness of measurements are extremely sensitive to the positions of the photodiode and brushes. \textbf{Please be careful with the apparatus, and do not make any adjustments from how it was set up.}
+The coil current and the voltage will be read from the power supply meters. The coil's period of rotation will be measured by a photodiode detector connected to a CRO. The photodiode emits light and detects its reflection from the shiny strip covering one side of the coil. The other side is covered by a non-reflective strip. When the coil is rotating, a signal/pulse will be seen on the CRO screen every time the reflected light strikes the detector. The period will be the time interval between two reflected signals/pulses. From the period you can calculate the frequency. 
 
-In addition to the electric motor, you are given a magnet on a track. 
-Below (Fig.~\ref{Fig:lab3-sessionb-calibration-bfield}) is a calibration of the magnet. This should remind you of your data in the last session. \\
+The performance of the motor and preciseness of measurements are extremely sensitive to the positions of the photodiode and brushes. \textbf{Please be careful with the apparatus, and do not make any adjustments from how it was set up.}
+
+In addition to the electric motor, you are given a magnet that can move on a track. 
+Figure~\ref{Fig:lab3-sessionb-calibration-bfield} below is a calibration of the magnet. This should remind you of your data in the last session. \\
 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.8]{lab3-sessionb-calibration-bfield}
-\caption{$B$ field as a function of distance from the face of the magnet.}
+\caption{$\mathbf{B}$ field as a function of distance from the face of the magnet.}
 \label{Fig:lab3-sessionb-calibration-bfield}
 \end{figure}
 
@@ -1201,7 +1282,7 @@ The main concern for this lab is the equipment. It has been reported that studen
 \subsection{Protocol}
 Similar to the first lab, you are asked to find what parameters affect the frequency of rotation of the motor $f$.
 
-To do this, recall that you must isolate your system and vary one parameter at a time in order to perform the analysis. As a starting point, we suggest that you draw a force diagram of the coils of the motor. Recall your answers from the pre-lab activity.
+To do this, recall that you must isolate your system and vary one parameter at a time in order to perform the analysis. As a starting point, we suggest that you draw a force diagram of the coils of the motor (recall magnetic moment from class). Recall your answers from the pre-lab activity.
 
 To make a measurement,
 \begin{enumerate}
@@ -1210,11 +1291,17 @@ To make a measurement,
 \item Turn the power supply to a desired voltage (\textbf{do not exceed 10 V}).
 \item The coil should start to rotate, though you will likely need to flick it gently with your finger to get it started.
 \item Measure the period $T$ from the time interval between two successive pulses from the CRO.
-\item For better precision, you may count the time interval between a few pulses and divide it by the number of intervals to get a better value for $T$. The frequency will be given by $f = 1/T$. Note the value of f in an Excel sheet with any other relevant parameters for this measurement.
+\item For better precision, you may count the time interval between a few pulses and divide it by the number of intervals to get a better value for $T$. The frequency will be given by $f = 1/T$. Note the value of $f$ in an Excel sheet as a function of any other relevant parameters you varied in  this measurement. Remember to keep track of errors in your measurements.
 \end{enumerate}
 
-{\color{blue} Through discussions with your lab partners, other teams and the TA, you must perform measurements to establish a (mathematical) relation between possible parameters that could affect the frequency of rotation of the electric motor. 
-Support your claims based on data and figures as usual.}
+{\color{blue} Through performing your measurements, and through discussions with your lab partners, other teams and the TA, establish a (mathematical) relation between possible parameters that could affect the frequency of rotation of the electric motor. 
+Support your claims based on data and figures as usual. Record your procedures and record your data, and discuss your rational in your log book.
+
+If we had another system where we could increase the current and magnetic field to extremely large values without using a magnet, what would happen to the frequency?}
+
+\begin{tcolorbox}
+
+\end{tcolorbox}
 
 
 
@@ -1229,9 +1316,9 @@ Support your claims based on data and figures as usual.}
 \chapter{Introduction to Excel}
 \label{App:Excel}
 
-Firstly, every McGill student can obtain a free copy of Microsoft Offices software by clicking \href{http://kb.mcgill.ca/kb/article?ArticleId=5172&source=Article&c=12&cid=2}{here}. Excel spreadsheet boxes can take in strings of letters of numbers as input. If the input is a number, we can easily perform calculations.\\
+These labs will make use of Excel to plot data. There will be a "lab 0"/tutorial session before official labs start to review error analysis and Excel, the latter of which is also summarized in this appendix, which should be brought to Lab 0. Every McGill student can obtain a free copy of Microsoft Office software by clicking \href{http://kb.mcgill.ca/kb/article?ArticleId=5172&source=Article&c=12&cid=2}{here}. Excel spreadsheet boxes can take in strings of letters of numbers as input. If the input is a number, we can easily perform calculations.\\
 
-\noindent \large \textbf{Spreadsheet Calculations} \normalsize
+\noindent \large \textbf{Performing Spreadsheet Calculations} \normalsize
 \begin{itemize}
 \item To initialize the math environment, simply click on a box, and press the ``=" key on your keyboard. Press ``Enter" when you are done.
 \item One can perform basic addition (+), subtraction (-), multiplication (*) and division (/) between two boxes. One can also take powers by using `` ^ " i.e. x^2 would be $x^2$. First, press ``=", click on the box of your first variable, choose one of the above manipulations and choose another box as your second variable.
@@ -1302,7 +1389,12 @@ Finally, you can add data from .txt files. To do so, go into the data tab, and i
 \section{Multimeter}
 A multimeter allows one to measure various electronic properties. We will be mainly interested in measuring the resistance or resistors, the capacitance of capacitors and the voltage and current of a circuit. To use the multimeter, one must attach two wires into the input and output. One can have alligator clips to attach to conducting wires more easily if necessary.
 
-\anhkhoi{insert pic of multimeter. Box certain useful settings}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{appendix-DMM.png}
+\label{Fig:App-DMM}
+\caption{Communal DMM (model 87V Fluke). Note that you may have a different model at your individual station, but the symbols for the settings are the same. The $\Omega$ symbol (center position) allows to measure resistance. The yellow symbol with one vertical line, and another slightly curved one (next to the $\Omega$ symbol) allows to measure capacitance. You must press the yellow function button to access it.}
+\end{figure}
 
 To measure the resistance, simply take a resistor, turn the knob of the multimeter to the resistance seting ($\Omega$) and attach each wire to the two sides of a resistor. To measure the capacitance of a capacitor, simply do the same as for the resistor, but turning the knob to the capacitance setting.
 
@@ -1311,7 +1403,7 @@ To measure the voltage and current of a circuit,
 \section{Arduino}
 The Arduino unit requires the Arduino IDE software to run the desired scripts. Information about the Arduino code for the capacitance lab can be found \href{https://www.arduino.cc/en/Tutorial/CapacitanceMeter}{here}.
 
-The setup is schematically shown in Fig.~\ref{Fig:ArduinoSchem} where the example shows two resistors: one with a resistance of $400 \Omega$, the other is unspecified. We recommend using at least $10^6 \Omega$ for the unspecified resistor: you can choose different values to vary the time constant of the RC circuit. This will change the precision of your setup.
+The Arduinio setup is schematically shown in Fig.~\ref{Fig:ArduinoSchem} where the example shows two resistors: one with a resistance of $400 \Omega$, the other is unspecified. We recommend using at least $10^6 \Omega$ for the unspecified resistor: you can choose different values to vary the time constant of the RC circuit. This will change the precision of your setup.
 
 \begin{figure}[H]
 \centering
@@ -1400,7 +1492,7 @@ To use the oscilloscope you must first plug it into an outlet, turn it on, and t
 \label{Fig:Appendix-CRO}
 \end{figure}
 
-\chapter{More statistics}
+\chapter{More about statistics}
 
 \noindent \large \textbf{Coefficient of determination} \normalsize
 
