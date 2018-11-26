@@ -1249,7 +1249,7 @@ Since this is the last lab session, you should try and give them less advice as 
 \end{tcolorbox}
 
 \subsection{Electric motor setup}
-For this lab, you are given a power supply, a cathode ray oscilloscope (CRO), an electric motor and a magnet. 
+For this lab, you are given a power supply, a digital oscilloscope, an electric motor and a magnet. 
 Fig.~\ref{Fig:lab3-sessionb-diagram} shows the schematic diagram of the setup we will use in this experiment and Fig.~\ref{Fig:lab3-sessionb-setup} shows a photograph of the actual setup. 
 
 \begin{figure}[h]
@@ -1262,7 +1262,7 @@ Fig.~\ref{Fig:lab3-sessionb-diagram} shows the schematic diagram of the setup we
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.9]{lab3-sessionb-setup}
-\caption{Photograph of the setup (CRO out of the picture range.)}
+\caption{Photograph of the setup (Oscilloscope and power supply out of the picture range.)}
 \label{Fig:lab3-sessionb-setup}
 \end{figure}
 
@@ -1270,10 +1270,10 @@ To set up the apparatus:
 \begin{itemize}
 \item Make sure the power supply is turned off
 \item Connect the leads from the coil to the power supply.
-\item See the instructions for the CRO in the appendix.
+\item See the instructions for the oscilloscope in the appendix.
 \end{itemize}
 
-The coil current and the voltage will be read from the power supply meters. The coil's period of rotation will be measured by a photodiode detector connected to a CRO. The photodiode emits light and detects its reflection from the shiny strip covering one side of the coil. The other side is covered by a non-reflective strip. When the coil is rotating, a signal/pulse will be seen on the CRO screen every time the reflected light strikes the detector. The period will be the time interval between two reflected signals/pulses. From the period you can calculate the frequency. 
+The coil current and the voltage will be read from the power supply meters. The coil's period of rotation will be measured by a photodiode detector connected to a digital oscilloscope. The photodiode emits light and detects its reflection from the shiny strip covering one side of the coil. The other side is covered by a non-reflective strip. When the coil is rotating, a signal/pulse will be seen on the oscilloscope screen every time the reflected light strikes the detector. The period will be the time interval between two reflected signals/pulses. From the period you can calculate the frequency. 
 
 The performance of the motor and preciseness of measurements are extremely sensitive to the positions of the photodiode and brushes. \textbf{Please be careful with the apparatus, and do not make any adjustments from how it was set up.}
 
@@ -1314,7 +1314,7 @@ To make a measurement,
 \item Set the magnet at a desired position (\textbf{greater than 1 cm away from the coils}).
 \item Turn the power supply to a desired voltage (\textbf{do not exceed 10 V}).
 \item The coil should start to rotate, though you will likely need to flick it gently with your finger to get it started.
-\item Measure the period $T$ from the time interval between two successive pulses from the CRO.
+\item Measure the period $T$ from the time interval between two successive pulses from the oscilloscope.
 \item For better precision, you may count the time interval between a few pulses and divide it by the number of intervals to get a better value for $T$. The frequency will be given by $f = 1/T$. Note the value of $f$ in an Excel sheet as a function of any other relevant parameters you varied in  this measurement. Remember to keep track of errors in your measurements.
 \end{enumerate}
 
@@ -1489,13 +1489,13 @@ Here are additional comments about the functionality of the IOLab
 \end{itemize}
 
 \section{Oscilloscope}
-In lab 3, we will use a cathode ray oscilloscope (CRO). The CRO is a valuable tool often used in many applications. Its most important function is the
+In lab 3, we will use a digital oscilloscope. An oscilloscope is a valuable tool often used in many applications. Its most important function is the
 ability to measure voltages that vary in time. The oscilloscope allows us to ``visualize" how this
 voltage changes. To fully characterize a voltage that varies in time using a hand-held voltmeter,
 you would have to plot how the readings change with time on a graph. This is not only time
 consuming, but impossible to do if the voltage changes too rapidly (for example, the voltage
 from a wall socket changes sinusoidally from +115 V to -115 V and back to +115 V in 1/60th of
-a second). The CRO report voltage by tracking the vertical position of an electron beam rapidly
+a second). To understand the principle behind an oscilloscope we will explain how an analog cathode ray oscilloscope (CRO) works. The CRO report voltage by tracking the vertical position of an electron beam rapidly
 sticking a fluorescent screen as it exists the space between two charged parallel conducting
 plates as is illustrated in Fig.~\ref{Fig:Appendix-CRO-data}. It plots the voltage on a screen along a vertical axis, and can
 also track changes of this voltage in time (horizontal axis) in a fraction of a microsecond.
@@ -1509,13 +1509,22 @@ also track changes of this voltage in time (horizontal axis) in a fraction of a 
 \label{Fig:Appendix-CRO-data}
 \end{figure}
 
-To use the oscilloscope you must first plug it into an outlet, turn it on, and then plug in your positive and negative electrodes into the connection labeled Channel A (number 8 in Figure \ref{Fig:Appendix-CRO}. You must then adjust the position (18), volts/div (12), and time/div (13) knobs until you see a signal on the screen (19). The position knob will adjust the vertical position of the signal. The volts/div and time/div on the other hand, will modifiy the value in volts and time and in \textit{y} and \textit{x} respectively of each of the squares or divisions. Explained in another manner these knobs allow you to control the zoom in/out in each direction separetely. The oscilloscope has other options such as DC or AC coupling that will already be set up for you. It will not be necessary to play around with any of the other options during the lab. 
+To use the oscilloscope you must first plug it into an outlet, turn it on by clicking the 'run/stop' button glowing green, and then plug in your BNC cable into the connection labeled Channel A - shown in red in Figure \ref{Fig:Appendix-Osc}. You must then adjust the position and scale knobs, shown in green until you see a signal on the screen. The vertical position knob on the left will adjust the $y$ position of the signal on the screen. The scale knob on the other hand, will modify the value in volts and time in \textit{y} and \textit{x} respectively of each of the squares or divisions on the screen. Explained in another manner these knobs allow you to control the zoom (or scale) in/out in each direction separately. You can also use the button labeled cursor, shown in orange, to adjust the cursor on the screen to aid you in measuring the frequency or voltage of the signal. The oscilloscope has other options such as DC or AC coupling that will already be set up for you. It will not be necessary to play around with any of the other options during the lab. 
+
+%To use the oscilloscope you must first plug it into an outlet, turn it on, and then plug in your positive and negative electrodes into the connection labeled Channel A shown in orange in Figure \ref{Fig:Appendix-CRO}. You must then adjust the position, volts/div (12), and time/div (13) knobs until you see a signal on the screen (19). The position knob will adjust the vertical position of the signal. The volts/div and time/div on the other hand, will modifiy the value in volts and time and in \textit{y} and \textit{x} respectively of each of the squares or divisions. Explained in another manner these knobs allow you to control the zoom in/out in each direction separetely. The oscilloscope has other options such as DC or AC coupling that will already be set up for you. It will not be necessary to play around with any of the other options during the lab. 
+
+%\begin{figure}[h]
+%\centering
+%\includegraphics[scale=1]{appendix-cro-pic}
+%\caption{Photograph of one CRO model}
+%\label{Fig:Appendix-CRO}
+%\end{figure}
 
 \begin{figure}[h]
-\centering
-\includegraphics[scale=1]{appendix-cro-pic}
-\caption{Photograph of one CRO model}
-\label{Fig:Appendix-CRO}
+	\centering
+	\includegraphics[scale=0.5]{appendix-digosc-label-pic.jpg}
+	\caption{Photograph of a digital model}
+	\label{Fig:Appendix-Osc}
 \end{figure}
 
 \chapter{More about statistics} \label{App:R2}
