@@ -1173,28 +1173,28 @@ To measure the voltage and current of a circuit,
 \section{Arduino}
 The Arduino unit requires the Arduino IDE software to run the desired scripts. Information about the Arduino code for the capacitance lab can be found \href{https://www.arduino.cc/en/Tutorial/CapacitanceMeter}{here}.
 
-The Arduinio setup is schematically shown in Fig.~\ref{Fig:ArduinoSchem} where the example shows two resistors: one with a resistance of $400 \Omega$, the other is unspecified. We recommend using at least $10^6 \Omega$ for the unspecified resistor: you can choose different values to vary the time constant of the RC circuit. This will change the precision of your setup.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.85]{CapacitanceMeterSchem.png}
-\caption{Arduino circuit scheme. The labels are associated with the pins and wire colors of Fig.~\ref{Fig:Arduino-real.png}.}
-\label{Fig:ArduinoSchem}
-\end{figure}
-
+The Arduino is encased inside a utility box. The circuit diagram of it is given in Fig.\ref{Fig:App-Arduino-utility-box}.
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8 \textwidth]{lab1-Arduino-circuit-board.jpg}
-\caption{Corresponding real setup of the Arduino unit. The red boxes label the pins while the purple boxes label the wiring that should make contact to each side of the capacitor.}
-\label{Fig:Arduino-real.png}
+\includegraphics[width=0.6 \textwidth]{lab1-arduino-utility-box.png}
+\caption{Arduino circuit inside the utility box.}
+\label{Fig:App-Arduino-utility-box}
 \end{figure}
-
-To change the resistance of the resistor, you must also change the value in the Arduino script. See Fig.~\ref{Fig:ArduinoSchem}.
-\begin{figure}[H]
+The circuit consists of a 390$\Omega$ and $10^6\Omega$ resistor. The latter's value will affect the precision of the time constant measurement.
+\textbf{You must input this value into the Arduino code. If you change this value, the code must reflect this change. See Fig.~\ref{Fig:ArduinoResistance}.}
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.9 \textwidth]{lab1-Arduino-resistance.png}
 \caption{Arduino resistor value. Change the value in the red box to the resistance value of your setup. We suggest using at least $10^6 \Omega$.}
 \label{Fig:ArduinoResistance}
+\end{figure}
+
+A more schematic diagram of the circuit can be found in Fig.~\ref{Fig:ArduinoSchem}.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.85]{CapacitanceMeterSchem.png}
+\caption{Arduino ``original" circuit diagram. Note that the generic value of $R$ is fixed to $10^6\Omega$ in our case.}
+\label{Fig:ArduinoSchem}
 \end{figure}
 
 \section{Reading Resistors}

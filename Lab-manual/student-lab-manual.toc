@@ -46,7 +46,7 @@
 \contentsline {section}{\numberline {B.1}Multimeter}{53}{section.B.1}
 \contentsline {section}{\numberline {B.2}Arduino}{54}{section.B.2}
 \contentsline {section}{\numberline {B.3}Reading Resistors}{55}{section.B.3}
-\contentsline {section}{\numberline {B.4}Bread Boards}{56}{section.B.4}
-\contentsline {section}{\numberline {B.5}IOLab}{57}{section.B.5}
+\contentsline {section}{\numberline {B.4}Bread Boards}{55}{section.B.4}
+\contentsline {section}{\numberline {B.5}IOLab}{56}{section.B.5}
 \contentsline {section}{\numberline {B.6}Oscilloscope}{57}{section.B.6}
 \contentsline {chapter}{\numberline {C}More about statistics}{60}{appendix.C}

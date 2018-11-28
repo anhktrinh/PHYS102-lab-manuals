@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.1)  26 NOV 2018 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.1)  28 NOV 2018 15:49
 entering extended mode
 **./TA-lab-manual.tex
 (TA-lab-manual.tex
@@ -3048,27 +3048,27 @@ Package pdftex.def Info: appendix-DMM.png  used on input line 1412.
 [62
 
  <./appendix-DMM.png>]
-<CapacitanceMeterSchem.png, id=784, 396.88275pt x 198.7425pt>
-File: CapacitanceMeterSchem.png Graphic file (type png)
-<use CapacitanceMeterSchem.png>
-Package pdftex.def Info: CapacitanceMeterSchem.png  used on input line 1428.
-(pdftex.def)             Requested size: 337.35193pt x 168.93192pt.
-<lab1-Arduino-circuit-board.jpg, id=787, 3774.1pt x 2818.53pt>
-File: lab1-Arduino-circuit-board.jpg Graphic file (type jpg)
-<use lab1-Arduino-circuit-board.jpg>
-Package pdftex.def Info: lab1-Arduino-circuit-board.jpg  used on input line 143
-5.
-(pdftex.def)             Requested size: 375.80544pt x 280.6223pt.
+<lab1-arduino-utility-box.png, id=784, 683.55376pt x 569.12625pt>
+File: lab1-arduino-utility-box.png Graphic file (type png)
+<use lab1-arduino-utility-box.png>
+Package pdftex.def Info: lab1-arduino-utility-box.png  used on input line 1427.
+
+(pdftex.def)             Requested size: 281.85587pt x 234.67195pt.
+<lab1-Arduino-resistance.png, id=786, 619.113pt x 220.4235pt>
+File: lab1-Arduino-resistance.png Graphic file (type png)
+<use lab1-Arduino-resistance.png>
+Package pdftex.def Info: lab1-Arduino-resistance.png  used on input line 1435.
+(pdftex.def)             Requested size: 422.77664pt x 150.52502pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<lab1-Arduino-resistance.png, id=789, 619.113pt x 220.4235pt>
-File: lab1-Arduino-resistance.png Graphic file (type png)
-<use lab1-Arduino-resistance.png>
-Package pdftex.def Info: lab1-Arduino-resistance.png  used on input line 1443.
-(pdftex.def)             Requested size: 422.77664pt x 150.52502pt.
-[63 <./CapacitanceMeterSchem.png>]
+<CapacitanceMeterSchem.png, id=788, 330.73563pt x 165.61874pt>
+File: CapacitanceMeterSchem.png Graphic file (type png)
+<use CapacitanceMeterSchem.png>
+Package pdftex.def Info: CapacitanceMeterSchem.png  used on input line 1443.
+(pdftex.def)             Requested size: 281.12659pt x 140.77658pt.
+[63 <./lab1-arduino-utility-box.png>]
 <appendix-resistor-chart.png, id=797, 380.92313pt x 323.70938pt>
 File: appendix-resistor-chart.png Graphic file (type png)
 <use appendix-resistor-chart.png>
@@ -3078,23 +3078,27 @@ Package pdftex.def Info: appendix-resistor-chart.png  used on input line 1451.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[64 <./lab1-Arduino-circuit-board.jpg> <./lab1-Arduino-resistance.png>]
-<lab2-bread-board.jpg, id=804, 3468.96pt x 4625.28pt>
+<lab2-bread-board.jpg, id=799, 3468.96pt x 4625.28pt>
 File: lab2-bread-board.jpg Graphic file (type jpg)
 <use lab2-bread-board.jpg>
 Package pdftex.def Info: lab2-bread-board.jpg  used on input line 1462.
 (pdftex.def)             Requested size: 208.12862pt x 277.50482pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[65 <./appendix-resistor-chart.png>] [66 <./lab2-bread-board.jpg>]
-<appendix-cro-data.jpg, id=817, 261.1356pt x 160.9212pt>
+[64 <./lab1-Arduino-resistance.png> <./CapacitanceMeterSchem.png>] [65 <./appen
+dix-resistor-chart.png>]
+<appendix-cro-data.jpg, id=812, 261.1356pt x 160.9212pt>
 File: appendix-cro-data.jpg Graphic file (type jpg)
 <use appendix-cro-data.jpg>
 Package pdftex.def Info: appendix-cro-data.jpg  used on input line 1499.
 (pdftex.def)             Requested size: 313.36113pt x 193.10448pt.
-<appendix-digosc-label-pic.jpg, id=819, 941.01563pt x 706.13812pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[66 <./lab2-bread-board.jpg>]
+<appendix-digosc-label-pic.jpg, id=821, 941.01563pt x 706.13812pt>
 File: appendix-digosc-label-pic.jpg Graphic file (type jpg)
 <use appendix-digosc-label-pic.jpg>
 Package pdftex.def Info: appendix-digosc-label-pic.jpg  used on input line 1517
@@ -3125,8 +3129,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1549.
  ) 
 Here is how much of TeX's memory you used:
  37248 strings out of 492973
- 691073 string characters out of 3126693
- 811462 words of memory out of 3000000
+ 691070 string characters out of 3126693
+ 811323 words of memory out of 3000000
  40121 multiletter control sequences out of 15000+200000
  551489 words of font info for 140 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3150,7 +3154,7 @@ rs/anhkh/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8
 nts/cm/cmti12.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmtt12.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on TA-lab-manual.pdf (70 pages, 13893544 bytes).
+Output written on TA-lab-manual.pdf (70 pages, 10273310 bytes).
 PDF statistics:
  944 PDF objects out of 1000 (max. 8388607)
  260 named destinations out of 1000 (max. 500000)
