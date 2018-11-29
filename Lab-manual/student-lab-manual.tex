@@ -77,7 +77,7 @@ Students are therefore encouraged to learn to acquire meaningful data to test a 
 To properly evaluate you, students' thinking process must  be reflected in their log book with enough clarity, organization and precision to allow  evaluation of their thought process. The TAs main involvement will be to guide students throughout discussion about the labs. 
 
 To ensure that you are discussing the appropriate concepts during each session, 
-\textbf{ {\color{blue} we expect you to either answer a question or to write down some discussion 1 associated with text that has a blue font.}} \underline{Take note of this if you intend to print the manual using} \underline{black/white ink.}
+\textbf{ {\color{blue} we expect you to either answer a question or to write down some discussion associated with text that has a blue font.}} \underline{Take note of this if you intend to print the manual using} \underline{black/white ink.}
 
 At the start of the first session, each student will be asked to answer in their log book some basic pre-lab questions posed in the lab manual. Student groups of three (to be determined in a so-called Lab 0 prior to the start of labs) will then perform measurements as a team to collect data related to the posed question(s). 
 All methods, experimental data collected, and interpretations should be written in a log book. 
@@ -480,7 +480,17 @@ Paper sheets & Extra wires \\
 \label{Fig:Arduino-Monitor}
 \end{figure}
 
-\item Take the two wires (see Fig.~\anhkhoi{updated setup}) and simply touch each side of the parallel plates: you should see a multitude of measurements scrolling down the monitor window, as in Fig.~\ref{Fig:Arduino-Monitor}. If you do not see many measurements scrolling in the monitor window, it is likely that the plates are touching each other and you therefore have a short circuit. \anhkhoi{input new setup pic}
+\item Your utility box looks like the one in Fig.~\ref{Fig:lab1-utility-box}. The interior of the utility box is shown in Fig.~\ref{Fig:App-utility-box-inside}. 
+You must connect two wires to the terminals. 
+Take the two wires and simply touch each side of the parallel plates: you should see a multitude of measurements scrolling down the monitor window, as in Fig.~\ref{Fig:Arduino-Monitor}. 
+If you do not see many measurements scrolling in the monitor window, it is likely that the plates are touching each other and you therefore have a short circuit. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\textwidth]{lab1-utility-box}
+\caption{Utility box containing the Arduino unit. In this figure, 4 terminals are available but you will only need the two to the far right of the figure. The interior of the utility box can be found in the appendix.}
+\label{Fig:lab1-utility-box}
+\end{figure}
+
 \item You can stop the auto-scroll by clicking the bottom-left box to better see your results (see Fig.~\ref{Fig:Arduino-Monitor}).
 \end{enumerate}
 
@@ -688,6 +698,19 @@ For this session, we recommend that you {\color{blue} record your measurements i
 %\caption{Connection of the circuit for the $470\Omega$ resistor in series with the $100\mu$F capacitor. By leaving the switch at the position shown, both charging and discharging constants should be the same.}
 %\label{Fig:lab2-session1-circuit2}
 %\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{lab2-pasco-open-interface}
+\caption{Home screen of the PASCO Capstone software. Click on the top left option (in the red box).}
+\label{Fig:lab2-pasco-home-ui}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{lab2-pasco-graph-interface}
+\caption{Graph screen. For the first column on the left (red box) and the x-axis of the graph (purple box), select ``Time". For the second column (blue box) and y-axis (green box), select ``Voltage".}
+\label{Fig:lab2-pasco-graph-ui}
+\end{figure}
 
 \item In the software, open the ``Signal Generator" tool, which is located on the left hand side panel and make sure that the signal is set to "Positive Square Wave" with an amplitude of 6V and frequency of 0.5 Hz. 
 This is equivalent turning on and off a DC voltage 2 times per second. Change the data acquisition frequency found at the bottom of the interface to $1$kHz. See Fig.~\ref{Fig:lab2-interface-square-wave}.
@@ -1173,7 +1196,15 @@ To measure the voltage and current of a circuit,
 \section{Arduino}
 The Arduino unit requires the Arduino IDE software to run the desired scripts. Information about the Arduino code for the capacitance lab can be found \href{https://www.arduino.cc/en/Tutorial/CapacitanceMeter}{here}.
 
-The Arduino is encased inside a utility box. The circuit diagram of it is given in Fig.\ref{Fig:App-Arduino-utility-box}.
+The Arduino is encased inside a utility box for which a picture can be found in Fig.~\ref{Fig:App-utility-box-inside}. 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{appendix-utility-box-inside}
+\caption{Inside of the utility box. Schematically, this is shown in Fig.~\ref{Fig:App-Arduino-utility-box}.}
+\label{Fig:App-utility-box-inside}
+\end{figure}
+
+The circuit diagram of it is given in Fig.\ref{Fig:App-Arduino-utility-box}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6 \textwidth]{lab1-arduino-utility-box.png}
