@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.1)  29 NOV 2018 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.1)  30 NOV 2018 11:53
 entering extended mode
 **./student-lab-manual.tex
 (student-lab-manual.tex
@@ -2695,29 +2695,29 @@ Chapter 2.
 <intro-example-scatter.png, id=315, 426.393pt x 227.6505pt>
 File: intro-example-scatter.png Graphic file (type png)
 <use intro-example-scatter.png>
-Package pdftex.def Info: intro-example-scatter.png  used on input line 210.
+Package pdftex.def Info: intro-example-scatter.png  used on input line 213.
 (pdftex.def)             Requested size: 422.77664pt x 225.72551pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10] [11 <./intro-example-scatter.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 235--237
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 267--269
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--277
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
@@ -2727,17 +2727,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--296
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
  []
 
@@ -2746,7 +2746,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--351
 ]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
 
@@ -2756,12 +2756,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 390--391
 <lab1-electric-potential.png, id=392, 527.72156pt x 167.87718pt>
 File: lab1-electric-potential.png Graphic file (type png)
 <use lab1-electric-potential.png>
-Package pdftex.def Info: lab1-electric-potential.png  used on input line 416.
+Package pdftex.def Info: lab1-electric-potential.png  used on input line 419.
 (pdftex.def)             Requested size: 328.82707pt x 104.60533pt.
 <lab1-parallel-plates.png, id=395, 215.30438pt x 304.88907pt>
 File: lab1-parallel-plates.png Graphic file (type png)
 <use lab1-parallel-plates.png>
-Package pdftex.def Info: lab1-parallel-plates.png  used on input line 424.
+Package pdftex.def Info: lab1-parallel-plates.png  used on input line 427.
 (pdftex.def)             Requested size: 129.18361pt x 182.93484pt.
 
 
@@ -2771,12 +2771,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <lab1-Arduino-menu-bar.png, id=414, 155.98276pt x 86.12175pt>
 File: lab1-Arduino-menu-bar.png Graphic file (type png)
 <use lab1-Arduino-menu-bar.png>
-Package pdftex.def Info: lab1-Arduino-menu-bar.png  used on input line 468.
+Package pdftex.def Info: lab1-Arduino-menu-bar.png  used on input line 471.
 (pdftex.def)             Requested size: 234.8775pt x 129.69217pt.
 <lab1-Arduino-monitor.png, id=415, 559.59062pt x 277.035pt>
 File: lab1-Arduino-monitor.png Graphic file (type png)
 <use lab1-Arduino-monitor.png>
-Package pdftex.def Info: lab1-Arduino-monitor.png  used on input line 478.
+Package pdftex.def Info: lab1-Arduino-monitor.png  used on input line 481.
 (pdftex.def)             Requested size: 399.29463pt x 197.68538pt.
 
 
@@ -2785,7 +2785,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <lab1-utility-box.jpg, id=420, 3468.96pt x 2649.9pt>
 File: lab1-utility-box.jpg Graphic file (type jpg)
 <use lab1-utility-box.jpg>
-Package pdftex.def Info: lab1-utility-box.jpg  used on input line 489.
+Package pdftex.def Info: lab1-utility-box.jpg  used on input line 492.
 (pdftex.def)             Requested size: 187.89914pt x 143.50085pt.
 [22 <./lab1-Arduino-menu-bar.png>] [23 <./lab1-Arduino-monitor.png> <./lab1-uti
 lity-box.jpg>] [24] [25]
@@ -2796,37 +2796,37 @@ Chapter 4.
 <lab2-prelab.png, id=465, 432.61626pt x 250.9375pt>
 File: lab2-prelab.png Graphic file (type png)
 <use lab2-prelab.png>
-Package pdftex.def Info: lab2-prelab.png  used on input line 569.
+Package pdftex.def Info: lab2-prelab.png  used on input line 572.
 (pdftex.def)             Requested size: 375.80544pt x 217.99222pt.
  [27 <./lab2-prelab.png (PNG copy)>] [28]
 <lab2-PASCO.jpg, id=489, 2961.0625pt x 1160.335pt>
 File: lab2-PASCO.jpg Graphic file (type jpg)
 <use lab2-PASCO.jpg>
-Package pdftex.def Info: lab2-PASCO.jpg  used on input line 625.
+Package pdftex.def Info: lab2-PASCO.jpg  used on input line 628.
 (pdftex.def)             Requested size: 375.80544pt x 147.25467pt.
  [29 <./lab2-PASCO.jpg>]
 <lab2-session1-circuit2.jpg, id=500, 420.1296pt x 175.3752pt>
 File: lab2-session1-circuit2.jpg Graphic file (type jpg)
 <use lab2-session1-circuit2.jpg>
-Package pdftex.def Info: lab2-session1-circuit2.jpg  used on input line 651.
+Package pdftex.def Info: lab2-session1-circuit2.jpg  used on input line 654.
 (pdftex.def)             Requested size: 352.31625pt x 147.06796pt.
 <lab2-pasco-open-interface.png, id=503, 963.6pt x 512.41437pt>
 File: lab2-pasco-open-interface.png Graphic file (type png)
 <use lab2-pasco-open-interface.png>
-Package pdftex.def Info: lab2-pasco-open-interface.png  used on input line 704.
+Package pdftex.def Info: lab2-pasco-open-interface.png  used on input line 707.
 
 (pdftex.def)             Requested size: 469.75502pt x 249.80295pt.
 <lab2-pasco-graph-interface.png, id=504, 963.09813pt x 510.40688pt>
 File: lab2-pasco-graph-interface.png Graphic file (type png)
 <use lab2-pasco-graph-interface.png>
-Package pdftex.def Info: lab2-pasco-graph-interface.png  used on input line 710
+Package pdftex.def Info: lab2-pasco-graph-interface.png  used on input line 713
 .
 (pdftex.def)             Requested size: 469.75502pt x 248.9489pt.
  [30 <./lab2-session1-circuit2.jpg>]
 <lab2-interface-square-wave.png, id=515, 650.43pt x 743.77875pt>
 File: lab2-interface-square-wave.png Graphic file (type png)
 <use lab2-interface-square-wave.png>
-Package pdftex.def Info: lab2-interface-square-wave.png  used on input line 719
+Package pdftex.def Info: lab2-interface-square-wave.png  used on input line 722
 .
 (pdftex.def)             Requested size: 325.2142pt x 371.88846pt.
  [31 <./lab2-pasco-open-interface.png> <./lab2-pasco-graph-interface.png>] [32 
@@ -2834,19 +2834,19 @@ Package pdftex.def Info: lab2-interface-square-wave.png  used on input line 719
 <lab2-interface-graph-tools.png, id=534, 346.79562pt x 25.09375pt>
 File: lab2-interface-graph-tools.png Graphic file (type png)
 <use lab2-interface-graph-tools.png>
-Package pdftex.def Info: lab2-interface-graph-tools.png  used on input line 740
+Package pdftex.def Info: lab2-interface-graph-tools.png  used on input line 743
 .
 (pdftex.def)             Requested size: 422.77664pt x 30.59248pt.
  [33 <./lab2-interface-graph-tools.png>]
 <lab2-session1-Rpractice.jpg, id=549, 237.7683pt x 180.675pt>
 File: lab2-session1-Rpractice.jpg Graphic file (type jpg)
 <use lab2-session1-Rpractice.jpg>
-Package pdftex.def Info: lab2-session1-Rpractice.jpg  used on input line 765.
+Package pdftex.def Info: lab2-session1-Rpractice.jpg  used on input line 768.
 (pdftex.def)             Requested size: 281.85587pt x 214.18987pt.
 <lab2-session1-Cpractice.png, id=551, 681.29532pt x 582.67688pt>
 File: lab2-session1-Cpractice.png Graphic file (type png)
 <use lab2-session1-Cpractice.png>
-Package pdftex.def Info: lab2-session1-Cpractice.png  used on input line 774.
+Package pdftex.def Info: lab2-session1-Cpractice.png  used on input line 777.
 (pdftex.def)             Requested size: 281.85587pt x 241.05956pt.
 
 
@@ -2856,7 +2856,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <lab2-session2-circuit.png, id=563, 420.82219pt x 161.10187pt>
 File: lab2-session2-circuit.png Graphic file (type png)
 <use lab2-session2-circuit.png>
-Package pdftex.def Info: lab2-session2-circuit.png  used on input line 799.
+Package pdftex.def Info: lab2-session2-circuit.png  used on input line 802.
 (pdftex.def)             Requested size: 422.77664pt x 161.85121pt.
 
 
@@ -2874,42 +2874,42 @@ Chapter 5.
 <lab3-wire.png, id=586, 379.4175pt x 189.70876pt>
 File: lab3-wire.png Graphic file (type png)
 <use lab3-wire.png>
-Package pdftex.def Info: lab3-wire.png  used on input line 875.
+Package pdftex.def Info: lab3-wire.png  used on input line 878.
 (pdftex.def)             Requested size: 189.70828pt x 94.85414pt.
 <lab3-wire-bfield-force.png, id=588, 379.4175pt x 189.70876pt>
 File: lab3-wire-bfield-force.png Graphic file (type png)
 <use lab3-wire-bfield-force.png>
-Package pdftex.def Info: lab3-wire-bfield-force.png  used on input line 888.
+Package pdftex.def Info: lab3-wire-bfield-force.png  used on input line 891.
 (pdftex.def)             Requested size: 322.5064pt x 161.25319pt.
 <lab3-sessiona-solenoid1.jpg, id=589, 1606.0pt x 1204.5pt>
 File: lab3-sessiona-solenoid1.jpg Graphic file (type jpg)
 <use lab3-sessiona-solenoid1.jpg>
-Package pdftex.def Info: lab3-sessiona-solenoid1.jpg  used on input line 901.
+Package pdftex.def Info: lab3-sessiona-solenoid1.jpg  used on input line 904.
 (pdftex.def)             Requested size: 211.38832pt x 158.53868pt.
 <lab3-sessiona-solenoid2.jpg, id=590, 1606.0pt x 1204.5pt>
 File: lab3-sessiona-solenoid2.jpg Graphic file (type jpg)
 <use lab3-sessiona-solenoid2.jpg>
-Package pdftex.def Info: lab3-sessiona-solenoid2.jpg  used on input line 904.
+Package pdftex.def Info: lab3-sessiona-solenoid2.jpg  used on input line 907.
 (pdftex.def)             Requested size: 211.38832pt x 158.53868pt.
  [39 <./lab3-wire.png> <./lab3-wire-bfield-force.png>]
 <lab3-power-supply.jpg, id=606, 803.0pt x 602.25pt>
 File: lab3-power-supply.jpg Graphic file (type jpg)
 <use lab3-power-supply.jpg>
-Package pdftex.def Info: lab3-power-supply.jpg  used on input line 914.
+Package pdftex.def Info: lab3-power-supply.jpg  used on input line 917.
 (pdftex.def)             Requested size: 321.1943pt x 240.89572pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 924--925
+Underfull \hbox (badness 10000) in paragraph at lines 927--928
 
  []
 
 <lab3-sessiona-interface1.png, id=609, 641.39626pt x 337.76187pt>
 File: lab3-sessiona-interface1.png Graphic file (type png)
 <use lab3-sessiona-interface1.png>
-Package pdftex.def Info: lab3-sessiona-interface1.png  used on input line 934.
+Package pdftex.def Info: lab3-sessiona-interface1.png  used on input line 937.
 (pdftex.def)             Requested size: 375.80544pt x 197.9017pt.
 [40 <./lab3-sessiona-solenoid1.jpg> <./lab3-sessiona-solenoid2.jpg>]
 
@@ -2918,7 +2918,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <iolab-data-selection.PNG, id=622, 674.52pt x 388.95313pt>
 File: iolab-data-selection.PNG Graphic file (type png)
 <use iolab-data-selection.PNG>
-Package pdftex.def Info: iolab-data-selection.PNG  used on input line 946.
+Package pdftex.def Info: iolab-data-selection.PNG  used on input line 949.
 (pdftex.def)             Requested size: 375.80544pt x 216.70836pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2926,7 +2926,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <lab3-sessiona-iolab-sensor.jpg, id=626, 602.25pt x 562.1pt>
 File: lab3-sessiona-iolab-sensor.jpg Graphic file (type jpg)
 <use lab3-sessiona-iolab-sensor.jpg>
-Package pdftex.def Info: lab3-sessiona-iolab-sensor.jpg  used on input line 960
+Package pdftex.def Info: lab3-sessiona-iolab-sensor.jpg  used on input line 963
 .
 (pdftex.def)             Requested size: 180.67639pt x 168.6313pt.
 
@@ -2936,14 +2936,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <lab3-sessiona-ramp.jpg, id=650, 803.0pt x 482.80376pt>
 File: lab3-sessiona-ramp.jpg Graphic file (type jpg)
 <use lab3-sessiona-ramp.jpg>
-Package pdftex.def Info: lab3-sessiona-ramp.jpg  used on input line 990.
+Package pdftex.def Info: lab3-sessiona-ramp.jpg  used on input line 993.
 (pdftex.def)             Requested size: 375.80544pt x 225.96008pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [43 <./iolab-data-selection.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1024
 
  []
 
@@ -2951,19 +2951,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
 <lab3-sessionb-diagram.jpg, id=670, 173.9298pt x 225.0006pt>
 File: lab3-sessionb-diagram.jpg Graphic file (type jpg)
 <use lab3-sessionb-diagram.jpg>
-Package pdftex.def Info: lab3-sessionb-diagram.jpg  used on input line 1036.
+Package pdftex.def Info: lab3-sessionb-diagram.jpg  used on input line 1039.
 (pdftex.def)             Requested size: 191.32336pt x 247.5014pt.
 <lab3-sessionb-setup.jpg, id=671, 310.5201pt x 251.7405pt>
 File: lab3-sessionb-setup.jpg Graphic file (type jpg)
 <use lab3-sessionb-setup.jpg>
-Package pdftex.def Info: lab3-sessionb-setup.jpg  used on input line 1043.
+Package pdftex.def Info: lab3-sessionb-setup.jpg  used on input line 1046.
 (pdftex.def)             Requested size: 279.4655pt x 226.56433pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1059--1061
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1064
 
  []
 
@@ -2972,7 +2972,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1059--1061
 File: lab3-sessionb-calibration-bfield.jpg Graphic file (type jpg)
 <use lab3-sessionb-calibration-bfield.jpg>
 Package pdftex.def Info: lab3-sessionb-calibration-bfield.jpg  used on input li
-ne 1064.
+ne 1067.
 (pdftex.def)             Requested size: 351.71446pt x 236.46776pt.
 
 
@@ -2984,14 +2984,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ]
 Appendix A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1112--1113
+Underfull \hbox (badness 10000) in paragraph at lines 1115--1116
 
  []
 
 <Excel-tut-boxes.png, id=706, 273.4215pt x 174.05025pt>
 File: Excel-tut-boxes.png Graphic file (type png)
 <use Excel-tut-boxes.png>
-Package pdftex.def Info: Excel-tut-boxes.png  used on input line 1122.
+Package pdftex.def Info: Excel-tut-boxes.png  used on input line 1125.
 (pdftex.def)             Requested size: 187.89914pt x 119.61409pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2999,7 +2999,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Excel-tut-select-fixed.png, id=709, 505.89pt x 178.86826pt>
 File: Excel-tut-select-fixed.png Graphic file (type png)
 <use Excel-tut-select-fixed.png>
-Package pdftex.def Info: Excel-tut-select-fixed.png  used on input line 1130.
+Package pdftex.def Info: Excel-tut-select-fixed.png  used on input line 1133.
 (pdftex.def)             Requested size: 375.80544pt x 132.87627pt.
 [51
 
@@ -3007,12 +3007,12 @@ Package pdftex.def Info: Excel-tut-select-fixed.png  used on input line 1130.
 <Excel-fig-insert.png, id=722, 608.2725pt x 142.131pt>
 File: Excel-fig-insert.png Graphic file (type png)
 <use Excel-fig-insert.png>
-Package pdftex.def Info: Excel-fig-insert.png  used on input line 1156.
+Package pdftex.def Info: Excel-fig-insert.png  used on input line 1159.
 (pdftex.def)             Requested size: 375.80544pt x 87.8145pt.
 <Excel-fig.png, id=724, 754.017pt x 573.94424pt>
 File: Excel-fig.png Graphic file (type png)
 <use Excel-fig.png>
-Package pdftex.def Info: Excel-fig.png  used on input line 1164.
+Package pdftex.def Info: Excel-fig.png  used on input line 1167.
 (pdftex.def)             Requested size: 375.80544pt x 286.06061pt.
 
 
@@ -3023,7 +3023,7 @@ Appendix B.
 <appendix-DMM.png, id=737, 617.30624pt x 411.5375pt>
 File: appendix-DMM.png Graphic file (type png)
 <use appendix-DMM.png>
-Package pdftex.def Info: appendix-DMM.png  used on input line 1187.
+Package pdftex.def Info: appendix-DMM.png  used on input line 1190.
 (pdftex.def)             Requested size: 328.82707pt x 219.22531pt.
 [55
 
@@ -3032,18 +3032,18 @@ Package pdftex.def Info: appendix-DMM.png  used on input line 1187.
 File: appendix-utility-box-inside.jpg Graphic file (type jpg)
 <use appendix-utility-box-inside.jpg>
 Package pdftex.def Info: appendix-utility-box-inside.jpg  used on input line 12
-02.
+05.
 (pdftex.def)             Requested size: 281.85587pt x 211.35747pt.
 <lab1-arduino-utility-box.png, id=749, 683.55376pt x 569.12625pt>
 File: lab1-arduino-utility-box.png Graphic file (type png)
 <use lab1-arduino-utility-box.png>
-Package pdftex.def Info: lab1-arduino-utility-box.png  used on input line 1210.
+Package pdftex.def Info: lab1-arduino-utility-box.png  used on input line 1213.
 
 (pdftex.def)             Requested size: 281.85587pt x 234.67195pt.
 <lab1-Arduino-resistance.png, id=751, 619.113pt x 220.4235pt>
 File: lab1-Arduino-resistance.png Graphic file (type png)
 <use lab1-Arduino-resistance.png>
-Package pdftex.def Info: lab1-Arduino-resistance.png  used on input line 1218.
+Package pdftex.def Info: lab1-Arduino-resistance.png  used on input line 1221.
 (pdftex.def)             Requested size: 422.77664pt x 150.52502pt.
 
 
@@ -3055,13 +3055,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <CapacitanceMeterSchem.png, id=753, 330.73563pt x 165.61874pt>
 File: CapacitanceMeterSchem.png Graphic file (type png)
 <use CapacitanceMeterSchem.png>
-Package pdftex.def Info: CapacitanceMeterSchem.png  used on input line 1226.
+Package pdftex.def Info: CapacitanceMeterSchem.png  used on input line 1229.
 (pdftex.def)             Requested size: 281.12659pt x 140.77658pt.
 [56 <./appendix-utility-box-inside.jpg>]
 <appendix-resistor-chart.png, id=761, 380.92313pt x 323.70938pt>
 File: appendix-resistor-chart.png Graphic file (type png)
 <use appendix-resistor-chart.png>
-Package pdftex.def Info: appendix-resistor-chart.png  used on input line 1234.
+Package pdftex.def Info: appendix-resistor-chart.png  used on input line 1237.
 (pdftex.def)             Requested size: 380.92218pt x 323.70859pt.
 
 
@@ -3070,7 +3070,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <lab2-bread-board.jpg, id=763, 3468.96pt x 4625.28pt>
 File: lab2-bread-board.jpg Graphic file (type jpg)
 <use lab2-bread-board.jpg>
-Package pdftex.def Info: lab2-bread-board.jpg  used on input line 1245.
+Package pdftex.def Info: lab2-bread-board.jpg  used on input line 1248.
 (pdftex.def)             Requested size: 208.12862pt x 277.50482pt.
 [57 <./lab1-arduino-utility-box.png> <./CapacitanceMeterSchem.png>]
 
@@ -3080,7 +3080,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <appendix-cro-data.jpg, id=776, 261.1356pt x 160.9212pt>
 File: appendix-cro-data.jpg Graphic file (type jpg)
 <use appendix-cro-data.jpg>
-Package pdftex.def Info: appendix-cro-data.jpg  used on input line 1282.
+Package pdftex.def Info: appendix-cro-data.jpg  used on input line 1285.
 (pdftex.def)             Requested size: 313.36113pt x 193.10448pt.
 
 
@@ -3090,11 +3090,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <appendix-digosc-label-pic.jpg, id=785, 941.01563pt x 706.13812pt>
 File: appendix-digosc-label-pic.jpg Graphic file (type jpg)
 <use appendix-digosc-label-pic.jpg>
-Package pdftex.def Info: appendix-digosc-label-pic.jpg  used on input line 1300
+Package pdftex.def Info: appendix-digosc-label-pic.jpg  used on input line 1303
 .
 (pdftex.def)             Requested size: 470.50667pt x 353.06819pt.
 
-Overfull \hbox (0.75165pt too wide) in paragraph at lines 1300--1301
+Overfull \hbox (0.75165pt too wide) in paragraph at lines 1303--1304
  [][] 
  []
 
@@ -3107,15 +3107,15 @@ Appendix C.
 [62
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1332.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1332.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1335.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1335.
  (student-lab-manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1332.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1332.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1335.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1335.
 
 Package rerunfilecheck Info: File `student-lab-manual.out' has not changed.
 (rerunfilecheck)             Checksum: 8789F814611AD9C2E298AA5675112A2D;3320.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1332.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1335.
  ) 
 Here is how much of TeX's memory you used:
  37152 strings out of 492973
@@ -3143,7 +3143,7 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users
 pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmtt12.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/cm-super/sfrm1200.pfb>
-Output written on student-lab-manual.pdf (63 pages, 18663181 bytes).
+Output written on student-lab-manual.pdf (63 pages, 18663365 bytes).
 PDF statistics:
  903 PDF objects out of 1000 (max. 8388607)
  250 named destinations out of 1000 (max. 500000)
