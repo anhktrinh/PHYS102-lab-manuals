@@ -1,0 +1,28 @@
+Hi folks,
+
+It was great to chat on Friday. Sounds like you’ve got some great ideas and I look forward to hearing how it goes.
+Some info on assessment:
+
+We’ve developed the Physics Lab Inventory of Critical thinking (PLIC) - a closed-response survey designed to 
+assess how students critically evaluate experimental methods, data, and models. Average completion time is 
+about 15 minutes and it’s all online via Qualtrics, so you can assign it for them to take at home (recommendation 
+is to assign some amount of course credit to incentivize filling it out – doing it in class is easy if you can 
+forego the time). 
+ 
+You can take a look at the questions by completing our Expert Survey. Responses from experts like you help us 
+validate the questions and our scoring, plus it gives you a chance to see what we’re asking students to do: 
+https://cornell.qualtrics.com/jfe/form/SV_0HCa6vTMaZZGxIp
+ 
+If you are interested in using it, (and when you are interested in using it) you can fill out our Instructor 
+Survey: https://cornell.qualtrics.com/jfe/form/SV_5ouHoTGEF5FBqxD
+ 
+Completing this survey will automatically generate links to a pre- and post-test survey unique for your class. 
+At the end of the semester, we will generate a report that will be emailed to you, and provides a summary of 
+your students’ performance, as well as comparisons to other courses similar to yours. The system also sends 
+timely reminders throughout the semester. 
+ 
+Other surveys that may be of interest to you are the Concise Data Processing Assessment (info here: 
+https://www.physport.org/assessments/CDPA ) or the E-CLASS (https://www.physport.org/assessments/ECLASS ).
+ 
+Cheers,
+Natasha 

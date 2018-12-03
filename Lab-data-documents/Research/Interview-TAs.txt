@@ -1,0 +1,76 @@
+Equipment:
+	Impact? Need for replacement/simplification.
+	- Doesn't matter.
+	Matei: Yes; but to what extant is uncertain
+	Rob: Consideration for first-time things, like using an oscilloscope
+	Scott: Agreed
+
+Partners:
+	Assigned vs random etc
+	- Better to choose their own.
+	Matei: Better to choose, +/- small error
+	Rob: Let them choose
+	Scott: Agreed
+
+Emphasis:
+	Do current labs emphasize stats/phys/math/etc?
+	- Phys then Hands-on.
+	Matei: 80/20 phys/hands-on
+	Rob: Should be hand-on, ignore uncertainty and error
+	Scott: Students get fixated on details (sig figs); phrasing the questions to high-light
+		Some physics, need coralling; one principal per lab; lectures should be in phase
+	- Prereading test (already in 102, not 101)
+	Rob: (N/A); extra work isn't necessarily worthwhile
+	Scott: Unsure if they are effective; occasional quiz was effective
+	- Better to have 2-session; (perhaps more stressful?)
+	Matei: Learning clash, difficult to implement
+	Scott: Like the idea, unsure if they are qualified (what if I do this?)
+	Rob: Agreed
+
+Workload:
+	Workload distribution: graders vs demonstrators
+	- Seperated (maybe 40 up to 70-90)
+	Rob: Markers seperate much better for TAs
+	Matei: Diffcult to say, benefits on both sides
+	Scott and Rob: Not at 90, but rather not work 90
+	Could you afford to do more work?
+	- Maybe, maybe not, but more TAs would be best
+	Matei: Technically fair, but difficult to push
+	
+BioPhys:
+	Add examples/materials for bio students to make material more relateable?
+	- Quite beneficial, where possible
+	Matei: Maybe, but preferentially favours Bio (only as examples)
+	Rob: Maybe in lecture or supplementary materials
+	Scott: Leave uncluttered, TAs would need to learn the material themselves
+
+Notes:
+Quality TA matters more than students.
+	Matei: more training is better
+	Rob: Better experience
+	Scott: A lot! A good demo, experienced TAs can be effective; less shy TAs
+Better TA training, mandatory experimental experience
+	Matei: Signing in mandetory
+	Rob: Need 'teacher voice' and better writing, seeking students out
+		Force TAs to demo to each other
+	Scott: Perhaps
+Prepare instructions ahead of time
+Practice and mentorship
+	Matei: Mentorship is good, but difficult to implement
+	Rob: 
+	Scott: 
+
+Matei:
+TA complaints:
+	List exists
+	Crowdmark sucks.
+	Avoid groups of labs
+	Different equipment from manual
+Student complaints:
+	TAs misleading them
+Errata:
+	Always try to do it, but nobody seems to actually do it.
+Rubric:
+	Graders come with rubric
+Notes:
+	More transparent (non-anonymous) reviews.

@@ -1,0 +1,26 @@
+Cornell lab drafts.zip contains the Mechanics labs we’ve been using (always a work in progress). 
+They hopefully give you an idea of how we structure things. The Pendulum rubric doc shows you one of 
+the rubrics for our Pendulum for Pros lab. And the “Training” doc shows you the handout we give to TAs 
+during our prep meeting. 
+
+The Holmes et al. 2013 paper is the TA development paper with the broken link online. 
+
+E-Class survey:
+https://jila.colorado.edu/lewandowski/research/e-class-colorado-learning-attitudes-about-science-survey-experimental-physics
+
+Physics Lab Inventory of Critical thinking (PLIC), is a closed-response assessment of student critical 
+thinking skills in intro lab courses. I have a version of the survey available here that you can take 
+a look at. This is our “expert” survey – it would be great for you to fill it out as expert physicists. 
+We use the expert responses to compare to student performance.
+https://cornell.qualtrics.com/jfe/form/SV_byziKLjBBPTIX9b
+
+Instructor survey:
+If you are interested in using it in your courses, we have an Instructor Survey here. After filling 
+out this survey, you will be emailed with a unique link to the pre survey, which can you send out 
+to your students. The instructor survey includes questions about when you would like the pre and 
+post survey open, as well as about the course you will use it with. We will send you the pre-test 
+link within an hour of filling out the instructor survey, and the post-test link will arrive about 2 
+weeks before the close date you request. Once the survey closes, you will be emailed a summary report 
+with your students’ performance compared to other students who have taken the survey. (It’s the same 
+process as the E-CLASS, if you’ve used it before).
+https://cornell.qualtrics.com/jfe/form/SV_5ouHoTGEF5FBqxD

@@ -1,0 +1,3 @@
+Goal:
+- Use IOLab
+- Exploratory physics (concepts)

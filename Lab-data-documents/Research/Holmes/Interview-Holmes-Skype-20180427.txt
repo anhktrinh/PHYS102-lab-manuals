@@ -1,0 +1,25 @@
+Grading rubric:
+20% Pre-lab
+50% Journal
+10% Attendance
+20% Participation
+
+Most grading is done outside of class
+Experimented with grading through interviews: seems to work
+Evaluation is by thought process, not so much result
+	Emphasize how to \textit{test} their hypothesis as opposed to
+	just stating what they think
+
+"Change" format to have \textit{discusion} period at the end with everyone
+as opposed to have them discuss pairwise
+
+
+She has data to support assessment of the new format
+
+
+Capacitance lab feedback
+Good thing that C vs r has log dependence so that students can discuss it
+
+
+Magnetism lab: Lenz's law
+	Dropping magnet through coils
