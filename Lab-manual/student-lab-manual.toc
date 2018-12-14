@@ -39,7 +39,7 @@
 \contentsline {subsection}{\numberline {5.3.4}Distance dependence}{44}{subsection.5.3.4}
 \contentsline {section}{\numberline {5.4}Session b}{45}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Electric motor setup}{46}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Protocol}{47}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.2}Protocol}{48}{subsection.5.4.2}
 \contentsline {part}{III\hspace {1em}Appendix}{50}{part.3}
 \contentsline {chapter}{\numberline {A}Introduction to Excel}{51}{appendix.A}
 \contentsline {chapter}{\numberline {B}Lab Equipment}{55}{appendix.B}
